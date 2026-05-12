@@ -1,0 +1,185 @@
+hash=d77f173b9d97c187c2895b8b12146d242942b097c6c8baf238bae71cd7fb70fb
+version=2
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+project=Microsoft.CodeAnalysis.ExternalAccess.HotReload.csproj
+language=C#
+primary
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Microsoft.CodeAnalysis.ExternalAccess.HotReload
+MaxSupportedLangVersion=14.0
+OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.HotReload/Debug/net10.0/
+OutputType=Library
+ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload/project.assets.json
+RootNamespace=Microsoft.CodeAnalysis.ExternalAccess.HotReload
+TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.HotReload/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.HotReload.dll
+TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload/Debug/net10.0/ref/Microsoft.CodeAnalysis.ExternalAccess.HotReload.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/noconfig
+/unsafe-
+/checked-
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:9999
+/doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.HotReload.xml
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:enable
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
+/debug+
+/debug:embedded
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/35MSSharedLib1024.snk
+/optimize-
+/out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.HotReload.dll
+/refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload/Debug/net10.0/refint/Microsoft.CodeAnalysis.ExternalAccess.HotReload.dll
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign+
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
+/warnaserror+:NU1605,SYSLIB0011
+/warnaserror-:IDE0055
+
+[sourceFiles]
+../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload/Debug/net10.0/
+ .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+ Microsoft.CodeAnalysis.ExternalAccess.HotReload.AssemblyInfo.cs
+ Microsoft.CodeAnalysis.ExternalAccess.HotReload.InternalsVisibleTo.cs
+Api/
+ HotReloadFileChangeKind.cs
+ HotReloadMSBuildWorkspace.cs
+ HotReloadMSBuildWorkspace.ProjectFileInfoProvider.cs
+ HotReloadService.cs
+GlobalUsings.cs
+
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
+[metadataReferences]
+../../../../artifacts/obj/
+ Microsoft.CodeAnalysis.Features/Debug/net10.0/ref/Microsoft.CodeAnalysis.Features.dll
+ Microsoft.CodeAnalysis.Scripting/Debug/net10.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+ Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/ref/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+  @aliases=BuildHost
+ Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts/Debug/net8.0/ref/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts.dll
+  @aliases=Contracts
+ Microsoft.CodeAnalysis.Workspaces.MSBuild/Debug/net10.0/ref/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+ Microsoft.CodeAnalysis.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ microsoft.build.framework/17.11.48/ref/net8.0/Microsoft.Build.Framework.dll
+ microsoft.build/17.11.48/ref/net8.0/Microsoft.Build.dll
+ microsoft.codeanalysis.elfie/1.0.0/lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll
+ microsoft.diasymreader/2.0.0/lib/netstandard2.0/Microsoft.DiaSymReader.dll
+ microsoft.extensions.dependencyinjection.abstractions/10.0.1/lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+ microsoft.extensions.dependencyinjection/10.0.1/lib/net10.0/Microsoft.Extensions.DependencyInjection.dll
+ microsoft.extensions.logging.abstractions/10.0.1/lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll
+ microsoft.extensions.logging/10.0.1/lib/net10.0/Microsoft.Extensions.Logging.dll
+ microsoft.extensions.options/10.0.1/lib/net10.0/Microsoft.Extensions.Options.dll
+ microsoft.extensions.primitives/10.0.1/lib/net10.0/Microsoft.Extensions.Primitives.dll
+ microsoft.net.stringtools/17.11.48/ref/net8.0/Microsoft.NET.StringTools.dll
+ microsoft.visualstudio.solutionpersistence/1.0.52/lib/net8.0/Microsoft.VisualStudio.SolutionPersistence.dll
+ system.composition.attributedmodel/10.0.1/lib/net10.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net10.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net10.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net10.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net10.0/System.Composition.TypedParts.dll
+ system.configuration.configurationmanager/10.0.1/lib/net10.0/System.Configuration.ConfigurationManager.dll
+ system.diagnostics.eventlog/10.0.1/lib/net10.0/System.Diagnostics.EventLog.dll
+ system.reflection.metadataloadcontext/8.0.0/lib/net8.0/System.Reflection.MetadataLoadContext.dll
+ system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.extensions.logging.abstractions/10.0.1/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll
+ microsoft.extensions.options/10.0.1/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Options.SourceGeneration.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[analyzerConfigFiles]
+../../../../
+ artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.HotReload.GeneratedMSBuildEditorConfig.editorconfig
+ eng/config/globalconfigs/
+  Common.globalconfig
+  Shipping.globalconfig
+ .editorconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
+.editorconfig
+
+[additionalFiles]
+../../
+ ../../eng/config/BannedSymbols.txt
+ BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+PublicAPI.Shipped.txt
+PublicAPI.Unshipped.txt
+
+[projectReferences]
+../../
+ ../
+  Compilers/Core/Portable/Microsoft.CodeAnalysis.csproj
+  Scripting/Core/Microsoft.CodeAnalysis.Scripting.csproj
+  Workspaces/
+   Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
+   MSBuild/
+    BuildHost/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.csproj
+    Contracts/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts.csproj
+    Core/Microsoft.CodeAnalysis.Workspaces.MSBuild.csproj
+ Core/Portable/Microsoft.CodeAnalysis.Features.csproj
+
+[capabilities]
+NativeAOT
+Pack
+SupportsHotReload

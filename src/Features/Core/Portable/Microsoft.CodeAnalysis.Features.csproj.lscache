@@ -1,0 +1,3138 @@
+hash=2b33ae472945934178b9e37607c1ed571c4844aed8842ac1d03bdd330528f196
+version=2
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+project=Microsoft.CodeAnalysis.Features.csproj
+language=C#
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Microsoft.CodeAnalysis.Features
+OutputType=Library
+ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/project.assets.json
+RootNamespace=Microsoft.CodeAnalysis
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:9999
+/highentropyva+
+/nullable:enable
+/debug+
+/debug:embedded
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/35MSSharedLib1024.snk
+/optimize-
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign+
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
+/warnaserror-:IDE0055
+
+[sourceFiles]
+AddConstructorParametersFromMembers/
+ AddConstructorParametersFromMembersCodeRefactoringProvider.AddConstructorParameterResult.cs
+ AddConstructorParametersFromMembersCodeRefactoringProvider.AddConstructorParametersCodeAction.cs
+ AddConstructorParametersFromMembersCodeRefactoringProvider.ConstructorCandidate.cs
+ AddConstructorParametersFromMembersCodeRefactoringProvider.cs
+ AddConstructorParametersFromMembersCodeRefactoringProvider.State.cs
+AddDebuggerDisplay/AbstractAddDebuggerDisplayCodeRefactoringProvider.cs
+AddFileBanner/
+ AbstractAddFileBannerCodeRefactoringProvider.cs
+ AbstractAddFileBannerNewDocumentFormattingProvider.cs
+ AddFileBannerHelpers.cs
+AddImport/
+ CodeActions/
+  AddImportCodeAction.cs
+  AssemblyReferenceCodeAction.cs
+  InstallPackageAndAddImportCodeAction.cs
+  InstallWithPackageManagerCodeAction.cs
+  MetadataSymbolReferenceCodeAction.cs
+  ProjectSymbolReferenceCodeAction.cs
+  SymbolReference.SymbolReferenceCodeAction.cs
+ References/
+  AssemblyReference.cs
+  MetadataSymbolReference.cs
+  PackageReference.cs
+  ProjectSymbolReference.cs
+  Reference.cs
+  SymbolReference.cs
+ Remote/
+  IRemoteMissingImportDiscoveryService.cs
+  RemoteMissingImportDiscoveryServiceCallbackDispatcher.cs
+ SearchScopes/
+  AllSymbolsProjectSearchScope.cs
+  MetadataSymbolsSearchScope.cs
+  ProjectSearchScope.cs
+  SearchScope.cs
+  SourceSymbolsProjectSearchScope.cs
+ AbstractAddImportCodeFixProvider.cs
+ AbstractAddImportCodeRefactoringProvider.cs
+ AbstractAddImportFeatureService.cs
+ AddImportFixData.cs
+ AddImportFixKind.cs
+ AddImportOptions.cs
+ IAddImportFeatureService.cs
+ PackageSourceHelper.cs
+ SymbolReferenceFinder.cs
+ SymbolReferenceFinder_PackageAssemblySearch.cs
+ SymbolResult.cs
+AddMissingReference/
+ AbstractAddMissingReferenceCodeFixProvider.cs
+ AddMissingReferenceCodeAction.cs
+AddPackage/
+ AbstractAddPackageCodeFixProvider.cs
+ AbstractAddSpecificPackageCodeFixProvider.cs
+ InstallPackageDirectlyCodeAction.cs
+ InstallPackageDirectlyCodeActionOperation.cs
+ InstallPackageParentCodeAction.cs
+ InstallWithPackageManagerCodeAction.cs
+ ParentInstallPackageCodeAction.cs
+BraceCompletion/
+ AbstractBraceCompletionService.cs
+ ExportBraceCompletionServiceAttribute.cs
+ IBraceCompletionService.cs
+BraceMatching/
+ AbstractBraceMatcher.cs
+ AbstractDirectiveTriviaBraceMatcher.cs
+ AbstractEmbeddedLanguageBraceMatcher.cs
+ BraceCharacterAndKind.cs
+ BraceMatchingOptions.cs
+ BraceMatchingService.cs
+ ExportBraceMatcherAttribute.cs
+ ExportEmbeddedLanguageBraceMatcherAttribute.cs
+ IBraceMatcher.cs
+ IBraceMatchingService.cs
+ IBraceMatchingServiceExtensions.cs
+ IEmbeddedLanguageBraceMatcher.cs
+BracePairs/IBracePairsService.cs
+CallHierarchy/
+ AbstractCallHierarchyService.cs
+ CallHierarchyDisplayFormats.cs
+ CallHierarchyItemDescriptor.cs
+ CallHierarchyItemId.cs
+ CallHierarchyItemSearchResult.cs
+ CallHierarchyRelationshipKind.cs
+ CallHierarchySearchDescriptor.cs
+ ICallHierarchyService.cs
+ChangeSignature/
+ AbstractChangeSignatureCodeRefactoringProvider.cs
+ AbstractChangeSignatureService.cs
+ CallSiteKind.cs
+ ChangeSignatureAnalyzedContext.cs
+ ChangeSignatureCodeAction.cs
+ ChangeSignatureCodeActionOperation.cs
+ ChangeSignatureFailureKind.cs
+ ChangeSignatureOptionsResult.cs
+ ChangeSignatureResult.cs
+ ChangeSignatureTelemetryLogger.cs
+ DelegateInvokeMethodReferenceFinder.cs
+ IChangeSignatureOptionsService.cs
+ IUnifiedArgumentSyntax.cs
+ Parameter.cs
+ ParameterConfiguration.cs
+ SignatureChange.cs
+CodeFixes/
+ Configuration/
+  ConfigureCodeStyle/
+   ConfigureCodeStyleOptionCodeFixProvider.cs
+   ConfigureCodeStyleOptionCodeFixProvider.TopLevelConfigureCodeStyleOptionCodeAction.cs
+  ConfigureSeverity/
+   ConfigureSeverityLevelCodeFixProvider.cs
+   ConfigureSeverityLevelCodeFixProvider.TopLevelBulkConfigureSeverityCodeAction.cs
+   ConfigureSeverityLevelCodeFixProvider.TopLevelConfigureSeverityCodeAction.cs
+  ConfigurationUpdater.cs
+ FixAllOccurrences/IFixMultipleOccurrencesService.cs
+ Service/
+  CodeFixService.cs
+  CodeFixService.FixAllDiagnosticProvider.cs
+  CodeFixService.FixAllPredefinedDiagnosticProvider.cs
+  CodeFixService.ProjectCodeFixProvider.cs
+  ICodeFixService.cs
+ Suppression/
+  AbstractSuppressionBatchFixAllProvider.cs
+  AbstractSuppressionCodeFixProvider.AbstractGlobalSuppressMessageCodeAction.cs
+  AbstractSuppressionCodeFixProvider.AbstractSuppressionCodeAction.cs
+  AbstractSuppressionCodeFixProvider.cs
+  AbstractSuppressionCodeFixProvider.FixAllProvider.cs
+  AbstractSuppressionCodeFixProvider.GlobalSuppressMessageCodeAction.cs
+  AbstractSuppressionCodeFixProvider.GlobalSuppressMessageFixAllCodeAction.cs
+  AbstractSuppressionCodeFixProvider.IPragmaBasedCodeAction.cs
+  AbstractSuppressionCodeFixProvider.LocalSuppressMessageCodeAction.cs
+  AbstractSuppressionCodeFixProvider.PragmaBatchFixHelpers.cs
+  AbstractSuppressionCodeFixProvider.PragmaHelpers.cs
+  AbstractSuppressionCodeFixProvider.PragmaWarningBatchFixAllProvider.cs
+  AbstractSuppressionCodeFixProvider.PragmaWarningCodeAction.cs
+  AbstractSuppressionCodeFixProvider.RemoveSuppressionCodeAction.BatchFixer.cs
+  AbstractSuppressionCodeFixProvider.RemoveSuppressionCodeAction.cs
+  AbstractSuppressionCodeFixProvider.RemoveSuppressionCodeAction_Attribute.cs
+  AbstractSuppressionCodeFixProvider.RemoveSuppressionCodeAction_Pragma.cs
+  ExportConfigurationFixProviderAttribute.cs
+  NestedSuppressionCodeAction.cs
+  SuppressionHelpers.cs
+  TopLevelSuppressionCodeAction.cs
+  WrapperCodeFixProvider.cs
+ AbstractConfigurationActionWithNestedActions.cs
+ CodeFixCollection.cs
+ DiagnosticExtensions.cs
+ ICodeFixProviderFactory.cs
+ RoslynAssemblyHelper.cs
+CodeFixesAndRefactorings/
+ AbstractFixAllCodeAction.cs
+ AbstractFixAllGetFixesService.cs
+ FeaturesFixAllGetFixesService.cs
+ IFixAllGetFixesService.cs
+CodeLens/
+ CodeLensFindReferenceProgress.cs
+ CodeLensHelpers.cs
+ CodeLensReferencesService.cs
+ CodeLensReferencesServiceFactory.cs
+ ICodeLensDisplayInfoService.cs
+ ICodeLensMemberFinder.cs
+ ICodeLensReferencesService.cs
+ IRemoteCodeLensReferencesService.cs
+ LocationComparer.cs
+ ReferenceCount.cs
+ ReferenceLocationDescriptor.cs
+ ReferenceMethodDescriptor.cs
+CodeRefactorings/
+ AddAwait/AbstractAddAwaitCodeRefactoringProvider.cs
+ AddMissingImports/
+  AbstractAddMissingImportsFeatureService.cs
+  AbstractAddMissingImportsRefactoringProvider.cs
+  IAddMissingImportsFeatureService.cs
+ ExtractMethod/AbstractExtractMethodCodeRefactoringProvider.cs
+ MoveType/
+  AbstractMoveTypeService.cs
+  AbstractMoveTypeService.Editor.cs
+  AbstractMoveTypeService.MoveTypeCodeAction.cs
+  AbstractMoveTypeService.MoveTypeEditor.cs
+  AbstractMoveTypeService.MoveTypeNamespaceScopeEditor.cs
+  AbstractMoveTypeService.RenameFileEditor.cs
+  AbstractMoveTypeService.RenameTypeEditor.cs
+  IMoveTypeService.cs
+  MoveTypeCodeRefactoringProvider.cs
+  MoveTypeOperationKind.cs
+ SyncNamespace/
+  AbstractChangeNamespaceService.cs
+  AbstractSyncNamespaceCodeRefactoringProvider.cs
+  AbstractSyncNamespaceCodeRefactoringProvider.MoveFileCodeAction.cs
+  AbstractSyncNamespaceCodeRefactoringProvider.State.cs
+  LocationForAffectedSymbol.cs
+  SyncNamespaceDocumentsNotInSolutionException.cs
+ WorkspaceServices/
+  IAddMetadataReferenceCodeActionOperationFactoryWorkspaceService.cs
+  ISymbolRenamedCodeActionOperationFactoryWorkspaceService.cs
+ CodeRefactoring.cs
+ CodeRefactoringService.cs
+ ICodeRefactoringHelpersService.cs
+ ICodeRefactoringProviderFactory.cs
+ ICodeRefactoringService.cs
+ PredefinedCodeRefactoringProviderNames.cs
+ ServicesLayerCodeActionHelpersService.cs
+CommentSelection/
+ AbstractCommentSelectionService.cs
+ CommentSelectionInfo.cs
+ ICommentSelectionService.cs
+Common/
+ AbstractProjectExtensionProvider.cs
+ DelayTimeSpan.cs
+ DocumentNavigationOperation.cs
+ FeaturesSessionTelemetry.cs
+ Glyph.cs
+ GlyphExtensions.cs
+ GlyphTags.cs
+ StartInlineRenameSessionOperation.cs
+ SymbolDisplayPartKindTags.cs
+ TaggedText.cs
+ TaggedTextStyle.cs
+ TextTags.cs
+Completion/
+ Log/CompletionProvidersLogger.cs
+ Providers/
+  ImportCompletionProvider/
+   AbstractExtensionMethodImportCompletionProvider.cs
+   AbstractImportCompletionCacheServiceFactory.cs
+   AbstractImportCompletionProvider.cs
+   AbstractTypeImportCompletionProvider.cs
+   AbstractTypeImportCompletionService.cs
+   DefaultExtensionMethodImportCompletionCacheServiceFactory.cs
+   DefaultTypeImportCompletionCacheServiceFactory.cs
+   ExtensionMemberImportCompletionHelper.cs
+   ExtensionMemberImportCompletionHelper.SymbolComputer.cs
+   ExtensionMemberImportCompletionHelper.SymbolComputer_Constraints.cs
+   ExtensionMethodImportCompletionCacheEntry.cs
+   IImportCompletionCacheService.cs
+   ImportCompletionCommitBehavior.cs
+   ImportCompletionItem.cs
+   ImportCompletionProviderHelpers.cs
+   IRemoteExtensionMethodImportCompletionService.cs
+   ITypeImportCompletionService.cs
+   SerializableImportCompletionItem.cs
+   TypeImportCompletionCacheEntry.cs
+  Scripting/
+   AbstractDirectivePathCompletionProvider.cs
+   AbstractLoadDirectiveCompletionProvider.cs
+   AbstractReferenceDirectiveCompletionProvider.cs
+   GlobalAssemblyCacheCompletionHelper.cs
+  Snippets/
+   AbstractSnippetCompletionProvider.cs
+   SnippetCompletionItem.cs
+  AbstractAggregateEmbeddedLanguageCompletionProvider.cs
+  AbstractAwaitCompletionProvider.cs
+  AbstractContextVariableArgumentProvider.cs
+  AbstractCrefCompletionProvider.cs
+  AbstractDefaultArgumentProvider.cs
+  AbstractDocCommentCompletionProvider.cs
+  AbstractInternalsVisibleToCompletionProvider.cs
+  AbstractKeywordCompletionProvider.cs
+  AbstractMemberInsertingCompletionProvider.cs
+  AbstractObjectCreationCompletionProvider.cs
+  AbstractObjectInitializerCompletionProvider.cs
+  AbstractOverrideCompletionProvider.BaseItemGetter.cs
+  AbstractOverrideCompletionProvider.cs
+  AbstractOverrideCompletionProvider.ItemGetter.cs
+  AbstractPartialMethodCompletionProvider.cs
+  AbstractPartialTypeCompletionProvider.cs
+  AbstractPreprocessorCompletionProvider.cs
+  AbstractRecommendationServiceBasedCompletionProvider.cs
+  AbstractSuggestionModeCompletionProvider.cs
+  AbstractSymbolCompletionProvider.cs
+  AbstractSymbolCompletionProvider.SymbolAndSelectionInfo.cs
+  CompletionUtilities.cs
+  EmbeddedLanguageCompletionProvider.cs
+  IKeywordRecommender.cs
+  MemberInsertingCompletionItem.cs
+  RecommendedKeyword.cs
+  SmallNumberFormatter.cs
+  SymbolCompletionItem.cs
+  SymbolMatchPriority.cs
+  UnionCompletionItemComparer.cs
+  XmlDocCommentCompletionItem.cs
+ ArgumentContext.cs
+ ArgumentProvider.cs
+ CharacterSetModificationKind.cs
+ CharacterSetModificationRule.cs
+ CommonCompletionItem.cs
+ CommonCompletionProvider.cs
+ CommonCompletionService.cs
+ CommonCompletionUtilities.cs
+ CompletionChange.cs
+ CompletionContext.cs
+ CompletionDescription.cs
+ CompletionFilterReason.cs
+ CompletionHelper.cs
+ CompletionItem.cs
+ CompletionItemFlags.cs
+ CompletionItemRules.cs
+ CompletionList.cs
+ CompletionOptions.cs
+ CompletionProvider.cs
+ CompletionProviderMetadata.cs
+ CompletionRules.cs
+ CompletionService.cs
+ CompletionService.ProviderManager.cs
+ CompletionService_GetCompletions.cs
+ CompletionTags.cs
+ CompletionTrigger.cs
+ CompletionTriggerKind.cs
+ EnterKeyRule.cs
+ ExpandedCompletionMode.cs
+ ExportArgumentProviderAttribute.cs
+ ExportCompletionProviderAttribute.cs
+ FileSystemCompletionHelper.cs
+ ICompletionProviderFactory.cs
+ INotifyCommittingItemCompletionProvider.cs
+ LSPCompletionProvider.cs
+ MatchPriority.cs
+ MatchResult.cs
+ PatternMatchHelper.cs
+ SharedSyntaxContextsWithSpeculativeModel.cs
+ SnippetsRule.cs
+ Utilities.cs
+Contracts/
+ Client/ISolutionSnapshotProviderService.cs
+ EditAndContinue/
+  ActiveStatementFlags.cs
+  DebugSessionFlags.cs
+  HotReloadResult.cs
+  IManagedHotReloadLanguageService.cs
+  IManagedHotReloadService.cs
+  ManagedActiveStatementDebugInfo.cs
+  ManagedActiveStatementUpdate.cs
+  ManagedEditAndContinueEngineCapabilities.cs
+  ManagedExceptionRegionUpdate.cs
+  ManagedHotReloadAvailability.cs
+  ManagedHotReloadAvailabilityStatus.cs
+  ManagedHotReloadDiagnostic.cs
+  ManagedHotReloadDiagnosticSeverity.cs
+  ManagedHotReloadUpdate.cs
+  ManagedHotReloadUpdates.cs
+  ManagedInstructionId.cs
+  ManagedMethodId.cs
+  ManagedModuleMethodId.cs
+  ProjectInstanceId.cs
+  RunningProjectInfo.cs
+  SequencePointUpdates.cs
+  SourceLineUpdate.cs
+  SourceSpan.cs
+ConvertAnonymousType/
+ AbstractConvertAnonymousTypeCodeRefactoringProvider.cs
+ AbstractConvertAnonymousTypeToClassCodeRefactoringProvider.cs
+ AbstractConvertAnonymousTypeToTupleCodeRefactoringProvider.cs
+ConvertAutoPropertyToFullProperty/AbstractConvertAutoPropertyToFullPropertyCodeRefactoringProvider.cs
+ConvertCast/AbstractConvertCastCodeRefactoringProvider.cs
+ConvertForEachToFor/AbstractConvertForEachToForCodeRefactoringProvider.cs
+ConvertForToForEach/AbstractConvertForToForEachCodeRefactoringProvider.cs
+ConvertIfToSwitch/
+ AbstractConvertIfToSwitchCodeRefactoringProvider.AnalyzedNodes.cs
+ AbstractConvertIfToSwitchCodeRefactoringProvider.Analyzer.cs
+ AbstractConvertIfToSwitchCodeRefactoringProvider.cs
+ AbstractConvertIfToSwitchCodeRefactoringProvider.Rewriting.cs
+ConvertLinq/
+ ConvertForEachToLinqQuery/
+  AbstractConvertForEachToLinqQueryProvider.cs
+  ExtendedSyntaxNode.cs
+  ForEachInfo.cs
+  IConverter.cs
+ AbstractConvertLinqQueryToForEachProvider.cs
+ConvertNumericLiteral/AbstractConvertNumericLiteralCodeRefactoringProvider.cs
+ConvertToInterpolatedString/
+ AbstractConvertConcatenationToInterpolatedStringRefactoringProvider.cs
+ AbstractConvertPlaceholderToInterpolatedStringRefactoringProvider.cs
+ ConvertRegularStringToInterpolatedStringRefactoringProvider.cs
+ConvertTupleToStruct/
+ AbstractConvertTupleToStructCodeRefactoringProvider.cs
+ DocumentToUpdate.cs
+ IConvertTupleToStructCodeRefactoringProvider.cs
+ IRemoteConvertTupleToStructCodeRefactoringService.cs
+ Scope.cs
+Copilot/
+ CopilotChangeAnalysis.cs
+ CopilotChangeAnalysisUtilities.cs
+ CopilotOptions.cs
+ CopilotUtilities.cs
+ Extensions.cs
+ ICopilotChangeAnalysisService.cs
+ ICopilotCodeAnalysisService.cs
+ ICopilotOptionsService.cs
+ ImplementationDetails.cs
+ IProposalAdjusterService.cs
+ IRemoteCopilotChangeAnalysisService.cs
+Debugging/
+ AbstractBreakpointResolver.cs
+ AbstractBreakpointResolver.NameAndArity.cs
+ AbstractDataTipInfoGetter.cs
+ BreakpointResolutionResult.cs
+ DebugDataTipInfo.cs
+ DebugInformationReaderProvider.cs
+ DebugLocationInfo.cs
+ DebugMode.cs
+ IBreakpointResolutionService.cs
+ ILanguageDebugInfoService.cs
+ IProximityExpressionsService.cs
+DecompiledSource/
+ IDecompilationService.cs
+ IDecompiledSourceService.cs
+DesignerAttribute/
+ DesignerAttributeData.cs
+ DesignerAttributeDiscoveryService.cs
+ IDesignerAttributeDiscoveryService.cs
+ IRemoteDesignerAttributeDiscoveryService.cs
+Diagnostics/
+ Analyzers/
+  DocumentDiagnosticAnalyzer.cs
+  UnboundIdentifiersDiagnosticAnalyzerBase.cs
+ LanguageServer/
+  ILspBuildOnlyDiagnostics.cs
+  ILspBuildOnlyDiagnosticsMetadata.cs
+  LspBuildOnlyDiagnosticsAttribute.cs
+ Log/DiagnosticLogger.cs
+ Options/
+  DiagnosticOptionsStorage.cs
+  SolutionCrawlerOptionsStorage.cs
+ Service/
+  ChecksumAndAnalyzersEqualityComparer.cs
+  DiagnosticAnalyzerComparer.cs
+  DiagnosticAnalyzerService.cs
+  DiagnosticAnalyzerService.HostAnalyzerInfo.cs
+  DiagnosticAnalyzerService.IncrementalMemberEditAnalyzer.cs
+  DiagnosticAnalyzerService.ProjectStates.cs
+  DiagnosticAnalyzerService_CompilationWithAnalyzersPair.cs
+  DiagnosticAnalyzerService_ComputeDiagnosticAnalysisResults.cs
+  DiagnosticAnalyzerService_CoreAnalyze.cs
+  DiagnosticAnalyzerService_DeprioritizationCandidates.cs
+  DiagnosticAnalyzerService_ForceCodeAnalysisDiagnostics.cs
+  DiagnosticAnalyzerService_GetDiagnosticsForSpan.cs
+  DiagnosticAnalyzerService_ProduceProjectDiagnostics.cs
+  DiagnosticAnalyzerService_RemoteOrLocalDispatcher.cs
+  DocumentAnalysisExecutor.cs
+  DocumentAnalysisExecutor_Helpers.cs
+ AbstractAnalyzerDriverService.cs
+ CodeAnalysisDiagnosticAnalyzerService.cs
+ DiagnosticAnalyzerExtensions.cs
+ DiagnosticAnalyzerTelemetry.cs
+ DiagnosticProviderMetadata.cs
+ DiagnosticsUpdatedArgs.cs
+ DiagnosticsUpdatedKind.cs
+ IAnalyzerDriverService.cs
+ ICodeAnalysisDiagnosticAnalyzerService.cs
+ IDiagnosticAnalyzerService.cs
+ IDiagnosticsRefresher.cs
+ IPerformanceTrackerService.cs
+DocumentationComments/
+ AbstractDocumentationCommentFormattingService.cs
+ AbstractDocumentationCommentSnippetService.cs
+ DocumentationCommentOptions.cs
+ DocumentationCommentProposal.cs
+ DocumentationCommentProposedEdit.cs
+ DocumentationCommentSnippet.cs
+ DocumentationCommentSnippetHelpers.cs
+ DocumentationCommentTagType.cs
+ IDocumentationCommentFormattingService.cs
+ IDocumentationCommentSnippetService.cs
+DocumentHighlighting/
+ AbstractDocumentHighlightsService.cs
+ ExportEmbeddedLanguageDocumentHighlighterAttribute.cs
+ HighlightingOptions.cs
+ IDocumentHighlightsService.cs
+ IEmbeddedLanguageDocumentHighlighter.cs
+ IRemoteDocumentHighlightsService.cs
+EditAndContinue/
+ Remote/
+  ActiveStatementSpanProviderCallback.cs
+  DebuggingSessionProxy.cs
+  IRemoteEditAndContinueService.cs
+  RemoteEditAndContinueServiceProxy.cs
+ Utilities/
+  BidirectionalMap.cs
+  Extensions.cs
+ AbstractEditAndContinueAnalyzer.ActiveMembersBuilder.cs
+ AbstractEditAndContinueAnalyzer.cs
+ AbstractSimpleMemberBody.cs
+ ActiveStatement.cs
+ ActiveStatementExceptionRegions.cs
+ ActiveStatementId.cs
+ ActiveStatementLineSpan.cs
+ ActiveStatementProvider.cs
+ ActiveStatementsMap.cs
+ ActiveStatementSpan.cs
+ CommittedSolution.cs
+ DebuggingSession.cs
+ DebuggingSessionId.cs
+ DebuggingSessionTelemetry.cs
+ DeclarationBody.cs
+ DeclarationBodyMap.cs
+ DocumentActiveStatementChanges.cs
+ DocumentAnalysisResults.cs
+ DocumentSemanticModel.cs
+ EditAndContinueCapabilities.cs
+ EditAndContinueCapabilitiesGrantor.cs
+ EditAndContinueDebugInfoReader.cs
+ EditAndContinueDiagnosticDescriptors.cs
+ EditAndContinueDocumentAnalysesCache.cs
+ EditAndContinueErrorCode.cs
+ EditAndContinueService.cs
+ EditAndContinueSessionState.cs
+ EditSession.cs
+ EditSessionTelemetry.cs
+ EmitSolutionUpdateResults.cs
+ IActiveStatementSpanFactory.cs
+ IActiveStatementSpanLocator.cs
+ IActiveStatementTrackingController.cs
+ IEditAndContinueAnalyzer.cs
+ IEditAndContinueLogReporter.cs
+ IEditAndContinueService.cs
+ IEditAndContinueSessionTracker.cs
+ IEditAndContinueSolutionProvider.cs
+ IPdbMatchingSourceTextProvider.cs
+ ISolutionSnapshotProvider.cs
+ LambdaBody.cs
+ MemberBody.cs
+ ModuleUpdate.cs
+ ModuleUpdateStatus.cs
+ NonRemappableRegion.cs
+ PdbMatchingSourceTextProvider.cs
+ PendingSolutionUpdate.cs
+ ProjectAnalysisSummary.cs
+ ProjectBaseline.cs
+ ProjectChanges.cs
+ ProjectDiagnostics.cs
+ ProjectDifferences.cs
+ ProjectSettingKind.cs
+ RudeEditDiagnostic.cs
+ RudeEditDiagnosticsBuilder.cs
+ RudeEditKind.cs
+ RudeEditReportingCondition.cs
+ RunningProjectOptions.cs
+ SemanticEditInfo.cs
+ SolutionSnapshotRegistry.cs
+ SolutionUpdate.cs
+ SourceFileSpan.cs
+ StaleProjectInfo.cs
+ StateMachineInfo.cs
+ TraceLog.cs
+ UnmappedActiveStatement.cs
+EmbeddedLanguages/
+ Classification/
+  AbstractEmbeddedLanguageClassificationService.cs
+  AbstractFallbackEmbeddedLanguageClassifier.cs
+  EmbeddedLanguageClassifierContext.cs
+  ExportEmbeddedLanguageClassifier.cs
+  IEmbeddedLanguageClassifier.cs
+ DateAndTime/
+  LanguageServices/
+   DateAndTimeEmbeddedLanguage.cs
+   DateAndTimeLanguageDetector.cs
+  DateAndTimeEmbeddedCompletionProvider.cs
+  DateAndTimeItem.cs
+  DateAndTimeOptions.cs
+  DateTimeTree.cs
+  EmbeddedCompletionContext.cs
+ Json/
+  LanguageServices/
+   AbstractJsonDetectionAnalyzer.cs
+   AbstractJsonDetectionCodeFixProvider.cs
+   AbstractJsonDiagnosticAnalyzer.cs
+   JsonBraceMatcher.cs
+   JsonClassifier.cs
+   JsonDetectionOptionsStorage.cs
+   JsonEmbeddedLanguage.cs
+   JsonLanguageDetector.cs
+  IJsonNodeVisitor.cs
+  JsonHelpers.cs
+  JsonKind.cs
+  JsonLexer.cs
+  JsonNode.cs
+  JsonNodes.cs
+  JsonOptions.cs
+  JsonParser.cs
+  JsonParser.JsonNetSyntaxChecks.cs
+  JsonParser.StrictSyntaxChecker.cs
+  JsonTree.cs
+ RegularExpressions/
+  LanguageServices/
+   AbstractRegexDiagnosticAnalyzer.cs
+   EmbeddedCompletionContext.cs
+   RegexBraceMatcher.cs
+   RegexClassifier.cs
+   RegexDocumentHighlighter.cs
+   RegexEmbeddedCompletionProvider.cs
+   RegexEmbeddedLanguage.cs
+   RegexItem.cs
+   RegexLanguageDetector.cs
+   RegexOptionsStorage.cs
+  IRegexNodeVisitor.cs
+  RegexCharClass.cs
+  RegexHelpers.cs
+  RegexKind.cs
+  RegexLexer.cs
+  RegexNode.cs
+  RegexNodes.cs
+  RegexParser.CaptureInfoAnalyzer.cs
+  RegexParser.cs
+  RegexTree.cs
+ StackFrame/
+  IStackFrameNodeVisitor.cs
+  Result.cs
+  StackFrameCompilationUnit.cs
+  StackFrameExtensions.cs
+  StackFrameKind.cs
+  StackFrameLexer.cs
+  StackFrameNodeDefinitions.cs
+  StackFrameParser.cs
+  StackFrameTree.cs
+ AbstractEmbeddedLanguageFeatureService.cs
+ AbstractEmbeddedLanguagesProvider.cs
+ AbstractLanguageDetector.cs
+ EmbeddedLanguageCommentDetector.cs
+ EmbeddedLanguageCommentOptions.cs
+ EmbeddedLanguageDetector.cs
+ EmbeddedLanguageInfo.cs
+ EmbeddedLanguageMetadata.cs
+ ExportEmbeddedLanguageFeatureServiceAttribute.cs
+ IEmbeddedLanguage.cs
+ IEmbeddedLanguageFeatureService.cs
+ IEmbeddedLanguagesProvider.cs
+Emit/
+ CompilationOutputFiles.cs
+ CompilationOutputFilesWithImplicitPdbPath.cs
+ CompilationOutputs.cs
+ ICompilationOutputsProviderService.cs
+EncapsulateField/
+ AbstractEncapsulateFieldService.cs
+ EncapsulateFieldRefactoringProvider.cs
+ EncapsulateFieldResult.cs
+ IEncapsulateFieldService.cs
+ IRemoteEncapsulateFieldService.cs
+Extensions/
+ ExtensionFolder.cs
+ ExtensionMessageHandlerService.cs
+ ExtensionMessageHandlerServiceFactory.cs
+ ExtensionMessageHandlerService_RemoteOrLocal.cs
+ IExtensionAssemblyLoaderProvider.cs
+ IExtensionMessageHandlerFactory.cs
+ IExtensionMessageHandlerService.cs
+ IExtensionMessageHandlerWrapper.cs
+ IRemoteExtensionMessageHandlerService.cs
+ExternalAccess/
+ Pythia/Api/
+  PythiaCompletionProviderBase.cs
+  PythiaDocumentationCommentFormatting.cs
+  PythiaGlyph.cs
+  PythiaSymbolMatchPriority.cs
+  PythiaSymbolSorting.cs
+ Razor/Api/
+  Extensions.cs
+  IRazorDocumentOptions.cs
+  IRazorDocumentOptionsService.cs
+ UnitTesting/
+  API/
+   INewUnitTestingIncrementalAnalyzerImplementation.cs
+   INewUnitTestingIncrementalAnalyzerProviderImplementation.cs
+   IUnitTestingStackTraceServiceAccessor.cs
+   NewUnitTestingIncrementalAnalyzer.cs
+   NewUnitTestingIncrementalAnalyzerProvider.cs
+   UnitTestingDefinitionItemWrapper.cs
+   UnitTestingDocumentSpan.cs
+   UnitTestingHotReloadService.cs
+   UnitTestingInvocationReasons.cs
+   UnitTestingInvocationReasons_Constants.cs
+   UnitTestingNavigationOptions.cs
+   UnitTestingParsedFrameWrapper.cs
+   UnitTestingPredefinedInvocationReasons.cs
+   UnitTestingSearchHelpers.cs
+   UnitTestingSearchQuery.cs
+  LegacySolutionEvents/UnitTestingLegacySolutionEventsListener.cs
+  Notification/
+   AbstractGlobalOperationNotificationService.cs
+   AbstractGlobalOperationNotificationService.GlobalOperationRegistration.cs
+   IGlobalOperationNotificationService.cs
+  SolutionCrawler/
+   AbstractUnitTestingDocumentDifferenceService.cs
+   ExportUnitTestingIncrementalAnalyzerProviderAttribute.cs
+   IUnitTestingDocumentDifferenceService.cs
+   IUnitTestingIncrementalAnalyzer.cs
+   IUnitTestingIncrementalAnalyzerProvider.cs
+   IUnitTestingSolutionCrawlerProgressReporter.cs
+   IUnitTestingSolutionCrawlerRegistrationService.cs
+   IUnitTestingSolutionCrawlerService.cs
+   IUnitTestingWorkCoordinator.cs
+   IUnitTestingWorkCoordinatorPriorityService.cs
+   UnitTestingGlobalOperationAwareIdleProcessor.cs
+   UnitTestingIdleProcessor.cs
+   UnitTestingIncrementalAnalyzerProviderMetadata.cs
+   UnitTestingSolutionCrawlerLogger.cs
+   UnitTestingSolutionCrawlerProgressReporter.cs
+   UnitTestingSolutionCrawlerRegistrationService.cs
+   UnitTestingSolutionCrawlerService.cs
+   UnitTestingSolutionCrawlerTimeSpan.cs
+   UnitTestingWorkCoordinator.AbstractUnitTestingPriorityProcessor.cs
+   UnitTestingWorkCoordinator.cs
+   UnitTestingWorkCoordinator.UnitTestingAsyncDocumentWorkItemQueue.cs
+   UnitTestingWorkCoordinator.UnitTestingAsyncProjectWorkItemQueue.cs
+   UnitTestingWorkCoordinator.UnitTestingAsyncWorkItemQueue.cs
+   UnitTestingWorkCoordinator.UnitTestingIncrementalAnalyzerProcessor.cs
+   UnitTestingWorkCoordinator.UnitTestingLowPriorityProcessor.cs
+   UnitTestingWorkCoordinator.UnitTestingNormalPriorityProcessor.cs
+   UnitTestingWorkCoordinator.UnitTestingSemanticChangeProcessor.cs
+   UnitTestingWorkCoordinator.UnitTestingWorkItem.cs
+  IRemoteUnitTestingSearchService.cs
+  UnitTestingFeaturesReferencesService.cs
+  UnitTestingStackTraceServiceAccessor.cs
+  UnitTestingStackTraceServiceAccessorFactory.cs
+ VSTypeScript/
+  Api/
+   IVSTypeScriptClassificationService.cs
+   IVSTypeScriptCommentSlectionServiceImplementation.cs
+   IVSTypeScriptDiagnosticAnalyzerService.cs
+   IVSTypeScriptFormattingServiceImplementation.cs
+   IVSTypeScriptNavigableItem.cs
+   IVSTypeScriptNavigateToSearchResult.cs
+   IVSTypeScriptNavigateToSearchService.cs
+   IVSTypeScriptTodoCommentDataServiceImplementation.cs
+   VSTypeScriptCommentSelectionInfo.cs
+   VSTypeScriptCompletionProvider.cs
+   VSTypeScriptCompletionServiceWithProviders.cs
+   VSTypeScriptDefinitionItemBase.cs
+   VSTypeScriptDiagnosticData.cs
+   VSTypeScriptDiagnosticsUpdatedArgsWrapper.cs
+   VSTypeScriptDocumentHighlightsServiceBase.cs
+   VSTypeScriptDocumentNavigationServiceWrapper.cs
+   VSTypeScriptGlyph.cs
+   VSTypeScriptNavigateToMatchKind.cs
+   VSTypeScriptSignatureHelpProviderBase.cs
+  VSTypeScriptClassificationService.cs
+  VSTypeScriptCommentSelectionService.cs
+  VSTypeScriptDiagnosticAnalyzerService.cs
+  VSTypeScriptFormattingService.cs
+  VSTypeScriptGlyphHelpers.cs
+  VSTypeScriptNavigableItemWrapper.cs
+  VSTypeScriptNavigateToSearchService.cs
+  VSTypeScriptTaskListService.cs
+  VSTypeScriptWellKnownDiagnosticCustomTags.cs
+ExtractClass/
+ AbstractExtractClassRefactoringProvider.cs
+ ExtractClassOptions.cs
+ ExtractClassWithDialogCodeAction.cs
+ IExtractClassOptionsService.cs
+ExtractInterface/
+ AbstractExtractInterfaceService.cs
+ ExtractInterfaceCodeAction.cs
+ ExtractInterfaceCodeRefactoringProvider.cs
+ ExtractInterfaceOptionsResult.cs
+ ExtractInterfaceResult.cs
+ ExtractInterfaceTypeAnalysisResult.cs
+ IExtractInterfaceOptionsService.cs
+ TypeDiscoveryRule.cs
+ExtractMethod/
+ AbstractExtractMethodService.cs
+ AbstractSyntaxTriviaService.cs
+ AbstractSyntaxTriviaService.Result.cs
+ Enums.cs
+ Extensions.cs
+ ExtractMethodFlowControlInformation.cs
+ ExtractMethodMatrix.cs
+ ExtractMethodResult.cs
+ ExtractMethodService.cs
+ IExtractMethodService.cs
+ ISyntaxTriviaService.cs
+ MethodExtractor.Analyzer.cs
+ MethodExtractor.AnalyzerResult.cs
+ MethodExtractor.CodeGenerator.cs
+ MethodExtractor.cs
+ MethodExtractor.TriviaResult.cs
+ MethodExtractor.TypeParameterCollector.cs
+ MethodExtractor.VariableInfo.cs
+ MethodExtractor.VariableSymbol.cs
+ OperationStatus.cs
+ OperationStatus_Statics.cs
+ OperationStatus`1.cs
+ ParameterStyle.cs
+ ReturnStyle.cs
+ SelectionInfo.cs
+ SelectionResult.cs
+ SelectionType.cs
+ SelectionValidator.cs
+ UniqueNameGenerator.cs
+ VariableStyle.cs
+FindUsages/
+ AbstractFindUsagesService.cs
+ AbstractFindUsagesService.DefinitionTrackingContext.cs
+ AbstractFindUsagesService.ProgressAdapter.cs
+ AbstractFindUsagesService_FindImplementations.cs
+ AbstractFindUsagesService_FindReferences.cs
+ AssemblyLocation.cs
+ DefaultExternalDefinitionItemProvider.cs
+ DefinitionItem.cs
+ DefinitionItem.DefaultDefinitionItem.cs
+ DefinitionItem.DetachedDefinitionItem.cs
+ DefinitionItemFactory.cs
+ DefinitionsAndReferences.cs
+ ExternalScope.cs
+ FindUsagesContext.cs
+ FindUsagesHelpers.cs
+ FindUsagesOptions.cs
+ IExternalDefinitionItemProvider.cs
+ IFindUsagesContext.cs
+ IFindUsagesLSPService.cs
+ IFindUsagesService.cs
+ IRemoteFindUsagesService.cs
+ SourceReferenceItem.cs
+Formatting/
+ AbstractNewDocumentFormattingService.cs
+ ExportNewDocumentFormattingProviderAttribute.cs
+ FormattingRuleUtilities.cs
+ INewDocumentFormattingProvider.cs
+ INewDocumentFormattingService.cs
+FullyQualify/
+ AbstractFullyQualifyCodeFixProvider.cs
+ AbstractFullyQualifyService.cs
+ AbstractFullyQualifyService.SymbolResult.cs
+ IFullyQualifyService.cs
+ IRemoteFullyQualifyService.cs
+GenerateComparisonOperators/GenerateComparisonOperatorsCodeRefactoringProvider.cs
+GenerateConstructors/
+ AbstractGenerateConstructorsCodeRefactoringProvider.ConstructorDelegatingCodeAction.cs
+ AbstractGenerateConstructorsCodeRefactoringProvider.cs
+ AbstractGenerateConstructorsCodeRefactoringProvider.FieldDelegatingCodeAction.cs
+ AbstractGenerateConstructorsCodeRefactoringProvider.GenerateConstructorWithDialogCodeAction.cs
+ AbstractGenerateConstructorsCodeRefactoringProvider.State.cs
+GenerateEqualsAndGetHashCodeFromMembers/
+ AbstractGenerateEqualsAndGetHashCodeService.cs
+ FormatLargeBinaryExpressionRule.cs
+ GenerateEqualsAndGetHashCodeAction.cs
+ GenerateEqualsAndGetHashCodeFromMembersCodeRefactoringProvider.cs
+ GenerateEqualsAndHashWithDialogCodeAction.cs
+ IGenerateEqualsAndGetHashCodeService.cs
+ IGenerateEqualsAndGetHashCodeServiceExtensions.cs
+GenerateFromMembers/
+ GenerateFromMembersHelpers.cs
+ SelectedMemberInfo.cs
+GenerateOverrides/
+ GenerateOverridesCodeRefactoringProvider.cs
+ GenerateOverridesWithDialogCodeAction.cs
+GenerateType/
+ AbstractGenerateTypeService.CodeAction.cs
+ AbstractGenerateTypeService.cs
+ AbstractGenerateTypeService.Editor.cs
+ AbstractGenerateTypeService.GenerateNamedType.cs
+ AbstractGenerateTypeService.State.cs
+ GenerateTypeDialogOptions.cs
+ GenerateTypeOptionsResult.cs
+ IGenerateTypeOptionService.cs
+ IGenerateTypeService.cs
+ TypeKindOptions.cs
+GoToBase/
+ AbstractGoToBaseService.cs
+ FindBaseHelpers.cs
+ IGoToBaseService.cs
+GoToDefinition/
+ AbstractGoToDefinitionSymbolService.cs
+ GoToDefinitionFeatureHelpers.cs
+ IGoToDefinitionSymbolService.cs
+Highlighting/
+ Keywords/AbstractKeywordHighlighter.cs
+ ExportHighlighterAttribute.cs
+ HighlightingService.cs
+ IHighlighter.cs
+ IHighlightingService.cs
+ImplementInterface/ImplementInterfaceCodeRefactoringProvider.cs
+InheritanceMargin/
+ AbstractInheritanceMarginService.cs
+ AbstractInheritanceMarginService_Helpers.cs
+ IInheritanceMarginService.cs
+ InheritanceMarginItem.cs
+ InheritanceRelationship.cs
+ InheritanceTargetItem.cs
+ IRemoteInheritanceMarginService.cs
+InitializeParameter/
+ AbstractAddParameterCheckCodeRefactoringProvider.cs
+ AbstractInitializeMemberFromParameterCodeRefactoringProviderMemberCreation.cs
+ AbstractInitializeParameterCodeRefactoringProvider.cs
+InlineHints/
+ AbstractInlineHintsService.cs
+ AbstractInlineParameterNameHintsService.cs
+ AbstractInlineTypeHintsService.cs
+ IInlineHintsService.cs
+ IInlineParameterNameHintsService.cs
+ IInlineTypeHintsService.cs
+ InlineHint.cs
+ InlineHintHelpers.cs
+ InlineHintsConstants.cs
+ InlineHintsOptions.cs
+ InlineParameterHintsOptions.cs
+ InlineTypeHintsOptions.cs
+ TypeHint.cs
+InlineMethod/
+ AbstractInlineMethodRefactoringProvider.cs
+ AbstractInlineMethodRefactoringProvider.InlineContext.cs
+ AbstractInlineMethodRefactoringProvider.MethodParametersInfo.cs
+InlineTemporary/AbstractInlineTemporaryCodeRefactoringProvider.cs
+Intents/
+ IIntentProvider.cs
+ IIntentProviderMetadata.cs
+ IntentDataProvider.cs
+ IntentProviderAttribute.cs
+ IntentResult.cs
+ WellKnownIntents.cs
+IntroduceParameter/
+ AbstractIntroduceParameterCodeRefactoringProvider.cs
+ IntroduceParameterDocumentRewriter.cs
+IntroduceUsingStatement/AbstractIntroduceUsingStatementCodeRefactoringProvider.cs
+IntroduceVariable/
+ AbstractIntroduceLocalForExpressionCodeRefactoringProvider.cs
+ AbstractIntroduceVariableService.cs
+ AbstractIntroduceVariableService.IntroduceVariableCodeAction.cs
+ AbstractIntroduceVariableService.State.cs
+ AbstractIntroduceVariableService.State_Attribute.cs
+ AbstractIntroduceVariableService.State_ConstructorInitializer.cs
+ AbstractIntroduceVariableService.State_Field.cs
+ AbstractIntroduceVariableService.State_Parameter.cs
+ AbstractIntroduceVariableService.State_Query.cs
+ IIntroduceVariableService.cs
+ IntroduceVariableCodeRefactoringProvider.cs
+InvertConditional/AbstractInvertConditionalCodeRefactoringProvider.cs
+InvertIf/
+ AbstractInvertIfCodeRefactoringProvider.cs
+ AbstractInvertIfCodeRefactoringProvider.StatementRange.cs
+InvertLogical/AbstractInvertLogicalCodeRefactoringProvider.cs
+LanguageServices/
+ AnonymousTypeDisplayService/
+  AbstractStructuralTypeDisplayService.cs
+  AbstractStructuralTypeDisplayService.StructuralTypeCollectorVisitor.cs
+  IStructuralTypeDisplayService.cs
+  StructuralTypeDisplayInfo.cs
+ SymbolDisplayService/
+  AbstractSymbolDisplayService.AbstractSymbolDescriptionBuilder.cs
+  AbstractSymbolDisplayService.AnonymousTypes.cs
+  AbstractSymbolDisplayService.cs
+  ISymbolDisplayService.cs
+  SymbolDescriptionGroups.cs
+  SymbolDescriptionOptions.cs
+LegacySolutionEvents/
+ ILegacySolutionEventsAggregationService.cs
+ ILegacySolutionEventsListener.cs
+ IRemoteLegacySolutionEventsAggregationService.cs
+LineSeparators/ILineSeparatorService.cs
+MapCode/IMapCodeService.cs
+MetadataAsSource/
+ AbstractMetadataAsSourceService+CompatAbstractMetadataFormattingRule.cs
+ AbstractMetadataAsSourceService.AbstractMetadataFormattingRule.cs
+ AbstractMetadataAsSourceService.AbstractWrappedNamespaceOrTypeSymbol.cs
+ AbstractMetadataAsSourceService.AbstractWrappedSymbol.cs
+ AbstractMetadataAsSourceService.cs
+ AbstractMetadataAsSourceService.DocCommentFormatter.cs
+ AbstractMetadataAsSourceService.WrappedEventSymbol.cs
+ AbstractMetadataAsSourceService.WrappedFieldSymbol.cs
+ AbstractMetadataAsSourceService.WrappedMethodSymbol.cs
+ AbstractMetadataAsSourceService.WrappedNamedTypeSymbol.cs
+ AbstractMetadataAsSourceService.WrappedPropertySymbol.cs
+ DecompilationMetadataAsSourceFileProvider.cs
+ DocumentationCommentUtilities.cs
+ ExportMetadataAsSourceFileProvider.cs
+ IMetadataAsSourceFileProvider.cs
+ IMetadataAsSourceFileService.cs
+ IMetadataAsSourceService.cs
+ MetadataAsSourceFile.cs
+ MetadataAsSourceFileProviderMetadata.cs
+ MetadataAsSourceFileService.cs
+ MetadataAsSourceGeneratedFileInfo.cs
+ MetadataAsSourceHelpers.cs
+ MetadataAsSourceOptions.cs
+ MetadataAsSourceWorkspace.cs
+ SymbolMappingServiceFactory.cs
+ TelemetryMessage.cs
+MoveDeclarationNearReference/AbstractMoveDeclarationNearReferenceCodeRefactoringProvider.cs
+MoveStaticMembers/
+ AbstractMoveStaticMembersRefactoringProvider.cs
+ IMoveStaticMembersOptionsService.cs
+ MoveStaticMembersOptions.cs
+ MoveStaticMembersWithDialogCodeAction.cs
+MoveToNamespace/
+ AbstractMoveToNamespaceService.cs
+ IMoveToNamespaceOptionsService.cs
+ MoveToNamespaceAnalysisResult.ContainerType.cs
+ MoveToNamespaceAnalysisResult.cs
+ MoveToNamespaceCodeAction.cs
+ MoveToNamespaceCodeActionProvider.cs
+ MoveToNamespaceOptionsResult.cs
+ MoveToNamespaceResult.cs
+NameTupleElement/AbstractNameTupleElementCodeRefactoringProvider.cs
+NavigateTo/
+ AbstractNavigateToSearchService.CachedDocumentSearch.cs
+ AbstractNavigateToSearchService.cs
+ AbstractNavigateToSearchService.GeneratedDocumentSearch.cs
+ AbstractNavigateToSearchService.InProcess.cs
+ AbstractNavigateToSearchService.NormalSearch.cs
+ INavigateToSearchCallback.cs
+ INavigateToSearcherHost.cs
+ INavigateToSearchResult.cs
+ INavigateToSearchService.cs
+ IRemoteNavigateToSearchService.cs
+ NavigateToItemKind.cs
+ NavigateToMatchKind.cs
+ NavigateToSearcher.cs
+ NavigateToSearchResultComparer.cs
+ NavigateToUtilities.cs
+ RegexPatternDetector.cs
+ RegexQueryCompiler.cs
+ RoslynNavigateToItem.cs
+ SearchPatternInfo.cs
+Navigation/
+ AbstractNavigableItemsService.cs
+ DefaultDocumentNavigationService.cs
+ DefaultSymbolNavigationService.cs
+ DefaultSymbolNavigationServiceFactory.cs
+ ICrossLanguageSymbolNavigationService.cs
+ IDefinitionLocationService.cs
+ IDocumentNavigationService.cs
+ INavigableItem.cs
+ INavigableItemsService.cs
+ INavigableLocation.cs
+ ISymbolNavigationService.cs
+ NavigableItemFactory.cs
+ NavigableItemFactory.SymbolLocationNavigableItem.cs
+ NavigationOptions.cs
+NavigationBar/
+ NavigationBarItems/
+  RoslynNavigationBarItem.AbstractGenerateCodeItem.cs
+  RoslynNavigationBarItem.ActionlessItem.cs
+  RoslynNavigationBarItem.cs
+  RoslynNavigationBarItem.GenerateDefaultConstructorItem.cs
+  RoslynNavigationBarItem.GenerateEventHandlerItem.cs
+  RoslynNavigationBarItem.GenerateFinalizerItem.cs
+  RoslynNavigationBarItem.GenerateMethodItem.cs
+  RoslynNavigationBarItem.SymbolItem.cs
+  RoslynNavigationBarItemKind.cs
+ AbstractNavigationBarItemService.cs
+ INavigationBarItemService.cs
+ IRemoteNavigationBarItemService.cs
+Notification/
+ INotificationService.cs
+ INotificationServiceCallback.cs
+ NotificationSeverity.cs
+Options/EditorConfig/
+ EditorConfigFileGenerator.cs
+ EditorConfigOptionsEnumerator.cs
+ EditorConfigOptionsEnumeratorAttribute.cs
+ IEditorConfigOptionsEnumerator.cs
+OrganizeImports/OrganizeImportsCodeRefactoringProvider.cs
+Organizing/
+ Organizers/
+  AbstractSyntaxNodeOrganizer.cs
+  ExportSyntaxNodeOrganizerAttribute.cs
+  ISyntaxOrganizer.cs
+ AbstractOrganizingService.cs
+ IOrganizingService.cs
+ OrganizingService.cs
+PasteTracking/IPasteTrackingService.cs
+PdbSourceDocument/
+ DocumentDebugInfoReader.cs
+ IImplementationAssemblyLookupService.cs
+ ImplementationAssemblyLookupService.cs
+ IPdbFileLocatorService.cs
+ IPdbSourceDocumentLoaderService.cs
+ IPdbSourceDocumentLogger.cs
+ ISourceLinkService.cs
+ PdbFileLocatorService.cs
+ PdbSourceDocumentLoaderService.cs
+ PdbSourceDocumentMetadataAsSourceFileProvider.cs
+ SourceLinkMap.cs
+ SymbolSourceDocumentFinder.cs
+PickMembers/
+ IPickMembersService.cs
+ PickMembersResult.cs
+PreferFrameworkType/
+ PreferFrameworkTypeCodeFixProvider.cs
+ PreferFrameworkTypeConstants.cs
+ PreferFrameworkTypeDiagnosticAnalyzerBase.cs
+ProjectManagement/IProjectManagementService.cs
+PullMemberUp/
+ Dialog/
+  IPullMemberUpOptionsService.cs
+  PullMemberUpWithDialogCodeAction.cs
+ AbstractPullMemberUpRefactoringProvider.cs
+ MemberAnalysisResult.cs
+ MemberAndDestinationValidator.cs
+ MembersPuller.cs
+ PullMembersUpOptions.cs
+ PullMembersUpOptionsBuilder.cs
+QuickInfo/
+ Presentation/
+  INavigationActionFactory.cs
+  QuickInfoClassifiedTextElement.cs
+  QuickInfoClassifiedTextRun.cs
+  QuickInfoClassifiedTextStyle.cs
+  QuickInfoContainerElement.cs
+  QuickInfoContainerStyle.cs
+  QuickInfoContentBuilder.cs
+  QuickInfoContentBuilderContext.cs
+  QuickInfoElement.cs
+  QuickInfoGlyphElement.cs
+  QuickInfoOnTheFlyDocsElement.cs
+  TaggedTextExtensions.cs
+ AbstractEmbeddedLanguageQuickInfoProvider.cs
+ CommonQuickInfoProvider.cs
+ CommonSemanticQuickInfoProvider.cs
+ CommonSemanticQuickInfoProvider.ErrorVisitor.cs
+ CommonSemanticQuickInfoProvider.TokenInfo.cs
+ ExportEmbeddedLanguageQuickInfoProviderAttribute.cs
+ ExportQuickInfoProviderAttribute.cs
+ IEmbeddedLanguageQuickInfoProvider.cs
+ IndentationHelper.cs
+ OnTheFlyDocsInfo.cs
+ OnTheFlyDocsLogger.cs
+ OnTheFlyDocsRelevantFileInfo.cs
+ QuickInfoContext.cs
+ QuickInfoItem.cs
+ QuickInfoOptions.cs
+ QuickInfoProvider.cs
+ QuickInfoProviderMetadata.cs
+ QuickInfoProviderNames.cs
+ QuickInfoSection.cs
+ QuickInfoSectionKinds.cs
+ QuickInfoService.cs
+ QuickInfoServiceWithProviders.cs
+ QuickInfoUtilities.cs
+RawStringLiteral/IRawStringLiteralOnAutoInsertService.cs
+RemoveUnusedVariable/AbstractRemoveUnusedVariableCodeFixProvider.cs
+Rename/
+ IRefactorNotifyService.cs
+ IRenameIssuesService.cs
+ SymbolicRenameInfo.cs
+ReplaceConditionalWithStatements/AbstractReplaceConditionalWithStatementsCodeRefactoringProvider.cs
+ReplaceDocCommentTextWithTag/AbstractReplaceDocCommentTextWithTagCodeRefactoringProvider.cs
+ReplaceMethodWithProperty/
+ AbstractReplaceMethodWithPropertyService.cs
+ IReplaceMethodWithPropertyService.cs
+ ReplaceMethodWithPropertyCodeRefactoringProvider.cs
+ReplacePropertyWithMethods/
+ AbstractReplacePropertyWithMethodsService.cs
+ IReplacePropertyWithMethodsService.cs
+ ReplacePropertyWithMethodsCodeRefactoringProvider.cs
+RQName/
+ Nodes/
+  RQArrayOrPointerType.cs
+  RQArrayType.cs
+  RQConstructedType.cs
+  RQConstructor.cs
+  RQErrorType.cs
+  RQEvent.cs
+  RQExplicitInterfaceMemberName.cs
+  RQIndexer.cs
+  RQMember.cs
+  RQMemberParameterIndex.cs
+  RQMemberParameterIndexFromPartialImplementation.cs
+  RQMemberParameterIndexFromPartialSignature.cs
+  RQMemberVariable.cs
+  RQMethod.cs
+  RQMethodBase.cs
+  RQMethodOrProperty.cs
+  RQMethodPropertyOrEvent.cs
+  RQMethodPropertyOrEventName.cs
+  RQNamespace.cs
+  RQNode.cs
+  RQNormalParameter.cs
+  RQNullType.cs
+  RQOrdinaryMethodPropertyOrEventName.cs
+  RQOutParameter.cs
+  RQParameter.cs
+  RQPointerType.cs
+  RQProperty.cs
+  RQPropertyBase.cs
+  RQRefParameter.cs
+  RQType.cs
+  RQTypeOrNamespace.cs
+  RQTypeVariableType.cs
+  RQUnconstructedType.cs
+  RQVoidType.cs
+ SimpleTree/
+  SimpleGroupNode.cs
+  SimpleLeafNode.cs
+  SimpleTreeNode.cs
+ ParenthesesTreeWriter.cs
+ RQNameInternal.cs
+ RQNameStrings.cs
+ RQNodeBuilder.cs
+SemanticSearch/
+ ExecuteQueryResult.cs
+ IRemoteSemanticSearchService.cs
+ ISemanticSearchQueryService.cs
+ ISemanticSearchResultsObserver.cs
+ ISemanticSearchSolutionService.cs
+ QueryExecutionOptions.cs
+ SearchCompilationFailureDefinitionItem.cs
+ SearchExceptionDefinitionItem.cs
+ SemanticSearchCopilotContext.cs
+ SemanticSearchDefinitionItemFactory.cs
+ SemanticSearchDocumentSupportsFeatureService.cs
+ SemanticSearchWorkspace.cs
+Shared/
+ Extensions/
+  DocumentExtensions.cs
+  ISymbolExtensions_2.cs
+  ISymbolExtensions_Sorting.cs
+  ProjectExtensions.cs
+  SyntaxTokenListExtensions.cs
+ TestHooks/Legacy/ListenerForwarders.cs
+ Utilities/
+  AnnotatedSymbolMapping.cs
+  ExtractTypeHelpers.cs
+  IUIContextActivationService.cs
+  LinkedFilesSymbolEquivalenceComparer.cs
+  SupportedPlatformData.cs
+ IDocumentSupportsFeatureService.cs
+SignatureHelp/
+ AbstractSignatureHelpProvider.cs
+ AbstractSignatureHelpProvider.SymbolKeySignatureHelpItem.cs
+ CommonSignatureHelpUtilities.cs
+ ExportSignatureHelpProviderAttribute.cs
+ ISignatureHelpProvider.cs
+ SignatureHelpItem.cs
+ SignatureHelpItems.cs
+ SignatureHelpParameter.cs
+ SignatureHelpService.cs
+ SignatureHelpState.cs
+ SignatureHelpTriggerInfo.cs
+ SignatureHelpTriggerReason.cs
+SimplifyThisOrMe/
+ AbstractSimplifyThisOrMeCodeFixProvider.cs
+ AbstractSimplifyThisOrMeDiagnosticAnalyzer.cs
+SimplifyTypeNames/AbstractSimplifyTypeNamesCodeFixProvider.cs
+Snippets/
+ SnippetProviders/
+  AbstractConditionalBlockSnippetProvider.cs
+  AbstractConsoleSnippetProvider.cs
+  AbstractConstructorSnippetProvider.cs
+  AbstractElseSnippetProvider.cs
+  AbstractForEachLoopSnippetProvider.cs
+  AbstractForLoopSnippetProvider.cs
+  AbstractIfSnippetProvider.cs
+  AbstractInlineStatementSnippetProvider.cs
+  AbstractLockSnippetProvider.cs
+  AbstractMainMethodSnippetProvider.cs
+  AbstractPropertySnippetProvider.cs
+  AbstractSingleChangeSnippetProvider.cs
+  AbstractSnippetProvider.cs
+  AbstractStatementSnippetProvider.cs
+  AbstractTypeSnippetProvider.cs
+  AbstractUsingSnippetProvider.cs
+  AbstractWhileLoopSnippetProvider.cs
+  ISnippetProvider.cs
+ AbstractSnippetService.cs
+ CommonSnippetIdentifiers.cs
+ ExportSnippetProviderAttribute.cs
+ InlineExpressionInfo.cs
+ IRoslynLSPSnippetExpander.cs
+ ISnippetInfoService.cs
+ ISnippetService.cs
+ RoslynLSPSnippetConverter.cs
+ SnippetChange.cs
+ SnippetContext.cs
+ SnippetData.cs
+ SnippetFunctionService.cs
+ SnippetInfo.cs
+ SnippetPlaceholder.cs
+ SnippetUtilities.cs
+SolutionCrawler/
+ AbstractDocumentDifferenceService.cs
+ IDocumentDifferenceService.cs
+ SolutionCrawlerService.cs
+SolutionExplorer/
+ ISolutionExplorerSymbolTreeItemProvider.cs
+ SymbolTreeItemData.cs
+SpellCheck/
+ AbstractSpellCheckCodeFixProvider.cs
+ AbstractSpellCheckSpanService.cs
+ ISpellCheckingSpanService.cs
+ SpellCheckKind.cs
+ SpellCheckSpan.cs
+SplitOrMergeIfStatements/
+ Consecutive/
+  AbstractMergeConsecutiveIfStatementsCodeRefactoringProvider.cs
+  AbstractSplitIntoConsecutiveIfStatementsCodeRefactoringProvider.cs
+ Nested/
+  AbstractMergeNestedIfStatementsCodeRefactoringProvider.cs
+  AbstractSplitIntoNestedIfStatementsCodeRefactoringProvider.cs
+ AbstractMergeIfStatementsCodeRefactoringProvider.cs
+ AbstractSplitIfStatementCodeRefactoringProvider.cs
+ IIfLikeStatementGenerator.cs
+StackTraceExplorer/
+ AbstractStackTraceSymbolResolver.cs
+ DefaultStackParser.cs
+ DotnetStackFrameParser.cs
+ IgnoredFrame.cs
+ IStackFrameParser.cs
+ IStackTraceExplorerService.cs
+ ParsedFrame.cs
+ ParsedStackFrame.cs
+ StackFrameLocalMethodResolver.cs
+ StackFrameMethodSymbolResolver.cs
+ StackFrameSymbolPart.cs
+ StackTraceAnalysisResult.cs
+ StackTraceAnalyzer.cs
+ StackTraceExplorerService.cs
+ StackTraceExplorerUtilities.cs
+ VSDebugCallstackParser.cs
+StringIndentation/IStringIndentationService.cs
+Structure/
+ Syntax/
+  AbstractBlockStructureProvider.cs
+  AbstractSyntaxNodeStructureProvider.cs
+  AbstractSyntaxStructureProvider.cs
+  AbstractSyntaxTriviaStructureProvider.cs
+  BlockSpanCollector.cs
+  BlockStructureExtensions.cs
+ BlockSpan.cs
+ BlockStructure.cs
+ BlockStructureContext.cs
+ BlockStructureOptions.cs
+ BlockStructureProvider.cs
+ BlockStructureService.cs
+ BlockStructureServiceWithProviders.cs
+ BlockTypes.cs
+SymbolMapping/
+ ISymbolMappingService.cs
+ SymbolMappingResult.cs
+ SymbolMappingServiceFactory.cs
+SymbolSearch/
+ SourceBuild/SymbolSearchUpdateEngineFactory.cs
+ Windows/
+  IAddReferenceDatabaseWrapper.cs
+  IDatabaseFactoryService.cs
+  IDelayService.cs
+  IFileDownloaderFactory.cs
+  IIOService.cs
+  IPatchService.cs
+  NativePatching.cs
+  SymbolSearchUpdateEngine.cs
+  SymbolSearchUpdateEngine.DatabaseFactoryService.cs
+  SymbolSearchUpdateEngine.DelayService.cs
+  SymbolSearchUpdateEngine.IOService.cs
+  SymbolSearchUpdateEngine.PatchService.cs
+  SymbolSearchUpdateEngine.Update.cs
+  SymbolSearchUpdateEngineFactory.cs
+  SymbolSearchUpdateEngineProxy.cs
+ SymbolSearchOptions.cs
+ SymbolSearchUpdateNoOpEngine.cs
+SyncNamespaces/
+ AbstractSyncNamespacesService.cs
+ ISyncNamespacesService.cs
+Tagging/CompilationAvailableHelpers.cs
+TaskList/AbstractTaskListService.cs
+Testing/
+ TestFrameworks/
+  ITestFrameworkMetadata.cs
+  MSTestTestFrameworkMetadata.cs
+  NUnitTestFrameworkMetadata.cs
+  XUnitTestFrameworkMetadata.cs
+ AbstractTestMethodFinder.cs
+ ITestMethodFinder.cs
+TypeHierarchy/
+ AbstractTypeHierarchyService.cs
+ ITypeHierarchyService.cs
+UnusedReferences/
+ ProjectAssets/
+  ProjectAssetsModel.cs
+  ProjectAssetsReader.cs
+ IReferenceCleanupService.cs
+ IUnusedReferenceAnalysisService.cs
+ ReferenceInfo.cs
+ ReferenceType.cs
+ ReferenceUpdate.cs
+ UnusedReferencesRemover.cs
+ UpdateAction.cs
+UseNamedArguments/AbstractUseNamedArgumentsCodeRefactoringProvider.cs
+ValueTracking/
+ IValueTrackingService.cs
+ SerializableValueTrackedItem.cs
+ ValueTrackedItem.cs
+ ValueTracker.cs
+ ValueTracker.FindReferencesProgress.cs
+ ValueTracker.OperationCollector.cs
+ ValueTrackingProgressCollector.cs
+ ValueTrackingService.cs
+Workspace/
+ IMiscellaneousProjectInfoService.cs
+ MiscellaneousFileUtilities.cs
+Wrapping/
+ BinaryExpression/
+  AbstractBinaryExpressionWrapper.cs
+  BinaryExpressionCodeActionComputer.cs
+ ChainedExpression/
+  AbstractChainedExpressionWrapper.cs
+  ChainedExpressionCodeActionComputer.cs
+ SeparatedSyntaxList/
+  AbstractSeparatedSyntaxListWrapper.cs
+  SeparatedSyntaxListCodeActionComputer.cs
+  WrappingStyle.cs
+ AbstractCodeActionComputer.cs
+ AbstractWrapper.cs
+ AbstractWrappingCodeRefactoringProvider.cs
+ Edit.cs
+ ICodeActionComputer.cs
+ ISyntaxWrapper.cs
+ SyntaxWrappingOptions.cs
+ WrapItemsAction.cs
+ WrappingGroup.cs
+ClassifiedSpansAndHighlightSpan.cs
+ClassifiedSpansAndHighlightSpanFactory.cs
+DocumentIdSpan.cs
+DocumentSpan.cs
+DocumentSpanExtensions.cs
+InternalLanguageNames.cs
+
+[additionalFiles]
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+FeaturesResources.resx
+PublicAPI.Shipped.txt
+PublicAPI.Unshipped.txt
+
+[projectReferences]
+../../../
+ Compilers/Core/Portable/Microsoft.CodeAnalysis.csproj
+ Scripting/Core/Microsoft.CodeAnalysis.Scripting.csproj
+ Workspaces/Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
+
+[capabilities]
+Pack
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=net10.0
+
+[properties]
+MaxSupportedLangVersion=14.0
+OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Features/Debug/net10.0/
+TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Features/Debug/net10.0/Microsoft.CodeAnalysis.Features.dll
+TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net10.0/ref/Microsoft.CodeAnalysis.Features.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
+/doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net10.0/Microsoft.CodeAnalysis.Features.xml
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
+/out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net10.0/Microsoft.CodeAnalysis.Features.dll
+/refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net10.0/refint/Microsoft.CodeAnalysis.Features.dll
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+../../../
+ ../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net10.0/
+  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.AnalyzersResources.cs
+   @link=AnalyzersResources.resx
+  Microsoft.CodeAnalysis.CodeFixesResources.cs
+   @link=CodeFixesResources.resx
+  Microsoft.CodeAnalysis.Features.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.Features.InternalsVisibleTo.cs
+  Microsoft.CodeAnalysis.FeaturesResources.cs
+ Analyzers/Core/
+  Analyzers/
+   AddAccessibilityModifiers/
+    AbstractAddAccessibilityModifiers.cs
+    AbstractAddAccessibilityModifiersDiagnosticAnalyzer.cs
+    IAddAccessibilityModifiersService.cs
+   AddRequiredParentheses/
+    AbstractAddRequiredParenthesesDiagnosticAnalyzer.cs
+    AddRequiredParenthesesConstants.cs
+   ConvertTypeofToNameof/AbstractConvertTypeOfToNameOfDiagnosticAnalyzer.cs
+   FileHeaders/
+    AbstractFileHeaderDiagnosticAnalyzer.cs
+    AbstractFileHeaderHelper.cs
+    FileHeader.cs
+   ForEachCast/AbstractForEachCastDiagnosticAnalyzer.cs
+   Formatting/AbstractFormattingAnalyzer.cs
+   Helpers/
+    HashCodeAnalyzer/
+     HashCodeAnalyzer.cs
+     HashCodeAnalyzer.OperationDeconstructor.cs
+    DeserializationConstructorCheck.cs
+    DiagnosticHelper.cs
+   MakeFieldReadonly/AbstractMakeFieldReadonlyDiagnosticAnalyzer.cs
+   MatchFolderAndNamespace/
+    AbstractMatchFolderAndNamespaceDiagnosticAnalyzer.cs
+    MatchFolderAndNamespaceConstants.cs
+   NamingStyle/NamingStyleDiagnosticAnalyzerBase.cs
+   NewLines/
+    ConsecutiveStatementPlacement/AbstractConsecutiveStatementPlacementDiagnosticAnalyzer.cs
+    MultipleBlankLines/AbstractMultipleBlankLinesDiagnosticAnalyzer.cs
+   OrderModifiers/
+    AbstractOrderModifiersDiagnosticAnalyzer.cs
+    OrderModifiersHelpers.cs
+   PopulateSwitch/
+    AbstractPopulateSwitchDiagnosticAnalyzer.cs
+    AbstractPopulateSwitchExpressionDiagnosticAnalyzer.cs
+    AbstractPopulateSwitchStatementDiagnosticAnalyzer.cs
+    PopulateSwitchExpressionHelpers.cs
+    PopulateSwitchStatementHelpers.cs
+   QualifyMemberAccess/AbstractQualifyMemberAccessDiagnosticAnalyzer.cs
+   RemoveRedundantEquality/
+    AbstractRemoveRedundantEqualityDiagnosticAnalyzer.cs
+    RedundantEqualityConstants.cs
+   RemoveUnnecessaryCast/AbstractRemoveUnnecessaryCastDiagnosticAnalyzer.cs
+   RemoveUnnecessaryImports/
+    AbstractRemoveUnnecessaryImportsDiagnosticAnalyzer.cs
+    RemoveUnnecessaryImportsConstants.cs
+   RemoveUnnecessaryParentheses/AbstractRemoveUnnecessaryParenthesesDiagnosticAnalyzer.cs
+   RemoveUnnecessarySuppressions/
+    AbstractRemoveUnnecessaryAttributeSuppressionsDiagnosticAnalyzer.cs
+    AbstractRemoveUnnecessaryPragmaSuppressionsDiagnosticAnalyzer.cs
+    SuppressMessageAttributeState.cs
+   RemoveUnusedMembers/AbstractRemoveUnusedMembersDiagnosticAnalyzer.cs
+   RemoveUnusedParametersAndValues/
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.cs
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.SymbolStartAnalyzer.BlockAnalyzer.cs
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.SymbolStartAnalyzer.cs
+   SimplifyBooleanExpression/
+    AbstractSimplifyConditionalDiagnosticAnalyzer.cs
+    SimplifyBooleanExpressionConstants.cs
+   SimplifyInterpolation/
+    AbstractSimplifyInterpolationDiagnosticAnalyzer.cs
+    AbstractSimplifyInterpolationHelpers.cs
+   SimplifyLinqExpression/AbstractSimplifyLinqExpressionDiagnosticAnalyzer.cs
+   SimplifyTypeNames/SimplifyTypeNamesDiagnosticAnalyzerBase.cs
+   UseAutoProperty/
+    AbstractUseAutoPropertyAnalyzer.cs
+    AccessedFields.cs
+    AnalysisResult.cs
+    UseAutoPropertiesHelpers.cs
+   UseCoalesceExpression/
+    AbstractUseCoalesceExpressionForIfNullCheckDiagnosticAnalyzer.cs
+    AbstractUseCoalesceExpressionForNullableTernaryConditionalCheckDiagnosticAnalyzer.cs
+    AbstractUseCoalesceExpressionForTernaryConditionalCheckDiagnosticAnalyzer.cs
+   UseCollectionExpression/CollectionExpressionMatch.cs
+   UseCollectionInitializer/
+    AbstractObjectCreationExpressionAnalyzer.cs
+    AbstractUseCollectionInitializerAnalyzer.cs
+    AbstractUseCollectionInitializerDiagnosticAnalyzer.cs
+    IUpdateExpressionSyntaxHelper.cs
+    UpdateExpressionState.cs
+    UseCollectionInitializerHelpers.cs
+   UseCompoundAssignment/
+    AbstractUseCompoundAssignmentDiagnosticAnalyzer.cs
+    UseCompoundAssignmentUtilities.cs
+   UseConditionalExpression/
+    ForAssignment/
+     AbstractUseConditionalExpressionForAssignmentDiagnosticAnalyzer.cs
+     UseConditionalExpressionForAssignmentHelpers.cs
+    ForReturn/
+     AbstractUseConditionalExpressionForReturnDiagnosticAnalyzer.cs
+     UseConditionalExpressionForReturnHelpers.cs
+    AbstractUseConditionalExpressionDiagnosticAnalyzer.cs
+    UseConditionalExpressionHelpers.cs
+   UseExplicitTupleName/UseExplicitTupleNameDiagnosticAnalyzer.cs
+   UseInferredMemberName/AbstractUseInferredMemberNameDiagnosticAnalyzer.cs
+   UseIsNullCheck/
+    AbstractUseIsNullForReferenceEqualsDiagnosticAnalyzer.cs
+    UseIsNullConstants.cs
+   UseNullPropagation/
+    AbstractUseNullPropagationDiagnosticAnalyzer.cs
+    AbstractUseNullPropagationDiagnosticAnalyzer_IfStatement.cs
+    AnalysisResults.cs
+   UseObjectInitializer/
+    AbstractUseObjectInitializerDiagnosticAnalyzer.cs
+    UseNamedMemberInitializerAnalyzer.cs
+   UseSystemHashCode/UseSystemHashCodeDiagnosticAnalyzer.cs
+   UseThrowExpression/AbstractUseThrowExpressionDiagnosticAnalyzer.cs
+   ValidateFormatString/
+    AbstractValidateFormatStringDiagnosticAnalyzer.cs
+    FormatStringValidationOptionStorage.cs
+   AbstractBuiltInCodeStyleDiagnosticAnalyzer.cs
+   AbstractBuiltInCodeStyleDiagnosticAnalyzer_Core.cs
+   AbstractBuiltInUnnecessaryCodeStyleDiagnosticAnalyzer.cs
+   AbstractCodeQualityDiagnosticAnalyzer.cs
+   AnalyzerOptionsProvider.cs
+   DiagnosticCustomTags.cs
+   EnforceOnBuild.cs
+   EnforceOnBuildValues.cs
+   IDEDiagnosticIds.cs
+   IDEDiagnosticIdToOptionMappingHelper.cs
+   ParenthesesDiagnosticAnalyzersHelper.cs
+  CodeFixes/
+   AddAccessibilityModifiers/
+    AbstractAddAccessibilityModifiersCodeFixProvider.cs
+    AddAccessibilityModifiersHelpers.cs
+    IAddAccessibilityModifiersService.cs
+   AddAnonymousTypeMemberName/AbstractAddAnonymousTypeMemberNameCodeFixProvider.cs
+   AddExplicitCast/
+    AbstractAddExplicitCastCodeFixProvider.cs
+    Fixer.cs
+    InheritanceDistanceComparer.cs
+   AddObsoleteAttribute/AbstractAddObsoleteAttributeCodeFixProvider.cs
+   AddParameter/
+    AbstractAddParameterCodeFixProvider.cs
+    AddParameterService.cs
+    ArgumentInsertPositionData.cs
+    CodeFixData.cs
+    RegisterFixData.cs
+   AddRequiredParentheses/AddRequiredParenthesesCodeFixProvider.cs
+   AliasAmbiguousType/AbstractAliasAmbiguousTypeCodeFixProvider.cs
+   ConflictMarkerResolution/AbstractConflictMarkerCodeFixProvider.cs
+   ConvertToAsync/AbstractConvertToAsyncCodeFixProvider.cs
+   ConvertTypeOfToNameOf/AbstractConvertTypeOfToNameOfCodeFixProvider.cs
+   DocumentationComments/
+    AbstractAddDocCommentNodesCodeFixProvider.cs
+    AbstractRemoveDocCommentNodeCodeFixProvider.cs
+   FileHeaders/AbstractFileHeaderCodeFixProvider.cs
+   ForEachCast/AbstractForEachCastCodeFixProvider.cs
+   Formatting/FormattingCodeFixProvider.cs
+   GenerateConstructor/
+    AbstractGenerateConstructorService.cs
+    AbstractGenerateConstructorService.State.cs
+    GenerateConstructorHelpers.cs
+    IGenerateConstructorService.cs
+   GenerateDefaultConstructors/
+    AbstractGenerateDefaultConstructorCodeFixProvider.cs
+    AbstractGenerateDefaultConstructorsService.cs
+    AbstractGenerateDefaultConstructorsService.State.cs
+    GenerateDefaultConstructorsCodeAction.cs
+    IGenerateDefaultConstructorsService.cs
+   GenerateEnumMember/
+    AbstractGenerateEnumMemberService.CodeAction.cs
+    AbstractGenerateEnumMemberService.cs
+    AbstractGenerateEnumMemberService.State.cs
+    IGenerateEnumMemberService.cs
+   GenerateMember/
+    AbstractGenerateMemberCodeFixProvider.cs
+    AbstractGenerateMemberService.cs
+   GenerateParameterizedMember/
+    AbstractGenerateConversionService.cs
+    AbstractGenerateConversionService.State.cs
+    AbstractGenerateDeconstructMethodService.cs
+    AbstractGenerateDeconstructMethodService.State.cs
+    AbstractGenerateMethodService.cs
+    AbstractGenerateMethodService.State.cs
+    AbstractGenerateParameterizedMemberService.AbstractInvocationInfo.cs
+    AbstractGenerateParameterizedMemberService.CodeAction.cs
+    AbstractGenerateParameterizedMemberService.cs
+    AbstractGenerateParameterizedMemberService.MethodSignatureInfo.cs
+    AbstractGenerateParameterizedMemberService.SignatureInfo.cs
+    AbstractGenerateParameterizedMemberService.State.cs
+    IGenerateConversionService.cs
+    IGenerateDeconstructMemberService.cs
+    IGenerateParameterizedMemberService.cs
+    MethodGenerationKind.cs
+    TypeParameterSubstitution.cs
+   GenerateVariable/
+    AbstractGenerateVariableService.CodeAction.cs
+    AbstractGenerateVariableService.cs
+    AbstractGenerateVariableService.GenerateLocalCodeAction.cs
+    AbstractGenerateVariableService.GenerateParameterCodeAction.cs
+    AbstractGenerateVariableService.State.cs
+    IGenerateVariableService.cs
+   ImplementAbstractClass/
+    AbstractImplementAbstractClassCodeFixProvider.cs
+    ImplementAbstractClassData.cs
+   ImplementInterface/
+    AbstractImplementInterfaceCodeFixProvider.cs
+    AbstractImplementInterfaceService.cs
+    AbstractImplementInterfaceService.State.cs
+    IImplementInterfaceService.cs
+    ImplementHelpers.cs
+    ImplementInterfaceGenerator.cs
+    ImplementInterfaceGenerator_Conflicts.cs
+    ImplementInterfaceGenerator_DisposePattern.cs
+    ImplementInterfaceGenerator_Method.cs
+    ImplementInterfaceGenerator_Property.cs
+    ImplementInterfaceInfo.cs
+   ImplementType/
+    ImplementTypeInsertionBehavior.cs
+    ImplementTypeOptions.cs
+    ImplementTypePropertyGenerationBehavior.cs
+   Iterator/AbstractIteratorCodeFixProvider.cs
+   MakeFieldReadonly/AbstractMakeFieldReadonlyCodeFixProvider.cs
+   MakeMemberStatic/AbstractMakeMemberStaticCodeFixProvider.cs
+   MakeMethodAsynchronous/AbstractMakeMethodAsynchronousCodeFixProvider.cs
+   MakeMethodSynchronous/AbstractMakeMethodSynchronousCodeFixProvider.cs
+   MakeTypeAbstract/AbstractMakeTypeAbstractCodeFixProvider.cs
+   MakeTypePartial/AbstractMakeTypePartialCodeFixProvider.cs
+   MatchFolderAndNamespace/
+    AbstractChangeNamespaceToMatchFolderCodeFixProvider.cs
+    AbstractChangeNamespaceToMatchFolderCodeFixProvider.CustomFixAllProvider.cs
+   Naming/
+    FallbackNamingRules.cs
+    NamingExtensions.cs
+   NamingStyle/NamingStyleCodeFixProvider.cs
+   NewLines/
+    ConsecutiveStatementPlacement/ConsecutiveStatementPlacementCodeFixProvider.cs
+    MultipleBlankLines/AbstractMultipleBlankLinesCodeFixProvider.cs
+   Options/FadingOptions.cs
+   OrderModifiers/AbstractOrderModifiersCodeFixProvider.cs
+   PopulateSwitch/
+    AbstractPopulateSwitchCodeFixProvider.cs
+    AbstractPopulateSwitchExpressionCodeFixProvider.cs
+    AbstractPopulateSwitchStatementCodeFixProvider.cs
+   QualifyMemberAccess/AbstractQualifyMemberAccessCodeFixProvider.cs
+   RemoveAsyncModifier/AbstractRemoveAsyncModifierCodeFixProvider.cs
+   RemoveRedundantEquality/RemoveRedundantEqualityCodeFixProvider.cs
+   RemoveUnnecessaryImports/AbstractRemoveUnnecessaryImportsCodeFixProvider.cs
+   RemoveUnnecessaryParentheses/AbstractRemoveUnnecessaryParenthesesCodeFixProvider.cs
+   RemoveUnnecessarySuppressions/
+    RemoveUnnecessaryAttributeSuppressionsCodeFixProvider.cs
+    RemoveUnnecessaryPragmaSuppressionsCodeFixProvider.cs
+   RemoveUnusedMembers/AbstractRemoveUnusedMembersCodeFixProvider.cs
+   RemoveUnusedParametersAndValues/AbstractRemoveUnusedValuesCodeFixProvider.cs
+   SimplifyBooleanExpression/SimplifyConditionalCodeFixProvider.cs
+   SimplifyInterpolation/AbstractSimplifyInterpolationCodeFixProvider.cs
+   SimplifyLinqExpression/SimplifyLinqExpressionCodeFixProvider.cs
+   UnsealClass/AbstractUnsealClassCodeFixProvider.cs
+   UpdateLegacySuppressions/UpdateLegacySuppressionsCodeFixProvider.cs
+   UpgradeProject/AbstractUpgradeProjectCodeFixProvider.cs
+   UseAutoProperty/
+    AbstractUseAutoPropertyCodeFixProvider.cs
+    UseAutoPropertyFixAllProvider.cs
+   UseCoalesceExpression/
+    AbstractUseCoalesceExpressionForIfNullStatementCheckCodeFixProvider.cs
+    UseCoalesceExpressionForNullableTernaryConditionalCheckCodeFixProvider.cs
+    UseCoalesceExpressionForTernaryConditionalCheckCodeFixProvider.cs
+   UseCollectionExpression/AbstractUseCollectionExpressionCodeFixProvider.cs
+   UseCollectionInitializer/AbstractUseCollectionInitializerCodeFixProvider.cs
+   UseCompoundAssignment/AbstractUseCompoundAssignmentCodeFixProvider.cs
+   UseConditionalExpression/
+    ForAssignment/AbstractUseConditionalExpressionForAssignmentCodeFixProvider.cs
+    ForReturn/AbstractUseConditionalExpressionForReturnCodeFixProvider.cs
+    AbstractUseConditionalExpressionCodeFixProvider.cs
+    UseConditionalExpressionHelpers.cs
+   UseExplicitTupleName/UseExplicitTupleNameCodeFixProvider.cs
+   UseInferredMemberName/AbstractUseInferredMemberNameCodeFixProvider.cs
+   UseIsNullCheck/AbstractUseIsNullForReferenceEqualsCodeFixProvider.cs
+   UseNullPropagation/AbstractUseNullPropagationCodeFixProvider.cs
+   UseObjectInitializer/AbstractUseObjectInitializerCodeFixProvider.cs
+   UseSystemHashCode/UseSystemHashCodeCodeFixProvider.cs
+   AnalyzerOptionsProviders.cs
+   PredefinedCodeFixProviderNames.cs
+   PredefinedConfigurationFixProviderNames.cs
+ Compilers/Core/
+  AnalyzerDriver/
+   AnalyzerExceptionDescriptionBuilder.cs
+   DeclarationComputer.cs
+   DeclarationInfo.cs
+  Portable/
+   DiagnosticAnalyzer/
+    SuppressMessageAttributeState.TargetScope.cs
+     @link=RemoveUnnecessarySuppressions/SuppressMessageAttributeState.TargetScope.cs
+    SuppressMessageAttributeState.TargetSymbolResolver.cs
+     @link=RemoveUnnecessarySuppressions/SuppressMessageAttributeState.TargetSymbolResolver.cs
+   Text/TextUtilities.cs
+    @link=Shared/Utilities/TextUtilities.cs
+ Dependencies/CodeAnalysis.Debugging/
+  CompilationOptionNames.cs
+  CustomDebugInfoConstants.cs
+  CustomDebugInfoEncoder.cs
+  CustomDebugInfoKind.cs
+  CustomDebugInfoReader.cs
+  CustomDebugInfoRecord.cs
+  DynamicLocalInfo.cs
+  ImportTargetKind.cs
+  PortableCustomDebugInfoKinds.cs
+  StateMachineHoistedLocalScope.cs
+  TupleElementNamesInfo.cs
+  VBImportScopeKind.cs
+
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
+[metadataReferences]
+../../../../artifacts/obj/
+ Microsoft.CodeAnalysis.Scripting/Debug/net10.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+  @aliases=Scripting,global
+ Microsoft.CodeAnalysis.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ microsoft.codeanalysis.elfie/1.0.0/lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll
+ microsoft.diasymreader/2.0.0/lib/netstandard2.0/Microsoft.DiaSymReader.dll
+ system.composition.attributedmodel/10.0.1/lib/net10.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net10.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net10.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net10.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net10.0/System.Composition.TypedParts.dll
+ system.configuration.configurationmanager/10.0.1/lib/net10.0/System.Configuration.ConfigurationManager.dll
+ system.diagnostics.eventlog/10.0.1/lib/net10.0/System.Diagnostics.EventLog.dll
+ system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[analyzerConfigFiles]
+../../../
+ ../
+  artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net10.0/Microsoft.CodeAnalysis.Features.GeneratedMSBuildEditorConfig.editorconfig
+  eng/config/globalconfigs/
+   Common.globalconfig
+   Shipping.globalconfig
+  .editorconfig
+ Compilers/.editorconfig
+ Dependencies/.editorconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
+
+[additionalFiles]
+../../
+ ../
+  ../
+   artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net10.0/Microsoft.CodeAnalysis.Features.xlf/
+    AnalyzersResources.cs.resx
+    AnalyzersResources.de.resx
+    AnalyzersResources.es.resx
+    AnalyzersResources.fr.resx
+    AnalyzersResources.it.resx
+    AnalyzersResources.ja.resx
+    AnalyzersResources.ko.resx
+    AnalyzersResources.pl.resx
+    AnalyzersResources.pt-BR.resx
+    AnalyzersResources.ru.resx
+    AnalyzersResources.tr.resx
+    AnalyzersResources.zh-Hans.resx
+    AnalyzersResources.zh-Hant.resx
+    CodeFixesResources.cs.resx
+    CodeFixesResources.de.resx
+    CodeFixesResources.es.resx
+    CodeFixesResources.fr.resx
+    CodeFixesResources.it.resx
+    CodeFixesResources.ja.resx
+    CodeFixesResources.ko.resx
+    CodeFixesResources.pl.resx
+    CodeFixesResources.pt-BR.resx
+    CodeFixesResources.ru.resx
+    CodeFixesResources.tr.resx
+    CodeFixesResources.zh-Hans.resx
+    CodeFixesResources.zh-Hant.resx
+    FeaturesResources.cs.resx
+    FeaturesResources.de.resx
+    FeaturesResources.es.resx
+    FeaturesResources.fr.resx
+    FeaturesResources.it.resx
+    FeaturesResources.ja.resx
+    FeaturesResources.ko.resx
+    FeaturesResources.pl.resx
+    FeaturesResources.pt-BR.resx
+    FeaturesResources.ru.resx
+    FeaturesResources.tr.resx
+    FeaturesResources.zh-Hans.resx
+    FeaturesResources.zh-Hant.resx
+   eng/config/BannedSymbols.txt
+  Analyzers/Core/
+   Analyzers/AnalyzersResources.resx
+   CodeFixes/CodeFixesResources.resx
+ BannedSymbols.txt
+
+[capabilities]
+NativeAOT
+SupportsHotReload
+
+---
+
+[project]
+language=C#
+primary
+
+[sliceDimensions]
+TargetFramework=net8.0
+
+[properties]
+MaxSupportedLangVersion=12.0
+OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Features/Debug/net8.0/
+TargetFramework=net8.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Features/Debug/net8.0/Microsoft.CodeAnalysis.Features.dll
+TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net8.0/ref/Microsoft.CodeAnalysis.Features.dll
+TemporaryDependencyNodeTargetIdentifier=net8.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
+/doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net8.0/Microsoft.CodeAnalysis.Features.xml
+/define:TRACE;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net8.0/Microsoft.CodeAnalysis.Features.dll
+/refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net8.0/refint/Microsoft.CodeAnalysis.Features.dll
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+../../../
+ ../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net8.0/
+  .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.AnalyzersResources.cs
+   @link=AnalyzersResources.resx
+  Microsoft.CodeAnalysis.CodeFixesResources.cs
+   @link=CodeFixesResources.resx
+  Microsoft.CodeAnalysis.Features.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.Features.InternalsVisibleTo.cs
+  Microsoft.CodeAnalysis.FeaturesResources.cs
+ Analyzers/Core/
+  Analyzers/
+   AddAccessibilityModifiers/
+    AbstractAddAccessibilityModifiers.cs
+    AbstractAddAccessibilityModifiersDiagnosticAnalyzer.cs
+    IAddAccessibilityModifiersService.cs
+   AddRequiredParentheses/
+    AbstractAddRequiredParenthesesDiagnosticAnalyzer.cs
+    AddRequiredParenthesesConstants.cs
+   ConvertTypeofToNameof/AbstractConvertTypeOfToNameOfDiagnosticAnalyzer.cs
+   FileHeaders/
+    AbstractFileHeaderDiagnosticAnalyzer.cs
+    AbstractFileHeaderHelper.cs
+    FileHeader.cs
+   ForEachCast/AbstractForEachCastDiagnosticAnalyzer.cs
+   Formatting/AbstractFormattingAnalyzer.cs
+   Helpers/
+    HashCodeAnalyzer/
+     HashCodeAnalyzer.cs
+     HashCodeAnalyzer.OperationDeconstructor.cs
+    DeserializationConstructorCheck.cs
+    DiagnosticHelper.cs
+   MakeFieldReadonly/AbstractMakeFieldReadonlyDiagnosticAnalyzer.cs
+   MatchFolderAndNamespace/
+    AbstractMatchFolderAndNamespaceDiagnosticAnalyzer.cs
+    MatchFolderAndNamespaceConstants.cs
+   NamingStyle/NamingStyleDiagnosticAnalyzerBase.cs
+   NewLines/
+    ConsecutiveStatementPlacement/AbstractConsecutiveStatementPlacementDiagnosticAnalyzer.cs
+    MultipleBlankLines/AbstractMultipleBlankLinesDiagnosticAnalyzer.cs
+   OrderModifiers/
+    AbstractOrderModifiersDiagnosticAnalyzer.cs
+    OrderModifiersHelpers.cs
+   PopulateSwitch/
+    AbstractPopulateSwitchDiagnosticAnalyzer.cs
+    AbstractPopulateSwitchExpressionDiagnosticAnalyzer.cs
+    AbstractPopulateSwitchStatementDiagnosticAnalyzer.cs
+    PopulateSwitchExpressionHelpers.cs
+    PopulateSwitchStatementHelpers.cs
+   QualifyMemberAccess/AbstractQualifyMemberAccessDiagnosticAnalyzer.cs
+   RemoveRedundantEquality/
+    AbstractRemoveRedundantEqualityDiagnosticAnalyzer.cs
+    RedundantEqualityConstants.cs
+   RemoveUnnecessaryCast/AbstractRemoveUnnecessaryCastDiagnosticAnalyzer.cs
+   RemoveUnnecessaryImports/
+    AbstractRemoveUnnecessaryImportsDiagnosticAnalyzer.cs
+    RemoveUnnecessaryImportsConstants.cs
+   RemoveUnnecessaryParentheses/AbstractRemoveUnnecessaryParenthesesDiagnosticAnalyzer.cs
+   RemoveUnnecessarySuppressions/
+    AbstractRemoveUnnecessaryAttributeSuppressionsDiagnosticAnalyzer.cs
+    AbstractRemoveUnnecessaryPragmaSuppressionsDiagnosticAnalyzer.cs
+    SuppressMessageAttributeState.cs
+   RemoveUnusedMembers/AbstractRemoveUnusedMembersDiagnosticAnalyzer.cs
+   RemoveUnusedParametersAndValues/
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.cs
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.SymbolStartAnalyzer.BlockAnalyzer.cs
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.SymbolStartAnalyzer.cs
+   SimplifyBooleanExpression/
+    AbstractSimplifyConditionalDiagnosticAnalyzer.cs
+    SimplifyBooleanExpressionConstants.cs
+   SimplifyInterpolation/
+    AbstractSimplifyInterpolationDiagnosticAnalyzer.cs
+    AbstractSimplifyInterpolationHelpers.cs
+   SimplifyLinqExpression/AbstractSimplifyLinqExpressionDiagnosticAnalyzer.cs
+   SimplifyTypeNames/SimplifyTypeNamesDiagnosticAnalyzerBase.cs
+   UseAutoProperty/
+    AbstractUseAutoPropertyAnalyzer.cs
+    AccessedFields.cs
+    AnalysisResult.cs
+    UseAutoPropertiesHelpers.cs
+   UseCoalesceExpression/
+    AbstractUseCoalesceExpressionForIfNullCheckDiagnosticAnalyzer.cs
+    AbstractUseCoalesceExpressionForNullableTernaryConditionalCheckDiagnosticAnalyzer.cs
+    AbstractUseCoalesceExpressionForTernaryConditionalCheckDiagnosticAnalyzer.cs
+   UseCollectionExpression/CollectionExpressionMatch.cs
+   UseCollectionInitializer/
+    AbstractObjectCreationExpressionAnalyzer.cs
+    AbstractUseCollectionInitializerAnalyzer.cs
+    AbstractUseCollectionInitializerDiagnosticAnalyzer.cs
+    IUpdateExpressionSyntaxHelper.cs
+    UpdateExpressionState.cs
+    UseCollectionInitializerHelpers.cs
+   UseCompoundAssignment/
+    AbstractUseCompoundAssignmentDiagnosticAnalyzer.cs
+    UseCompoundAssignmentUtilities.cs
+   UseConditionalExpression/
+    ForAssignment/
+     AbstractUseConditionalExpressionForAssignmentDiagnosticAnalyzer.cs
+     UseConditionalExpressionForAssignmentHelpers.cs
+    ForReturn/
+     AbstractUseConditionalExpressionForReturnDiagnosticAnalyzer.cs
+     UseConditionalExpressionForReturnHelpers.cs
+    AbstractUseConditionalExpressionDiagnosticAnalyzer.cs
+    UseConditionalExpressionHelpers.cs
+   UseExplicitTupleName/UseExplicitTupleNameDiagnosticAnalyzer.cs
+   UseInferredMemberName/AbstractUseInferredMemberNameDiagnosticAnalyzer.cs
+   UseIsNullCheck/
+    AbstractUseIsNullForReferenceEqualsDiagnosticAnalyzer.cs
+    UseIsNullConstants.cs
+   UseNullPropagation/
+    AbstractUseNullPropagationDiagnosticAnalyzer.cs
+    AbstractUseNullPropagationDiagnosticAnalyzer_IfStatement.cs
+    AnalysisResults.cs
+   UseObjectInitializer/
+    AbstractUseObjectInitializerDiagnosticAnalyzer.cs
+    UseNamedMemberInitializerAnalyzer.cs
+   UseSystemHashCode/UseSystemHashCodeDiagnosticAnalyzer.cs
+   UseThrowExpression/AbstractUseThrowExpressionDiagnosticAnalyzer.cs
+   ValidateFormatString/
+    AbstractValidateFormatStringDiagnosticAnalyzer.cs
+    FormatStringValidationOptionStorage.cs
+   AbstractBuiltInCodeStyleDiagnosticAnalyzer.cs
+   AbstractBuiltInCodeStyleDiagnosticAnalyzer_Core.cs
+   AbstractBuiltInUnnecessaryCodeStyleDiagnosticAnalyzer.cs
+   AbstractCodeQualityDiagnosticAnalyzer.cs
+   AnalyzerOptionsProvider.cs
+   DiagnosticCustomTags.cs
+   EnforceOnBuild.cs
+   EnforceOnBuildValues.cs
+   IDEDiagnosticIds.cs
+   IDEDiagnosticIdToOptionMappingHelper.cs
+   ParenthesesDiagnosticAnalyzersHelper.cs
+  CodeFixes/
+   AddAccessibilityModifiers/
+    AbstractAddAccessibilityModifiersCodeFixProvider.cs
+    AddAccessibilityModifiersHelpers.cs
+    IAddAccessibilityModifiersService.cs
+   AddAnonymousTypeMemberName/AbstractAddAnonymousTypeMemberNameCodeFixProvider.cs
+   AddExplicitCast/
+    AbstractAddExplicitCastCodeFixProvider.cs
+    Fixer.cs
+    InheritanceDistanceComparer.cs
+   AddObsoleteAttribute/AbstractAddObsoleteAttributeCodeFixProvider.cs
+   AddParameter/
+    AbstractAddParameterCodeFixProvider.cs
+    AddParameterService.cs
+    ArgumentInsertPositionData.cs
+    CodeFixData.cs
+    RegisterFixData.cs
+   AddRequiredParentheses/AddRequiredParenthesesCodeFixProvider.cs
+   AliasAmbiguousType/AbstractAliasAmbiguousTypeCodeFixProvider.cs
+   ConflictMarkerResolution/AbstractConflictMarkerCodeFixProvider.cs
+   ConvertToAsync/AbstractConvertToAsyncCodeFixProvider.cs
+   ConvertTypeOfToNameOf/AbstractConvertTypeOfToNameOfCodeFixProvider.cs
+   DocumentationComments/
+    AbstractAddDocCommentNodesCodeFixProvider.cs
+    AbstractRemoveDocCommentNodeCodeFixProvider.cs
+   FileHeaders/AbstractFileHeaderCodeFixProvider.cs
+   ForEachCast/AbstractForEachCastCodeFixProvider.cs
+   Formatting/FormattingCodeFixProvider.cs
+   GenerateConstructor/
+    AbstractGenerateConstructorService.cs
+    AbstractGenerateConstructorService.State.cs
+    GenerateConstructorHelpers.cs
+    IGenerateConstructorService.cs
+   GenerateDefaultConstructors/
+    AbstractGenerateDefaultConstructorCodeFixProvider.cs
+    AbstractGenerateDefaultConstructorsService.cs
+    AbstractGenerateDefaultConstructorsService.State.cs
+    GenerateDefaultConstructorsCodeAction.cs
+    IGenerateDefaultConstructorsService.cs
+   GenerateEnumMember/
+    AbstractGenerateEnumMemberService.CodeAction.cs
+    AbstractGenerateEnumMemberService.cs
+    AbstractGenerateEnumMemberService.State.cs
+    IGenerateEnumMemberService.cs
+   GenerateMember/
+    AbstractGenerateMemberCodeFixProvider.cs
+    AbstractGenerateMemberService.cs
+   GenerateParameterizedMember/
+    AbstractGenerateConversionService.cs
+    AbstractGenerateConversionService.State.cs
+    AbstractGenerateDeconstructMethodService.cs
+    AbstractGenerateDeconstructMethodService.State.cs
+    AbstractGenerateMethodService.cs
+    AbstractGenerateMethodService.State.cs
+    AbstractGenerateParameterizedMemberService.AbstractInvocationInfo.cs
+    AbstractGenerateParameterizedMemberService.CodeAction.cs
+    AbstractGenerateParameterizedMemberService.cs
+    AbstractGenerateParameterizedMemberService.MethodSignatureInfo.cs
+    AbstractGenerateParameterizedMemberService.SignatureInfo.cs
+    AbstractGenerateParameterizedMemberService.State.cs
+    IGenerateConversionService.cs
+    IGenerateDeconstructMemberService.cs
+    IGenerateParameterizedMemberService.cs
+    MethodGenerationKind.cs
+    TypeParameterSubstitution.cs
+   GenerateVariable/
+    AbstractGenerateVariableService.CodeAction.cs
+    AbstractGenerateVariableService.cs
+    AbstractGenerateVariableService.GenerateLocalCodeAction.cs
+    AbstractGenerateVariableService.GenerateParameterCodeAction.cs
+    AbstractGenerateVariableService.State.cs
+    IGenerateVariableService.cs
+   ImplementAbstractClass/
+    AbstractImplementAbstractClassCodeFixProvider.cs
+    ImplementAbstractClassData.cs
+   ImplementInterface/
+    AbstractImplementInterfaceCodeFixProvider.cs
+    AbstractImplementInterfaceService.cs
+    AbstractImplementInterfaceService.State.cs
+    IImplementInterfaceService.cs
+    ImplementHelpers.cs
+    ImplementInterfaceGenerator.cs
+    ImplementInterfaceGenerator_Conflicts.cs
+    ImplementInterfaceGenerator_DisposePattern.cs
+    ImplementInterfaceGenerator_Method.cs
+    ImplementInterfaceGenerator_Property.cs
+    ImplementInterfaceInfo.cs
+   ImplementType/
+    ImplementTypeInsertionBehavior.cs
+    ImplementTypeOptions.cs
+    ImplementTypePropertyGenerationBehavior.cs
+   Iterator/AbstractIteratorCodeFixProvider.cs
+   MakeFieldReadonly/AbstractMakeFieldReadonlyCodeFixProvider.cs
+   MakeMemberStatic/AbstractMakeMemberStaticCodeFixProvider.cs
+   MakeMethodAsynchronous/AbstractMakeMethodAsynchronousCodeFixProvider.cs
+   MakeMethodSynchronous/AbstractMakeMethodSynchronousCodeFixProvider.cs
+   MakeTypeAbstract/AbstractMakeTypeAbstractCodeFixProvider.cs
+   MakeTypePartial/AbstractMakeTypePartialCodeFixProvider.cs
+   MatchFolderAndNamespace/
+    AbstractChangeNamespaceToMatchFolderCodeFixProvider.cs
+    AbstractChangeNamespaceToMatchFolderCodeFixProvider.CustomFixAllProvider.cs
+   Naming/
+    FallbackNamingRules.cs
+    NamingExtensions.cs
+   NamingStyle/NamingStyleCodeFixProvider.cs
+   NewLines/
+    ConsecutiveStatementPlacement/ConsecutiveStatementPlacementCodeFixProvider.cs
+    MultipleBlankLines/AbstractMultipleBlankLinesCodeFixProvider.cs
+   Options/FadingOptions.cs
+   OrderModifiers/AbstractOrderModifiersCodeFixProvider.cs
+   PopulateSwitch/
+    AbstractPopulateSwitchCodeFixProvider.cs
+    AbstractPopulateSwitchExpressionCodeFixProvider.cs
+    AbstractPopulateSwitchStatementCodeFixProvider.cs
+   QualifyMemberAccess/AbstractQualifyMemberAccessCodeFixProvider.cs
+   RemoveAsyncModifier/AbstractRemoveAsyncModifierCodeFixProvider.cs
+   RemoveRedundantEquality/RemoveRedundantEqualityCodeFixProvider.cs
+   RemoveUnnecessaryImports/AbstractRemoveUnnecessaryImportsCodeFixProvider.cs
+   RemoveUnnecessaryParentheses/AbstractRemoveUnnecessaryParenthesesCodeFixProvider.cs
+   RemoveUnnecessarySuppressions/
+    RemoveUnnecessaryAttributeSuppressionsCodeFixProvider.cs
+    RemoveUnnecessaryPragmaSuppressionsCodeFixProvider.cs
+   RemoveUnusedMembers/AbstractRemoveUnusedMembersCodeFixProvider.cs
+   RemoveUnusedParametersAndValues/AbstractRemoveUnusedValuesCodeFixProvider.cs
+   SimplifyBooleanExpression/SimplifyConditionalCodeFixProvider.cs
+   SimplifyInterpolation/AbstractSimplifyInterpolationCodeFixProvider.cs
+   SimplifyLinqExpression/SimplifyLinqExpressionCodeFixProvider.cs
+   UnsealClass/AbstractUnsealClassCodeFixProvider.cs
+   UpdateLegacySuppressions/UpdateLegacySuppressionsCodeFixProvider.cs
+   UpgradeProject/AbstractUpgradeProjectCodeFixProvider.cs
+   UseAutoProperty/
+    AbstractUseAutoPropertyCodeFixProvider.cs
+    UseAutoPropertyFixAllProvider.cs
+   UseCoalesceExpression/
+    AbstractUseCoalesceExpressionForIfNullStatementCheckCodeFixProvider.cs
+    UseCoalesceExpressionForNullableTernaryConditionalCheckCodeFixProvider.cs
+    UseCoalesceExpressionForTernaryConditionalCheckCodeFixProvider.cs
+   UseCollectionExpression/AbstractUseCollectionExpressionCodeFixProvider.cs
+   UseCollectionInitializer/AbstractUseCollectionInitializerCodeFixProvider.cs
+   UseCompoundAssignment/AbstractUseCompoundAssignmentCodeFixProvider.cs
+   UseConditionalExpression/
+    ForAssignment/AbstractUseConditionalExpressionForAssignmentCodeFixProvider.cs
+    ForReturn/AbstractUseConditionalExpressionForReturnCodeFixProvider.cs
+    AbstractUseConditionalExpressionCodeFixProvider.cs
+    UseConditionalExpressionHelpers.cs
+   UseExplicitTupleName/UseExplicitTupleNameCodeFixProvider.cs
+   UseInferredMemberName/AbstractUseInferredMemberNameCodeFixProvider.cs
+   UseIsNullCheck/AbstractUseIsNullForReferenceEqualsCodeFixProvider.cs
+   UseNullPropagation/AbstractUseNullPropagationCodeFixProvider.cs
+   UseObjectInitializer/AbstractUseObjectInitializerCodeFixProvider.cs
+   UseSystemHashCode/UseSystemHashCodeCodeFixProvider.cs
+   AnalyzerOptionsProviders.cs
+   PredefinedCodeFixProviderNames.cs
+   PredefinedConfigurationFixProviderNames.cs
+ Compilers/Core/
+  AnalyzerDriver/
+   AnalyzerExceptionDescriptionBuilder.cs
+   DeclarationComputer.cs
+   DeclarationInfo.cs
+  Portable/
+   DiagnosticAnalyzer/
+    SuppressMessageAttributeState.TargetScope.cs
+     @link=RemoveUnnecessarySuppressions/SuppressMessageAttributeState.TargetScope.cs
+    SuppressMessageAttributeState.TargetSymbolResolver.cs
+     @link=RemoveUnnecessarySuppressions/SuppressMessageAttributeState.TargetSymbolResolver.cs
+   Text/TextUtilities.cs
+    @link=Shared/Utilities/TextUtilities.cs
+ Dependencies/CodeAnalysis.Debugging/
+  CompilationOptionNames.cs
+  CustomDebugInfoConstants.cs
+  CustomDebugInfoEncoder.cs
+  CustomDebugInfoKind.cs
+  CustomDebugInfoReader.cs
+  CustomDebugInfoRecord.cs
+  DynamicLocalInfo.cs
+  ImportTargetKind.cs
+  PortableCustomDebugInfoKinds.cs
+  StateMachineHoistedLocalScope.cs
+  TupleElementNamesInfo.cs
+  VBImportScopeKind.cs
+
+[metadataReferences]
+../../../../artifacts/obj/
+ Microsoft.CodeAnalysis.Scripting/Debug/net8.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+  @aliases=Scripting,global
+ Microsoft.CodeAnalysis.Workspaces/Debug/net8.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/net8.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ microsoft.codeanalysis.elfie/1.0.0/lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll
+ microsoft.diasymreader/2.0.0/lib/netstandard2.0/Microsoft.DiaSymReader.dll
+ microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+  Microsoft.CSharp.dll
+  Microsoft.VisualBasic.Core.dll
+  Microsoft.VisualBasic.dll
+  Microsoft.Win32.Primitives.dll
+  Microsoft.Win32.Registry.dll
+  mscorlib.dll
+  netstandard.dll
+  System.AppContext.dll
+  System.Buffers.dll
+  System.Collections.Concurrent.dll
+  System.Collections.dll
+  System.Collections.NonGeneric.dll
+  System.Collections.Specialized.dll
+  System.ComponentModel.Annotations.dll
+  System.ComponentModel.DataAnnotations.dll
+  System.ComponentModel.dll
+  System.ComponentModel.EventBasedAsync.dll
+  System.ComponentModel.Primitives.dll
+  System.ComponentModel.TypeConverter.dll
+  System.Configuration.dll
+  System.Console.dll
+  System.Core.dll
+  System.Data.Common.dll
+  System.Data.DataSetExtensions.dll
+  System.Data.dll
+  System.Diagnostics.Contracts.dll
+  System.Diagnostics.Debug.dll
+  System.Diagnostics.DiagnosticSource.dll
+  System.Diagnostics.FileVersionInfo.dll
+  System.Diagnostics.Process.dll
+  System.Diagnostics.StackTrace.dll
+  System.Diagnostics.TextWriterTraceListener.dll
+  System.Diagnostics.Tools.dll
+  System.Diagnostics.TraceSource.dll
+  System.Diagnostics.Tracing.dll
+  System.dll
+  System.Drawing.dll
+  System.Drawing.Primitives.dll
+  System.Dynamic.Runtime.dll
+  System.Formats.Asn1.dll
+  System.Formats.Tar.dll
+  System.Globalization.Calendars.dll
+  System.Globalization.dll
+  System.Globalization.Extensions.dll
+  System.IO.Compression.Brotli.dll
+  System.IO.Compression.dll
+  System.IO.Compression.FileSystem.dll
+  System.IO.Compression.ZipFile.dll
+  System.IO.dll
+  System.IO.FileSystem.AccessControl.dll
+  System.IO.FileSystem.dll
+  System.IO.FileSystem.DriveInfo.dll
+  System.IO.FileSystem.Primitives.dll
+  System.IO.FileSystem.Watcher.dll
+  System.IO.IsolatedStorage.dll
+  System.IO.MemoryMappedFiles.dll
+  System.IO.Pipes.AccessControl.dll
+  System.IO.Pipes.dll
+  System.IO.UnmanagedMemoryStream.dll
+  System.Linq.dll
+  System.Linq.Expressions.dll
+  System.Linq.Parallel.dll
+  System.Linq.Queryable.dll
+  System.Memory.dll
+  System.Net.dll
+  System.Net.Http.dll
+  System.Net.Http.Json.dll
+  System.Net.HttpListener.dll
+  System.Net.Mail.dll
+  System.Net.NameResolution.dll
+  System.Net.NetworkInformation.dll
+  System.Net.Ping.dll
+  System.Net.Primitives.dll
+  System.Net.Quic.dll
+  System.Net.Requests.dll
+  System.Net.Security.dll
+  System.Net.ServicePoint.dll
+  System.Net.Sockets.dll
+  System.Net.WebClient.dll
+  System.Net.WebHeaderCollection.dll
+  System.Net.WebProxy.dll
+  System.Net.WebSockets.Client.dll
+  System.Net.WebSockets.dll
+  System.Numerics.dll
+  System.Numerics.Vectors.dll
+  System.ObjectModel.dll
+  System.Reflection.DispatchProxy.dll
+  System.Reflection.dll
+  System.Reflection.Emit.dll
+  System.Reflection.Emit.ILGeneration.dll
+  System.Reflection.Emit.Lightweight.dll
+  System.Reflection.Extensions.dll
+  System.Reflection.Primitives.dll
+  System.Reflection.TypeExtensions.dll
+  System.Resources.Reader.dll
+  System.Resources.ResourceManager.dll
+  System.Resources.Writer.dll
+  System.Runtime.CompilerServices.Unsafe.dll
+  System.Runtime.CompilerServices.VisualC.dll
+  System.Runtime.dll
+  System.Runtime.Extensions.dll
+  System.Runtime.Handles.dll
+  System.Runtime.InteropServices.dll
+  System.Runtime.InteropServices.JavaScript.dll
+  System.Runtime.InteropServices.RuntimeInformation.dll
+  System.Runtime.Intrinsics.dll
+  System.Runtime.Loader.dll
+  System.Runtime.Numerics.dll
+  System.Runtime.Serialization.dll
+  System.Runtime.Serialization.Formatters.dll
+  System.Runtime.Serialization.Json.dll
+  System.Runtime.Serialization.Primitives.dll
+  System.Runtime.Serialization.Xml.dll
+  System.Security.AccessControl.dll
+  System.Security.Claims.dll
+  System.Security.Cryptography.Algorithms.dll
+  System.Security.Cryptography.Cng.dll
+  System.Security.Cryptography.Csp.dll
+  System.Security.Cryptography.dll
+  System.Security.Cryptography.Encoding.dll
+  System.Security.Cryptography.OpenSsl.dll
+  System.Security.Cryptography.Primitives.dll
+  System.Security.Cryptography.X509Certificates.dll
+  System.Security.dll
+  System.Security.Principal.dll
+  System.Security.Principal.Windows.dll
+  System.Security.SecureString.dll
+  System.ServiceModel.Web.dll
+  System.ServiceProcess.dll
+  System.Text.Encoding.CodePages.dll
+  System.Text.Encoding.dll
+  System.Text.Encoding.Extensions.dll
+  System.Text.RegularExpressions.dll
+  System.Threading.Channels.dll
+  System.Threading.dll
+  System.Threading.Overlapped.dll
+  System.Threading.Tasks.Dataflow.dll
+  System.Threading.Tasks.dll
+  System.Threading.Tasks.Extensions.dll
+  System.Threading.Tasks.Parallel.dll
+  System.Threading.Thread.dll
+  System.Threading.ThreadPool.dll
+  System.Threading.Timer.dll
+  System.Transactions.dll
+  System.Transactions.Local.dll
+  System.ValueTuple.dll
+  System.Web.dll
+  System.Web.HttpUtility.dll
+  System.Windows.dll
+  System.Xml.dll
+  System.Xml.Linq.dll
+  System.Xml.ReaderWriter.dll
+  System.Xml.Serialization.dll
+  System.Xml.XDocument.dll
+  System.Xml.XmlDocument.dll
+  System.Xml.XmlSerializer.dll
+  System.Xml.XPath.dll
+  System.Xml.XPath.XDocument.dll
+  WindowsBase.dll
+ system.collections.immutable/10.0.1/lib/net8.0/System.Collections.Immutable.dll
+ system.composition.attributedmodel/10.0.1/lib/net8.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net8.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net8.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net8.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net8.0/System.Composition.TypedParts.dll
+ system.configuration.configurationmanager/10.0.1/lib/net8.0/System.Configuration.ConfigurationManager.dll
+ system.diagnostics.eventlog/10.0.1/lib/net8.0/System.Diagnostics.EventLog.dll
+ system.io.pipelines/10.0.1/lib/net8.0/System.IO.Pipelines.dll
+ system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
+ system.security.cryptography.protecteddata/10.0.1/lib/net8.0/System.Security.Cryptography.ProtectedData.dll
+ system.text.encodings.web/10.0.1/lib/net8.0/System.Text.Encodings.Web.dll
+ system.text.json/10.0.1/lib/net8.0/System.Text.Json.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.netcore.app.ref/8.0.25/analyzers/dotnet/cs/
+  Microsoft.Interop.ComInterfaceGenerator.dll
+  Microsoft.Interop.LibraryImportGenerator.dll
+  Microsoft.Interop.SourceGeneration.dll
+  System.Text.RegularExpressions.Generator.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+ system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[analyzerConfigFiles]
+../../../
+ ../
+  artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net8.0/Microsoft.CodeAnalysis.Features.GeneratedMSBuildEditorConfig.editorconfig
+  eng/config/globalconfigs/
+   Common.globalconfig
+   Shipping.globalconfig
+  .editorconfig
+ Compilers/.editorconfig
+ Dependencies/.editorconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
+
+[additionalFiles]
+../../
+ ../
+  ../
+   artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/net8.0/Microsoft.CodeAnalysis.Features.xlf/
+    AnalyzersResources.cs.resx
+    AnalyzersResources.de.resx
+    AnalyzersResources.es.resx
+    AnalyzersResources.fr.resx
+    AnalyzersResources.it.resx
+    AnalyzersResources.ja.resx
+    AnalyzersResources.ko.resx
+    AnalyzersResources.pl.resx
+    AnalyzersResources.pt-BR.resx
+    AnalyzersResources.ru.resx
+    AnalyzersResources.tr.resx
+    AnalyzersResources.zh-Hans.resx
+    AnalyzersResources.zh-Hant.resx
+    CodeFixesResources.cs.resx
+    CodeFixesResources.de.resx
+    CodeFixesResources.es.resx
+    CodeFixesResources.fr.resx
+    CodeFixesResources.it.resx
+    CodeFixesResources.ja.resx
+    CodeFixesResources.ko.resx
+    CodeFixesResources.pl.resx
+    CodeFixesResources.pt-BR.resx
+    CodeFixesResources.ru.resx
+    CodeFixesResources.tr.resx
+    CodeFixesResources.zh-Hans.resx
+    CodeFixesResources.zh-Hant.resx
+    FeaturesResources.cs.resx
+    FeaturesResources.de.resx
+    FeaturesResources.es.resx
+    FeaturesResources.fr.resx
+    FeaturesResources.it.resx
+    FeaturesResources.ja.resx
+    FeaturesResources.ko.resx
+    FeaturesResources.pl.resx
+    FeaturesResources.pt-BR.resx
+    FeaturesResources.ru.resx
+    FeaturesResources.tr.resx
+    FeaturesResources.zh-Hans.resx
+    FeaturesResources.zh-Hant.resx
+   eng/config/BannedSymbols.txt
+  Analyzers/Core/
+   Analyzers/AnalyzersResources.resx
+   CodeFixes/CodeFixesResources.resx
+ BannedSymbols.txt
+
+[capabilities]
+NativeAOT
+SupportsHotReload
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=netstandard2.0
+
+[properties]
+MaxSupportedLangVersion=7.3
+OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/
+TargetFramework=netstandard2.0
+TargetFrameworkIdentifier=.NETStandard
+TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/Microsoft.CodeAnalysis.Features.dll
+TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Features.dll
+TemporaryDependencyNodeTargetIdentifier=netstandard2.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,Nullable,1701,1702
+/doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/Microsoft.CodeAnalysis.Features.xml
+/define:TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD1_0_OR_GREATER;NETSTANDARD1_1_OR_GREATER;NETSTANDARD1_2_OR_GREATER;NETSTANDARD1_3_OR_GREATER;NETSTANDARD1_4_OR_GREATER;NETSTANDARD1_5_OR_GREATER;NETSTANDARD1_6_OR_GREATER;NETSTANDARD2_0_OR_GREATER
+/out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/Microsoft.CodeAnalysis.Features.dll
+/refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/refint/Microsoft.CodeAnalysis.Features.dll
+/warnaserror+:NU1605
+
+[sourceFiles]
+../../../
+ ../artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/
+  .NETStandard,Version=v2.0.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.AnalyzersResources.cs
+   @link=AnalyzersResources.resx
+  Microsoft.CodeAnalysis.CodeFixesResources.cs
+   @link=CodeFixesResources.resx
+  Microsoft.CodeAnalysis.Features.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.Features.InternalsVisibleTo.cs
+  Microsoft.CodeAnalysis.FeaturesResources.cs
+ Analyzers/Core/
+  Analyzers/
+   AddAccessibilityModifiers/
+    AbstractAddAccessibilityModifiers.cs
+    AbstractAddAccessibilityModifiersDiagnosticAnalyzer.cs
+    IAddAccessibilityModifiersService.cs
+   AddRequiredParentheses/
+    AbstractAddRequiredParenthesesDiagnosticAnalyzer.cs
+    AddRequiredParenthesesConstants.cs
+   ConvertTypeofToNameof/AbstractConvertTypeOfToNameOfDiagnosticAnalyzer.cs
+   FileHeaders/
+    AbstractFileHeaderDiagnosticAnalyzer.cs
+    AbstractFileHeaderHelper.cs
+    FileHeader.cs
+   ForEachCast/AbstractForEachCastDiagnosticAnalyzer.cs
+   Formatting/AbstractFormattingAnalyzer.cs
+   Helpers/
+    HashCodeAnalyzer/
+     HashCodeAnalyzer.cs
+     HashCodeAnalyzer.OperationDeconstructor.cs
+    DeserializationConstructorCheck.cs
+    DiagnosticHelper.cs
+   MakeFieldReadonly/AbstractMakeFieldReadonlyDiagnosticAnalyzer.cs
+   MatchFolderAndNamespace/
+    AbstractMatchFolderAndNamespaceDiagnosticAnalyzer.cs
+    MatchFolderAndNamespaceConstants.cs
+   NamingStyle/NamingStyleDiagnosticAnalyzerBase.cs
+   NewLines/
+    ConsecutiveStatementPlacement/AbstractConsecutiveStatementPlacementDiagnosticAnalyzer.cs
+    MultipleBlankLines/AbstractMultipleBlankLinesDiagnosticAnalyzer.cs
+   OrderModifiers/
+    AbstractOrderModifiersDiagnosticAnalyzer.cs
+    OrderModifiersHelpers.cs
+   PopulateSwitch/
+    AbstractPopulateSwitchDiagnosticAnalyzer.cs
+    AbstractPopulateSwitchExpressionDiagnosticAnalyzer.cs
+    AbstractPopulateSwitchStatementDiagnosticAnalyzer.cs
+    PopulateSwitchExpressionHelpers.cs
+    PopulateSwitchStatementHelpers.cs
+   QualifyMemberAccess/AbstractQualifyMemberAccessDiagnosticAnalyzer.cs
+   RemoveRedundantEquality/
+    AbstractRemoveRedundantEqualityDiagnosticAnalyzer.cs
+    RedundantEqualityConstants.cs
+   RemoveUnnecessaryCast/AbstractRemoveUnnecessaryCastDiagnosticAnalyzer.cs
+   RemoveUnnecessaryImports/
+    AbstractRemoveUnnecessaryImportsDiagnosticAnalyzer.cs
+    RemoveUnnecessaryImportsConstants.cs
+   RemoveUnnecessaryParentheses/AbstractRemoveUnnecessaryParenthesesDiagnosticAnalyzer.cs
+   RemoveUnnecessarySuppressions/
+    AbstractRemoveUnnecessaryAttributeSuppressionsDiagnosticAnalyzer.cs
+    AbstractRemoveUnnecessaryPragmaSuppressionsDiagnosticAnalyzer.cs
+    SuppressMessageAttributeState.cs
+   RemoveUnusedMembers/AbstractRemoveUnusedMembersDiagnosticAnalyzer.cs
+   RemoveUnusedParametersAndValues/
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.cs
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.SymbolStartAnalyzer.BlockAnalyzer.cs
+    AbstractRemoveUnusedParametersAndValuesDiagnosticAnalyzer.SymbolStartAnalyzer.cs
+   SimplifyBooleanExpression/
+    AbstractSimplifyConditionalDiagnosticAnalyzer.cs
+    SimplifyBooleanExpressionConstants.cs
+   SimplifyInterpolation/
+    AbstractSimplifyInterpolationDiagnosticAnalyzer.cs
+    AbstractSimplifyInterpolationHelpers.cs
+   SimplifyLinqExpression/AbstractSimplifyLinqExpressionDiagnosticAnalyzer.cs
+   SimplifyTypeNames/SimplifyTypeNamesDiagnosticAnalyzerBase.cs
+   UseAutoProperty/
+    AbstractUseAutoPropertyAnalyzer.cs
+    AccessedFields.cs
+    AnalysisResult.cs
+    UseAutoPropertiesHelpers.cs
+   UseCoalesceExpression/
+    AbstractUseCoalesceExpressionForIfNullCheckDiagnosticAnalyzer.cs
+    AbstractUseCoalesceExpressionForNullableTernaryConditionalCheckDiagnosticAnalyzer.cs
+    AbstractUseCoalesceExpressionForTernaryConditionalCheckDiagnosticAnalyzer.cs
+   UseCollectionExpression/CollectionExpressionMatch.cs
+   UseCollectionInitializer/
+    AbstractObjectCreationExpressionAnalyzer.cs
+    AbstractUseCollectionInitializerAnalyzer.cs
+    AbstractUseCollectionInitializerDiagnosticAnalyzer.cs
+    IUpdateExpressionSyntaxHelper.cs
+    UpdateExpressionState.cs
+    UseCollectionInitializerHelpers.cs
+   UseCompoundAssignment/
+    AbstractUseCompoundAssignmentDiagnosticAnalyzer.cs
+    UseCompoundAssignmentUtilities.cs
+   UseConditionalExpression/
+    ForAssignment/
+     AbstractUseConditionalExpressionForAssignmentDiagnosticAnalyzer.cs
+     UseConditionalExpressionForAssignmentHelpers.cs
+    ForReturn/
+     AbstractUseConditionalExpressionForReturnDiagnosticAnalyzer.cs
+     UseConditionalExpressionForReturnHelpers.cs
+    AbstractUseConditionalExpressionDiagnosticAnalyzer.cs
+    UseConditionalExpressionHelpers.cs
+   UseExplicitTupleName/UseExplicitTupleNameDiagnosticAnalyzer.cs
+   UseInferredMemberName/AbstractUseInferredMemberNameDiagnosticAnalyzer.cs
+   UseIsNullCheck/
+    AbstractUseIsNullForReferenceEqualsDiagnosticAnalyzer.cs
+    UseIsNullConstants.cs
+   UseNullPropagation/
+    AbstractUseNullPropagationDiagnosticAnalyzer.cs
+    AbstractUseNullPropagationDiagnosticAnalyzer_IfStatement.cs
+    AnalysisResults.cs
+   UseObjectInitializer/
+    AbstractUseObjectInitializerDiagnosticAnalyzer.cs
+    UseNamedMemberInitializerAnalyzer.cs
+   UseSystemHashCode/UseSystemHashCodeDiagnosticAnalyzer.cs
+   UseThrowExpression/AbstractUseThrowExpressionDiagnosticAnalyzer.cs
+   ValidateFormatString/
+    AbstractValidateFormatStringDiagnosticAnalyzer.cs
+    FormatStringValidationOptionStorage.cs
+   AbstractBuiltInCodeStyleDiagnosticAnalyzer.cs
+   AbstractBuiltInCodeStyleDiagnosticAnalyzer_Core.cs
+   AbstractBuiltInUnnecessaryCodeStyleDiagnosticAnalyzer.cs
+   AbstractCodeQualityDiagnosticAnalyzer.cs
+   AnalyzerOptionsProvider.cs
+   DiagnosticCustomTags.cs
+   EnforceOnBuild.cs
+   EnforceOnBuildValues.cs
+   IDEDiagnosticIds.cs
+   IDEDiagnosticIdToOptionMappingHelper.cs
+   ParenthesesDiagnosticAnalyzersHelper.cs
+  CodeFixes/
+   AddAccessibilityModifiers/
+    AbstractAddAccessibilityModifiersCodeFixProvider.cs
+    AddAccessibilityModifiersHelpers.cs
+    IAddAccessibilityModifiersService.cs
+   AddAnonymousTypeMemberName/AbstractAddAnonymousTypeMemberNameCodeFixProvider.cs
+   AddExplicitCast/
+    AbstractAddExplicitCastCodeFixProvider.cs
+    Fixer.cs
+    InheritanceDistanceComparer.cs
+   AddObsoleteAttribute/AbstractAddObsoleteAttributeCodeFixProvider.cs
+   AddParameter/
+    AbstractAddParameterCodeFixProvider.cs
+    AddParameterService.cs
+    ArgumentInsertPositionData.cs
+    CodeFixData.cs
+    RegisterFixData.cs
+   AddRequiredParentheses/AddRequiredParenthesesCodeFixProvider.cs
+   AliasAmbiguousType/AbstractAliasAmbiguousTypeCodeFixProvider.cs
+   ConflictMarkerResolution/AbstractConflictMarkerCodeFixProvider.cs
+   ConvertToAsync/AbstractConvertToAsyncCodeFixProvider.cs
+   ConvertTypeOfToNameOf/AbstractConvertTypeOfToNameOfCodeFixProvider.cs
+   DocumentationComments/
+    AbstractAddDocCommentNodesCodeFixProvider.cs
+    AbstractRemoveDocCommentNodeCodeFixProvider.cs
+   FileHeaders/AbstractFileHeaderCodeFixProvider.cs
+   ForEachCast/AbstractForEachCastCodeFixProvider.cs
+   Formatting/FormattingCodeFixProvider.cs
+   GenerateConstructor/
+    AbstractGenerateConstructorService.cs
+    AbstractGenerateConstructorService.State.cs
+    GenerateConstructorHelpers.cs
+    IGenerateConstructorService.cs
+   GenerateDefaultConstructors/
+    AbstractGenerateDefaultConstructorCodeFixProvider.cs
+    AbstractGenerateDefaultConstructorsService.cs
+    AbstractGenerateDefaultConstructorsService.State.cs
+    GenerateDefaultConstructorsCodeAction.cs
+    IGenerateDefaultConstructorsService.cs
+   GenerateEnumMember/
+    AbstractGenerateEnumMemberService.CodeAction.cs
+    AbstractGenerateEnumMemberService.cs
+    AbstractGenerateEnumMemberService.State.cs
+    IGenerateEnumMemberService.cs
+   GenerateMember/
+    AbstractGenerateMemberCodeFixProvider.cs
+    AbstractGenerateMemberService.cs
+   GenerateParameterizedMember/
+    AbstractGenerateConversionService.cs
+    AbstractGenerateConversionService.State.cs
+    AbstractGenerateDeconstructMethodService.cs
+    AbstractGenerateDeconstructMethodService.State.cs
+    AbstractGenerateMethodService.cs
+    AbstractGenerateMethodService.State.cs
+    AbstractGenerateParameterizedMemberService.AbstractInvocationInfo.cs
+    AbstractGenerateParameterizedMemberService.CodeAction.cs
+    AbstractGenerateParameterizedMemberService.cs
+    AbstractGenerateParameterizedMemberService.MethodSignatureInfo.cs
+    AbstractGenerateParameterizedMemberService.SignatureInfo.cs
+    AbstractGenerateParameterizedMemberService.State.cs
+    IGenerateConversionService.cs
+    IGenerateDeconstructMemberService.cs
+    IGenerateParameterizedMemberService.cs
+    MethodGenerationKind.cs
+    TypeParameterSubstitution.cs
+   GenerateVariable/
+    AbstractGenerateVariableService.CodeAction.cs
+    AbstractGenerateVariableService.cs
+    AbstractGenerateVariableService.GenerateLocalCodeAction.cs
+    AbstractGenerateVariableService.GenerateParameterCodeAction.cs
+    AbstractGenerateVariableService.State.cs
+    IGenerateVariableService.cs
+   ImplementAbstractClass/
+    AbstractImplementAbstractClassCodeFixProvider.cs
+    ImplementAbstractClassData.cs
+   ImplementInterface/
+    AbstractImplementInterfaceCodeFixProvider.cs
+    AbstractImplementInterfaceService.cs
+    AbstractImplementInterfaceService.State.cs
+    IImplementInterfaceService.cs
+    ImplementHelpers.cs
+    ImplementInterfaceGenerator.cs
+    ImplementInterfaceGenerator_Conflicts.cs
+    ImplementInterfaceGenerator_DisposePattern.cs
+    ImplementInterfaceGenerator_Method.cs
+    ImplementInterfaceGenerator_Property.cs
+    ImplementInterfaceInfo.cs
+   ImplementType/
+    ImplementTypeInsertionBehavior.cs
+    ImplementTypeOptions.cs
+    ImplementTypePropertyGenerationBehavior.cs
+   Iterator/AbstractIteratorCodeFixProvider.cs
+   MakeFieldReadonly/AbstractMakeFieldReadonlyCodeFixProvider.cs
+   MakeMemberStatic/AbstractMakeMemberStaticCodeFixProvider.cs
+   MakeMethodAsynchronous/AbstractMakeMethodAsynchronousCodeFixProvider.cs
+   MakeMethodSynchronous/AbstractMakeMethodSynchronousCodeFixProvider.cs
+   MakeTypeAbstract/AbstractMakeTypeAbstractCodeFixProvider.cs
+   MakeTypePartial/AbstractMakeTypePartialCodeFixProvider.cs
+   MatchFolderAndNamespace/
+    AbstractChangeNamespaceToMatchFolderCodeFixProvider.cs
+    AbstractChangeNamespaceToMatchFolderCodeFixProvider.CustomFixAllProvider.cs
+   Naming/
+    FallbackNamingRules.cs
+    NamingExtensions.cs
+   NamingStyle/NamingStyleCodeFixProvider.cs
+   NewLines/
+    ConsecutiveStatementPlacement/ConsecutiveStatementPlacementCodeFixProvider.cs
+    MultipleBlankLines/AbstractMultipleBlankLinesCodeFixProvider.cs
+   Options/FadingOptions.cs
+   OrderModifiers/AbstractOrderModifiersCodeFixProvider.cs
+   PopulateSwitch/
+    AbstractPopulateSwitchCodeFixProvider.cs
+    AbstractPopulateSwitchExpressionCodeFixProvider.cs
+    AbstractPopulateSwitchStatementCodeFixProvider.cs
+   QualifyMemberAccess/AbstractQualifyMemberAccessCodeFixProvider.cs
+   RemoveAsyncModifier/AbstractRemoveAsyncModifierCodeFixProvider.cs
+   RemoveRedundantEquality/RemoveRedundantEqualityCodeFixProvider.cs
+   RemoveUnnecessaryImports/AbstractRemoveUnnecessaryImportsCodeFixProvider.cs
+   RemoveUnnecessaryParentheses/AbstractRemoveUnnecessaryParenthesesCodeFixProvider.cs
+   RemoveUnnecessarySuppressions/
+    RemoveUnnecessaryAttributeSuppressionsCodeFixProvider.cs
+    RemoveUnnecessaryPragmaSuppressionsCodeFixProvider.cs
+   RemoveUnusedMembers/AbstractRemoveUnusedMembersCodeFixProvider.cs
+   RemoveUnusedParametersAndValues/AbstractRemoveUnusedValuesCodeFixProvider.cs
+   SimplifyBooleanExpression/SimplifyConditionalCodeFixProvider.cs
+   SimplifyInterpolation/AbstractSimplifyInterpolationCodeFixProvider.cs
+   SimplifyLinqExpression/SimplifyLinqExpressionCodeFixProvider.cs
+   UnsealClass/AbstractUnsealClassCodeFixProvider.cs
+   UpdateLegacySuppressions/UpdateLegacySuppressionsCodeFixProvider.cs
+   UpgradeProject/AbstractUpgradeProjectCodeFixProvider.cs
+   UseAutoProperty/
+    AbstractUseAutoPropertyCodeFixProvider.cs
+    UseAutoPropertyFixAllProvider.cs
+   UseCoalesceExpression/
+    AbstractUseCoalesceExpressionForIfNullStatementCheckCodeFixProvider.cs
+    UseCoalesceExpressionForNullableTernaryConditionalCheckCodeFixProvider.cs
+    UseCoalesceExpressionForTernaryConditionalCheckCodeFixProvider.cs
+   UseCollectionExpression/AbstractUseCollectionExpressionCodeFixProvider.cs
+   UseCollectionInitializer/AbstractUseCollectionInitializerCodeFixProvider.cs
+   UseCompoundAssignment/AbstractUseCompoundAssignmentCodeFixProvider.cs
+   UseConditionalExpression/
+    ForAssignment/AbstractUseConditionalExpressionForAssignmentCodeFixProvider.cs
+    ForReturn/AbstractUseConditionalExpressionForReturnCodeFixProvider.cs
+    AbstractUseConditionalExpressionCodeFixProvider.cs
+    UseConditionalExpressionHelpers.cs
+   UseExplicitTupleName/UseExplicitTupleNameCodeFixProvider.cs
+   UseInferredMemberName/AbstractUseInferredMemberNameCodeFixProvider.cs
+   UseIsNullCheck/AbstractUseIsNullForReferenceEqualsCodeFixProvider.cs
+   UseNullPropagation/AbstractUseNullPropagationCodeFixProvider.cs
+   UseObjectInitializer/AbstractUseObjectInitializerCodeFixProvider.cs
+   UseSystemHashCode/UseSystemHashCodeCodeFixProvider.cs
+   AnalyzerOptionsProviders.cs
+   PredefinedCodeFixProviderNames.cs
+   PredefinedConfigurationFixProviderNames.cs
+ Compilers/Core/
+  AnalyzerDriver/
+   AnalyzerExceptionDescriptionBuilder.cs
+   DeclarationComputer.cs
+   DeclarationInfo.cs
+  Portable/
+   DiagnosticAnalyzer/
+    SuppressMessageAttributeState.TargetScope.cs
+     @link=RemoveUnnecessarySuppressions/SuppressMessageAttributeState.TargetScope.cs
+    SuppressMessageAttributeState.TargetSymbolResolver.cs
+     @link=RemoveUnnecessarySuppressions/SuppressMessageAttributeState.TargetSymbolResolver.cs
+   Text/TextUtilities.cs
+    @link=Shared/Utilities/TextUtilities.cs
+ Dependencies/CodeAnalysis.Debugging/
+  CompilationOptionNames.cs
+  CustomDebugInfoConstants.cs
+  CustomDebugInfoEncoder.cs
+  CustomDebugInfoKind.cs
+  CustomDebugInfoReader.cs
+  CustomDebugInfoRecord.cs
+  DynamicLocalInfo.cs
+  ImportTargetKind.cs
+  PortableCustomDebugInfoKinds.cs
+  StateMachineHoistedLocalScope.cs
+  TupleElementNamesInfo.cs
+  VBImportScopeKind.cs
+
+[metadataReferences]
+../../../../artifacts/obj/
+ Microsoft.CodeAnalysis.Scripting/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+  @aliases=Scripting,global
+ Microsoft.CodeAnalysis.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ microsoft.bcl.asyncinterfaces/10.0.1/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll
+ microsoft.codeanalysis.elfie/1.0.0/lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll
+ microsoft.diasymreader/2.0.0/lib/netstandard2.0/Microsoft.DiaSymReader.dll
+ netstandard.library/2.0.3/build/netstandard2.0/ref/
+  Microsoft.Win32.Primitives.dll
+  mscorlib.dll
+  netstandard.dll
+  System.AppContext.dll
+  System.Collections.Concurrent.dll
+  System.Collections.dll
+  System.Collections.NonGeneric.dll
+  System.Collections.Specialized.dll
+  System.ComponentModel.Composition.dll
+  System.ComponentModel.dll
+  System.ComponentModel.EventBasedAsync.dll
+  System.ComponentModel.Primitives.dll
+  System.ComponentModel.TypeConverter.dll
+  System.Console.dll
+  System.Core.dll
+  System.Data.Common.dll
+  System.Data.dll
+  System.Diagnostics.Contracts.dll
+  System.Diagnostics.Debug.dll
+  System.Diagnostics.FileVersionInfo.dll
+  System.Diagnostics.Process.dll
+  System.Diagnostics.StackTrace.dll
+  System.Diagnostics.TextWriterTraceListener.dll
+  System.Diagnostics.Tools.dll
+  System.Diagnostics.TraceSource.dll
+  System.Diagnostics.Tracing.dll
+  System.dll
+  System.Drawing.dll
+  System.Drawing.Primitives.dll
+  System.Dynamic.Runtime.dll
+  System.Globalization.Calendars.dll
+  System.Globalization.dll
+  System.Globalization.Extensions.dll
+  System.IO.Compression.dll
+  System.IO.Compression.FileSystem.dll
+  System.IO.Compression.ZipFile.dll
+  System.IO.dll
+  System.IO.FileSystem.dll
+  System.IO.FileSystem.DriveInfo.dll
+  System.IO.FileSystem.Primitives.dll
+  System.IO.FileSystem.Watcher.dll
+  System.IO.IsolatedStorage.dll
+  System.IO.MemoryMappedFiles.dll
+  System.IO.Pipes.dll
+  System.IO.UnmanagedMemoryStream.dll
+  System.Linq.dll
+  System.Linq.Expressions.dll
+  System.Linq.Parallel.dll
+  System.Linq.Queryable.dll
+  System.Net.dll
+  System.Net.Http.dll
+  System.Net.NameResolution.dll
+  System.Net.NetworkInformation.dll
+  System.Net.Ping.dll
+  System.Net.Primitives.dll
+  System.Net.Requests.dll
+  System.Net.Security.dll
+  System.Net.Sockets.dll
+  System.Net.WebHeaderCollection.dll
+  System.Net.WebSockets.Client.dll
+  System.Net.WebSockets.dll
+  System.Numerics.dll
+  System.ObjectModel.dll
+  System.Reflection.dll
+  System.Reflection.Extensions.dll
+  System.Reflection.Primitives.dll
+  System.Resources.Reader.dll
+  System.Resources.ResourceManager.dll
+  System.Resources.Writer.dll
+  System.Runtime.CompilerServices.VisualC.dll
+  System.Runtime.dll
+  System.Runtime.Extensions.dll
+  System.Runtime.Handles.dll
+  System.Runtime.InteropServices.dll
+  System.Runtime.InteropServices.RuntimeInformation.dll
+  System.Runtime.Numerics.dll
+  System.Runtime.Serialization.dll
+  System.Runtime.Serialization.Formatters.dll
+  System.Runtime.Serialization.Json.dll
+  System.Runtime.Serialization.Primitives.dll
+  System.Runtime.Serialization.Xml.dll
+  System.Security.Claims.dll
+  System.Security.Cryptography.Algorithms.dll
+  System.Security.Cryptography.Csp.dll
+  System.Security.Cryptography.Encoding.dll
+  System.Security.Cryptography.Primitives.dll
+  System.Security.Cryptography.X509Certificates.dll
+  System.Security.Principal.dll
+  System.Security.SecureString.dll
+  System.ServiceModel.Web.dll
+  System.Text.Encoding.dll
+  System.Text.Encoding.Extensions.dll
+  System.Text.RegularExpressions.dll
+  System.Threading.dll
+  System.Threading.Overlapped.dll
+  System.Threading.Tasks.dll
+  System.Threading.Tasks.Parallel.dll
+  System.Threading.Thread.dll
+  System.Threading.ThreadPool.dll
+  System.Threading.Timer.dll
+  System.Transactions.dll
+  System.ValueTuple.dll
+  System.Web.dll
+  System.Windows.dll
+  System.Xml.dll
+  System.Xml.Linq.dll
+  System.Xml.ReaderWriter.dll
+  System.Xml.Serialization.dll
+  System.Xml.XDocument.dll
+  System.Xml.XmlDocument.dll
+  System.Xml.XmlSerializer.dll
+  System.Xml.XPath.dll
+  System.Xml.XPath.XDocument.dll
+ system.buffers/4.6.1/lib/netstandard2.0/System.Buffers.dll
+ system.collections.immutable/10.0.1/lib/netstandard2.0/System.Collections.Immutable.dll
+ system.composition.attributedmodel/10.0.1/lib/netstandard2.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/netstandard2.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/netstandard2.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/netstandard2.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/netstandard2.0/System.Composition.TypedParts.dll
+ system.configuration.configurationmanager/10.0.1/lib/netstandard2.0/System.Configuration.ConfigurationManager.dll
+ system.data.datasetextensions/4.5.0/ref/netstandard2.0/System.Data.DataSetExtensions.dll
+ system.io.pipelines/10.0.1/lib/netstandard2.0/System.IO.Pipelines.dll
+ system.memory/4.6.3/lib/netstandard2.0/System.Memory.dll
+ system.numerics.vectors/4.6.1/lib/netstandard2.0/System.Numerics.Vectors.dll
+ system.reflection.metadata/10.0.1/lib/netstandard2.0/System.Reflection.Metadata.dll
+ system.runtime.compilerservices.unsafe/6.1.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll
+ system.security.cryptography.protecteddata/10.0.1/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+ system.text.encoding.codepages/8.0.0/lib/netstandard2.0/System.Text.Encoding.CodePages.dll
+ system.text.encodings.web/10.0.1/lib/netstandard2.0/System.Text.Encodings.Web.dll
+ system.text.json/10.0.1/lib/netstandard2.0/System.Text.Json.dll
+ system.threading.channels/8.0.0/lib/netstandard2.0/System.Threading.Channels.dll
+ system.threading.tasks.extensions/4.6.3/lib/netstandard2.0/System.Threading.Tasks.Extensions.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+ system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[analyzerConfigFiles]
+../../../
+ ../
+  artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/Microsoft.CodeAnalysis.Features.GeneratedMSBuildEditorConfig.editorconfig
+  eng/config/globalconfigs/
+   Common.globalconfig
+   Shipping.globalconfig
+  .editorconfig
+ Compilers/.editorconfig
+ Dependencies/.editorconfig
+
+[additionalFiles]
+../../
+ ../
+  ../
+   artifacts/obj/Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/Microsoft.CodeAnalysis.Features.xlf/
+    AnalyzersResources.cs.resx
+    AnalyzersResources.de.resx
+    AnalyzersResources.es.resx
+    AnalyzersResources.fr.resx
+    AnalyzersResources.it.resx
+    AnalyzersResources.ja.resx
+    AnalyzersResources.ko.resx
+    AnalyzersResources.pl.resx
+    AnalyzersResources.pt-BR.resx
+    AnalyzersResources.ru.resx
+    AnalyzersResources.tr.resx
+    AnalyzersResources.zh-Hans.resx
+    AnalyzersResources.zh-Hant.resx
+    CodeFixesResources.cs.resx
+    CodeFixesResources.de.resx
+    CodeFixesResources.es.resx
+    CodeFixesResources.fr.resx
+    CodeFixesResources.it.resx
+    CodeFixesResources.ja.resx
+    CodeFixesResources.ko.resx
+    CodeFixesResources.pl.resx
+    CodeFixesResources.pt-BR.resx
+    CodeFixesResources.ru.resx
+    CodeFixesResources.tr.resx
+    CodeFixesResources.zh-Hans.resx
+    CodeFixesResources.zh-Hant.resx
+    FeaturesResources.cs.resx
+    FeaturesResources.de.resx
+    FeaturesResources.es.resx
+    FeaturesResources.fr.resx
+    FeaturesResources.it.resx
+    FeaturesResources.ja.resx
+    FeaturesResources.ko.resx
+    FeaturesResources.pl.resx
+    FeaturesResources.pt-BR.resx
+    FeaturesResources.ru.resx
+    FeaturesResources.tr.resx
+    FeaturesResources.zh-Hans.resx
+    FeaturesResources.zh-Hant.resx
+   eng/config/BannedSymbols.txt
+  Analyzers/Core/
+   Analyzers/AnalyzersResources.resx
+   CodeFixes/CodeFixesResources.resx
+ BannedSymbols.txt

@@ -1,0 +1,1017 @@
+hash=91d913545d99da68af89478c2992f0602af14e82aa6ccd994a70caf7908cd4bf
+version=2
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+project=Microsoft.CodeAnalysis.Razor.Compiler.csproj
+language=C#
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Microsoft.CodeAnalysis.Razor.Compiler
+OutputType=Library
+ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/project.assets.json
+RootNamespace=Microsoft.CodeAnalysis.Razor.Compiler
+
+[commandLineArguments]
+/noconfig
+/unsafe-
+/checked-
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:9999
+/highentropyva+
+/nullable:enable
+/debug+
+/debug:portable
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/AspNetCore.snk
+/optimize-
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign-
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
+/warnaserror-:IDE0055,CS1591,xUnit1004
+
+[sourceFiles]
+Analyzers/
+ AnalyzerIDs.cs
+ ComponentParameterNullableWarningSuppressor.cs
+CSharp/
+ AssemblyIdentityEqualityComparer.cs
+ CompilationExtensions.cs
+ CompilationTagHelperFeature.cs
+ CompilerFeatures.cs
+ ComponentDetectionConventions.cs
+ DefaultMetadataReferenceFeature.cs
+ DefaultTagHelperDescriptorFactory.cs
+ DefaultUtf8WriteLiteralFeature.cs
+ GenericTypeNameRewriter.cs
+ GlobalQualifiedTypeNameRewriter.cs
+ IMetadataReferenceFeature.cs
+ IUtf8WriteLiteralFeature.cs
+ ParseOptionsExtensions.cs
+ RazorDiagnosticFactory.cs
+ RazorLanguage.cs
+ RequiredAttributeParser.cs
+ SourceSpanExtensions.cs
+ SymbolExtensions.cs
+ TagHelperTypes.cs
+ TextChangeExtensions.cs
+ TextSpanExtensions.cs
+ Utf8WriteLiteralDetectionPass.cs
+ WellKnownSymbolDisplayFormats.cs
+Language/
+ CodeGeneration/
+  CodeRenderingContext.cs
+  CodeRenderingContextExtensions.cs
+  CodeTarget.cs
+  CodeTargetBuilder.cs
+  CodeWriter.cs
+  CodeWriter.IndentCache.cs
+  CodeWriter.WriteInterpolatedStringHandler.cs
+  CodeWriterExtensions.cs
+  DefaultCodeTarget.cs
+  DefaultCodeTargetBuilder.cs
+  ICodeTargetExtension.cs
+  IntermediateNodeWriter.cs
+  IWriteableValue.cs
+  LinePragma.cs
+  LiteralRuntimeNodeWriter.cs
+  TagHelperHtmlAttributeRuntimeNodeWriter.cs
+  TagHelperRenderingContext.cs
+ Components/
+  BindMetadata.cs
+  BuilderVariableName.cs
+  ChildContentParameterMetadata.cs
+  ComponentBindLoweringPass.AttributeInfo.cs
+  ComponentBindLoweringPass.BindEntryKey.cs
+  ComponentBindLoweringPass.cs
+  ComponentChildContentDiagnosticPass.cs
+  ComponentCodeDirective.cs
+  ComponentCodeTarget.cs
+  ComponentComplexAttributeContentPass.cs
+  ComponentConstrainedTypeParamDirective.cs
+  ComponentCssScopePass.cs
+  ComponentDiagnosticFactory.cs
+  ComponentDocumentClassifierPass.cs
+  ComponentEventHandlerLoweringPass.cs
+  ComponentFormNameLoweringPass.cs
+  ComponentGenericTypePass.cs
+  ComponentHelpers.cs
+  ComponentImportProjectFeature.cs
+  ComponentInjectDirective.cs
+  ComponentInjectDirectivePass.cs
+  ComponentInjectIntermediateNode.cs
+  ComponentIntermediateNodePassBase.cs
+  ComponentKeyLoweringPass.cs
+  ComponentLayoutDirective.cs
+  ComponentLayoutDirectivePass.cs
+  ComponentLoweringPass.cs
+  ComponentMarkupBlockPass.cs
+  ComponentMarkupDiagnosticPass.cs
+  ComponentMarkupEncodingPass.cs
+  ComponentMetadata.cs
+  ComponentNodeWriter.cs
+  ComponentPageDirective.cs
+  ComponentPageDirectivePass.cs
+  ComponentPreserveWhitespaceDirective.cs
+  ComponentReferenceCaptureLoweringPass.cs
+  ComponentRenderModeDirective.cs
+  ComponentRenderModeDirectivePass.cs
+  ComponentRenderModeLoweringPass.cs
+  ComponentsApi.cs
+  ComponentSplatLoweringPass.cs
+  ComponentTemplateDiagnosticPass.cs
+  ComponentTemplateTargetExtension.cs
+  ComponentTypeParamDirective.cs
+  ComponentWhitespacePass.cs
+  EventHandlerMetadata.cs
+  FormNameVariableName.cs
+  PropertyMetadata.cs
+  RenderModeVariableName.cs
+  RouteAttributeExtensionNode.cs
+  ScopeStack.cs
+  ScopeStack.Entry.cs
+  TagHelperBoundAttributeDescriptorExtensions.cs
+  TagHelperDescriptorExtensions.cs
+  TypeNameHelper.cs
+  TypeNameHelper.NameComparer.cs
+  TypeParameterMetadata.cs
+ Extensions/
+  AttributeDirective.cs
+  AttributeDirectivePass.cs
+  DefaultMetadataIdentifierFeature.cs
+  DefaultTagHelperBodyIntermediateNode.cs
+  DefaultTagHelperCreateIntermediateNode.cs
+  DefaultTagHelperExecuteIntermediateNode.cs
+  DefaultTagHelperHtmlAttributeIntermediateNode.cs
+  DefaultTagHelperOptimizationPass.cs
+  DefaultTagHelperPropertyIntermediateNode.cs
+  DefaultTagHelperRuntimeIntermediateNode.cs
+  DefaultTagHelperTargetExtension.cs
+  EliminateMethodBodyPass.cs
+  FunctionsDirective.cs
+  FunctionsDirectivePass.cs
+  IDefaultTagHelperTargetExtension.cs
+  IMetadataAttributeTargetExtension.cs
+  IMetadataIdentifierFeature.cs
+  ImplementsDirective.cs
+  ImplementsDirectivePass.cs
+  INamedTypeSymbolExtensions.cs
+  InheritsDirective.cs
+  InheritsDirectivePass.cs
+  IPreallocatedAttributeTargetExtension.cs
+  ISectionTargetExtension.cs
+  ITemplateTargetExtension.cs
+  MetadataAttributePass.cs
+  MetadataAttributeTargetExtension.cs
+  NamespaceDirective.cs
+  PreallocatedAttributeTargetExtension.cs
+  PreallocatedTagHelperAttributeOptimizationPass.cs
+  PreallocatedTagHelperHtmlAttributeIntermediateNode.cs
+  PreallocatedTagHelperHtmlAttributeValueIntermediateNode.cs
+  PreallocatedTagHelperPropertyIntermediateNode.cs
+  PreallocatedTagHelperPropertyValueIntermediateNode.cs
+  RazorCompiledItemAttributeIntermediateNode.cs
+  RazorCompiledItemMetadataAttributeIntermediateNode.cs
+  RazorSourceChecksumAttributeIntermediateNode.cs
+  SectionDirective.cs
+  SectionDirectivePass.cs
+  SectionIntermediateNode.cs
+  SectionTargetExtension.cs
+  TemplateIntermediateNode.cs
+  TemplateTargetExtension.cs
+  ViewCssScopePass.cs
+ Intermediate/
+  BaseTypeWithModel.cs
+  CascadingGenericTypeParameter.cs
+  ClassDeclarationIntermediateNode.cs
+  CommonModifiers.cs
+  ComponentAttributeIntermediateNode.cs
+  ComponentChildContentIntermediateNode.cs
+  ComponentIntermediateNode.cs
+  ComponentTypeArgumentIntermediateNode.cs
+  ComponentTypeInferenceMethodIntermediateNode.cs
+  CSharpCodeAttributeValueIntermediateNode.cs
+  CSharpCodeIntermediateNode.cs
+  CSharpExpressionAttributeValueIntermediateNode.cs
+  CSharpExpressionIntermediateNode.cs
+  CSharpIntermediateToken.cs
+  DefaultRazorIntermediateNodeBuilder.cs
+  DirectiveIntermediateNode.cs
+  DirectiveTokenIntermediateNode.cs
+  DocumentIntermediateNode.cs
+  DocumentIntermediateNodeExtensions.cs
+  ExtensionIntermediateNode.cs
+  FieldDeclarationIntermediateNode.cs
+  FormNameIntermediateNode.cs
+  HtmlAttributeIntermediateNode.cs
+  HtmlAttributeValueIntermediateNode.cs
+  HtmlContentIntermediateNode.cs
+  HtmlIntermediateToken.cs
+  IExtensionIntermediateNodeVisitor.cs
+  IntermediateNode.cs
+  IntermediateNodeBuilder.cs
+  IntermediateNodeCollection.cs
+  IntermediateNodeExtensions.cs
+  IntermediateNodeFactory.cs
+  IntermediateNodeFormatter.cs
+  IntermediateNodeReference.cs
+  IntermediateNodeReference`1.cs
+  IntermediateNodeVisitor.cs
+  IntermediateNodeWalker.cs
+  IntermediateNodeWalker.Stack.cs
+  IntermediateToken.cs
+  LazyContent.cs
+  MalformedDirectiveIntermediateNode.cs
+  MarkupBlockIntermediateNode.cs
+  MarkupElementIntermediateNode.cs
+  MemberDeclarationIntermediateNode.cs
+  MethodDeclarationIntermediateNode.cs
+  MethodParameter.cs
+  NamespaceDeclarationIntermediateNode.cs
+  PropertyDeclarationIntermediateNode.cs
+  ReferenceCaptureIntermediateNode.cs
+  RenderModeIntermediateNode.cs
+  SetKeyIntermediateNode.cs
+  SplatIntermediateNode.cs
+  TagHelperBodyIntermediateNode.cs
+  TagHelperDirectiveAttributeIntermediateNode.cs
+  TagHelperDirectiveAttributeParameterIntermediateNode.cs
+  TagHelperHtmlAttributeIntermediateNode.cs
+  TagHelperIntermediateNode.cs
+  TagHelperPropertyIntermediateNode.cs
+  TypeParameter.cs
+  UnresolvedAttributeIntermediateNode.cs
+  UnresolvedAttributeValueIntermediateNode.cs
+  UnresolvedElementIntermediateNode.cs
+  UnresolvedExpressionAttributeValueIntermediateNode.cs
+  UsingDirectiveIntermediateNode.cs
+ Legacy/
+  Syntax/
+   CSharpEphemeralTextLiteralSyntax.cs
+   CSharpExpressionLiteralSyntax.cs
+   CSharpStatementLiteralSyntax.cs
+   CSharpTransitionSyntax.cs
+   MarkupEndTagSyntax.cs
+   MarkupEphemeralTextLiteralSyntax.cs
+   MarkupStartTagSyntax.cs
+   MarkupTagHelperEndTagSyntax.cs
+   MarkupTagHelperStartTagSyntax.cs
+   MarkupTextLiteralSyntax.cs
+   MarkupTransitionSyntax.cs
+   RazorMetaCodeSyntax.cs
+   SyntaxFactory.cs
+   UnclassifiedTextLiteralSyntax.cs
+  AcceptedCharactersInternal.cs
+  AddImportChunkGenerator.cs
+  AddTagHelperChunkGenerator.cs
+  AutoCompleteEditHandler.cs
+  BalancingModes.cs
+  BlockKindInternal.cs
+  ClassifiedSpanInternal.cs
+  ClassifiedSpanVisitor.cs
+  CodeBlockEditHandler.cs
+  CSharpCodeParser.cs
+  CSharpTokenizer.cs
+  DirectiveCSharpTokenizer.cs
+  DirectiveHtmlTokenizer.cs
+  DirectiveTokenChunkGenerator.cs
+  DisposableAction.cs
+  DisposableAction`1.cs
+  EditResult.cs
+  ErrorSink.cs
+  ExpressionChunkGenerator.cs
+  FirstDirectiveCSharpLanguageCharacteristics.cs
+  FirstDirectiveHtmlLanguageCharacteristics.cs
+  HtmlLanguageCharacteristics.cs
+  HtmlMarkupParser.cs
+  HtmlTokenizer.cs
+  ILegacySyntax.cs
+  ImplicitExpressionEditHandler.cs
+  ISpanChunkGenerator.cs
+  KeywordSet.cs
+  KnownTokenType.cs
+  LanguageCharacteristics.cs
+  LegacySyntaxNodeExtensions.ChildSyntaxListReversedEnumeratorStack.cs
+  LegacySyntaxNodeExtensions.ChildSyntaxListReversedEnumeratorStack.Policy.cs
+  LegacySyntaxNodeExtensions.cs
+  LiteralAttributeChunkGenerator.cs
+  LocationTagged.cs
+  MarkupChunkGenerator.cs
+  NativeCSharpLanguageCharacteristics.cs
+  NativeCSharpTokenizer.cs
+  ParserBase.cs
+  ParserContext.cs
+  ParserContext.ErrorScope.cs
+  ParserHelpers.cs
+  ParserState.cs
+  PartialParseResultInternal.cs
+  RazorParser.cs
+  RazorSyntaxTreeExtensions.cs
+  RemoveTagHelperChunkGenerator.cs
+  RoslynCSharpLanguageCharacteristics.cs
+  RoslynCSharpTokenizer.cs
+  SeekableTextReader.cs
+  SourceLocationTracker.cs
+  SpanChunkGenerator.cs
+  SpanEditHandler.cs
+  SpanEditHandlerBuilder.cs
+  SpanKindInternal.cs
+  StatementChunkGenerator.cs
+  SyntaxConstants.cs
+  TagHelperAttributeNode.cs
+  TagHelperBlockRewriter.cs
+  TagHelperDirectiveType.cs
+  TagHelperParseTreeRewriter.cs
+  TagHelperPrefixDirectiveChunkGenerator.cs
+  TagHelperSpanInternal.cs
+  TagHelperSpanVisitor.cs
+  TextReaderExtensions.cs
+  Tokenizer.cs
+  TokenizerBackedParser.cs
+  TokenizerView.cs
+  WhiteSpaceRewriter.cs
+ Syntax/
+  Generated/
+   Syntax.xml.Internal.Generated.cs
+   Syntax.xml.Main.Generated.cs
+   Syntax.xml.Syntax.Generated.cs
+  InternalSyntax/
+   MarkupElementSyntax.cs
+   MarkupTagHelperElementSyntax.cs
+   RazorSyntaxNode.cs
+   SyntaxFactory.cs
+   SyntaxList.cs
+   SyntaxListBuilder.cs
+   SyntaxListBuilderOfT.cs
+   SyntaxListOfT.cs
+   SyntaxListPool.cs
+   SyntaxRewriter.cs
+   SyntaxToken.cs
+   SyntaxTokenCache.cs
+   SyntaxVisitor.cs
+  ArrayElement.cs
+  BaseMarkupEndTagSyntax.cs
+  BaseMarkupStartTagSyntax.cs
+  BaseRazorDirectiveSyntax.cs
+  ChildSyntaxList.cs
+  ChildSyntaxList.Enumerator.cs
+  ChildSyntaxList.Reversed.cs
+  GreenNode.cs
+  GreenNode.Enumerator.cs
+  GreenNode.TokenEnumerable.cs
+  GreenNodeExtensions.cs
+  MarkupElementSyntax.cs
+  MarkupEndTagSyntax.cs
+  MarkupMinimizedTagHelperDirectiveAttributeSyntax.cs
+  MarkupStartTagSyntax.cs
+  MarkupTagHelperDirectiveAttributeSyntax.cs
+  MarkupTagHelperElementSyntax.cs
+  NodeFlags.cs
+  RazorDirectiveSyntax.cs
+  RazorSyntaxNode.cs
+  SpecializedCollections.cs
+  StackGuard.cs
+  SyntaxBuilderExtensions.cs
+  SyntaxExtensions.cs
+  SyntaxFactory.cs
+  SyntaxKind.cs
+  SyntaxList.cs
+  SyntaxList`1.cs
+  SyntaxList`1.Enumerator.cs
+  SyntaxNavigator.cs
+  SyntaxNode.cs
+  SyntaxNode.Iterators.cs
+  SyntaxNodeExtensions.cs
+  SyntaxNodeOrToken.cs
+  SyntaxReplacer.cs
+  SyntaxRewriter.cs
+  SyntaxSerializer.cs
+  SyntaxSerializer.Default.cs
+  SyntaxToken.cs
+  SyntaxTokenList.cs
+  SyntaxTokenList.Enumerator.cs
+  SyntaxTokenList.Reversed.cs
+  SyntaxUtilities.cs
+  SyntaxVisitor.cs
+  SyntaxWalker.cs
+ TagHelpers/
+  Producers/
+   BindTagHelperProducer.cs
+   BindTagHelperProducer.Factory.cs
+   ComponentTagHelperProducer.cs
+   ComponentTagHelperProducer.Factory.cs
+   DefaultTagHelperProducer.cs
+   DefaultTagHelperProducer.Factory.cs
+   EventHandlerTagHelperProducer.cs
+   EventHandlerTagHelperProducer.Factory.cs
+   FormNameTagHelperProducer.cs
+   FormNameTagHelperProducer.Factory.cs
+   ITagHelperProducerFactory.cs
+   KeyTagHelperProducer.cs
+   KeyTagHelperProducer.Factory.cs
+   RefTagHelperProducer.cs
+   RefTagHelperProducer.Factory.cs
+   RenderModeTagHelperProducer.cs
+   RenderModeTagHelperProducer.Factory.cs
+   SplatTagHelperProducer.cs
+   SplatTagHelperProducer.Factory.cs
+   TagHelperProducer.cs
+   TagHelperProducerKind.cs
+  RoslynExtensions.cs
+ AllowedChildTagDescriptor.cs
+ AllowedChildTagDescriptorBuilder.cs
+ AllowedChildTagDescriptorBuilder_Pooling.cs
+ AttributeStructure.cs
+ BoundAttributeDescriptor.cs
+ BoundAttributeDescriptorBuilder.cs
+ BoundAttributeDescriptorBuilderExtensions.cs
+ BoundAttributeDescriptorBuilder_Pooling.cs
+ BoundAttributeDescriptorExtensions.cs
+ BoundAttributeFlags.cs
+ BoundAttributeParameterDescriptor.cs
+ BoundAttributeParameterDescriptorBuilder.cs
+ BoundAttributeParameterDescriptorBuilder_Pooling.cs
+ BoundAttributeParameterFlags.cs
+ ChecksumUtilities.cs
+ ConfigureDirectivesFeature.cs
+ CSharpIdentifier.cs
+ DefaultDirectiveSyntaxTreePass.cs
+ DefaultDocumentClassifierPass.cs
+ DefaultDocumentClassifierPassFeature.cs
+ DefaultImportProjectFeature.cs
+ DefaultImportProjectItem.cs
+ DefaultRazorCSharpLoweringPhase.cs
+ DefaultRazorDirectiveClassifierPhase.cs
+ DefaultRazorDocumentClassifierPhase.cs
+ DefaultRazorIntermediateNodeLoweringPhase.cs
+ DefaultRazorOptimizationPhase.cs
+ DefaultRazorParsingPhase.cs
+ DefaultRazorProjectFileSystem.cs
+ DefaultRazorProjectItem.cs
+ DefaultRazorSyntaxTreePhase.cs
+ DefaultRazorTagHelperContextDiscoveryPhase.cs
+ DefaultRazorTagHelperContextDiscoveryPhase_Pooling.cs
+ DefaultRazorTagHelperRewritePhase.cs
+ DefaultRazorTargetExtensionFeature.cs
+ DefaultTagHelperResolutionPhase.ComponentTagHelperResolver.cs
+ DefaultTagHelperResolutionPhase.cs
+ DefaultTagHelperResolutionPhase.LegacyTagHelperResolver.cs
+ DirectiveDescriptor.cs
+ DirectiveDescriptorBuilderExtensions.cs
+ DirectiveDescriptorComparer.cs
+ DirectiveKind.cs
+ DirectiveRemovalOptimizationPass.cs
+ DirectiveTagHelperContribution.cs
+ DirectiveTokenDescriptor.cs
+ DirectiveTokenDescriptorComparer.cs
+ DirectiveTokenEditHandler.cs
+ DirectiveTokenKind.cs
+ DirectiveUsage.cs
+ DocumentationDescriptor.cs
+ DocumentationDescriptor.FormattedDescriptor.cs
+ DocumentationDescriptor.SimpleDescriptor.cs
+ DocumentationId.cs
+ DocumentationObject.cs
+ DocumentClassifierPassBase.cs
+ FeatureCache`1.cs
+ FileKindDirectiveFeature.cs
+ FileKinds.cs
+ HashCodeCombiner.cs
+ HtmlConventions.cs
+ HtmlNodeOptimizationPass.cs
+ IConfigureRazorCodeGenerationOptionsFeature.cs
+ IConfigureRazorParserOptionsFeature.cs
+ IDirectiveDescriptorBuilder.cs
+ IImportProjectFeature.cs
+ InMemoryFileContent.cs
+ IntermediateNodePassBase.cs
+ IRazorCSharpLoweringPhase.cs
+ IRazorDirectiveClassifierPass.cs
+ IRazorDirectiveClassifierPhase.cs
+ IRazorDocumentClassifierPass.cs
+ IRazorDocumentClassifierPhase.cs
+ IRazorEngineFeature.cs
+ IRazorEnginePhase.cs
+ IRazorFeature.cs
+ IRazorIntermediateNodeLoweringPhase.cs
+ IRazorOptimizationPass.cs
+ IRazorOptimizationPhase.cs
+ IRazorParsingPhase.cs
+ IRazorProjectEngineFeature.cs
+ IRazorSyntaxTreePass.cs
+ IRazorSyntaxTreePhase.cs
+ IRazorTagHelperBinderPhase.cs
+ IRazorTargetExtensionFeature.cs
+ ITagHelperDiscoveryService.cs
+ ITagHelperFeature.cs
+ MetadataObject.cs
+ NamespaceComputer.cs
+ NotFoundProjectItem.cs
+ RazorCodeDocument.cs
+ RazorCodeDocumentExtensions.cs
+ RazorCodeGenerationOptions.Builder.cs
+ RazorCodeGenerationOptions.cs
+ RazorCodeGenerationOptions.Flags.cs
+ RazorConfiguration.cs
+ RazorCSharpDocument.cs
+ RazorDiagnostic.cs
+ RazorDiagnosticDescriptor.cs
+ RazorDiagnosticFactory.cs
+ RazorDiagnosticSeverity.cs
+ RazorEngine.cs
+ RazorEngineFeatureBase.cs
+ RazorEnginePhaseBase.cs
+ RazorExtension.cs
+ RazorFileKind.cs
+ RazorHtmlDocument.cs
+ RazorHtmlWriter.cs
+ RazorLanguageVersion.cs
+ RazorParserOptions.Builder.cs
+ RazorParserOptions.cs
+ RazorParserOptions.Flags.cs
+ RazorProjectEngine.cs
+ RazorProjectEngineBuilder.cs
+ RazorProjectEngineBuilderExtensions.cs
+ RazorProjectEngineExtensions.cs
+ RazorProjectEngineFeatureBase.cs
+ RazorProjectFileSystem.cs
+ RazorProjectFileSystem.EmptyFileSystem.cs
+ RazorProjectItem.cs
+ RazorSourceDocument.cs
+ RazorSourceDocumentProperties.cs
+ RazorSyntaxTree.cs
+ ReadOnlyMemoryOfCharComparer.cs
+ RequiredAttributeDescriptor.cs
+ RequiredAttributeDescriptorBuilder.cs
+ RequiredAttributeDescriptorBuilder_Pooling.cs
+ RequiredAttributeDescriptorFlags.cs
+ RequiredAttributeNameComparison.cs
+ RequiredAttributeValueComparison.cs
+ RuntimeKind.cs
+ SourceChange.cs
+ SourceLocation.cs
+ SourceMapping.cs
+ SourceSpan.cs
+ SpanComputer.cs
+ StringTokenizer.cs
+ SymbolCache.AssemblySymbolData.cs
+ SymbolCache.cs
+ SymbolCache.Entry.cs
+ SymbolCache.NamedTypeSymbolData.cs
+ SymbolCache.NamedTypeSymbolData.IsViewComponentResult.cs
+ SymbolCache.SymbolData.cs
+ SymbolCache.SymbolData.ToDisplayStringResult.cs
+ TagHelperAttributeInfo.cs
+ TagHelperAttributeMatch.cs
+ TagHelperBinder.cs
+ TagHelperBinder.TagHelperSet.cs
+ TagHelperBinding.cs
+ TagHelperBoundRulesInfo.cs
+ TagHelperCollection.Builder.cs
+ TagHelperCollection.Builder.Enumerator.cs
+ TagHelperCollection.ChecksumSetPool.cs
+ TagHelperCollection.cs
+ TagHelperCollection.EmptyCollection.cs
+ TagHelperCollection.Enumerator.cs
+ TagHelperCollection.FixedSizeBuilder.cs
+ TagHelperCollection.MultiSegmentCollection.cs
+ TagHelperCollection.RefBuilder.cs
+ TagHelperCollection.RefBuilder.Enumerator.cs
+ TagHelperCollection.SegmentAccessor.cs
+ TagHelperCollection.SegmentBuilder.cs
+ TagHelperCollection.SegmentCollectionBase.cs
+ TagHelperCollection.SingleSegmentCollection.cs
+ TagHelperCollection_Factories.cs
+ TagHelperDescriptor.cs
+ TagHelperDescriptorBuilder.cs
+ TagHelperDescriptorBuilder.PooledBuilder.cs
+ TagHelperDescriptorBuilder_Pooling.cs
+ TagHelperDescriptorExtensions.cs
+ TagHelperDiscoverer.cs
+ TagHelperDiscoveryOptions.cs
+ TagHelperDiscoveryService.cs
+ TagHelperDocumentContext.cs
+ TagHelperFlags.cs
+ TagHelperInfo.cs
+ TagHelperKind.cs
+ TagHelperKindExtensions.cs
+ TagHelperMatchingConventions.cs
+ TagHelperObjectBuilderCollection`2.cs
+ TagHelperObjectBuilderCollection`2.Enumerator.cs
+ TagHelperObjectBuilder`1.cs
+ TagHelperObject`1.cs
+ TagMatchingRuleDescriptor.cs
+ TagMatchingRuleDescriptorBuilder.cs
+ TagMatchingRuleDescriptorBuilder_Pooling.cs
+ TagMode.cs
+ TagStructure.cs
+ TypeNameObject.cs
+ TypeNameRewriter.cs
+ VirtualRazorProjectFileSystem.cs
+Mvc/
+ CreateNewOnMetadataUpdateAttributePass.cs
+ IInjectTargetExtension.cs
+ InjectDirective.cs
+ InjectIntermediateNode.cs
+ InjectTargetExtension.cs
+ IViewComponentTagHelperTargetExtension.cs
+ ModelDirective.cs
+ ModelExpressionPass.cs
+ MvcImportProjectFeature.cs
+ MvcViewDocumentClassifierPass.cs
+ PageDirective.cs
+ PagesPropertyInjectionPass.cs
+ RazorExtensions.cs
+ RazorExtensionsDiagnosticFactory.cs
+ RazorPageDocumentClassifierPass.cs
+ TagHelperDescriptorExtensions.cs
+ ViewComponentMetadata.cs
+ ViewComponentsApi.cs
+ ViewComponentTagHelperConventions.cs
+ ViewComponentTagHelperDescriptorFactory.cs
+ ViewComponentTagHelperIntermediateNode.cs
+ ViewComponentTagHelperPass.cs
+ ViewComponentTagHelperProducer.cs
+ ViewComponentTagHelperProducer.Factory.cs
+ ViewComponentTagHelperTargetExtension.cs
+ ViewComponentTagHelperTargetExtensionBase.cs
+ ViewComponentTypes.cs
+Mvc.Version1_X/
+ LegacySectionTargetExtension.cs
+ MvcImportProjectFeature.cs
+ MvcViewDocumentClassifierPass.cs
+ RazorExtensions.cs
+ ViewComponentTagHelperDescriptorFactory.cs
+ ViewComponentTagHelperProducer.cs
+ ViewComponentTagHelperProducer.Factory.cs
+ ViewComponentTagHelperTargetExtension.cs
+Mvc.Version2_X/
+ AssemblyAttributeInjectionPass.cs
+ InstrumentationPass.cs
+ MvcImportProjectFeature.cs
+ MvcViewDocumentClassifierPass.cs
+ NamespaceDirective.cs
+ PagesPropertyInjectionPass.cs
+ RazorExtensions.cs
+ RazorPageDocumentClassifierPass.cs
+ ViewComponentTagHelperDescriptorFactory.cs
+ ViewComponentTagHelperProducer.cs
+ ViewComponentTagHelperProducer.Factory.cs
+ ViewComponentTagHelperTargetExtension.cs
+SourceGenerators/
+ Diagnostics/
+  DiagnosticIds.cs
+  RazorDiagnostics.cs
+ IncrementalValueProviderExtensions.cs
+ RazorGeneratorResult.cs
+ RazorSourceGenerationOptions.cs
+ RazorSourceGenerator.cs
+ RazorSourceGenerator.Helpers.cs
+ RazorSourceGenerator.RazorProviders.cs
+ RazorSourceGeneratorEventSource.cs
+ SourceGeneratorProjectEngine.cs
+ SourceGeneratorProjectItem.cs
+ SourceGeneratorRazorCodeDocument.cs
+ SourceGeneratorText.cs
+ StaticCompilationTagHelperFeature.cs
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[analyzerConfigFiles]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/build/config/analysislevel_11_default.globalconfig
+ codestyle/cs/build/config/analysislevelstyle_default.globalconfig
+SourceGenerators/.editorconfig
+
+[additionalFiles]
+../../../../
+ ../../eng/config/BannedSymbols.txt
+ BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+Analyzers/AnalyzerResources.resx
+CSharp/CodeAnalysisResources.resx
+Language/
+ ComponentResources.resx
+ Resources.resx
+Mvc.Version1_X/Resources.resx
+Mvc.Version2_X/Resources.resx
+Mvc/RazorExtensionsResources.resx
+SourceGenerators/Diagnostics/RazorSourceGeneratorResources.resx
+
+[projectReferences]
+../../../
+ ../../Compilers/
+  Core/Portable/Microsoft.CodeAnalysis.csproj
+  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.csproj
+ Shared/Microsoft.AspNetCore.Razor.Utilities.Shared/Microsoft.AspNetCore.Razor.Utilities.Shared.csproj
+
+[capabilities]
+Pack
+
+---
+
+[project]
+language=C#
+primary
+
+[sliceDimensions]
+TargetFramework=net10.0
+
+[properties]
+MaxSupportedLangVersion=14.0
+OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/
+TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/Microsoft.CodeAnalysis.Razor.Compiler.dll
+TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/ref/Microsoft.CodeAnalysis.Razor.Compiler.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,NU1507,NU1510,RS1041,RS1038,1573,1701,NU1505,NETSDK1233,MSB3277,EnableGenerateDocumentationFile,RS2008,RS1036,NU5105,1701,1702,8002
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
+/out:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/Microsoft.CodeAnalysis.Razor.Compiler.dll
+/refout:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/refint/Microsoft.CodeAnalysis.Razor.Compiler.dll
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+../../../
+ ../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/
+  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+  Microsoft.AspNetCore.Mvc.Razor.Extensions.RazorExtensionsResources.cs
+  Microsoft.AspNetCore.Mvc.Razor.Extensions.Version1_X.Resources.cs
+  Microsoft.AspNetCore.Mvc.Razor.Extensions.Version2_X.Resources.cs
+  Microsoft.AspNetCore.Razor.Language.ComponentResources.cs
+  Microsoft.AspNetCore.Razor.Language.Resources.cs
+  Microsoft.CodeAnalysis.Razor.CodeAnalysisResources.cs
+  Microsoft.CodeAnalysis.Razor.Compiler.Analyzers.AnalyzerResources.cs
+  Microsoft.CodeAnalysis.Razor.Compiler.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.Razor.Compiler.InternalsVisibleTo.cs
+  Microsoft.NET.Sdk.Razor.SourceGenerators.Diagnostics.RazorSourceGeneratorResources.cs
+ Shared/files/LanguageSupport/IsExternalInit.cs
+  @link=LanguageSupport/IsExternalInit.cs
+
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
+[metadataReferences]
+../../../../../../artifacts/obj/
+ Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net10.0/ref/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
+ Microsoft.CodeAnalysis.CSharp/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/microsoft.extensions.objectpool/10.0.1/lib/net10.0/Microsoft.Extensions.ObjectPool.dll
+
+[analyzerConfigFiles]
+../../
+ ../../
+  ../../
+   artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/Microsoft.CodeAnalysis.Razor.Compiler.GeneratedMSBuildEditorConfig.editorconfig
+   eng/config/globalconfigs/
+    Common.globalconfig
+    Shipping.globalconfig
+   .editorconfig
+  .editorconfig
+  Common.globalconfig
+  Shipping.globalconfig
+ .editorconfig
+ .globalconfig
+
+[capabilities]
+NativeAOT
+SupportsHotReload
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=netstandard2.0
+
+[properties]
+MaxSupportedLangVersion=7.3
+OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/
+TargetFramework=netstandard2.0
+TargetFrameworkIdentifier=.NETStandard
+TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/Microsoft.CodeAnalysis.Razor.Compiler.dll
+TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Razor.Compiler.dll
+TemporaryDependencyNodeTargetIdentifier=netstandard2.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,NU1507,NU1510,RS1041,RS1038,1573,1701,NU1505,NETSDK1233,MSB3277,EnableGenerateDocumentationFile,RS2008,RS1036,NU5105,Nullable,Nullable,1701,1702
+/define:TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD1_0_OR_GREATER;NETSTANDARD1_1_OR_GREATER;NETSTANDARD1_2_OR_GREATER;NETSTANDARD1_3_OR_GREATER;NETSTANDARD1_4_OR_GREATER;NETSTANDARD1_5_OR_GREATER;NETSTANDARD1_6_OR_GREATER;NETSTANDARD2_0_OR_GREATER
+/out:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/Microsoft.CodeAnalysis.Razor.Compiler.dll
+/refout:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/refint/Microsoft.CodeAnalysis.Razor.Compiler.dll
+/warnaserror+:NU1605
+
+[sourceFiles]
+../../../
+ ../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/
+  .NETStandard,Version=v2.0.AssemblyAttributes.cs
+  Microsoft.AspNetCore.Mvc.Razor.Extensions.RazorExtensionsResources.cs
+  Microsoft.AspNetCore.Mvc.Razor.Extensions.Version1_X.Resources.cs
+  Microsoft.AspNetCore.Mvc.Razor.Extensions.Version2_X.Resources.cs
+  Microsoft.AspNetCore.Razor.Language.ComponentResources.cs
+  Microsoft.AspNetCore.Razor.Language.Resources.cs
+  Microsoft.CodeAnalysis.Razor.CodeAnalysisResources.cs
+  Microsoft.CodeAnalysis.Razor.Compiler.Analyzers.AnalyzerResources.cs
+  Microsoft.CodeAnalysis.Razor.Compiler.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.Razor.Compiler.InternalsVisibleTo.cs
+  Microsoft.NET.Sdk.Razor.SourceGenerators.Diagnostics.RazorSourceGeneratorResources.cs
+ Shared/files/LanguageSupport/IsExternalInit.cs
+  @link=LanguageSupport/IsExternalInit.cs
+
+[metadataReferences]
+../../../../../../artifacts/obj/
+ Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/netstandard2.0/ref/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
+ Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ microsoft.extensions.objectpool/10.0.1/lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll
+ netstandard.library/2.0.3/build/netstandard2.0/ref/
+  Microsoft.Win32.Primitives.dll
+  mscorlib.dll
+  netstandard.dll
+  System.AppContext.dll
+  System.Collections.Concurrent.dll
+  System.Collections.dll
+  System.Collections.NonGeneric.dll
+  System.Collections.Specialized.dll
+  System.ComponentModel.Composition.dll
+  System.ComponentModel.dll
+  System.ComponentModel.EventBasedAsync.dll
+  System.ComponentModel.Primitives.dll
+  System.ComponentModel.TypeConverter.dll
+  System.Console.dll
+  System.Core.dll
+  System.Data.Common.dll
+  System.Data.dll
+  System.Diagnostics.Contracts.dll
+  System.Diagnostics.Debug.dll
+  System.Diagnostics.FileVersionInfo.dll
+  System.Diagnostics.Process.dll
+  System.Diagnostics.StackTrace.dll
+  System.Diagnostics.TextWriterTraceListener.dll
+  System.Diagnostics.Tools.dll
+  System.Diagnostics.TraceSource.dll
+  System.Diagnostics.Tracing.dll
+  System.dll
+  System.Drawing.dll
+  System.Drawing.Primitives.dll
+  System.Dynamic.Runtime.dll
+  System.Globalization.Calendars.dll
+  System.Globalization.dll
+  System.Globalization.Extensions.dll
+  System.IO.Compression.dll
+  System.IO.Compression.FileSystem.dll
+  System.IO.Compression.ZipFile.dll
+  System.IO.dll
+  System.IO.FileSystem.dll
+  System.IO.FileSystem.DriveInfo.dll
+  System.IO.FileSystem.Primitives.dll
+  System.IO.FileSystem.Watcher.dll
+  System.IO.IsolatedStorage.dll
+  System.IO.MemoryMappedFiles.dll
+  System.IO.Pipes.dll
+  System.IO.UnmanagedMemoryStream.dll
+  System.Linq.dll
+  System.Linq.Expressions.dll
+  System.Linq.Parallel.dll
+  System.Linq.Queryable.dll
+  System.Net.dll
+  System.Net.Http.dll
+  System.Net.NameResolution.dll
+  System.Net.NetworkInformation.dll
+  System.Net.Ping.dll
+  System.Net.Primitives.dll
+  System.Net.Requests.dll
+  System.Net.Security.dll
+  System.Net.Sockets.dll
+  System.Net.WebHeaderCollection.dll
+  System.Net.WebSockets.Client.dll
+  System.Net.WebSockets.dll
+  System.Numerics.dll
+  System.ObjectModel.dll
+  System.Reflection.dll
+  System.Reflection.Extensions.dll
+  System.Reflection.Primitives.dll
+  System.Resources.Reader.dll
+  System.Resources.ResourceManager.dll
+  System.Resources.Writer.dll
+  System.Runtime.CompilerServices.VisualC.dll
+  System.Runtime.dll
+  System.Runtime.Extensions.dll
+  System.Runtime.Handles.dll
+  System.Runtime.InteropServices.dll
+  System.Runtime.InteropServices.RuntimeInformation.dll
+  System.Runtime.Numerics.dll
+  System.Runtime.Serialization.dll
+  System.Runtime.Serialization.Formatters.dll
+  System.Runtime.Serialization.Json.dll
+  System.Runtime.Serialization.Primitives.dll
+  System.Runtime.Serialization.Xml.dll
+  System.Security.Claims.dll
+  System.Security.Cryptography.Algorithms.dll
+  System.Security.Cryptography.Csp.dll
+  System.Security.Cryptography.Encoding.dll
+  System.Security.Cryptography.Primitives.dll
+  System.Security.Cryptography.X509Certificates.dll
+  System.Security.Principal.dll
+  System.Security.SecureString.dll
+  System.ServiceModel.Web.dll
+  System.Text.Encoding.dll
+  System.Text.Encoding.Extensions.dll
+  System.Text.RegularExpressions.dll
+  System.Threading.dll
+  System.Threading.Overlapped.dll
+  System.Threading.Tasks.dll
+  System.Threading.Tasks.Parallel.dll
+  System.Threading.Thread.dll
+  System.Threading.ThreadPool.dll
+  System.Threading.Timer.dll
+  System.Transactions.dll
+  System.ValueTuple.dll
+  System.Web.dll
+  System.Windows.dll
+  System.Xml.dll
+  System.Xml.Linq.dll
+  System.Xml.ReaderWriter.dll
+  System.Xml.Serialization.dll
+  System.Xml.XDocument.dll
+  System.Xml.XmlDocument.dll
+  System.Xml.XmlSerializer.dll
+  System.Xml.XPath.dll
+  System.Xml.XPath.XDocument.dll
+ system.buffers/4.6.1/lib/netstandard2.0/System.Buffers.dll
+ system.collections.immutable/10.0.1/lib/netstandard2.0/System.Collections.Immutable.dll
+ system.memory/4.6.3/lib/netstandard2.0/System.Memory.dll
+ system.numerics.vectors/4.6.1/lib/netstandard2.0/System.Numerics.Vectors.dll
+ system.reflection.metadata/10.0.1/lib/netstandard2.0/System.Reflection.Metadata.dll
+ system.runtime.compilerservices.unsafe/6.1.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll
+ system.text.encoding.codepages/8.0.0/lib/netstandard2.0/System.Text.Encoding.CodePages.dll
+ system.threading.tasks.extensions/4.6.3/lib/netstandard2.0/System.Threading.Tasks.Extensions.dll
+
+[analyzerConfigFiles]
+../../
+ ../../
+  ../../
+   artifacts/obj/Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/Microsoft.CodeAnalysis.Razor.Compiler.GeneratedMSBuildEditorConfig.editorconfig
+   eng/config/globalconfigs/
+    Common.globalconfig
+    Shipping.globalconfig
+   .editorconfig
+  .editorconfig
+  Common.globalconfig
+  Shipping.globalconfig
+ .editorconfig
+ .globalconfig

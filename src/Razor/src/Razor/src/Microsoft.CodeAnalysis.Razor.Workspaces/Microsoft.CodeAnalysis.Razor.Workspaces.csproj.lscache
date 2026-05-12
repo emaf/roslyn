@@ -1,0 +1,1211 @@
+hash=1f0936eabbc3f7e1b0a959054cf325564568a0562a1e51b6278f7408b3cc9cfd
+version=2
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+project=Microsoft.CodeAnalysis.Razor.Workspaces.csproj
+language=C#
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Microsoft.CodeAnalysis.Razor.Workspaces
+OutputType=Library
+ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/project.assets.json
+RootNamespace=Microsoft.CodeAnalysis.Razor.Workspaces
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:9999
+/highentropyva+
+/nullable:enable
+/debug+
+/debug:embedded
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/AspNetCore.snk
+/optimize-
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign-
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
+/warnaserror-:IDE0055
+
+[sourceFiles]
+AutoInsert/
+ AutoClosingTagOnAutoInsertProvider.cs
+ AutoInsertService.cs
+ CloseTextTagOnAutoInsertProvider.cs
+ IAutoInsertService.cs
+ IOnAutoInsertProvider.cs
+ IOnAutoInsertTriggerCharacterProvider.cs
+CodeActions/
+ CSharp/
+  CSharpCodeActionProvider.cs
+  CSharpCodeActionResolver.cs
+  ICSharpCodeActionProvider.cs
+  ICSharpCodeActionResolver.cs
+  TypeAccessibilityCodeActionProvider.cs
+  UnformattedRemappingCSharpCodeActionResolver.cs
+ Html/
+  HtmlCodeActionProvider.cs
+  HtmlCodeActionResolver.cs
+  IHtmlCodeActionProvider.cs
+  IHtmlCodeActionResolver.cs
+ Models/
+  AddUsingsCodeActionParams.cs
+  CodeActionExtensions.cs
+  CreateComponentCodeActionParams.cs
+  ExtractToCodeBehindCodeActionParams.cs
+  ExtractToComponentCodeActionParams.cs
+  ExtractToCssCodeActionParams.cs
+  GenerateEventHandlerCodeActionParams.cs
+  PromoteToUsingCodeActionParams.cs
+  RazorCodeActionResolutionParams.cs
+  RazorVSInternalCodeAction.cs
+  RemoveUnnecessaryDirectivesCodeActionParams.cs
+  SimplifyComponentCodeActionParams.cs
+  SimplifyFullyQualifiedComponentCodeActionParams.cs
+  WrapAttributesCodeActionParams.cs
+ Razor/
+  AddUsingsCodeActionResolver.cs
+  ComponentAccessibilityCodeActionProvider.cs
+  CreateComponentCodeActionResolver.cs
+  ExtractToCodeBehindCodeActionProvider.cs
+  ExtractToCodeBehindCodeActionResolver.cs
+  ExtractToComponentCodeActionProvider.cs
+  ExtractToComponentCodeActionResolver.cs
+  ExtractToCssCodeActionProvider.cs
+  ExtractToCssCodeActionResolver.cs
+  GenerateEventHandlerCodeActionProvider.cs
+  GenerateEventHandlerCodeActionResolver.cs
+  IRazorCodeActionProvider.cs
+  IRazorCodeActionResolver.cs
+  IRoslynCodeActionHelpers.cs
+  PromoteUsingCodeActionProvider.cs
+  PromoteUsingCodeActionResolver.cs
+  RazorCodeActionFactory.cs
+  RemoveUnnecessaryDirectivesCodeActionProvider.cs
+  RemoveUnnecessaryDirectivesCodeActionResolver.cs
+  SimplifyFullyQualifiedComponentCodeActionProvider.cs
+  SimplifyFullyQualifiedComponentCodeActionResolver.cs
+  SimplifyTagToSelfClosingCodeActionProvider.cs
+  SimplifyTagToSelfClosingCodeActionResolver.cs
+  SortAndConsolidateUsingsCodeActionProvider.cs
+  SortAndConsolidateUsingsCodeActionResolver.cs
+  UnboundDirectiveAttributeAddUsingCodeActionProvider.cs
+  WrapAttributesCodeActionProvider.cs
+  WrapAttributesCodeActionResolver.cs
+ CodeActionResolveService.cs
+ CodeActionsService.cs
+ ICodeActionProvider.cs
+ ICodeActionResolver.cs
+ ICodeActionResolveService.cs
+ ICodeActionsService.cs
+ RazorCodeActionContext.cs
+CodeLens/RazorCodeLensResolveData.cs
+Cohost/
+ AbstractCohostDocumentEndpoint.cs
+ IHtmlRequestInvoker.cs
+ IIncompatibleProjectNotifier.cs
+ IIncompatibleProjectService.cs
+Completion/
+ Delegation/
+  DelegatedCompletionHelper.cs
+  DesignTimeHelperResponseRewriter.cs
+  HtmlCommitCharacterResponseRewriter.cs
+  IDelegatedCSharpCompletionResponseRewriter.cs
+  ImplicitExpressionSuggestionModeRewriter.cs
+  SnippetResponseRewriter.cs
+  TextEditResponseRewriter.cs
+ AbstractRazorCompletionFactsService.cs
+ AggregateCompletionItemResolver.cs
+ AttributeCompletionContext.cs
+ AttributeCompletionResult.cs
+ BlazorDataAttributeCompletionItemProvider.cs
+ CompletionContextHelper.cs
+ CompletionDescription.cs
+ CompletionItemResolver.cs
+ CompletionItemsResult.cs
+ CompletionListCache.cs
+ CompletionListMerger.cs
+ CompletionListOptimizer.cs
+ CompletionReason.cs
+ CompletionSortTextHelper.cs
+ CompletionTriggerAndCommitCharacters.cs
+ CSharpRazorKeywordCompletionDescription.cs
+ CSharpRazorKeywordCompletionItemProvider.cs
+ DirectiveAttributeCompletionContext.cs
+ DirectiveAttributeCompletionItemProvider.AttributeCompletionDetails.cs
+ DirectiveAttributeCompletionItemProvider.cs
+ DirectiveAttributeCompletionItemProvider.DefaultCommitCharacters.cs
+ DirectiveAttributeCompletionItemProviderBase.cs
+ DirectiveAttributeEventParameterCompletionItemProvider.cs
+ DirectiveAttributeTransitionCompletionItemProvider.cs
+ DirectiveCompletionDescription.cs
+ DirectiveCompletionItemProvider.cs
+ ElementCompletionContext.cs
+ ElementCompletionResult.cs
+ ICompletionResolveContext.cs
+ IHtmlDependentCompletionItemProvider.cs
+ IRazorCompletionFactsService.cs
+ IRazorCompletionItemProvider.cs
+ ISnippetCompletionItemProvider.cs
+ ITagHelperCompletionService.cs
+ LspRazorCompletionFactsService.cs
+ MarkupTransitionCompletionDescription.cs
+ MarkupTransitionCompletionItemProvider.cs
+ RazorCommitCharacter.cs
+ RazorCompletionContext.cs
+ RazorCompletionItem.cs
+ RazorCompletionItemKind.cs
+ RazorCompletionItemResolver.cs
+ RazorCompletionListProvider.cs
+ RazorCompletionOptions.cs
+ RazorCompletionResolveContext.cs
+ RazorCompletionResolveData.cs
+ RazorHtmlDependentCompletionContext.cs
+ SnippetCompletionResolutionContext.cs
+ TagHelperCompletionProvider.cs
+ TagHelperCompletionService.cs
+ VSInternalCompletionItemExtensions.cs
+ VSInternalCompletionListExtensions.cs
+Diagnostics/
+ CSSErrorCodes.cs
+ HTMLErrorCodes.cs
+ RazorDiagnosticHelper.cs
+ RazorTranslateDiagnosticsService.cs
+ TaskListDiagnosticProvider.cs
+ UnusedDirectiveCache.cs
+DocumentExcerpt/DocumentExcerptHelper.cs
+DocumentMapping/
+ AbstractDocumentMappingService.cs
+ DefaultDocumentPositionInfoStrategy.cs
+ DocumentPositionInfo.cs
+ IDocumentMappingService.cs
+ IDocumentMappingServiceExtensions.cs
+ IDocumentPositionInfoStrategy.cs
+ IRazorEditService.cs
+ IRazorEditServiceExtensions.cs
+ MappingBehavior.cs
+ PreferAttributeNameDocumentPositionInfoStrategy.cs
+ PreferHtmlInAttributeValuesDocumentPositionStrategy.cs
+ RangeComparer.cs
+ RazorEditService.cs
+ RazorEditService.CSharpMember.cs
+ RazorEditService_Members.cs
+ RazorEditService_UsingDirectives.cs
+ RazorEditService_WorkspaceEdit.cs
+ UsingsNodeComparer.cs
+ UsingsStringComparer.cs
+DocumentPresentation/UriPresentationHelper.cs
+Extensions/
+ ClientCapabilitiesExtensions.cs
+ CSharpSyntaxNodeExtensions.cs
+ EnumerableExtensions.cs
+ LinePositionExtensions.cs
+ LinePositionSpanExtensions.cs
+ LspExtensions_LinePosition.cs
+ LspExtensions_LinePositionSpan.cs
+ LspExtensions_Location.cs
+ LspExtensions_Position.cs
+ LspExtensions_Range.cs
+ LspExtensions_RazorSyntaxTree.cs
+ LspExtensions_SourceText.cs
+ LspExtensions_SumTypes.cs
+ LspExtensions_SyntaxNode.cs
+ LspExtensions_SyntaxToken.cs
+ LspExtensions_TextChange.cs
+ LspExtensions_TextDocumentIdentifier.cs
+ LspExtensions_VSInternalClientCapabilities.cs
+ LspExtensions_WorkspaceEdit.cs
+ LspFactory.cs
+ ProjectExtensions.cs
+ RazorCodeDocumentExtensions.CachedData.cs
+ RazorCodeDocumentExtensions.cs
+ RazorCodeDocumentExtensions_ClassifiedSpans.cs
+ RazorCodeDocumentExtensions_ComponentEndTag.cs
+ RazorGeneratedDocumentIdentityExtensions.cs
+ RazorSyntaxNodeExtensions.cs
+ RazorSyntaxNodeOrTokenExtensions.cs
+ RazorSyntaxTokenExtensions.cs
+ RazorSyntaxTreeExtensions.cs
+ RazorTextChangeExtensions.cs
+ RazorTextSpanExtensions.cs
+ SolutionExtensions.cs
+ SourceGeneratedDocumentExtensions.cs
+ SourceLocationExtensions.cs
+ SourceSpanExtensions.cs
+ SourceTextExtensions.cs
+ StringExtensions.cs
+ SyntaxListExtensions.cs
+ TagHelperDescriptorExtensions.cs
+ TextLineExtensions.cs
+ TextSpanExtensions.cs
+FindAllReferences/FindAllReferencesHelper.cs
+FoldingRanges/
+ AbstractSyntaxNodeFoldingProvider.cs
+ FoldingRangeService.cs
+ IFoldingRangeService.cs
+ IRazorFoldingRangeProvider.cs
+ RazorCodeBlockFoldingProvider.cs
+ RazorCSharpStatementFoldingProvider.cs
+ RazorCSharpStatementKeywordFoldingProvider.cs
+ SectionDirectiveFoldingProvider.cs
+ UsingsFoldingRangeProvider.cs
+Formatting/
+ Passes/
+  CSharpFormattingPass.cs
+  CSharpFormattingPass.CSharpDocumentGenerator.cs
+  CSharpOnTypeFormattingPass.cs
+  FormattingContentValidationPass.cs
+  FormattingDiagnosticValidationPass.cs
+  HtmlFormattingPass.cs
+  HtmlOnTypeFormattingPass.cs
+  RazorFormattingPass.cs
+  RoslynWorkspaceHelper.cs
+ CSharpFormatter.cs
+ FormattedDocument.cs
+ FormattingBlockKind.cs
+ FormattingContext.cs
+ FormattingLogger.cs
+ FormattingLoggerFactory.cs
+ FormattingSpan.cs
+ FormattingSpanKind.cs
+ FormattingUtilities.cs
+ FormattingVisitor.cs
+ IFormattingLogger.cs
+ IFormattingLoggerFactory.cs
+ IFormattingPass.cs
+ IFormattingValidationPass.cs
+ IndentationContext.cs
+ IndentCache.cs
+ IRazorFormattingService.cs
+ LineInfo.cs
+ RazorFormattingOptions.cs
+ RazorFormattingService.cs
+ SnippetFormatter.cs
+ UsingDirectiveHelper.cs
+GoToDefinition/
+ AbstractDefinitionService.cs
+ IDefinitionService.cs
+ RazorComponentDefinitionHelpers.cs
+Hover/
+ HoverDisplayOptions.cs
+ HoverFactory.cs
+LinkedEditingRange/LinkedEditingRangeHelper.cs
+Logging/
+ Handlers/
+  CriticalLogMessageInterpolatedStringHandler.cs
+  DebugLogMessageInterpolatedStringHandler.cs
+  ErrorLogMessageInterpolatedStringHandler.cs
+  InformationLogMessageInterpolatedStringHandler.cs
+  LogMessageInterpolatedStringHandler.cs
+  TraceLogMessageInterpolatedStringHandler.cs
+  WarningLogMessageInterpolatedStringHandler.cs
+ AbstractLoggerFactory.AggregateLogger.cs
+ AbstractLoggerFactory.cs
+ AbstractMemoryLoggerProvider.Buffer.cs
+ AbstractMemoryLoggerProvider.cs
+ AbstractMemoryLoggerProvider.Logger.cs
+ EmptyLoggerFactory.cs
+ ILogger.cs
+ ILoggerExtensions.cs
+ ILoggerFactory.cs
+ ILoggerFactoryExtensions.cs
+ ILoggerProvider.cs
+ LoggerProviderMetadata.cs
+ LogLevel.cs
+ LogLevelExtensions.cs
+ LogMessageFormatter.cs
+ LogMessageFormatter.FormattedMessageState.cs
+NestedFiles/NestedFileKind.cs
+ProjectSystem/
+ DocumentContext.cs
+ FallbackRazorConfiguration.cs
+ HostDocument.cs
+ HostProject.cs
+ IDocumentSnapshot.cs
+ IDocumentSnapshotExtensions.cs
+ IProjectSnapshot.cs
+ ISolutionQueryOperations.cs
+Protocol/
+ AutoInsert/RemoteAutoInsertTextEdit.cs
+ CallHierarchy/RazorCallHierarchyResolveData.cs
+ CodeActions/
+  DelegatedCodeActionParams.cs
+  FormatNewFileParams.cs
+  RazorResolveCodeActionParams.cs
+  SimplifyMethodParams.cs
+  VSCodeActionParams.cs
+ ColorPresentation/
+  DelegatedColorPresentationParams.cs
+  DelegatedDocumentColorParams.cs
+ Completion/
+  CompletionPositionInfo.cs
+  CompletionResult.cs
+  RazorInlineCompletionRequest.cs
+  RazorVSInternalCompletionList.cs
+  RazorVSInternalCompletionParams.cs
+ Debugging/
+  RazorBreakpointSpanParams.cs
+  RazorBreakpointSpanResponse.cs
+  RazorProximityExpressionsParams.cs
+  RazorProximityExpressionsResponse.cs
+ DevTools/
+  DocumentContentsRequest.cs
+  GeneratedDocumentKind.cs
+  SyntaxVisualizerNode.cs
+  SyntaxVisualizerTree.cs
+  TagHelpersKind.cs
+ Diagnostics/RazorPullDiagnosticResponse.cs
+ DocumentHighlight/RemoteDocumentHighlight.cs
+ DocumentMapping/
+  RazorMapToDocumentEditsParams.cs
+  RazorMapToDocumentEditsResponse.cs
+  RazorMapToDocumentRangesParams.cs
+  RazorMapToDocumentRangesResponse.cs
+ DocumentPresentation/
+  IPresentationParams.cs
+  RazorTextPresentationParams.cs
+  RazorUriPresentationParams.cs
+  TextPresentationParams.cs
+  UriPresentationParams.cs
+ DocumentSymbols/
+  DocumentSymbolService.cs
+  IDocumentSymbolService.cs
+ Folding/
+  RazorFoldingRangeRequestParam.cs
+  RazorFoldingRangeResponse.cs
+  RemoteFoldingRange.cs
+ Formatting/
+  RazorDocumentFormattingParams.cs
+  RazorDocumentFormattingResponse.cs
+  RazorDocumentOnTypeFormattingParams.cs
+ InlayHints/InlayHintDataWrapper.cs
+ NestedFiles/AddNestedFileParams.cs
+ SemanticTokens/
+  ProvideSemanticTokensRangesParams.cs
+  ProvideSemanticTokensResponse.cs
+  SemanticTokensRangesParams.cs
+  SemanticTokensRefreshParams.cs
+ AbstractClientCapabilitiesService.cs
+ DelegatedCompletionResolutionContext.cs
+ IClientCapabilitiesService.cs
+ IDelegatedParams.cs
+ JsonHelpers.cs
+ LanguageServerConstants.cs
+ LspInitializationHelpers.cs
+ RazorLanguageKind.cs
+ RazorTextChange.cs
+ RazorTextSpan.cs
+ TextDocumentIdentifierAndVersion.cs
+ UpdateBufferRequest.cs
+Remote/
+ CodeActionRequestInfo.cs
+ IRemoteAddNestedFileService.cs
+ IRemoteAutoInsertService.cs
+ IRemoteCallHierarchyService.cs
+ IRemoteClientInitializationService.cs
+ IRemoteClientSettingsService.cs
+ IRemoteCodeActionsService.cs
+ IRemoteCodeLensService.cs
+ IRemoteCompletionService.cs
+ IRemoteDataTipRangeService.cs
+ IRemoteDebugInfoService.cs
+ IRemoteDevToolsService.cs
+ IRemoteDiagnosticsService.cs
+ IRemoteDocumentHighlightService.cs
+ IRemoteDocumentSymbolService.cs
+ IRemoteFindAllReferencesService.cs
+ IRemoteFoldingRangeService.cs
+ IRemoteFormattingService.cs
+ IRemoteGoToDefinitionService.cs
+ IRemoteGoToImplementationService.cs
+ IRemoteHoverService.cs
+ IRemoteHtmlDocumentService.cs
+ IRemoteInlayHintService.cs
+ IRemoteInlineCompletionService.cs
+ IRemoteJsonService.cs
+ IRemoteLinkedEditingRangeService.cs
+ IRemoteMEFInitializationService.cs
+ IRemoteRemoveAndSortUsingsService.cs
+ IRemoteRenameService.cs
+ IRemoteSelectionRangeService.cs
+ IRemoteSemanticTokensService.cs
+ IRemoteServiceInvoker.cs
+ IRemoteSignatureHelpService.cs
+ IRemoteSpanMappingService.cs
+ IRemoteSpellCheckService.cs
+ IRemoteUriPresentationService.cs
+ IRemoteWrapWithTagService.cs
+ RazorServices.cs
+ RemoteClientInitializationOptions.cs
+ RemoteClientLSPInitializationOptions.cs
+ RemoteExcerptResult.cs
+ RemoteResponse.cs
+Rename/
+ IRenameService.cs
+ RenameService.cs
+SemanticTokens/
+ AbstractRazorSemanticTokensInfoService.cs
+ AbstractRazorSemanticTokensLegendService.cs
+ ICSharpSemanticTokensProvider.cs
+ IRazorSemanticTokenInfoService.cs
+ ISemanticTokensLegendService.cs
+ SemanticRange.cs
+ SemanticTokenModifiers.cs
+ SemanticTokensVisitor.cs
+ SemanticTokenTypes.cs
+Settings/
+ AttributeIndentStyle.cs
+ ClientSettings.cs
+ IClientSettingsManager.cs
+ SnippetSetting.cs
+SpellCheck/
+ ICSharpSpellCheckRangeProvider.cs
+ ISpellCheckService.cs
+ SpellCheckRange.cs
+ SpellCheckService.cs
+Telemetry/
+ ITelemetryReporter.cs
+ ITelemetryReporterExtensions.cs
+ ITelemetryReporterInitializer.cs
+ NoOpTelemetryReporter.cs
+ Property.cs
+ Severity.cs
+ TelemetryResult.cs
+ TelemetryScope.cs
+ TelemetryThresholds.cs
+TextDifferencing/
+ DiffKind.cs
+ SourceTextDiffer.CharDiffer.cs
+ SourceTextDiffer.cs
+ SourceTextDiffer.LineDiffer.cs
+ SourceTextDiffer.TextSpanDiffer.cs
+ SourceTextDiffer.WordDiffer.cs
+ TextDiffer.cs
+ TextDiffer.DiffEdit.cs
+ TextDiffer.DiffEditBuilder.cs
+ TextDiffer.DiffEditKind.cs
+ TextDiffer.IntArray.cs
+Threading/
+ CancellationSeries.cs
+ SemaphoreSlimExtensions.cs
+ TaskExtensions.cs
+Tooltip/
+ AbstractComponentAvailabilityService.cs
+ AggregateBoundAttributeDescription.cs
+ AggregateBoundElementDescription.cs
+ AttributeDescriptionInfo.cs
+ BoundAttributeDescriptionInfo.cs
+ BoundElementDescriptionInfo.cs
+ ClassifiedTagHelperTooltipFactory.cs
+ DocCommentHelpers.cs
+ Extensions.cs
+ IComponentAvailabilityService.cs
+ MarkupTagHelperTooltipFactory.cs
+ TypeNameStringResolver.cs
+Utilities/
+ AsyncBatchingWorkQueue.cs
+ AsyncBatchingWorkQueue`1.cs
+ AsyncBatchingWorkQueue`2.cs
+ FilePathNormalizer.cs
+ FilePathNormalizingComparer.cs
+ MemoryCache`2.cs
+ MemoryCache`2.Entry.cs
+ MemoryCache`2.TestAccessor.cs
+ UrlDecoder.cs
+ WrapWithTagHelper.cs
+AbstractFilePathService.cs
+AdhocLanguageServices.cs
+AdhocServices.cs
+AdhocWorkspaceServices.cs
+DebuggerDisplay.cs
+FileSystem.cs
+GlobalUsings.cs
+HtmlFacts.cs
+ICapabilitiesProvider.cs
+IFilePathService.cs
+IFileSystem.cs
+IHostServicesProvider.cs
+ILspServerActivationTracker.cs
+IRazorComponentSearchEngine.cs
+ITagHelperSearchEngine.cs
+IWorkspaceProvider.cs
+LanguageServerFeatureOptions.cs
+NonCapturingTimer.cs
+RazorComponentSearchEngine.cs
+RazorEventSource.cs
+RazorSyntaxFacts.cs
+ShortNameToFullyQualifiedComparer.cs
+TagHelperFacts.cs
+UriExtensions.cs
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+
+[additionalFiles]
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+PublicAPI/
+ PublicAPI.Shipped.txt
+ PublicAPI.Unshipped.txt
+Resources/SR.resx
+
+[projectReferences]
+../../../
+ ../../
+  Compilers/
+   Core/Portable/Microsoft.CodeAnalysis.csproj
+   CSharp/Portable/Microsoft.CodeAnalysis.CSharp.csproj
+  Features/
+   Core/Portable/Microsoft.CodeAnalysis.Features.csproj
+   CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Features.csproj
+  LanguageServer/Protocol/Microsoft.CodeAnalysis.LanguageServer.Protocol.csproj
+  Scripting/Core/Microsoft.CodeAnalysis.Scripting.csproj
+  Tools/ExternalAccess/Razor/Features/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features.csproj
+  Workspaces/
+   Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
+   CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
+   Remote/Core/Microsoft.CodeAnalysis.Remote.Workspaces.csproj
+ Compiler/Microsoft.CodeAnalysis.Razor.Compiler/src/Microsoft.CodeAnalysis.Razor.Compiler.csproj
+ Shared/Microsoft.AspNetCore.Razor.Utilities.Shared/Microsoft.AspNetCore.Razor.Utilities.Shared.csproj
+
+[capabilities]
+Pack
+
+---
+
+[project]
+language=C#
+primary
+
+[sliceDimensions]
+TargetFramework=net10.0
+
+[properties]
+MaxSupportedLangVersion=14.0
+OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/
+TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU1505,NETSDK1233,MSB3277,NU5105,1701,1702,8002
+/doc:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.Razor.Workspaces.xml
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
+/out:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+/refout:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/refint/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+../../../
+ ../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/
+  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.GlobalUsings.g.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.InternalsVisibleTo.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.Resources.SR.cs
+ Shared/files/LanguageSupport/IsExternalInit.cs
+  @link=LanguageSupport/IsExternalInit.cs
+
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
+[metadataReferences]
+../../../../../../artifacts/obj/
+ Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net10.0/ref/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
+ Microsoft.CodeAnalysis.CSharp.Features/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.Features.dll
+ Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+ Microsoft.CodeAnalysis.CSharp/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis.ExternalAccess.Razor.Features/Debug/net10.0/ref/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features.dll
+ Microsoft.CodeAnalysis.Features/Debug/net10.0/ref/Microsoft.CodeAnalysis.Features.dll
+ Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/net10.0/ref/Microsoft.CodeAnalysis.LanguageServer.Protocol.dll
+ Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/ref/Microsoft.CodeAnalysis.Razor.Compiler.dll
+ Microsoft.CodeAnalysis.Remote.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Remote.Workspaces.dll
+ Microsoft.CodeAnalysis.Scripting/Debug/net10.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+ Microsoft.CodeAnalysis.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ icsharpcode.decompiler/9.1.0.7988/lib/netstandard2.0/ICSharpCode.Decompiler.dll
+ messagepack.annotations/2.5.198/lib/netstandard2.0/MessagePack.Annotations.dll
+ messagepack/2.5.198/lib/net6.0/MessagePack.dll
+ microsoft.codeanalysis.elfie/1.0.0/lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll
+ microsoft.diasymreader/2.0.0/lib/netstandard2.0/Microsoft.DiaSymReader.dll
+ microsoft.extensions.objectpool/10.0.1/lib/net10.0/Microsoft.Extensions.ObjectPool.dll
+ microsoft.servicehub.client/4.6.3200/lib/net8.0/Microsoft.ServiceHub.Client.dll
+ microsoft.servicehub.framework/4.9.14-beta/lib/net8.0/Microsoft.ServiceHub.Framework.dll
+ microsoft.visualstudio.composition/17.13.50/lib/net8.0/Microsoft.VisualStudio.Composition.dll
+ microsoft.visualstudio.threading.only/17.15.22-alpha/lib/net8.0/Microsoft.VisualStudio.Threading.dll
+ microsoft.visualstudio.validation/17.8.8/lib/net6.0/Microsoft.VisualStudio.Validation.dll
+ nerdbank.streams/2.12.87/lib/net8.0/Nerdbank.Streams.dll
+ newtonsoft.json/13.0.3/lib/net6.0/Newtonsoft.Json.dll
+ streamjsonrpc/2.23.41-alpha/lib/net8.0/StreamJsonRpc.dll
+ system.componentmodel.composition/10.0.1/lib/net10.0/System.ComponentModel.Composition.dll
+ system.composition.attributedmodel/10.0.1/lib/net10.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net10.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net10.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net10.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net10.0/System.Composition.TypedParts.dll
+ system.configuration.configurationmanager/10.0.1/lib/net10.0/System.Configuration.ConfigurationManager.dll
+ system.diagnostics.eventlog/10.0.1/lib/net10.0/System.Diagnostics.EventLog.dll
+ system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
+ system.security.permissions/10.0.1/lib/net10.0/System.Security.Permissions.dll
+ system.windows.extensions/10.0.1/lib/net10.0/System.Windows.Extensions.dll
+
+[analyzerReferences]
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.servicehub.analyzers/4.9.14-beta/analyzers/cs/
+  Microsoft.ServiceHub.Analyzers.CodeFixes.dll
+  Microsoft.ServiceHub.Analyzers.CSharp.dll
+  Microsoft.ServiceHub.Analyzers.dll
+ microsoft.visualstudio.composition.analyzers/17.13.50/analyzers/cs/
+  Microsoft.VisualStudio.Composition.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Composition.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Composition.Analyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[analyzerConfigFiles]
+../
+ ../
+  ../../
+   ../../
+    artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.Razor.Workspaces.GeneratedMSBuildEditorConfig.editorconfig
+    eng/config/globalconfigs/
+     Common.globalconfig
+     Shipping.globalconfig
+    .editorconfig
+   .editorconfig
+   Common.globalconfig
+   Shipping.globalconfig
+  .editorconfig
+ .editorconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
+
+[additionalFiles]
+../../../../
+ ../../
+  artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.Razor.Workspaces.xlf/
+   SR.cs.resx
+   SR.de.resx
+   SR.es.resx
+   SR.fr.resx
+   SR.it.resx
+   SR.ja.resx
+   SR.ko.resx
+   SR.pl.resx
+   SR.pt-BR.resx
+   SR.ru.resx
+   SR.tr.resx
+   SR.zh-Hans.resx
+   SR.zh-Hant.resx
+  eng/config/BannedSymbols.txt
+ BannedSymbols.txt
+
+[capabilities]
+NativeAOT
+SupportsHotReload
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=net472
+
+[properties]
+MaxSupportedLangVersion=7.3
+OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/
+TargetFramework=net472
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/ref/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+TemporaryDependencyNodeTargetIdentifier=net472
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU1505,NETSDK1233,MSB3277,NU5105,Nullable,Nullable,1701,1702
+/doc:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/Microsoft.CodeAnalysis.Razor.Workspaces.xml
+/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
+/out:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+/refout:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/refint/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+/subsystemversion:6.00
+/warnaserror+:NU1605
+
+[sourceFiles]
+../../../
+ ../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.GlobalUsings.g.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.InternalsVisibleTo.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.Resources.SR.cs
+ Shared/files/LanguageSupport/IsExternalInit.cs
+  @link=LanguageSupport/IsExternalInit.cs
+
+[metadataReferences]
+../../../../../../artifacts/obj/
+ Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/ref/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
+ Microsoft.CodeAnalysis.CSharp.Features/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.Features.dll
+ Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+ Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis.ExternalAccess.Razor.Features/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features.dll
+ Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Features.dll
+ Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.LanguageServer.Protocol.dll
+ Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Razor.Compiler.dll
+ Microsoft.CodeAnalysis.Remote.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Remote.Workspaces.dll
+ Microsoft.CodeAnalysis.Scripting/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+ Microsoft.CodeAnalysis.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
+<NETFXREF>/v4.7.2/
+ Facades/netstandard.dll
+ Microsoft.CSharp.dll
+ mscorlib.dll
+ System.ComponentModel.Composition.dll
+ System.Configuration.dll
+ System.Core.dll
+ System.Data.DataSetExtensions.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Management.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Windows.Forms.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+ WindowsBase.dll
+<NUGET>/
+ icsharpcode.decompiler/9.1.0.7988/lib/netstandard2.0/ICSharpCode.Decompiler.dll
+ messagepack.annotations/2.5.198/lib/netstandard2.0/MessagePack.Annotations.dll
+ messagepack/2.5.198/lib/net472/MessagePack.dll
+ microsoft.bcl.asyncinterfaces/10.0.1/lib/net462/Microsoft.Bcl.AsyncInterfaces.dll
+ microsoft.codeanalysis.elfie/1.0.0/lib/net45/Microsoft.CodeAnalysis.Elfie.dll
+ microsoft.diasymreader/2.0.0/lib/netstandard2.0/Microsoft.DiaSymReader.dll
+ microsoft.extensions.objectpool/10.0.1/lib/net462/Microsoft.Extensions.ObjectPool.dll
+ microsoft.io.redist/6.1.0/lib/net472/Microsoft.IO.Redist.dll
+ microsoft.servicehub.client/4.6.3200/lib/net472/Microsoft.ServiceHub.Client.dll
+ microsoft.servicehub.framework/4.9.14-beta/lib/net472/Microsoft.ServiceHub.Framework.dll
+ microsoft.visualstudio.composition/17.13.50/lib/net472/Microsoft.VisualStudio.Composition.dll
+ microsoft.visualstudio.threading.only/17.15.22-alpha/lib/net472/Microsoft.VisualStudio.Threading.dll
+ microsoft.visualstudio.validation/17.8.8/lib/netstandard2.0/Microsoft.VisualStudio.Validation.dll
+ microsoft.win32.registry/5.0.0/ref/net461/Microsoft.Win32.Registry.dll
+ nerdbank.streams/2.12.87/lib/netstandard2.0/Nerdbank.Streams.dll
+ newtonsoft.json/13.0.3/lib/net45/Newtonsoft.Json.dll
+ streamjsonrpc/2.23.41-alpha/lib/netstandard2.0/StreamJsonRpc.dll
+ system.buffers/4.6.1/lib/net462/System.Buffers.dll
+ system.collections.immutable/10.0.1/lib/net462/System.Collections.Immutable.dll
+ system.composition.attributedmodel/10.0.1/lib/net462/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net462/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net462/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net462/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net462/System.Composition.TypedParts.dll
+ system.diagnostics.diagnosticsource/10.0.1/lib/net462/System.Diagnostics.DiagnosticSource.dll
+ system.io.pipelines/10.0.1/lib/net462/System.IO.Pipelines.dll
+ system.memory/4.6.3/lib/net462/System.Memory.dll
+ system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
+ system.reflection.metadata/10.0.1/lib/net462/System.Reflection.Metadata.dll
+ system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
+ system.security.accesscontrol/5.0.0/ref/net461/System.Security.AccessControl.dll
+ system.security.principal.windows/5.0.0/ref/net461/System.Security.Principal.Windows.dll
+ system.text.encoding.codepages/8.0.0/lib/net462/System.Text.Encoding.CodePages.dll
+ system.text.encodings.web/10.0.1/lib/net462/System.Text.Encodings.Web.dll
+ system.text.json/10.0.1/lib/net462/System.Text.Json.dll
+ system.threading.channels/8.0.0/lib/net462/System.Threading.Channels.dll
+ system.threading.tasks.dataflow/10.0.1/lib/net462/System.Threading.Tasks.Dataflow.dll
+ system.threading.tasks.extensions/4.6.3/lib/net462/System.Threading.Tasks.Extensions.dll
+
+[analyzerReferences]
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.servicehub.analyzers/4.9.14-beta/analyzers/cs/
+  Microsoft.ServiceHub.Analyzers.CodeFixes.dll
+  Microsoft.ServiceHub.Analyzers.CSharp.dll
+  Microsoft.ServiceHub.Analyzers.dll
+ microsoft.visualstudio.composition.analyzers/17.13.50/analyzers/cs/
+  Microsoft.VisualStudio.Composition.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Composition.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Composition.Analyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+ system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[analyzerConfigFiles]
+../
+ ../
+  ../../
+   ../../
+    artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/Microsoft.CodeAnalysis.Razor.Workspaces.GeneratedMSBuildEditorConfig.editorconfig
+    eng/config/globalconfigs/
+     Common.globalconfig
+     Shipping.globalconfig
+    .editorconfig
+   .editorconfig
+   Common.globalconfig
+   Shipping.globalconfig
+  .editorconfig
+ .editorconfig
+
+[additionalFiles]
+../../../../
+ ../../
+  artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net472/Microsoft.CodeAnalysis.Razor.Workspaces.xlf/
+   SR.cs.resx
+   SR.de.resx
+   SR.es.resx
+   SR.fr.resx
+   SR.it.resx
+   SR.ja.resx
+   SR.ko.resx
+   SR.pl.resx
+   SR.pt-BR.resx
+   SR.ru.resx
+   SR.tr.resx
+   SR.zh-Hans.resx
+   SR.zh-Hant.resx
+  eng/config/BannedSymbols.txt
+ BannedSymbols.txt
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=netstandard2.0
+
+[properties]
+MaxSupportedLangVersion=7.3
+OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/
+TargetFramework=netstandard2.0
+TargetFrameworkIdentifier=.NETStandard
+TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+TemporaryDependencyNodeTargetIdentifier=netstandard2.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU1505,NETSDK1233,MSB3277,NU5105,Nullable,Nullable,1701,1702
+/doc:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.Razor.Workspaces.xml
+/define:TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD1_0_OR_GREATER;NETSTANDARD1_1_OR_GREATER;NETSTANDARD1_2_OR_GREATER;NETSTANDARD1_3_OR_GREATER;NETSTANDARD1_4_OR_GREATER;NETSTANDARD1_5_OR_GREATER;NETSTANDARD1_6_OR_GREATER;NETSTANDARD2_0_OR_GREATER
+/out:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+/refout:<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/refint/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+/warnaserror+:NU1605
+
+[sourceFiles]
+../../../
+ ../../../artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/
+  .NETStandard,Version=v2.0.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.GlobalUsings.g.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.InternalsVisibleTo.cs
+  Microsoft.CodeAnalysis.Razor.Workspaces.Resources.SR.cs
+ Shared/files/LanguageSupport/IsExternalInit.cs
+  @link=LanguageSupport/IsExternalInit.cs
+
+[metadataReferences]
+../../../../../../artifacts/obj/
+ Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/netstandard2.0/ref/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
+ Microsoft.CodeAnalysis.CSharp.Features/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.Features.dll
+ Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+ Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis.ExternalAccess.Razor.Features/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features.dll
+ Microsoft.CodeAnalysis.Features/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Features.dll
+ Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.LanguageServer.Protocol.dll
+ Microsoft.CodeAnalysis.Razor.Compiler/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Razor.Compiler.dll
+ Microsoft.CodeAnalysis.Remote.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Remote.Workspaces.dll
+ Microsoft.CodeAnalysis.Scripting/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+ Microsoft.CodeAnalysis.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ icsharpcode.decompiler/9.1.0.7988/lib/netstandard2.0/ICSharpCode.Decompiler.dll
+ messagepack.annotations/2.5.198/lib/netstandard2.0/MessagePack.Annotations.dll
+ messagepack/2.5.198/lib/netstandard2.0/MessagePack.dll
+ microsoft.bcl.asyncinterfaces/10.0.1/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll
+ microsoft.codeanalysis.elfie/1.0.0/lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll
+ microsoft.diasymreader/2.0.0/lib/netstandard2.0/Microsoft.DiaSymReader.dll
+ microsoft.extensions.objectpool/10.0.1/lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll
+ microsoft.servicehub.client/4.6.3200/lib/netstandard2.0/Microsoft.ServiceHub.Client.dll
+ microsoft.servicehub.framework/4.9.14-beta/lib/netstandard2.0/Microsoft.ServiceHub.Framework.dll
+ microsoft.visualstudio.composition/17.13.50/lib/netstandard2.0/Microsoft.VisualStudio.Composition.dll
+ microsoft.visualstudio.threading.only/17.15.22-alpha/lib/netstandard2.0/Microsoft.VisualStudio.Threading.dll
+ microsoft.visualstudio.validation/17.8.8/lib/netstandard2.0/Microsoft.VisualStudio.Validation.dll
+ microsoft.win32.registry/5.0.0/ref/netstandard2.0/Microsoft.Win32.Registry.dll
+ nerdbank.streams/2.12.87/lib/netstandard2.0/Nerdbank.Streams.dll
+ netstandard.library/2.0.3/build/netstandard2.0/ref/
+  Microsoft.Win32.Primitives.dll
+  mscorlib.dll
+  netstandard.dll
+  System.AppContext.dll
+  System.Collections.Concurrent.dll
+  System.Collections.dll
+  System.Collections.NonGeneric.dll
+  System.Collections.Specialized.dll
+  System.ComponentModel.dll
+  System.ComponentModel.EventBasedAsync.dll
+  System.ComponentModel.Primitives.dll
+  System.ComponentModel.TypeConverter.dll
+  System.Console.dll
+  System.Core.dll
+  System.Data.Common.dll
+  System.Data.dll
+  System.Diagnostics.Contracts.dll
+  System.Diagnostics.Debug.dll
+  System.Diagnostics.FileVersionInfo.dll
+  System.Diagnostics.Process.dll
+  System.Diagnostics.StackTrace.dll
+  System.Diagnostics.TextWriterTraceListener.dll
+  System.Diagnostics.Tools.dll
+  System.Diagnostics.TraceSource.dll
+  System.Diagnostics.Tracing.dll
+  System.dll
+  System.Drawing.dll
+  System.Drawing.Primitives.dll
+  System.Dynamic.Runtime.dll
+  System.Globalization.Calendars.dll
+  System.Globalization.dll
+  System.Globalization.Extensions.dll
+  System.IO.Compression.dll
+  System.IO.Compression.FileSystem.dll
+  System.IO.Compression.ZipFile.dll
+  System.IO.dll
+  System.IO.FileSystem.dll
+  System.IO.FileSystem.DriveInfo.dll
+  System.IO.FileSystem.Primitives.dll
+  System.IO.FileSystem.Watcher.dll
+  System.IO.IsolatedStorage.dll
+  System.IO.MemoryMappedFiles.dll
+  System.IO.Pipes.dll
+  System.IO.UnmanagedMemoryStream.dll
+  System.Linq.dll
+  System.Linq.Expressions.dll
+  System.Linq.Parallel.dll
+  System.Linq.Queryable.dll
+  System.Net.dll
+  System.Net.Http.dll
+  System.Net.NameResolution.dll
+  System.Net.NetworkInformation.dll
+  System.Net.Ping.dll
+  System.Net.Primitives.dll
+  System.Net.Requests.dll
+  System.Net.Security.dll
+  System.Net.Sockets.dll
+  System.Net.WebHeaderCollection.dll
+  System.Net.WebSockets.Client.dll
+  System.Net.WebSockets.dll
+  System.Numerics.dll
+  System.ObjectModel.dll
+  System.Reflection.dll
+  System.Reflection.Extensions.dll
+  System.Reflection.Primitives.dll
+  System.Resources.Reader.dll
+  System.Resources.ResourceManager.dll
+  System.Resources.Writer.dll
+  System.Runtime.CompilerServices.VisualC.dll
+  System.Runtime.dll
+  System.Runtime.Extensions.dll
+  System.Runtime.Handles.dll
+  System.Runtime.InteropServices.dll
+  System.Runtime.InteropServices.RuntimeInformation.dll
+  System.Runtime.Numerics.dll
+  System.Runtime.Serialization.dll
+  System.Runtime.Serialization.Formatters.dll
+  System.Runtime.Serialization.Json.dll
+  System.Runtime.Serialization.Primitives.dll
+  System.Runtime.Serialization.Xml.dll
+  System.Security.Claims.dll
+  System.Security.Cryptography.Algorithms.dll
+  System.Security.Cryptography.Csp.dll
+  System.Security.Cryptography.Encoding.dll
+  System.Security.Cryptography.Primitives.dll
+  System.Security.Cryptography.X509Certificates.dll
+  System.Security.Principal.dll
+  System.Security.SecureString.dll
+  System.ServiceModel.Web.dll
+  System.Text.Encoding.dll
+  System.Text.Encoding.Extensions.dll
+  System.Text.RegularExpressions.dll
+  System.Threading.dll
+  System.Threading.Overlapped.dll
+  System.Threading.Tasks.dll
+  System.Threading.Tasks.Parallel.dll
+  System.Threading.Thread.dll
+  System.Threading.ThreadPool.dll
+  System.Threading.Timer.dll
+  System.Transactions.dll
+  System.ValueTuple.dll
+  System.Web.dll
+  System.Windows.dll
+  System.Xml.dll
+  System.Xml.Linq.dll
+  System.Xml.ReaderWriter.dll
+  System.Xml.Serialization.dll
+  System.Xml.XDocument.dll
+  System.Xml.XmlDocument.dll
+  System.Xml.XmlSerializer.dll
+  System.Xml.XPath.dll
+  System.Xml.XPath.XDocument.dll
+ newtonsoft.json/13.0.3/lib/netstandard2.0/Newtonsoft.Json.dll
+ streamjsonrpc/2.23.41-alpha/lib/netstandard2.0/StreamJsonRpc.dll
+ system.buffers/4.6.1/lib/netstandard2.0/System.Buffers.dll
+ system.collections.immutable/10.0.1/lib/netstandard2.0/System.Collections.Immutable.dll
+ system.componentmodel.composition/10.0.1/lib/netstandard2.0/System.ComponentModel.Composition.dll
+ system.composition.attributedmodel/10.0.1/lib/netstandard2.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/netstandard2.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/netstandard2.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/netstandard2.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/netstandard2.0/System.Composition.TypedParts.dll
+ system.configuration.configurationmanager/10.0.1/lib/netstandard2.0/System.Configuration.ConfigurationManager.dll
+ system.data.datasetextensions/4.5.0/ref/netstandard2.0/System.Data.DataSetExtensions.dll
+ system.diagnostics.diagnosticsource/10.0.1/lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll
+ system.io.pipelines/10.0.1/lib/netstandard2.0/System.IO.Pipelines.dll
+ system.memory/4.6.3/lib/netstandard2.0/System.Memory.dll
+ system.numerics.vectors/4.6.1/lib/netstandard2.0/System.Numerics.Vectors.dll
+ system.reflection.emit.ilgeneration/4.7.0/ref/netstandard2.0/System.Reflection.Emit.ILGeneration.dll
+ system.reflection.emit.lightweight/4.7.0/ref/netstandard2.0/System.Reflection.Emit.Lightweight.dll
+ system.reflection.emit/4.7.0/ref/netstandard2.0/System.Reflection.Emit.dll
+ system.reflection.metadata/10.0.1/lib/netstandard2.0/System.Reflection.Metadata.dll
+ system.runtime.compilerservices.unsafe/6.1.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll
+ system.security.accesscontrol/6.0.0/lib/netstandard2.0/System.Security.AccessControl.dll
+ system.security.cryptography.protecteddata/10.0.1/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+ system.security.principal.windows/5.0.0/ref/netstandard2.0/System.Security.Principal.Windows.dll
+ system.text.encoding.codepages/8.0.0/lib/netstandard2.0/System.Text.Encoding.CodePages.dll
+ system.text.encodings.web/10.0.1/lib/netstandard2.0/System.Text.Encodings.Web.dll
+ system.text.json/10.0.1/lib/netstandard2.0/System.Text.Json.dll
+ system.threading.channels/8.0.0/lib/netstandard2.0/System.Threading.Channels.dll
+ system.threading.tasks.dataflow/10.0.1/lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll
+ system.threading.tasks.extensions/4.6.3/lib/netstandard2.0/System.Threading.Tasks.Extensions.dll
+
+[analyzerReferences]
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.servicehub.analyzers/4.9.14-beta/analyzers/cs/
+  Microsoft.ServiceHub.Analyzers.CodeFixes.dll
+  Microsoft.ServiceHub.Analyzers.CSharp.dll
+  Microsoft.ServiceHub.Analyzers.dll
+ microsoft.visualstudio.composition.analyzers/17.13.50/analyzers/cs/
+  Microsoft.VisualStudio.Composition.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Composition.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Composition.Analyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+ system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[analyzerConfigFiles]
+../
+ ../
+  ../../
+   ../../
+    artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.Razor.Workspaces.GeneratedMSBuildEditorConfig.editorconfig
+    eng/config/globalconfigs/
+     Common.globalconfig
+     Shipping.globalconfig
+    .editorconfig
+   .editorconfig
+   Common.globalconfig
+   Shipping.globalconfig
+  .editorconfig
+ .editorconfig
+
+[additionalFiles]
+../../../../
+ ../../
+  artifacts/obj/Microsoft.CodeAnalysis.Razor.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.Razor.Workspaces.xlf/
+   SR.cs.resx
+   SR.de.resx
+   SR.es.resx
+   SR.fr.resx
+   SR.it.resx
+   SR.ja.resx
+   SR.ko.resx
+   SR.pl.resx
+   SR.pt-BR.resx
+   SR.ru.resx
+   SR.tr.resx
+   SR.zh-Hans.resx
+   SR.zh-Hant.resx
+  eng/config/BannedSymbols.txt
+ BannedSymbols.txt

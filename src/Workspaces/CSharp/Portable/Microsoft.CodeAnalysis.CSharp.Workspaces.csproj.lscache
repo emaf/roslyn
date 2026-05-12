@@ -1,0 +1,1557 @@
+hash=92cfdd527b5acde221cec4d29926efd1f9a5e4e08bd7b9bb01816b5878c815aa
+version=2
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+project=Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
+language=C#
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Microsoft.CodeAnalysis.CSharp.Workspaces
+OutputType=Library
+ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/project.assets.json
+RootNamespace=Microsoft.CodeAnalysis.CSharp
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:9999
+/highentropyva+
+/nullable:enable
+/debug+
+/debug:embedded
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/35MSSharedLib1024.snk
+/optimize-
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign+
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
+/warnaserror-:IDE0055
+
+[sourceFiles]
+CaseCorrection/CSharpCaseCorrectionService.cs
+Classification/
+ SyntaxClassification/
+  CSharpSyntaxClassificationService.cs
+  DiscardSyntaxClassifier.cs
+  DocCommentCodeBlockClassifier.cs
+  FunctionPointerUnmanagedCallingConventionClassifier.cs
+  NameSyntaxClassifier.cs
+  OperatorOverloadSyntaxClassifier.cs
+  SyntaxTokenClassifier.cs
+  UsingDirectiveSyntaxClassifier.cs
+ ClassificationHelpers.cs
+ CSharpClassificationService.cs
+ Worker.cs
+ Worker_DocumentationComments.cs
+ Worker_Preprocesser.cs
+CodeCleanup/
+ CSharpCodeCleanerService.cs
+ CSharpCodeCleanerServiceFactory.cs
+CodeGeneration/CSharpSyntaxGenerator.cs
+Composition/CSharpWorkspaceFeatures.cs
+Diagnostics/CSharpDiagnosticPropertiesService.cs
+EmbeddedLanguages/CSharpTestEmbeddedLanguageUtilities.cs
+ExternalAccess/Pythia/Api/
+ PythiaSymbolExtensions.cs
+ PythiaSyntaxExtensions.cs
+FindSymbols/
+ CSharpDeclaredSymbolInfoFactoryService.cs
+ FindSymbolsUtilities.cs
+Formatting/
+ CSharpFormattingOptions.cs
+ CSharpFormattingService.cs
+ObsoleteSymbol/CSharpObsoleteSymbolService.cs
+OrganizeImports/
+ CSharpOrganizeImportsService.cs
+ CSharpOrganizeImportsService.Rewriter.cs
+ReassignedVariable/CSharpReassignedVariableService.cs
+Recommendations/
+ CSharpRecommendationService.cs
+ CSharpRecommendationServiceRunner.cs
+ CSharpRecommendationServiceRunner_Conversions.cs
+ CSharpRecommendationServiceRunner_Operators.cs
+Rename/
+ CSharpRenameRewriterLanguageService.cs
+ LabelConflictVisitor.cs
+ LocalConflictVisitor.cs
+Serialization/CSharpOptionsSerializationService.cs
+Simplification/
+ Reducers/
+  AbstractCSharpReducer.AbstractReductionRewriter.cs
+  AbstractCSharpReducer.cs
+  CSharpCastReducer.cs
+  CSharpCastReducer.Rewriter.cs
+  CSharpDefaultExpressionReducer.cs
+  CSharpDefaultExpressionReducer.Rewriter.cs
+  CSharpEscapingReducer.cs
+  CSharpEscapingReducer.Rewriter.cs
+  CSharpExtensionMethodReducer.cs
+  CSharpExtensionMethodReducer.Rewriter.cs
+  CSharpInferredMemberNameReducer.cs
+  CSharpInferredMemberNameReducer.Rewriter.cs
+  CSharpMiscellaneousReducer.cs
+  CSharpMiscellaneousReducer.Rewriter.cs
+  CSharpNameReducer.cs
+  CSharpNameReducer.Rewriter.cs
+  CSharpNullableAnnotationReducer.cs
+  CSharpNullableAnnotationReducer.Rewriter.cs
+  CSharpParenthesizedExpressionReducer.cs
+  CSharpParenthesizedExpressionReducer.Rewriter.cs
+  CSharpParenthesizedPatternReducer.cs
+  CSharpParenthesizedPatternReducer.Rewriter.cs
+  CSharpVarReducer.cs
+  CSharpVarReducer.Rewriter.cs
+ Simplifiers/
+  AbstractCSharpSimplifier.cs
+  ExpressionSimplifier.CandidateSymbolEqualityComparer.cs
+  ExpressionSimplifier.cs
+  MemberAccessExpressionSimplifier.cs
+  NameSimplifier.cs
+  QualifiedCrefSimplifier.cs
+ CSharpSimplificationService.cs
+ CSharpSimplificationService.Expander.cs
+ CSharpSimplificationService.NodesAndTokensToReduceComputer.cs
+Workspace/LanguageServices/
+ CSharpCompilationFactoryService.cs
+ CSharpSyntaxTreeFactoryService.cs
+ CSharpSyntaxTreeFactoryService.NodeSyntaxReference.cs
+ CSharpSyntaxTreeFactoryService.ParsedSyntaxTree.cs
+
+[additionalFiles]
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+CSharpWorkspaceResources.resx
+PublicAPI.Shipped.txt
+PublicAPI.Unshipped.txt
+
+[projectReferences]
+../../
+ ../Compilers/
+  Core/Portable/Microsoft.CodeAnalysis.csproj
+  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.csproj
+ Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
+
+[capabilities]
+Pack
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=net10.0
+
+[properties]
+MaxSupportedLangVersion=14.0
+OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/
+TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
+/doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.xml
+/define:TRACE;CSHARP_WORKSPACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
+/out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/refint/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+../../
+ ../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/
+  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.CSharp.CSharpCompilerExtensionsResources.cs
+   @link=CSharpCompilerExtensionsResources.resx
+  Microsoft.CodeAnalysis.CSharp.CSharpWorkspaceExtensionsResources.cs
+   @link=CSharpWorkspaceExtensionsResources.resx
+  Microsoft.CodeAnalysis.CSharp.CSharpWorkspaceResources.cs
+  Microsoft.CodeAnalysis.CSharp.Workspaces.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.CSharp.Workspaces.InternalsVisibleTo.cs
+ SharedUtilitiesAndExtensions/
+  Compiler/CSharp/
+   CodeGeneration/
+    CSharpCodeGenerationOptions.cs
+    CSharpSyntaxTokens.cs
+   CodeStyle/
+    TypeStyle/
+     TypeStyleHelper.cs
+     UseVarPreference.cs
+    CSharpCodeStyleOptions.cs
+    CSharpCodeStyleOptions_Parsing.cs
+    PreferBracesPreference.cs
+   EmbeddedLanguages/VirtualChars/
+    CSharpVirtualCharService.cs
+    RuneExtensions.cs
+   Extensions/
+    ContextQuery/SyntaxTreeExtensions.cs
+    ArgumentSyntaxExtensions.cs
+    ArrowExpressionClauseSyntaxExtensions.cs
+    AssignmentExpressionSyntaxExtensions.cs
+    AttributeArgumentSyntaxExtensions.cs
+    BlockSyntaxExtensions.cs
+    CompilationExtensions.cs
+    CompilationUnitSyntaxExtensions.cs
+    ConversionExtensions.cs
+    DefaultExpressionSyntaxExtensions.cs
+    DirectiveSyntaxExtensions.cs
+    ExpressionSyntaxExtensions.cs
+    ILocalSymbolExtensions.cs
+    ITypeSymbolExtensions.cs
+    LanguageVersionExtensions.cs
+    MemberAccessExpressionSyntaxExtensions.cs
+    MemberDeclarationSyntaxExtensions.cs
+    MemberDeclarationSyntaxExtensions.DeclarationFinder.cs
+    MemberDeclarationSyntaxExtensions.LocalDeclarationMap.cs
+    MemberDeclarationSyntaxExtensions_GetAttributes.cs
+    OperatorPrecedence.cs
+    ParenthesizedExpressionSyntaxExtensions.cs
+    ParseOptionsExtensions.cs
+    SemanticModelExtensions.cs
+    SimpleNameSyntaxExtensions.cs
+    StatementSyntaxExtensions.cs
+    SymbolDisplayPartExtensions.cs
+    SyntaxKindExtensions.cs
+    SyntaxListExtensions.cs
+    SyntaxNodeExtensions.cs
+    SyntaxNodeExtensions.SingleLineRewriter.cs
+    SyntaxTokenExtensions.cs
+    SyntaxTreeExtensions.cs
+    SyntaxTriviaExtensions.cs
+    SyntaxTriviaListExtensions.cs
+    TypeSyntaxExtensions.cs
+    VariableDeclaratorExtensions.cs
+   Formatting/
+    Engine/
+     Trivia/
+      CSharpTriviaFormatter.cs
+      CSharpTriviaFormatter.DocumentationCommentExteriorCommentRewriter.cs
+      TriviaDataFactory.Analyzer.cs
+      TriviaDataFactory.CodeShapeAnalyzer.cs
+      TriviaDataFactory.ComplexTrivia.cs
+      TriviaDataFactory.cs
+      TriviaDataFactory.FormattedComplexTrivia.cs
+      TriviaDataFactory.ModifiedComplexTrivia.cs
+      TriviaRewriter.cs
+     AggregatedFormattingResult.cs
+     CSharpFormatEngine.cs
+     CSharpStructuredTriviaFormatEngine.cs
+     FormattingResult.cs
+    Rules/
+     AnchorIndentationFormattingRule.cs
+     BaseFormattingRule.cs
+     ElasticTriviaFormattingRule.cs
+     EndOfFileTokenFormattingRule.cs
+     IndentBlockFormattingRule.cs
+     IndentUserSettingsFormattingRule.cs
+     NewLineUserSettingFormattingRule.cs
+     QueryExpressionFormattingRule.cs
+     SpacingFormattingRule.cs
+     StructuredTriviaFormattingRule.cs
+     SuppressFormattingRule.cs
+     TokenBasedFormattingRule.cs
+     WrappingFormattingRule.cs
+    CSharpFormattingOptions2.cs
+    CSharpFormattingOptions2.Parsers.cs
+    CSharpSyntaxFormatting.cs
+    CSharpSyntaxFormattingOptions.cs
+    DefaultOperationProvider.cs
+    FormattingHelpers.cs
+    IndentationPlacement.cs
+    NewLineBeforeOpenBracePlacement.cs
+    NewLinePlacement.cs
+    SpacePlacement.cs
+    SpacingWithinParentheses.cs
+   Helpers/RemoveUnnecessaryImports/CSharpUnnecessaryImportsProvider.cs
+   Indentation/CSharpSmartTokenFormatter.cs
+   Services/
+    Precedence/
+     AbstractCSharpPrecedenceService.cs
+     CSharpExpressionPrecedenceService.cs
+     CSharpPatternPrecedenceService.cs
+    RefactoringHelpers/CSharpRefactoringHelpers.cs
+    SelectedMembers/CSharpSelectedMembers.cs
+    SemanticFacts/CSharpSemanticFacts.cs
+    SyntaxFacts/
+     CSharpAccessibilityFacts.cs
+     CSharpBlockFacts.cs
+     CSharpDocumentationCommentService.cs
+     CSharpFileBannerFacts.cs
+     CSharpHeaderFacts.cs
+     CSharpSyntaxFacts.cs
+     CSharpSyntaxKinds.cs
+   Simplification/
+    Simplifiers/CastSimplifier.cs
+    CSharpInferredMemberNameSimplifier.cs
+    CSharpSimplification.cs
+    CSharpSimplifierOptions.cs
+   Utilities/
+    TypeStyle/
+     CSharpTypeStyleHelper.cs
+     CSharpTypeStyleHelper.State.cs
+     CSharpUseExplicitTypeHelper.cs
+     CSharpUseImplicitTypeHelper.cs
+    CSharpLightweightOverloadResolution.cs
+    FormattingRangeHelper.cs
+    NameSyntaxComparer.cs
+    SpeculationAnalyzer.cs
+    TokenComparer.cs
+    TypeSyntaxComparer.cs
+    UsingsAndExternAliasesDirectiveComparer.cs
+    UsingsAndExternAliasesOrganizer.cs
+  Workspace/CSharp/
+   CodeFixesAndRefactorings/CSharpFixAllSpanMappingService.cs
+   CodeGeneration/
+    ArgumentGenerator.cs
+    AttributeGenerator.cs
+    ConstructorGenerator.cs
+    ConversionGenerator.cs
+    CSharpCodeGenerationContextInfo.cs
+    CSharpCodeGenerationHelpers.cs
+    CSharpCodeGenerationService.cs
+    CSharpCodeGenerationServiceFactory.cs
+    CSharpDeclarationComparer.cs
+    CSharpFlagsEnumGenerator.cs
+    DestructorGenerator.cs
+    EnumMemberGenerator.cs
+    EventGenerator.cs
+    ExpressionGenerator.cs
+    FieldGenerator.cs
+    MethodGenerator.cs
+    NamedTypeGenerator.cs
+    NamespaceGenerator.cs
+    OperatorGenerator.cs
+    ParameterGenerator.cs
+    PropertyGenerator.cs
+    StatementGenerator.cs
+    TypeParameterGenerator.cs
+   CodeRefactorings/CSharpRefactoringHelpersService.cs
+   Editing/CSharpImportAdder.cs
+   EmbeddedLanguages/VirtualChars/CSharpVirtualCharLanguageServiceFactory.cs
+   Extensions/
+    ContextQuery/
+     CSharpSyntaxContext.cs
+     CSharpSyntaxContextService.cs
+     SyntaxTokenExtensions.cs
+     SyntaxTreeExtensions.cs
+    BaseArgumentListSyntaxExtensions.cs
+    BaseNamespaceDeclarationSyntaxExtensions.cs
+    BaseParameterListSyntaxExtensions.cs
+    BasePropertyDeclarationSyntaxExtensions.cs
+    CastExpressionSyntaxExtensions.cs
+    CompilationUnitSyntaxExtensions.cs
+    DocumentationCommentExtensions.cs
+    ExpressionSyntaxExtensions.cs
+    InternalExtensions.cs
+    ITypeParameterSymbolExtensions.cs
+    ITypeSymbolExtensions.cs
+    ITypeSymbolExtensions.ExpressionSyntaxGeneratorVisitor.cs
+    ITypeSymbolExtensions.TypeSyntaxGeneratorVisitor.cs
+    NameSyntaxExtensions.cs
+    QueryExpressionSyntaxExtensions.cs
+    SemanticModelExtensions.cs
+    SeparatedSyntaxListExtensions.cs
+    StringExtensions.cs
+    SyntaxTokenListExtensions.cs
+    SyntaxTreeExtensions.cs
+    TypeDeclarationSyntaxExtensions.cs
+    TypeSyntaxExtensions.cs
+    UsingDirectiveSyntaxExtensions.cs
+    WithElementSyntaxExtensions.cs
+   Formatting/
+    CSharpSyntaxFormattingOptionsProviders.cs
+    CSharpSyntaxFormattingService.cs
+    TypingFormattingRule.cs
+   Indentation/
+    CSharpIndentationService.cs
+    CSharpIndentationService.Indenter.cs
+   LanguageServices/
+    InitializeParameter/
+     CSharpInitializeParameterService.cs
+     InitializeParameterHelpers.cs
+    CSharpAddImportsService.cs
+    CSharpBlockFactsService.cs
+    CSharpCommandLineParserService.cs
+    CSharpFileBannerFactsService.cs
+    CSharpGeneratedCodeRecognitionService.cs
+    CSharpHeaderFactsService.cs
+    CSharpMoveDeclarationNearReferenceService.cs
+    CSharpRemoveUnnecessaryImportsService.cs
+    CSharpRemoveUnnecessaryImportsService.Rewriter.cs
+    CSharpReplaceDiscardDeclarationsWithAssignmentsService.cs
+    CSharpSemanticFactsService.cs
+    CSharpSemanticFactsServiceFactory.cs
+    CSharpSymbolDeclarationService.cs
+    CSharpSyntaxFactsService.cs
+    CSharpSyntaxFactsServiceFactory.cs
+    CSharpSyntaxGeneratorInternal.cs
+    CSharpSyntaxKindsServiceFactory.cs
+    CSharpTypeInferenceService.cs
+    CSharpTypeInferenceService.TypeInferrer.cs
+   SemanticModelReuse/CSharpSemanticModelReuseLanguageService.cs
+   Simplification/CSharpSimplifierOptionsProviders.cs
+   Utilities/
+    NullableHelpers/NullableExtensions.cs
+    CSharpSimplificationHelpers.cs
+    NameSyntaxIterator.cs
+    SyntaxKindSet.cs
+
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
+[metadataReferences]
+../../../../artifacts/obj/
+ Microsoft.CodeAnalysis.CSharp/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ humanizer.core/2.14.1/lib/net6.0/Humanizer.dll
+ system.composition.attributedmodel/10.0.1/lib/net10.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net10.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net10.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net10.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net10.0/System.Composition.TypedParts.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[analyzerConfigFiles]
+../../../../
+ artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.GeneratedMSBuildEditorConfig.editorconfig
+ eng/config/globalconfigs/
+  Common.globalconfig
+  Shipping.globalconfig
+ .editorconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
+
+[additionalFiles]
+../../
+ ../../
+  artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Workspaces.xlf/
+   CSharpCompilerExtensionsResources.cs.resx
+   CSharpCompilerExtensionsResources.de.resx
+   CSharpCompilerExtensionsResources.es.resx
+   CSharpCompilerExtensionsResources.fr.resx
+   CSharpCompilerExtensionsResources.it.resx
+   CSharpCompilerExtensionsResources.ja.resx
+   CSharpCompilerExtensionsResources.ko.resx
+   CSharpCompilerExtensionsResources.pl.resx
+   CSharpCompilerExtensionsResources.pt-BR.resx
+   CSharpCompilerExtensionsResources.ru.resx
+   CSharpCompilerExtensionsResources.tr.resx
+   CSharpCompilerExtensionsResources.zh-Hans.resx
+   CSharpCompilerExtensionsResources.zh-Hant.resx
+   CSharpWorkspaceExtensionsResources.cs.resx
+   CSharpWorkspaceExtensionsResources.de.resx
+   CSharpWorkspaceExtensionsResources.es.resx
+   CSharpWorkspaceExtensionsResources.fr.resx
+   CSharpWorkspaceExtensionsResources.it.resx
+   CSharpWorkspaceExtensionsResources.ja.resx
+   CSharpWorkspaceExtensionsResources.ko.resx
+   CSharpWorkspaceExtensionsResources.pl.resx
+   CSharpWorkspaceExtensionsResources.pt-BR.resx
+   CSharpWorkspaceExtensionsResources.ru.resx
+   CSharpWorkspaceExtensionsResources.tr.resx
+   CSharpWorkspaceExtensionsResources.zh-Hans.resx
+   CSharpWorkspaceExtensionsResources.zh-Hant.resx
+   CSharpWorkspaceResources.cs.resx
+   CSharpWorkspaceResources.de.resx
+   CSharpWorkspaceResources.es.resx
+   CSharpWorkspaceResources.fr.resx
+   CSharpWorkspaceResources.it.resx
+   CSharpWorkspaceResources.ja.resx
+   CSharpWorkspaceResources.ko.resx
+   CSharpWorkspaceResources.pl.resx
+   CSharpWorkspaceResources.pt-BR.resx
+   CSharpWorkspaceResources.ru.resx
+   CSharpWorkspaceResources.tr.resx
+   CSharpWorkspaceResources.zh-Hans.resx
+   CSharpWorkspaceResources.zh-Hant.resx
+  eng/config/BannedSymbols.txt
+ SharedUtilitiesAndExtensions/
+  Compiler/CSharp/CSharpCompilerExtensionsResources.resx
+  Workspace/CSharp/CSharpWorkspaceExtensionsResources.resx
+
+[capabilities]
+NativeAOT
+SupportsHotReload
+
+---
+
+[project]
+language=C#
+primary
+
+[sliceDimensions]
+TargetFramework=net8.0
+
+[properties]
+MaxSupportedLangVersion=12.0
+OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/
+TargetFramework=net8.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+TemporaryDependencyNodeTargetIdentifier=net8.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
+/doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.xml
+/define:TRACE;CSHARP_WORKSPACE;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/refint/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/warnaserror+:NU1605,SYSLIB0011
+
+[sourceFiles]
+../../
+ ../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/
+  .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.CSharp.CSharpCompilerExtensionsResources.cs
+   @link=CSharpCompilerExtensionsResources.resx
+  Microsoft.CodeAnalysis.CSharp.CSharpWorkspaceExtensionsResources.cs
+   @link=CSharpWorkspaceExtensionsResources.resx
+  Microsoft.CodeAnalysis.CSharp.CSharpWorkspaceResources.cs
+  Microsoft.CodeAnalysis.CSharp.Workspaces.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.CSharp.Workspaces.InternalsVisibleTo.cs
+ SharedUtilitiesAndExtensions/
+  Compiler/CSharp/
+   CodeGeneration/
+    CSharpCodeGenerationOptions.cs
+    CSharpSyntaxTokens.cs
+   CodeStyle/
+    TypeStyle/
+     TypeStyleHelper.cs
+     UseVarPreference.cs
+    CSharpCodeStyleOptions.cs
+    CSharpCodeStyleOptions_Parsing.cs
+    PreferBracesPreference.cs
+   EmbeddedLanguages/VirtualChars/
+    CSharpVirtualCharService.cs
+    RuneExtensions.cs
+   Extensions/
+    ContextQuery/SyntaxTreeExtensions.cs
+    ArgumentSyntaxExtensions.cs
+    ArrowExpressionClauseSyntaxExtensions.cs
+    AssignmentExpressionSyntaxExtensions.cs
+    AttributeArgumentSyntaxExtensions.cs
+    BlockSyntaxExtensions.cs
+    CompilationExtensions.cs
+    CompilationUnitSyntaxExtensions.cs
+    ConversionExtensions.cs
+    DefaultExpressionSyntaxExtensions.cs
+    DirectiveSyntaxExtensions.cs
+    ExpressionSyntaxExtensions.cs
+    ILocalSymbolExtensions.cs
+    ITypeSymbolExtensions.cs
+    LanguageVersionExtensions.cs
+    MemberAccessExpressionSyntaxExtensions.cs
+    MemberDeclarationSyntaxExtensions.cs
+    MemberDeclarationSyntaxExtensions.DeclarationFinder.cs
+    MemberDeclarationSyntaxExtensions.LocalDeclarationMap.cs
+    MemberDeclarationSyntaxExtensions_GetAttributes.cs
+    OperatorPrecedence.cs
+    ParenthesizedExpressionSyntaxExtensions.cs
+    ParseOptionsExtensions.cs
+    SemanticModelExtensions.cs
+    SimpleNameSyntaxExtensions.cs
+    StatementSyntaxExtensions.cs
+    SymbolDisplayPartExtensions.cs
+    SyntaxKindExtensions.cs
+    SyntaxListExtensions.cs
+    SyntaxNodeExtensions.cs
+    SyntaxNodeExtensions.SingleLineRewriter.cs
+    SyntaxTokenExtensions.cs
+    SyntaxTreeExtensions.cs
+    SyntaxTriviaExtensions.cs
+    SyntaxTriviaListExtensions.cs
+    TypeSyntaxExtensions.cs
+    VariableDeclaratorExtensions.cs
+   Formatting/
+    Engine/
+     Trivia/
+      CSharpTriviaFormatter.cs
+      CSharpTriviaFormatter.DocumentationCommentExteriorCommentRewriter.cs
+      TriviaDataFactory.Analyzer.cs
+      TriviaDataFactory.CodeShapeAnalyzer.cs
+      TriviaDataFactory.ComplexTrivia.cs
+      TriviaDataFactory.cs
+      TriviaDataFactory.FormattedComplexTrivia.cs
+      TriviaDataFactory.ModifiedComplexTrivia.cs
+      TriviaRewriter.cs
+     AggregatedFormattingResult.cs
+     CSharpFormatEngine.cs
+     CSharpStructuredTriviaFormatEngine.cs
+     FormattingResult.cs
+    Rules/
+     AnchorIndentationFormattingRule.cs
+     BaseFormattingRule.cs
+     ElasticTriviaFormattingRule.cs
+     EndOfFileTokenFormattingRule.cs
+     IndentBlockFormattingRule.cs
+     IndentUserSettingsFormattingRule.cs
+     NewLineUserSettingFormattingRule.cs
+     QueryExpressionFormattingRule.cs
+     SpacingFormattingRule.cs
+     StructuredTriviaFormattingRule.cs
+     SuppressFormattingRule.cs
+     TokenBasedFormattingRule.cs
+     WrappingFormattingRule.cs
+    CSharpFormattingOptions2.cs
+    CSharpFormattingOptions2.Parsers.cs
+    CSharpSyntaxFormatting.cs
+    CSharpSyntaxFormattingOptions.cs
+    DefaultOperationProvider.cs
+    FormattingHelpers.cs
+    IndentationPlacement.cs
+    NewLineBeforeOpenBracePlacement.cs
+    NewLinePlacement.cs
+    SpacePlacement.cs
+    SpacingWithinParentheses.cs
+   Helpers/RemoveUnnecessaryImports/CSharpUnnecessaryImportsProvider.cs
+   Indentation/CSharpSmartTokenFormatter.cs
+   Services/
+    Precedence/
+     AbstractCSharpPrecedenceService.cs
+     CSharpExpressionPrecedenceService.cs
+     CSharpPatternPrecedenceService.cs
+    RefactoringHelpers/CSharpRefactoringHelpers.cs
+    SelectedMembers/CSharpSelectedMembers.cs
+    SemanticFacts/CSharpSemanticFacts.cs
+    SyntaxFacts/
+     CSharpAccessibilityFacts.cs
+     CSharpBlockFacts.cs
+     CSharpDocumentationCommentService.cs
+     CSharpFileBannerFacts.cs
+     CSharpHeaderFacts.cs
+     CSharpSyntaxFacts.cs
+     CSharpSyntaxKinds.cs
+   Simplification/
+    Simplifiers/CastSimplifier.cs
+    CSharpInferredMemberNameSimplifier.cs
+    CSharpSimplification.cs
+    CSharpSimplifierOptions.cs
+   Utilities/
+    TypeStyle/
+     CSharpTypeStyleHelper.cs
+     CSharpTypeStyleHelper.State.cs
+     CSharpUseExplicitTypeHelper.cs
+     CSharpUseImplicitTypeHelper.cs
+    CSharpLightweightOverloadResolution.cs
+    FormattingRangeHelper.cs
+    NameSyntaxComparer.cs
+    SpeculationAnalyzer.cs
+    TokenComparer.cs
+    TypeSyntaxComparer.cs
+    UsingsAndExternAliasesDirectiveComparer.cs
+    UsingsAndExternAliasesOrganizer.cs
+  Workspace/CSharp/
+   CodeFixesAndRefactorings/CSharpFixAllSpanMappingService.cs
+   CodeGeneration/
+    ArgumentGenerator.cs
+    AttributeGenerator.cs
+    ConstructorGenerator.cs
+    ConversionGenerator.cs
+    CSharpCodeGenerationContextInfo.cs
+    CSharpCodeGenerationHelpers.cs
+    CSharpCodeGenerationService.cs
+    CSharpCodeGenerationServiceFactory.cs
+    CSharpDeclarationComparer.cs
+    CSharpFlagsEnumGenerator.cs
+    DestructorGenerator.cs
+    EnumMemberGenerator.cs
+    EventGenerator.cs
+    ExpressionGenerator.cs
+    FieldGenerator.cs
+    MethodGenerator.cs
+    NamedTypeGenerator.cs
+    NamespaceGenerator.cs
+    OperatorGenerator.cs
+    ParameterGenerator.cs
+    PropertyGenerator.cs
+    StatementGenerator.cs
+    TypeParameterGenerator.cs
+   CodeRefactorings/CSharpRefactoringHelpersService.cs
+   Editing/CSharpImportAdder.cs
+   EmbeddedLanguages/VirtualChars/CSharpVirtualCharLanguageServiceFactory.cs
+   Extensions/
+    ContextQuery/
+     CSharpSyntaxContext.cs
+     CSharpSyntaxContextService.cs
+     SyntaxTokenExtensions.cs
+     SyntaxTreeExtensions.cs
+    BaseArgumentListSyntaxExtensions.cs
+    BaseNamespaceDeclarationSyntaxExtensions.cs
+    BaseParameterListSyntaxExtensions.cs
+    BasePropertyDeclarationSyntaxExtensions.cs
+    CastExpressionSyntaxExtensions.cs
+    CompilationUnitSyntaxExtensions.cs
+    DocumentationCommentExtensions.cs
+    ExpressionSyntaxExtensions.cs
+    InternalExtensions.cs
+    ITypeParameterSymbolExtensions.cs
+    ITypeSymbolExtensions.cs
+    ITypeSymbolExtensions.ExpressionSyntaxGeneratorVisitor.cs
+    ITypeSymbolExtensions.TypeSyntaxGeneratorVisitor.cs
+    NameSyntaxExtensions.cs
+    QueryExpressionSyntaxExtensions.cs
+    SemanticModelExtensions.cs
+    SeparatedSyntaxListExtensions.cs
+    StringExtensions.cs
+    SyntaxTokenListExtensions.cs
+    SyntaxTreeExtensions.cs
+    TypeDeclarationSyntaxExtensions.cs
+    TypeSyntaxExtensions.cs
+    UsingDirectiveSyntaxExtensions.cs
+    WithElementSyntaxExtensions.cs
+   Formatting/
+    CSharpSyntaxFormattingOptionsProviders.cs
+    CSharpSyntaxFormattingService.cs
+    TypingFormattingRule.cs
+   Indentation/
+    CSharpIndentationService.cs
+    CSharpIndentationService.Indenter.cs
+   LanguageServices/
+    InitializeParameter/
+     CSharpInitializeParameterService.cs
+     InitializeParameterHelpers.cs
+    CSharpAddImportsService.cs
+    CSharpBlockFactsService.cs
+    CSharpCommandLineParserService.cs
+    CSharpFileBannerFactsService.cs
+    CSharpGeneratedCodeRecognitionService.cs
+    CSharpHeaderFactsService.cs
+    CSharpMoveDeclarationNearReferenceService.cs
+    CSharpRemoveUnnecessaryImportsService.cs
+    CSharpRemoveUnnecessaryImportsService.Rewriter.cs
+    CSharpReplaceDiscardDeclarationsWithAssignmentsService.cs
+    CSharpSemanticFactsService.cs
+    CSharpSemanticFactsServiceFactory.cs
+    CSharpSymbolDeclarationService.cs
+    CSharpSyntaxFactsService.cs
+    CSharpSyntaxFactsServiceFactory.cs
+    CSharpSyntaxGeneratorInternal.cs
+    CSharpSyntaxKindsServiceFactory.cs
+    CSharpTypeInferenceService.cs
+    CSharpTypeInferenceService.TypeInferrer.cs
+   SemanticModelReuse/CSharpSemanticModelReuseLanguageService.cs
+   Simplification/CSharpSimplifierOptionsProviders.cs
+   Utilities/
+    NullableHelpers/NullableExtensions.cs
+    CSharpSimplificationHelpers.cs
+    NameSyntaxIterator.cs
+    SyntaxKindSet.cs
+
+[metadataReferences]
+../../../../artifacts/obj/
+ Microsoft.CodeAnalysis.CSharp/Debug/net8.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis.Workspaces/Debug/net8.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/net8.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ humanizer.core/2.14.1/lib/net6.0/Humanizer.dll
+ microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+  Microsoft.CSharp.dll
+  Microsoft.VisualBasic.Core.dll
+  Microsoft.VisualBasic.dll
+  Microsoft.Win32.Primitives.dll
+  Microsoft.Win32.Registry.dll
+  mscorlib.dll
+  netstandard.dll
+  System.AppContext.dll
+  System.Buffers.dll
+  System.Collections.Concurrent.dll
+  System.Collections.dll
+  System.Collections.NonGeneric.dll
+  System.Collections.Specialized.dll
+  System.ComponentModel.Annotations.dll
+  System.ComponentModel.DataAnnotations.dll
+  System.ComponentModel.dll
+  System.ComponentModel.EventBasedAsync.dll
+  System.ComponentModel.Primitives.dll
+  System.ComponentModel.TypeConverter.dll
+  System.Configuration.dll
+  System.Console.dll
+  System.Core.dll
+  System.Data.Common.dll
+  System.Data.DataSetExtensions.dll
+  System.Data.dll
+  System.Diagnostics.Contracts.dll
+  System.Diagnostics.Debug.dll
+  System.Diagnostics.DiagnosticSource.dll
+  System.Diagnostics.FileVersionInfo.dll
+  System.Diagnostics.Process.dll
+  System.Diagnostics.StackTrace.dll
+  System.Diagnostics.TextWriterTraceListener.dll
+  System.Diagnostics.Tools.dll
+  System.Diagnostics.TraceSource.dll
+  System.Diagnostics.Tracing.dll
+  System.dll
+  System.Drawing.dll
+  System.Drawing.Primitives.dll
+  System.Dynamic.Runtime.dll
+  System.Formats.Asn1.dll
+  System.Formats.Tar.dll
+  System.Globalization.Calendars.dll
+  System.Globalization.dll
+  System.Globalization.Extensions.dll
+  System.IO.Compression.Brotli.dll
+  System.IO.Compression.dll
+  System.IO.Compression.FileSystem.dll
+  System.IO.Compression.ZipFile.dll
+  System.IO.dll
+  System.IO.FileSystem.AccessControl.dll
+  System.IO.FileSystem.dll
+  System.IO.FileSystem.DriveInfo.dll
+  System.IO.FileSystem.Primitives.dll
+  System.IO.FileSystem.Watcher.dll
+  System.IO.IsolatedStorage.dll
+  System.IO.MemoryMappedFiles.dll
+  System.IO.Pipes.AccessControl.dll
+  System.IO.Pipes.dll
+  System.IO.UnmanagedMemoryStream.dll
+  System.Linq.dll
+  System.Linq.Expressions.dll
+  System.Linq.Parallel.dll
+  System.Linq.Queryable.dll
+  System.Memory.dll
+  System.Net.dll
+  System.Net.Http.dll
+  System.Net.Http.Json.dll
+  System.Net.HttpListener.dll
+  System.Net.Mail.dll
+  System.Net.NameResolution.dll
+  System.Net.NetworkInformation.dll
+  System.Net.Ping.dll
+  System.Net.Primitives.dll
+  System.Net.Quic.dll
+  System.Net.Requests.dll
+  System.Net.Security.dll
+  System.Net.ServicePoint.dll
+  System.Net.Sockets.dll
+  System.Net.WebClient.dll
+  System.Net.WebHeaderCollection.dll
+  System.Net.WebProxy.dll
+  System.Net.WebSockets.Client.dll
+  System.Net.WebSockets.dll
+  System.Numerics.dll
+  System.Numerics.Vectors.dll
+  System.ObjectModel.dll
+  System.Reflection.DispatchProxy.dll
+  System.Reflection.dll
+  System.Reflection.Emit.dll
+  System.Reflection.Emit.ILGeneration.dll
+  System.Reflection.Emit.Lightweight.dll
+  System.Reflection.Extensions.dll
+  System.Reflection.Primitives.dll
+  System.Reflection.TypeExtensions.dll
+  System.Resources.Reader.dll
+  System.Resources.ResourceManager.dll
+  System.Resources.Writer.dll
+  System.Runtime.CompilerServices.Unsafe.dll
+  System.Runtime.CompilerServices.VisualC.dll
+  System.Runtime.dll
+  System.Runtime.Extensions.dll
+  System.Runtime.Handles.dll
+  System.Runtime.InteropServices.dll
+  System.Runtime.InteropServices.JavaScript.dll
+  System.Runtime.InteropServices.RuntimeInformation.dll
+  System.Runtime.Intrinsics.dll
+  System.Runtime.Loader.dll
+  System.Runtime.Numerics.dll
+  System.Runtime.Serialization.dll
+  System.Runtime.Serialization.Formatters.dll
+  System.Runtime.Serialization.Json.dll
+  System.Runtime.Serialization.Primitives.dll
+  System.Runtime.Serialization.Xml.dll
+  System.Security.AccessControl.dll
+  System.Security.Claims.dll
+  System.Security.Cryptography.Algorithms.dll
+  System.Security.Cryptography.Cng.dll
+  System.Security.Cryptography.Csp.dll
+  System.Security.Cryptography.dll
+  System.Security.Cryptography.Encoding.dll
+  System.Security.Cryptography.OpenSsl.dll
+  System.Security.Cryptography.Primitives.dll
+  System.Security.Cryptography.X509Certificates.dll
+  System.Security.dll
+  System.Security.Principal.dll
+  System.Security.Principal.Windows.dll
+  System.Security.SecureString.dll
+  System.ServiceModel.Web.dll
+  System.ServiceProcess.dll
+  System.Text.Encoding.CodePages.dll
+  System.Text.Encoding.dll
+  System.Text.Encoding.Extensions.dll
+  System.Text.Encodings.Web.dll
+  System.Text.Json.dll
+  System.Text.RegularExpressions.dll
+  System.Threading.Channels.dll
+  System.Threading.dll
+  System.Threading.Overlapped.dll
+  System.Threading.Tasks.Dataflow.dll
+  System.Threading.Tasks.dll
+  System.Threading.Tasks.Extensions.dll
+  System.Threading.Tasks.Parallel.dll
+  System.Threading.Thread.dll
+  System.Threading.ThreadPool.dll
+  System.Threading.Timer.dll
+  System.Transactions.dll
+  System.Transactions.Local.dll
+  System.ValueTuple.dll
+  System.Web.dll
+  System.Web.HttpUtility.dll
+  System.Windows.dll
+  System.Xml.dll
+  System.Xml.Linq.dll
+  System.Xml.ReaderWriter.dll
+  System.Xml.Serialization.dll
+  System.Xml.XDocument.dll
+  System.Xml.XmlDocument.dll
+  System.Xml.XmlSerializer.dll
+  System.Xml.XPath.dll
+  System.Xml.XPath.XDocument.dll
+  WindowsBase.dll
+ system.collections.immutable/10.0.1/lib/net8.0/System.Collections.Immutable.dll
+ system.composition.attributedmodel/10.0.1/lib/net8.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net8.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net8.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net8.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net8.0/System.Composition.TypedParts.dll
+ system.io.pipelines/10.0.1/lib/net8.0/System.IO.Pipelines.dll
+ system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.netcore.app.ref/8.0.25/analyzers/dotnet/cs/
+  Microsoft.Interop.ComInterfaceGenerator.dll
+  Microsoft.Interop.LibraryImportGenerator.dll
+  Microsoft.Interop.SourceGeneration.dll
+  System.Text.Json.SourceGeneration.dll
+  System.Text.RegularExpressions.Generator.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[analyzerConfigFiles]
+../../../../
+ artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.GeneratedMSBuildEditorConfig.editorconfig
+ eng/config/globalconfigs/
+  Common.globalconfig
+  Shipping.globalconfig
+ .editorconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
+
+[additionalFiles]
+../../
+ ../../
+  artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.xlf/
+   CSharpCompilerExtensionsResources.cs.resx
+   CSharpCompilerExtensionsResources.de.resx
+   CSharpCompilerExtensionsResources.es.resx
+   CSharpCompilerExtensionsResources.fr.resx
+   CSharpCompilerExtensionsResources.it.resx
+   CSharpCompilerExtensionsResources.ja.resx
+   CSharpCompilerExtensionsResources.ko.resx
+   CSharpCompilerExtensionsResources.pl.resx
+   CSharpCompilerExtensionsResources.pt-BR.resx
+   CSharpCompilerExtensionsResources.ru.resx
+   CSharpCompilerExtensionsResources.tr.resx
+   CSharpCompilerExtensionsResources.zh-Hans.resx
+   CSharpCompilerExtensionsResources.zh-Hant.resx
+   CSharpWorkspaceExtensionsResources.cs.resx
+   CSharpWorkspaceExtensionsResources.de.resx
+   CSharpWorkspaceExtensionsResources.es.resx
+   CSharpWorkspaceExtensionsResources.fr.resx
+   CSharpWorkspaceExtensionsResources.it.resx
+   CSharpWorkspaceExtensionsResources.ja.resx
+   CSharpWorkspaceExtensionsResources.ko.resx
+   CSharpWorkspaceExtensionsResources.pl.resx
+   CSharpWorkspaceExtensionsResources.pt-BR.resx
+   CSharpWorkspaceExtensionsResources.ru.resx
+   CSharpWorkspaceExtensionsResources.tr.resx
+   CSharpWorkspaceExtensionsResources.zh-Hans.resx
+   CSharpWorkspaceExtensionsResources.zh-Hant.resx
+   CSharpWorkspaceResources.cs.resx
+   CSharpWorkspaceResources.de.resx
+   CSharpWorkspaceResources.es.resx
+   CSharpWorkspaceResources.fr.resx
+   CSharpWorkspaceResources.it.resx
+   CSharpWorkspaceResources.ja.resx
+   CSharpWorkspaceResources.ko.resx
+   CSharpWorkspaceResources.pl.resx
+   CSharpWorkspaceResources.pt-BR.resx
+   CSharpWorkspaceResources.ru.resx
+   CSharpWorkspaceResources.tr.resx
+   CSharpWorkspaceResources.zh-Hans.resx
+   CSharpWorkspaceResources.zh-Hant.resx
+  eng/config/BannedSymbols.txt
+ SharedUtilitiesAndExtensions/
+  Compiler/CSharp/CSharpCompilerExtensionsResources.resx
+  Workspace/CSharp/CSharpWorkspaceExtensionsResources.resx
+
+[capabilities]
+NativeAOT
+SupportsHotReload
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=netstandard2.0
+
+[properties]
+MaxSupportedLangVersion=7.3
+OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/
+TargetFramework=netstandard2.0
+TargetFrameworkIdentifier=.NETStandard
+TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+TemporaryDependencyNodeTargetIdentifier=netstandard2.0
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,Nullable,1701,1702
+/doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.xml
+/define:TRACE;CSHARP_WORKSPACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD1_0_OR_GREATER;NETSTANDARD1_1_OR_GREATER;NETSTANDARD1_2_OR_GREATER;NETSTANDARD1_3_OR_GREATER;NETSTANDARD1_4_OR_GREATER;NETSTANDARD1_5_OR_GREATER;NETSTANDARD1_6_OR_GREATER;NETSTANDARD2_0_OR_GREATER
+/out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/refint/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/warnaserror+:NU1605
+
+[sourceFiles]
+../../
+ ../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/
+  .NETStandard,Version=v2.0.AssemblyAttributes.cs
+  Microsoft.CodeAnalysis.CSharp.CSharpCompilerExtensionsResources.cs
+   @link=CSharpCompilerExtensionsResources.resx
+  Microsoft.CodeAnalysis.CSharp.CSharpWorkspaceExtensionsResources.cs
+   @link=CSharpWorkspaceExtensionsResources.resx
+  Microsoft.CodeAnalysis.CSharp.CSharpWorkspaceResources.cs
+  Microsoft.CodeAnalysis.CSharp.Workspaces.AssemblyInfo.cs
+  Microsoft.CodeAnalysis.CSharp.Workspaces.InternalsVisibleTo.cs
+ SharedUtilitiesAndExtensions/
+  Compiler/CSharp/
+   CodeGeneration/
+    CSharpCodeGenerationOptions.cs
+    CSharpSyntaxTokens.cs
+   CodeStyle/
+    TypeStyle/
+     TypeStyleHelper.cs
+     UseVarPreference.cs
+    CSharpCodeStyleOptions.cs
+    CSharpCodeStyleOptions_Parsing.cs
+    PreferBracesPreference.cs
+   EmbeddedLanguages/VirtualChars/
+    CSharpVirtualCharService.cs
+    RuneExtensions.cs
+   Extensions/
+    ContextQuery/SyntaxTreeExtensions.cs
+    ArgumentSyntaxExtensions.cs
+    ArrowExpressionClauseSyntaxExtensions.cs
+    AssignmentExpressionSyntaxExtensions.cs
+    AttributeArgumentSyntaxExtensions.cs
+    BlockSyntaxExtensions.cs
+    CompilationExtensions.cs
+    CompilationUnitSyntaxExtensions.cs
+    ConversionExtensions.cs
+    DefaultExpressionSyntaxExtensions.cs
+    DirectiveSyntaxExtensions.cs
+    ExpressionSyntaxExtensions.cs
+    ILocalSymbolExtensions.cs
+    ITypeSymbolExtensions.cs
+    LanguageVersionExtensions.cs
+    MemberAccessExpressionSyntaxExtensions.cs
+    MemberDeclarationSyntaxExtensions.cs
+    MemberDeclarationSyntaxExtensions.DeclarationFinder.cs
+    MemberDeclarationSyntaxExtensions.LocalDeclarationMap.cs
+    MemberDeclarationSyntaxExtensions_GetAttributes.cs
+    OperatorPrecedence.cs
+    ParenthesizedExpressionSyntaxExtensions.cs
+    ParseOptionsExtensions.cs
+    SemanticModelExtensions.cs
+    SimpleNameSyntaxExtensions.cs
+    StatementSyntaxExtensions.cs
+    SymbolDisplayPartExtensions.cs
+    SyntaxKindExtensions.cs
+    SyntaxListExtensions.cs
+    SyntaxNodeExtensions.cs
+    SyntaxNodeExtensions.SingleLineRewriter.cs
+    SyntaxTokenExtensions.cs
+    SyntaxTreeExtensions.cs
+    SyntaxTriviaExtensions.cs
+    SyntaxTriviaListExtensions.cs
+    TypeSyntaxExtensions.cs
+    VariableDeclaratorExtensions.cs
+   Formatting/
+    Engine/
+     Trivia/
+      CSharpTriviaFormatter.cs
+      CSharpTriviaFormatter.DocumentationCommentExteriorCommentRewriter.cs
+      TriviaDataFactory.Analyzer.cs
+      TriviaDataFactory.CodeShapeAnalyzer.cs
+      TriviaDataFactory.ComplexTrivia.cs
+      TriviaDataFactory.cs
+      TriviaDataFactory.FormattedComplexTrivia.cs
+      TriviaDataFactory.ModifiedComplexTrivia.cs
+      TriviaRewriter.cs
+     AggregatedFormattingResult.cs
+     CSharpFormatEngine.cs
+     CSharpStructuredTriviaFormatEngine.cs
+     FormattingResult.cs
+    Rules/
+     AnchorIndentationFormattingRule.cs
+     BaseFormattingRule.cs
+     ElasticTriviaFormattingRule.cs
+     EndOfFileTokenFormattingRule.cs
+     IndentBlockFormattingRule.cs
+     IndentUserSettingsFormattingRule.cs
+     NewLineUserSettingFormattingRule.cs
+     QueryExpressionFormattingRule.cs
+     SpacingFormattingRule.cs
+     StructuredTriviaFormattingRule.cs
+     SuppressFormattingRule.cs
+     TokenBasedFormattingRule.cs
+     WrappingFormattingRule.cs
+    CSharpFormattingOptions2.cs
+    CSharpFormattingOptions2.Parsers.cs
+    CSharpSyntaxFormatting.cs
+    CSharpSyntaxFormattingOptions.cs
+    DefaultOperationProvider.cs
+    FormattingHelpers.cs
+    IndentationPlacement.cs
+    NewLineBeforeOpenBracePlacement.cs
+    NewLinePlacement.cs
+    SpacePlacement.cs
+    SpacingWithinParentheses.cs
+   Helpers/RemoveUnnecessaryImports/CSharpUnnecessaryImportsProvider.cs
+   Indentation/CSharpSmartTokenFormatter.cs
+   Services/
+    Precedence/
+     AbstractCSharpPrecedenceService.cs
+     CSharpExpressionPrecedenceService.cs
+     CSharpPatternPrecedenceService.cs
+    RefactoringHelpers/CSharpRefactoringHelpers.cs
+    SelectedMembers/CSharpSelectedMembers.cs
+    SemanticFacts/CSharpSemanticFacts.cs
+    SyntaxFacts/
+     CSharpAccessibilityFacts.cs
+     CSharpBlockFacts.cs
+     CSharpDocumentationCommentService.cs
+     CSharpFileBannerFacts.cs
+     CSharpHeaderFacts.cs
+     CSharpSyntaxFacts.cs
+     CSharpSyntaxKinds.cs
+   Simplification/
+    Simplifiers/CastSimplifier.cs
+    CSharpInferredMemberNameSimplifier.cs
+    CSharpSimplification.cs
+    CSharpSimplifierOptions.cs
+   Utilities/
+    TypeStyle/
+     CSharpTypeStyleHelper.cs
+     CSharpTypeStyleHelper.State.cs
+     CSharpUseExplicitTypeHelper.cs
+     CSharpUseImplicitTypeHelper.cs
+    CSharpLightweightOverloadResolution.cs
+    FormattingRangeHelper.cs
+    NameSyntaxComparer.cs
+    SpeculationAnalyzer.cs
+    TokenComparer.cs
+    TypeSyntaxComparer.cs
+    UsingsAndExternAliasesDirectiveComparer.cs
+    UsingsAndExternAliasesOrganizer.cs
+  Workspace/CSharp/
+   CodeFixesAndRefactorings/CSharpFixAllSpanMappingService.cs
+   CodeGeneration/
+    ArgumentGenerator.cs
+    AttributeGenerator.cs
+    ConstructorGenerator.cs
+    ConversionGenerator.cs
+    CSharpCodeGenerationContextInfo.cs
+    CSharpCodeGenerationHelpers.cs
+    CSharpCodeGenerationService.cs
+    CSharpCodeGenerationServiceFactory.cs
+    CSharpDeclarationComparer.cs
+    CSharpFlagsEnumGenerator.cs
+    DestructorGenerator.cs
+    EnumMemberGenerator.cs
+    EventGenerator.cs
+    ExpressionGenerator.cs
+    FieldGenerator.cs
+    MethodGenerator.cs
+    NamedTypeGenerator.cs
+    NamespaceGenerator.cs
+    OperatorGenerator.cs
+    ParameterGenerator.cs
+    PropertyGenerator.cs
+    StatementGenerator.cs
+    TypeParameterGenerator.cs
+   CodeRefactorings/CSharpRefactoringHelpersService.cs
+   Editing/CSharpImportAdder.cs
+   EmbeddedLanguages/VirtualChars/CSharpVirtualCharLanguageServiceFactory.cs
+   Extensions/
+    ContextQuery/
+     CSharpSyntaxContext.cs
+     CSharpSyntaxContextService.cs
+     SyntaxTokenExtensions.cs
+     SyntaxTreeExtensions.cs
+    BaseArgumentListSyntaxExtensions.cs
+    BaseNamespaceDeclarationSyntaxExtensions.cs
+    BaseParameterListSyntaxExtensions.cs
+    BasePropertyDeclarationSyntaxExtensions.cs
+    CastExpressionSyntaxExtensions.cs
+    CompilationUnitSyntaxExtensions.cs
+    DocumentationCommentExtensions.cs
+    ExpressionSyntaxExtensions.cs
+    InternalExtensions.cs
+    ITypeParameterSymbolExtensions.cs
+    ITypeSymbolExtensions.cs
+    ITypeSymbolExtensions.ExpressionSyntaxGeneratorVisitor.cs
+    ITypeSymbolExtensions.TypeSyntaxGeneratorVisitor.cs
+    NameSyntaxExtensions.cs
+    QueryExpressionSyntaxExtensions.cs
+    SemanticModelExtensions.cs
+    SeparatedSyntaxListExtensions.cs
+    StringExtensions.cs
+    SyntaxTokenListExtensions.cs
+    SyntaxTreeExtensions.cs
+    TypeDeclarationSyntaxExtensions.cs
+    TypeSyntaxExtensions.cs
+    UsingDirectiveSyntaxExtensions.cs
+    WithElementSyntaxExtensions.cs
+   Formatting/
+    CSharpSyntaxFormattingOptionsProviders.cs
+    CSharpSyntaxFormattingService.cs
+    TypingFormattingRule.cs
+   Indentation/
+    CSharpIndentationService.cs
+    CSharpIndentationService.Indenter.cs
+   LanguageServices/
+    InitializeParameter/
+     CSharpInitializeParameterService.cs
+     InitializeParameterHelpers.cs
+    CSharpAddImportsService.cs
+    CSharpBlockFactsService.cs
+    CSharpCommandLineParserService.cs
+    CSharpFileBannerFactsService.cs
+    CSharpGeneratedCodeRecognitionService.cs
+    CSharpHeaderFactsService.cs
+    CSharpMoveDeclarationNearReferenceService.cs
+    CSharpRemoveUnnecessaryImportsService.cs
+    CSharpRemoveUnnecessaryImportsService.Rewriter.cs
+    CSharpReplaceDiscardDeclarationsWithAssignmentsService.cs
+    CSharpSemanticFactsService.cs
+    CSharpSemanticFactsServiceFactory.cs
+    CSharpSymbolDeclarationService.cs
+    CSharpSyntaxFactsService.cs
+    CSharpSyntaxFactsServiceFactory.cs
+    CSharpSyntaxGeneratorInternal.cs
+    CSharpSyntaxKindsServiceFactory.cs
+    CSharpTypeInferenceService.cs
+    CSharpTypeInferenceService.TypeInferrer.cs
+   SemanticModelReuse/CSharpSemanticModelReuseLanguageService.cs
+   Simplification/CSharpSimplifierOptionsProviders.cs
+   Utilities/
+    NullableHelpers/NullableExtensions.cs
+    CSharpSimplificationHelpers.cs
+    NameSyntaxIterator.cs
+    SyntaxKindSet.cs
+
+[metadataReferences]
+../../../../artifacts/obj/
+ Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ humanizer.core/2.14.1/lib/netstandard2.0/Humanizer.dll
+ microsoft.bcl.asyncinterfaces/10.0.1/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll
+ netstandard.library/2.0.3/build/netstandard2.0/ref/
+  Microsoft.Win32.Primitives.dll
+  mscorlib.dll
+  netstandard.dll
+  System.AppContext.dll
+  System.Collections.Concurrent.dll
+  System.Collections.dll
+  System.Collections.NonGeneric.dll
+  System.Collections.Specialized.dll
+  System.ComponentModel.Composition.dll
+  System.ComponentModel.dll
+  System.ComponentModel.EventBasedAsync.dll
+  System.ComponentModel.Primitives.dll
+  System.ComponentModel.TypeConverter.dll
+  System.Console.dll
+  System.Core.dll
+  System.Data.Common.dll
+  System.Data.dll
+  System.Diagnostics.Contracts.dll
+  System.Diagnostics.Debug.dll
+  System.Diagnostics.FileVersionInfo.dll
+  System.Diagnostics.Process.dll
+  System.Diagnostics.StackTrace.dll
+  System.Diagnostics.TextWriterTraceListener.dll
+  System.Diagnostics.Tools.dll
+  System.Diagnostics.TraceSource.dll
+  System.Diagnostics.Tracing.dll
+  System.dll
+  System.Drawing.dll
+  System.Drawing.Primitives.dll
+  System.Dynamic.Runtime.dll
+  System.Globalization.Calendars.dll
+  System.Globalization.dll
+  System.Globalization.Extensions.dll
+  System.IO.Compression.dll
+  System.IO.Compression.FileSystem.dll
+  System.IO.Compression.ZipFile.dll
+  System.IO.dll
+  System.IO.FileSystem.dll
+  System.IO.FileSystem.DriveInfo.dll
+  System.IO.FileSystem.Primitives.dll
+  System.IO.FileSystem.Watcher.dll
+  System.IO.IsolatedStorage.dll
+  System.IO.MemoryMappedFiles.dll
+  System.IO.Pipes.dll
+  System.IO.UnmanagedMemoryStream.dll
+  System.Linq.dll
+  System.Linq.Expressions.dll
+  System.Linq.Parallel.dll
+  System.Linq.Queryable.dll
+  System.Net.dll
+  System.Net.Http.dll
+  System.Net.NameResolution.dll
+  System.Net.NetworkInformation.dll
+  System.Net.Ping.dll
+  System.Net.Primitives.dll
+  System.Net.Requests.dll
+  System.Net.Security.dll
+  System.Net.Sockets.dll
+  System.Net.WebHeaderCollection.dll
+  System.Net.WebSockets.Client.dll
+  System.Net.WebSockets.dll
+  System.Numerics.dll
+  System.ObjectModel.dll
+  System.Reflection.dll
+  System.Reflection.Extensions.dll
+  System.Reflection.Primitives.dll
+  System.Resources.Reader.dll
+  System.Resources.ResourceManager.dll
+  System.Resources.Writer.dll
+  System.Runtime.CompilerServices.VisualC.dll
+  System.Runtime.dll
+  System.Runtime.Extensions.dll
+  System.Runtime.Handles.dll
+  System.Runtime.InteropServices.dll
+  System.Runtime.InteropServices.RuntimeInformation.dll
+  System.Runtime.Numerics.dll
+  System.Runtime.Serialization.dll
+  System.Runtime.Serialization.Formatters.dll
+  System.Runtime.Serialization.Json.dll
+  System.Runtime.Serialization.Primitives.dll
+  System.Runtime.Serialization.Xml.dll
+  System.Security.Claims.dll
+  System.Security.Cryptography.Algorithms.dll
+  System.Security.Cryptography.Csp.dll
+  System.Security.Cryptography.Encoding.dll
+  System.Security.Cryptography.Primitives.dll
+  System.Security.Cryptography.X509Certificates.dll
+  System.Security.Principal.dll
+  System.Security.SecureString.dll
+  System.ServiceModel.Web.dll
+  System.Text.Encoding.dll
+  System.Text.Encoding.Extensions.dll
+  System.Text.RegularExpressions.dll
+  System.Threading.dll
+  System.Threading.Overlapped.dll
+  System.Threading.Tasks.dll
+  System.Threading.Tasks.Parallel.dll
+  System.Threading.Thread.dll
+  System.Threading.ThreadPool.dll
+  System.Threading.Timer.dll
+  System.Transactions.dll
+  System.ValueTuple.dll
+  System.Web.dll
+  System.Windows.dll
+  System.Xml.dll
+  System.Xml.Linq.dll
+  System.Xml.ReaderWriter.dll
+  System.Xml.Serialization.dll
+  System.Xml.XDocument.dll
+  System.Xml.XmlDocument.dll
+  System.Xml.XmlSerializer.dll
+  System.Xml.XPath.dll
+  System.Xml.XPath.XDocument.dll
+ system.buffers/4.6.1/lib/netstandard2.0/System.Buffers.dll
+ system.collections.immutable/10.0.1/lib/netstandard2.0/System.Collections.Immutable.dll
+ system.composition.attributedmodel/10.0.1/lib/netstandard2.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/netstandard2.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/netstandard2.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/netstandard2.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/netstandard2.0/System.Composition.TypedParts.dll
+ system.io.pipelines/10.0.1/lib/netstandard2.0/System.IO.Pipelines.dll
+ system.memory/4.6.3/lib/netstandard2.0/System.Memory.dll
+ system.numerics.vectors/4.6.1/lib/netstandard2.0/System.Numerics.Vectors.dll
+ system.reflection.metadata/10.0.1/lib/netstandard2.0/System.Reflection.Metadata.dll
+ system.runtime.compilerservices.unsafe/6.1.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll
+ system.text.encoding.codepages/8.0.0/lib/netstandard2.0/System.Text.Encoding.CodePages.dll
+ system.threading.channels/8.0.0/lib/netstandard2.0/System.Threading.Channels.dll
+ system.threading.tasks.extensions/4.6.3/lib/netstandard2.0/System.Threading.Tasks.Extensions.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[analyzerConfigFiles]
+../../../../
+ artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.GeneratedMSBuildEditorConfig.editorconfig
+ eng/config/globalconfigs/
+  Common.globalconfig
+  Shipping.globalconfig
+ .editorconfig
+
+[additionalFiles]
+../../
+ ../../
+  artifacts/obj/Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/Microsoft.CodeAnalysis.CSharp.Workspaces.xlf/
+   CSharpCompilerExtensionsResources.cs.resx
+   CSharpCompilerExtensionsResources.de.resx
+   CSharpCompilerExtensionsResources.es.resx
+   CSharpCompilerExtensionsResources.fr.resx
+   CSharpCompilerExtensionsResources.it.resx
+   CSharpCompilerExtensionsResources.ja.resx
+   CSharpCompilerExtensionsResources.ko.resx
+   CSharpCompilerExtensionsResources.pl.resx
+   CSharpCompilerExtensionsResources.pt-BR.resx
+   CSharpCompilerExtensionsResources.ru.resx
+   CSharpCompilerExtensionsResources.tr.resx
+   CSharpCompilerExtensionsResources.zh-Hans.resx
+   CSharpCompilerExtensionsResources.zh-Hant.resx
+   CSharpWorkspaceExtensionsResources.cs.resx
+   CSharpWorkspaceExtensionsResources.de.resx
+   CSharpWorkspaceExtensionsResources.es.resx
+   CSharpWorkspaceExtensionsResources.fr.resx
+   CSharpWorkspaceExtensionsResources.it.resx
+   CSharpWorkspaceExtensionsResources.ja.resx
+   CSharpWorkspaceExtensionsResources.ko.resx
+   CSharpWorkspaceExtensionsResources.pl.resx
+   CSharpWorkspaceExtensionsResources.pt-BR.resx
+   CSharpWorkspaceExtensionsResources.ru.resx
+   CSharpWorkspaceExtensionsResources.tr.resx
+   CSharpWorkspaceExtensionsResources.zh-Hans.resx
+   CSharpWorkspaceExtensionsResources.zh-Hant.resx
+   CSharpWorkspaceResources.cs.resx
+   CSharpWorkspaceResources.de.resx
+   CSharpWorkspaceResources.es.resx
+   CSharpWorkspaceResources.fr.resx
+   CSharpWorkspaceResources.it.resx
+   CSharpWorkspaceResources.ja.resx
+   CSharpWorkspaceResources.ko.resx
+   CSharpWorkspaceResources.pl.resx
+   CSharpWorkspaceResources.pt-BR.resx
+   CSharpWorkspaceResources.ru.resx
+   CSharpWorkspaceResources.tr.resx
+   CSharpWorkspaceResources.zh-Hans.resx
+   CSharpWorkspaceResources.zh-Hant.resx
+  eng/config/BannedSymbols.txt
+ SharedUtilitiesAndExtensions/
+  Compiler/CSharp/CSharpCompilerExtensionsResources.resx
+  Workspace/CSharp/CSharpWorkspaceExtensionsResources.resx

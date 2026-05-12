@@ -1,0 +1,216 @@
+hash=febbe3bcd5e4e43d4f207169639e917a924469924aa573b9f438f25e1325a0fe
+version=2
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+project=Roslyn.Diagnostics.Analyzers.UnitTests.csproj
+language=C#
+primary
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Roslyn.Diagnostics.Analyzers.UnitTests
+MaxSupportedLangVersion=14.0
+OutputPath=<PATH>../../../../artifacts/bin/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/
+OutputType=Exe
+ProjectAssetsFile=<PATH>../../../../artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/project.assets.json
+RootNamespace=Roslyn.Diagnostics.Analyzers.UnitTests
+RunArguments=exec "<PATH>../../../../artifacts/bin/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/Roslyn.Diagnostics.Analyzers.UnitTests.dll"
+RunCommand=dotnet
+TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../artifacts/bin/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/Roslyn.Diagnostics.Analyzers.UnitTests.dll
+TargetRefPath=<PATH>../../../../artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/ref/Roslyn.Diagnostics.Analyzers.UnitTests.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,IDE0079,NU5105,RS2008,RS2007,1701,1702,8002
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:9999
+/doc:<PATH>../../../../artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/Roslyn.Diagnostics.Analyzers.UnitTests.xml
+/define:OLDER_ROSLYN;TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:enable
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
+/debug+
+/debug:embedded
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/35MSSharedLib1024.snk
+/optimize-
+/out:<PATH>../../../../artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/Roslyn.Diagnostics.Analyzers.UnitTests.dll
+/refout:<PATH>../../../../artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/refint/Roslyn.Diagnostics.Analyzers.UnitTests.dll
+/target:exe
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign+
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
+/features:flow-analysis
+/warnaserror+:NU1605,SYSLIB0011
+/warnaserror-:IDE0055
+
+[sourceFiles]
+../../../../artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/
+ .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+ Roslyn.Diagnostics.Analyzers.UnitTests.AssemblyInfo.cs
+<NUGET>/microsoft.net.test.sdk/17.14.1/build/net8.0/Microsoft.NET.Test.Sdk.Program.cs
+ApplyTraitToClassTests.cs
+CreateTestAccessorTests.cs
+CSharpAvoidOptSuffixForNullableEnableCodeTests.cs
+CSharpDoNotCapturePrimaryConstructorParametersTests.cs
+CSharpDoNotUseDebugAssertForInterpolatedStringsTests.cs
+DefaultableTypeShouldHaveDefaultableFieldsTests.cs
+DoNotCallGetTestAccessorTests.cs
+DoNotCopyValueTests.cs
+DoNotMixAttributesFromDifferentVersionsOfMEFTests.cs
+DoNotUseGenericCodeActionCreateToCreateCodeActionTests.cs
+ExportedPartsShouldHaveImportingConstructorTests.cs
+ExposeMemberForTestingTests.cs
+ImmutableArrayBoxingAnalyzerTests.cs
+ImportingConstructorShouldBeObsoleteTests.cs
+InvokeTheCorrectPropertyToEnsureCorrectUseSiteDiagnosticsTests.cs
+IRemoteJsonServiceParameterAnalyzerTests.cs
+NumberCommentsRefactoringTests.cs
+PartsExportedWithMEFv2MustBeMarkedAsSharedTests.cs
+PooledArrayBuilderAsRefAnalyzerTests.cs
+PreferNullLiteralTests.cs
+RelaxTestNamingSuppressorTests.cs
+RunIterationsTests.cs
+SpecializedEnumerableCreationAnalyzerTests.cs
+SymbolDeclaredEventMustBeGeneratedForSourceSymbolsTests.cs
+TemporaryArrayAsRefTests.cs
+TestExportsShouldNotBeDiscoverableTests.cs
+
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
+[metadataReferences]
+../../../../artifacts/obj/
+ Roslyn.Diagnostics.Analyzers/Debug/netstandard2.0/ref/Roslyn.Diagnostics.Analyzers.dll
+ Roslyn.Diagnostics.CSharp.Analyzers/Debug/netstandard2.0/ref/Roslyn.Diagnostics.CSharp.Analyzers.dll
+ Roslyn.Diagnostics.VisualBasic.Analyzers/Debug/netstandard2.0/ref/Roslyn.Diagnostics.VisualBasic.Analyzers.dll
+ Test.Utilities/Debug/net10.0/ref/Test.Utilities.dll
+ TestReferenceAssembly/Debug/netstandard2.0/ref/TestReferenceAssembly.dll
+<NUGET>/
+ humanizer.core/2.14.1/lib/net6.0/Humanizer.dll
+ microsoft.codeanalysis.analyzer.testing/1.1.3-beta1.26059.1/lib/netcoreapp3.1/Microsoft.CodeAnalysis.Analyzer.Testing.dll
+ microsoft.codeanalysis.codefix.testing/1.1.3-beta1.26059.1/lib/netcoreapp3.1/Microsoft.CodeAnalysis.CodeFix.Testing.dll
+ microsoft.codeanalysis.coderefactoring.testing/1.1.3-beta1.26059.1/lib/netcoreapp3.1/Microsoft.CodeAnalysis.CodeRefactoring.Testing.dll
+ microsoft.codeanalysis.common/4.12.0/lib/net8.0/Microsoft.CodeAnalysis.dll
+ microsoft.codeanalysis.csharp.codefix.testing/1.1.3-beta1.26059.1/lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.CodeFix.Testing.dll
+ microsoft.codeanalysis.csharp.coderefactoring.testing/1.1.3-beta1.26059.1/lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.CodeRefactoring.Testing.dll
+ microsoft.codeanalysis.csharp.workspaces/4.12.0/lib/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+ microsoft.codeanalysis.csharp/4.12.0/lib/net8.0/Microsoft.CodeAnalysis.CSharp.dll
+ microsoft.codeanalysis.visualbasic.codefix.testing/1.1.3-beta1.26059.1/lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.CodeFix.Testing.dll
+ microsoft.codeanalysis.visualbasic.coderefactoring.testing/1.1.3-beta1.26059.1/lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.CodeRefactoring.Testing.dll
+ microsoft.codeanalysis.visualbasic.workspaces/4.12.0/lib/net8.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+ microsoft.codeanalysis.visualbasic/4.12.0/lib/net8.0/Microsoft.CodeAnalysis.VisualBasic.dll
+ microsoft.codeanalysis.workspaces.common/4.12.0/lib/net8.0/Microsoft.CodeAnalysis.Workspaces.dll
+ microsoft.codecoverage/17.14.1/lib/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+ microsoft.testplatform.testhost/17.14.1/lib/net8.0/
+  Microsoft.TestPlatform.CommunicationUtilities.dll
+  Microsoft.TestPlatform.CoreUtilities.dll
+  Microsoft.TestPlatform.CrossPlatEngine.dll
+  Microsoft.TestPlatform.PlatformAbstractions.dll
+  Microsoft.TestPlatform.Utilities.dll
+  Microsoft.VisualStudio.TestPlatform.Common.dll
+  Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+  testhost.dll
+ microsoft.visualstudio.composition.netfxattributes/16.1.8/lib/netstandard2.0/Microsoft.VisualStudio.Composition.NetFxAttributes.dll
+ microsoft.visualstudio.composition/16.1.8/lib/netcoreapp2.0/Microsoft.VisualStudio.Composition.dll
+ microsoft.visualstudio.validation/15.0.82/lib/netstandard1.0/Microsoft.VisualStudio.Validation.dll
+ newtonsoft.json/13.0.3/lib/net6.0/Newtonsoft.Json.dll
+ system.componentmodel.composition/10.0.1/lib/net10.0/System.ComponentModel.Composition.dll
+ system.composition.attributedmodel/8.0.0/lib/net8.0/System.Composition.AttributedModel.dll
+ system.composition.convention/8.0.0/lib/net8.0/System.Composition.Convention.dll
+ system.composition.hosting/8.0.0/lib/net8.0/System.Composition.Hosting.dll
+ system.composition.runtime/8.0.0/lib/net8.0/System.Composition.Runtime.dll
+ system.composition.typedparts/8.0.0/lib/net8.0/System.Composition.TypedParts.dll
+ xunit.abstractions/2.0.3/lib/netstandard2.0/xunit.abstractions.dll
+ xunit.assert/2.9.2/lib/net6.0/xunit.assert.dll
+ xunit.combinatorial/1.6.24/lib/netstandard2.0/Xunit.Combinatorial.dll
+ xunit.extensibility.core/2.9.2/lib/netstandard1.1/xunit.core.dll
+ xunit.extensibility.execution/2.9.2/lib/netstandard1.1/xunit.execution.dotnet.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/3.3.4/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+ xunit.analyzers/1.17.0/analyzers/dotnet/cs/
+  xunit.analyzers.dll
+  xunit.analyzers.fixes.dll
+
+[analyzerConfigFiles]
+../../../../
+ artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/Roslyn.Diagnostics.Analyzers.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
+ eng/config/globalconfigs/
+  Common.globalconfig
+  NonShipping.globalconfig
+ .editorconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
+
+[additionalFiles]
+../../../../eng/config/test/BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
+../
+ ../
+  Test.Utilities/Test.Utilities.csproj
+  TestReferenceAssembly/TestReferenceAssembly.csproj
+ Core/Roslyn.Diagnostics.Analyzers.csproj
+ CSharp/Roslyn.Diagnostics.CSharp.Analyzers.csproj
+ VisualBasic/Roslyn.Diagnostics.VisualBasic.Analyzers.vbproj
+
+[capabilities]
+CrossPlatformExecutable
+NativeAOT
+Pack
+SupportsHotReload
+TestContainer

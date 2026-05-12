@@ -1,0 +1,259 @@
+hash=cf8df652d20b189e510dbe1061491f8db695426c2fcdd26cb517919a5f019581
+version=2
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+project=Microsoft.Build.Tasks.CodeAnalysis.Sdk.csproj
+language=C#
+primary
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Microsoft.Build.Tasks.CodeAnalysis.Sdk
+MaxSupportedLangVersion=7.3
+OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.Build.Tasks.CodeAnalysis.Sdk/Debug/net472/
+OutputType=Library
+ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis.Sdk/project.assets.json
+RootNamespace=Microsoft.CodeAnalysis.BuildTasks
+TargetFramework=net472
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.Build.Tasks.CodeAnalysis.Sdk/Debug/net472/Microsoft.Build.Tasks.CodeAnalysis.Sdk.dll
+TargetRefPath=<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis.Sdk/Debug/net472/ref/Microsoft.Build.Tasks.CodeAnalysis.Sdk.dll
+TemporaryDependencyNodeTargetIdentifier=net472
+
+[commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,CA1819,NU5105,Nullable,1701,1702
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:9999
+/doc:<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis.Sdk/Debug/net472/Microsoft.Build.Tasks.CodeAnalysis.Sdk.xml
+/define:TRACE;SDK_TASK;MICROSOFT_CODEANALYSIS_CONTRACTS_NO_VALUE_TASK;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
+/highentropyva+
+/nullable:enable
+/debug+
+/debug:embedded
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/35MSSharedLib1024.snk
+/optimize-
+/out:<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis.Sdk/Debug/net472/Microsoft.Build.Tasks.CodeAnalysis.Sdk.dll
+/refout:<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis.Sdk/Debug/net472/refint/Microsoft.Build.Tasks.CodeAnalysis.Sdk.dll
+/subsystemversion:6.00
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign+
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
+/warnaserror+:NU1605
+/warnaserror-:IDE0055
+
+[sourceFiles]
+../
+ ../
+  ../
+   ../
+    ../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis.Sdk/Debug/net472/
+     .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+     Microsoft.Build.Tasks.CodeAnalysis.Sdk.AssemblyInfo.cs
+     Microsoft.Build.Tasks.CodeAnalysis.Sdk.InternalsVisibleTo.cs
+     Microsoft.CodeAnalysis.BuildTasks.ErrorString.cs
+      @link=ErrorString.resx
+    Dependencies/Contracts/
+     ErrorReporting/
+      FailFast.cs
+      FatalError.cs
+     CollectionBuilderAttribute.cs
+     CompilerFeatureRequiredAttribute.cs
+     Contract.cs
+     Contract.InterpolatedStringHandlers.cs
+     EnumExtensions.cs
+     EqualityComparerExtensions.cs
+     ExceptionUtilities.cs
+     ExperimentalAttribute.cs
+     Index.cs
+     InterpolatedStringHandlerArgumentAttribute.cs
+     InterpolatedStringHandlerAttribute.cs
+     IReadOnlySet.cs
+     IsExternalInit.cs
+     NonCopyableAttribute.cs
+     NonDefaultableAttribute.cs
+     NullableAttributes.cs
+     Range.cs
+     ReferenceEqualityComparer.cs
+     RequiredMemberAttribute.cs
+     SetsRequiredMembersAttribute.cs
+     ValueTaskExtensions.cs
+   Shared/
+    BuildProtocol.cs
+     @link=BuildProtocol.cs
+    BuildServerConnection.cs
+     @link=BuildServerConnection.cs
+    CompilerServerLogger.cs
+     @link=CompilerServerLogger.cs
+    ConsoleUtil.cs
+     @link=ConsoleUtil.cs
+    NamedPipeUtil.cs
+     @link=NamedPipeUtil.cs
+    NativeMethods.cs
+     @link=NativeMethods.cs
+    RuntimeHostInfo.cs
+     @link=RuntimeHostInfo.cs
+  Portable/
+   InternalUtilities/
+    CommandLineUtilities.cs
+     @link=CommandLineUtilities.cs
+    CompilerOptionParseUtilities.cs
+     @link=CompilerOptionParseUtilities.cs
+    Debug.cs
+     @link=Debug.cs
+    PlatformInformation.cs
+     @link=PlatformInformation.cs
+    ReflectionUtilities.cs
+     @link=ReflectionUtilities.cs
+    RoslynString.cs
+     @link=RoslynString.cs
+    UnicodeCharacterUtilities.cs
+     @link=UnicodeCharacterUtilities.cs
+   CommitHashAttribute.cs
+    @link=CommitHashAttribute.cs
+ CanonicalError.cs
+  @link=CanonicalError.cs
+ CommandLineBuilderExtension.cs
+  @link=CommandLineBuilderExtension.cs
+ CopyRefAssembly.cs
+  @link=CopyRefAssembly.cs
+ Csc.cs
+  @link=Csc.cs
+ Csi.cs
+  @link=Csi.cs
+ GenerateMSBuildEditorConfig.cs
+  @link=GenerateMSBuildEditorConfig.cs
+ IAnalyzerConfigFilesHostObject.cs
+  @link=IAnalyzerConfigFilesHostObject.cs
+ ICompilerOptionsHostObject.cs
+  @link=ICompilerOptionsHostObject.cs
+ ICscHostObject5.cs
+  @link=ICscHostObject5.cs
+ InteractiveCompiler.cs
+  @link=InteractiveCompiler.cs
+ IVbcHostObject6.cs
+  @link=IVbcHostObject6.cs
+ ManagedCompiler.cs
+  @link=ManagedCompiler.cs
+ ManagedToolTask.cs
+  @link=ManagedToolTask.cs
+ MapSourceRoots.cs
+  @link=MapSourceRoots.cs
+ MvidReader.cs
+  @link=MvidReader.cs
+ PropertyDictionary.cs
+  @link=PropertyDictionary.cs
+ RCWForCurrentContext.cs
+  @link=RCWForCurrentContext.cs
+ ShowMessageForImplicitlySkipAnalyzers.cs
+  @link=ShowMessageForImplicitlySkipAnalyzers.cs
+ TaskCompilerServerLogger.cs
+  @link=TaskCompilerServerLogger.cs
+ Utilities.cs
+  @link=Utilities.cs
+ ValidateBootstrap.cs
+  @link=ValidateBootstrap.cs
+ Vbc.cs
+  @link=Vbc.cs
+
+[metadataReferences]
+<NETFXREF>/v4.7.2/
+ mscorlib.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+<NUGET>/
+ microsoft.bcl.asyncinterfaces/10.0.1/lib/net462/Microsoft.Bcl.AsyncInterfaces.dll
+ microsoft.bcl.hashcode/6.0.0/lib/net462/Microsoft.Bcl.HashCode.dll
+ microsoft.build.framework/18.0.2/ref/net472/Microsoft.Build.Framework.dll
+ microsoft.build.tasks.core/18.0.2/ref/net472/Microsoft.Build.Tasks.Core.dll
+ microsoft.build.utilities.core/18.0.2/ref/net472/Microsoft.Build.Utilities.Core.dll
+ microsoft.io.redist/6.1.0/lib/net472/Microsoft.IO.Redist.dll
+ microsoft.net.stringtools/18.0.2/ref/net472/Microsoft.NET.StringTools.dll
+ system.buffers/4.6.1/lib/net462/System.Buffers.dll
+ system.collections.immutable/10.0.1/lib/net462/System.Collections.Immutable.dll
+ system.configuration.configurationmanager/10.0.1/lib/net462/System.Configuration.ConfigurationManager.dll
+ system.diagnostics.diagnosticsource/10.0.1/lib/net462/System.Diagnostics.DiagnosticSource.dll
+ system.formats.nrbf/10.0.1/lib/net462/System.Formats.Nrbf.dll
+ system.io.pipelines/10.0.1/lib/net462/System.IO.Pipelines.dll
+ system.memory/4.6.3/lib/net462/System.Memory.dll
+ system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
+ system.reflection.metadata/10.0.1/lib/net462/System.Reflection.Metadata.dll
+ system.resources.extensions/10.0.1/lib/net462/System.Resources.Extensions.dll
+ system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
+ system.text.encodings.web/10.0.1/lib/net462/System.Text.Encodings.Web.dll
+ system.text.json/10.0.1/lib/net462/System.Text.Json.dll
+ system.threading.tasks.dataflow/10.0.1/lib/net462/System.Threading.Tasks.Dataflow.dll
+ system.threading.tasks.extensions/4.6.3/lib/net462/System.Threading.Tasks.Extensions.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+<NUGET>/
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+ system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[analyzerConfigFiles]
+../../../
+ ../
+  ../
+   artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis.Sdk/Debug/net472/Microsoft.Build.Tasks.CodeAnalysis.Sdk.GeneratedMSBuildEditorConfig.editorconfig
+   eng/config/globalconfigs/
+    Common.globalconfig
+    Shipping.globalconfig
+   .editorconfig
+  Dependencies/.editorconfig
+ .editorconfig
+
+[additionalFiles]
+../../../../../eng/config/BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+
+[capabilities]
+Pack

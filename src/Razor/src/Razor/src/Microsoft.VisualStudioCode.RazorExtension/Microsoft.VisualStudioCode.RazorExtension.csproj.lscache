@@ -1,0 +1,340 @@
+hash=eaf0fcb5051db604e6a742620d0816bbdc580992df9466925ddbc052968f0af1
+version=2
+
+# This file caches language service data to improve the performance of C# Dev Kit.
+# It is not intended for manual editing. It can safely be deleted and will be
+# regenerated automatically. For more information, see https://aka.ms/lscache
+#
+# To control where cache files are stored, use the following VS Code setting:
+#   "dotnet.projectsystem.cacheInProjectFolder": true
+
+[project]
+project=Microsoft.VisualStudioCode.RazorExtension.csproj
+language=C#
+primary
+lastDtbSucceeded
+
+[properties]
+AssemblyName=Microsoft.VisualStudioCode.RazorExtension
+MaxSupportedLangVersion=14.0
+OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.VisualStudioCode.RazorExtension/Debug/net10.0/
+OutputType=Library
+ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.VisualStudioCode.RazorExtension/project.assets.json
+RootNamespace=Microsoft.VisualStudioCode.RazorExtension
+TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.VisualStudioCode.RazorExtension/Debug/net10.0/Microsoft.VisualStudioCode.RazorExtension.dll
+TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.VisualStudioCode.RazorExtension/Debug/net10.0/ref/Microsoft.VisualStudioCode.RazorExtension.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
+
+[commandLineArguments]
+/noconfig
+/unsafe-
+/checked-
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU1505,NETSDK1233,MSB3277,NU5100,NU5105,1701,1702,8002
+/fullpaths
+/nostdlib+
+/errorreport:prompt
+/warn:9999
+/doc:<PATH>../../../../../../artifacts/obj/Microsoft.VisualStudioCode.RazorExtension/Debug/net10.0/Microsoft.VisualStudioCode.RazorExtension.xml
+/define:TRACE;VSCODE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:enable
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
+/debug+
+/debug:embedded
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/AspNetCore.snk
+/optimize-
+/out:<PATH>../../../../../../artifacts/obj/Microsoft.VisualStudioCode.RazorExtension/Debug/net10.0/Microsoft.VisualStudioCode.RazorExtension.dll
+/refout:<PATH>../../../../../../artifacts/obj/Microsoft.VisualStudioCode.RazorExtension/Debug/net10.0/refint/Microsoft.VisualStudioCode.RazorExtension.dll
+/target:library
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign-
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
+/warnaserror+:NU1605,SYSLIB0011
+/warnaserror-:IDE0055
+
+[sourceFiles]
+../
+ ../../
+  ../../../artifacts/obj/Microsoft.VisualStudioCode.RazorExtension/Debug/net10.0/
+   .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+   Microsoft.VisualStudioCode.RazorExtension.AssemblyInfo.cs
+   Microsoft.VisualStudioCode.RazorExtension.InternalsVisibleTo.cs
+  Shared/files/LanguageSupport/IsExternalInit.cs
+   @link=LanguageSupport/IsExternalInit.cs
+ Microsoft.CodeAnalysis.Razor.CohostingShared/
+  CallHierarchy/
+   CohostCallHierarchyIncomingCallsEndpoint.cs
+   CohostCallHierarchyOutgoingCallsEndpoint.cs
+   CohostPrepareCallHierarchyEndpoint.cs
+  CodeActions/
+   CohostCodeActionsEndpoint.cs
+   CohostCodeActionsResolveEndpoint.cs
+  Completion/
+   CohostCompletionListCache.cs
+   CohostDocumentCompletionEndpoint.cs
+   CohostDocumentCompletionResolveEndpoint.cs
+  Diagnostics/CohostDocumentPullDiagnosticsEndpointBase.cs
+  DocumentColor/
+   CohostColorPresentationEndpoint.cs
+   CohostDocumentColorEndpoint.cs
+  DocumentHighlight/CohostDocumentHighlightEndpoint.cs
+  DocumentSymbol/CohostDocumentSymbolEndpoint.cs
+  FindAllReferences/CohostFindAllReferencesEndpoint.cs
+  FoldingRange/CohostFoldingRangeEndpoint.cs
+  Formatting/
+   CohostDocumentFormattingEndpoint.cs
+   CohostOnTypeFormattingEndpoint.cs
+   CohostRangeFormattingEndpoint.cs
+  GeneratedDocumentContents/CohostGeneratedDocumentContentsEndpoint.cs
+  Hover/CohostHoverEndpoint.cs
+  HtmlDocumentServices/
+   HtmlDocumentSynchronizer.cs
+   HtmlDocumentSynchronizer.RazorDocumentVersion.cs
+   HtmlDocumentSynchronizer.SynchronizationRequest.cs
+   HtmlRequestInvokerExtensions.cs
+   IHtmlDocumentPublisher.cs
+   IHtmlDocumentSynchronizer.cs
+   SynchronizationResult.cs
+  InlayHints/
+   CohostInlayHintEndpoint.cs
+   CohostInlayHintResolveEndpoint.cs
+  LinkedEditingRange/CohostLinkedEditingRangeEndpoint.cs
+  Navigation/
+   CohostGoToDefinitionEndpoint.cs
+   CohostGoToImplementationEndpoint.cs
+  OnAutoInsert/
+   CohostOnAutoInsertEndpoint.cs
+   CohostOnAutoInsertTriggerCharacterProviders.cs
+  Rename/
+   CohostPrepareRenameEndpoint.cs
+   CohostRenameEndpoint.cs
+   WorkspaceWillRenameEndpoint.cs
+  SelectionRanges/CohostSelectionRangeEndpoint.cs
+  SemanticTokens/
+   CohostSemanticTokensLegendService.cs
+   CohostSemanticTokensRangeEndpoint.cs
+  SignatureHelp/CohostSignatureHelpEndpoint.cs
+  CohostDocSyncEndpointRegistration.cs
+  CohostEndpointAttribute.cs
+  CohostInitializeReporter.cs
+  CohostStartupService.cs
+  IDynamicRegistrationProvider.cs
+  IncompatibleProjectService.cs
+  IRazorCohostStartupService.cs
+  RazorAnalyzerAssemblyRedirector.cs
+  RazorCohostClientCapabilitiesService.cs
+  RazorCohostDynamicRegistrationService.cs
+  RazorLSPConstants.cs
+  RazorSourceGeneratedDocumentExcerptService.cs
+  RazorSourceGeneratedDocumentSpanMappingService.cs
+  RazorSourceGeneratorLocator.cs
+  WellKnownStartupOrder.cs
+ Microsoft.CodeAnalysis.Razor.Workspaces/GlobalUsings.cs
+  @link=GlobalUsings.cs
+Endpoints/
+ CohostCodeLensEndpoint.cs
+ CohostResolveCodeLensEndpoint.cs
+ DocumentPullDiagnosticsEndpoint.cs
+ RazorDocumentClosedEndpoint.cs
+SemanticTokens/CohostSemanticTokensRegistration.cs
+Services/
+ ClientSettingsManager.cs
+ CohostConfigurationChangedService.cs
+ HtmlDocumentPublisher.cs
+ HtmlRequestInvoker.cs
+ IncompatibleProjectNotifier.cs
+ InProcServiceFactory.cs
+ LoggerFactory.cs
+ LoggerProvider.cs
+ LspLogger.cs
+ RazorClientServerManagerProvider.cs
+ RazorInitializer.cs
+ TelemetryReporterWrapper.cs
+ VSCodeBrokeredServiceInterceptor.cs
+ VSCodeFilePathService.cs
+ VSCodeLanguageServerFeatureOptions.cs
+ VSCodeRemoteServiceInvoker.cs
+ VSCodeRemoteServicesInitializer.cs
+ VSCodeTelemetryReporter.cs
+ VSCodeWorkspaceProvider.cs
+
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
+[metadataReferences]
+../../../../../../artifacts/obj/
+ Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net10.0/ref/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
+ Microsoft.CodeAnalysis.CSharp.Features/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.Features.dll
+ Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+ Microsoft.CodeAnalysis.CSharp/Debug/net10.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis.ExternalAccess.AspNetCore/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.ExternalAccess.AspNetCore.dll
+ Microsoft.CodeAnalysis.ExternalAccess.Copilot/Debug/net10.0/ref/Microsoft.CodeAnalysis.ExternalAccess.Copilot.dll
+ Microsoft.CodeAnalysis.ExternalAccess.Extensions/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.ExternalAccess.Extensions.dll
+ Microsoft.CodeAnalysis.ExternalAccess.Razor.Features/Debug/net10.0/ref/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features.dll
+ Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/net10.0/ref/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+ Microsoft.CodeAnalysis.Features/Debug/net10.0/ref/Microsoft.CodeAnalysis.Features.dll
+ Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/net10.0/ref/Microsoft.CodeAnalysis.LanguageServer.Protocol.dll
+ Microsoft.CodeAnalysis.Razor.Compiler/Debug/net10.0/ref/Microsoft.CodeAnalysis.Razor.Compiler.dll
+ Microsoft.CodeAnalysis.Razor.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Razor.Workspaces.dll
+ Microsoft.CodeAnalysis.Remote.Razor/Debug/net10.0/ref/Microsoft.CodeAnalysis.Remote.Razor.dll
+ Microsoft.CodeAnalysis.Remote.ServiceHub/Debug/net10.0/ref/Microsoft.CodeAnalysis.Remote.ServiceHub.dll
+ Microsoft.CodeAnalysis.Remote.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Remote.Workspaces.dll
+ Microsoft.CodeAnalysis.Scripting/Debug/net10.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+ Microsoft.CodeAnalysis.Workspaces/Debug/net10.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
+ Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
+<NUGET>/
+ icsharpcode.decompiler/9.1.0.7988/lib/netstandard2.0/ICSharpCode.Decompiler.dll
+ messagepack.annotations/2.5.198/lib/netstandard2.0/MessagePack.Annotations.dll
+ messagepack/2.5.198/lib/net6.0/MessagePack.dll
+ microsoft.bcl.asyncinterfaces/10.0.1/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll
+ microsoft.codeanalysis.elfie/1.0.0/lib/netstandard2.0/Microsoft.CodeAnalysis.Elfie.dll
+ microsoft.diasymreader/2.0.0/lib/netstandard2.0/Microsoft.DiaSymReader.dll
+ microsoft.extensions.dependencyinjection.abstractions/10.0.1/lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+ microsoft.extensions.dependencyinjection/10.0.1/lib/net10.0/Microsoft.Extensions.DependencyInjection.dll
+ microsoft.extensions.logging.abstractions/10.0.1/lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll
+ microsoft.extensions.logging/10.0.1/lib/net10.0/Microsoft.Extensions.Logging.dll
+ microsoft.extensions.objectpool/10.0.1/lib/net10.0/Microsoft.Extensions.ObjectPool.dll
+ microsoft.extensions.options/10.0.1/lib/net10.0/Microsoft.Extensions.Options.dll
+ microsoft.extensions.primitives/10.0.1/lib/net10.0/Microsoft.Extensions.Primitives.dll
+ microsoft.servicehub.client/4.6.3200/lib/net8.0/Microsoft.ServiceHub.Client.dll
+ microsoft.servicehub.framework/4.9.14-beta/lib/net8.0/Microsoft.ServiceHub.Framework.dll
+ microsoft.visualstudio.composition/17.13.50/lib/net8.0/Microsoft.VisualStudio.Composition.dll
+ microsoft.visualstudio.debugger.contracts/18.0.0-beta.25379.1/lib/netstandard2.0/Microsoft.VisualStudio.Debugger.Contracts.dll
+ microsoft.visualstudio.remotecontrol/16.3.52/lib/netstandard2.0/Microsoft.VisualStudio.RemoteControl.dll
+ microsoft.visualstudio.rpccontracts/17.15.25-pre/lib/net8.0/Microsoft.VisualStudio.RpcContracts.dll
+ microsoft.visualstudio.telemetry/18.0.22/lib/netstandard2.0/Microsoft.VisualStudio.Telemetry.dll
+ microsoft.visualstudio.threading.only/17.15.22-alpha/lib/net8.0/Microsoft.VisualStudio.Threading.dll
+ microsoft.visualstudio.validation/17.8.8/lib/net6.0/Microsoft.VisualStudio.Validation.dll
+ nerdbank.streams/2.12.87/lib/net8.0/Nerdbank.Streams.dll
+ newtonsoft.json/13.0.3/lib/net6.0/Newtonsoft.Json.dll
+ streamjsonrpc/2.23.41-alpha/lib/net8.0/StreamJsonRpc.dll
+ system.codedom/8.0.0/lib/net8.0/System.CodeDom.dll
+ system.componentmodel.composition/10.0.1/lib/net10.0/System.ComponentModel.Composition.dll
+ system.composition.attributedmodel/10.0.1/lib/net10.0/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net10.0/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net10.0/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net10.0/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net10.0/System.Composition.TypedParts.dll
+ system.configuration.configurationmanager/10.0.1/lib/net10.0/System.Configuration.ConfigurationManager.dll
+ system.diagnostics.eventlog/10.0.1/lib/net10.0/System.Diagnostics.EventLog.dll
+ system.diagnostics.performancecounter/7.0.0/lib/net7.0/System.Diagnostics.PerformanceCounter.dll
+ system.management/7.0.0/lib/net7.0/System.Management.dll
+ system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
+ system.security.permissions/10.0.1/lib/net10.0/System.Security.Permissions.dll
+ system.windows.extensions/10.0.1/lib/net10.0/System.Windows.Extensions.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+<NUGET>/
+ messagepackanalyzer/2.5.124/analyzers/dotnet/MessagePackAnalyzer.dll
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.extensions.logging.abstractions/10.0.1/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll
+ microsoft.extensions.options/10.0.1/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Options.SourceGeneration.dll
+ microsoft.servicehub.analyzers/4.9.14-beta/analyzers/cs/
+  Microsoft.ServiceHub.Analyzers.CodeFixes.dll
+  Microsoft.ServiceHub.Analyzers.CSharp.dll
+  Microsoft.ServiceHub.Analyzers.dll
+ microsoft.visualstudio.composition.analyzers/17.13.50/analyzers/cs/
+  Microsoft.VisualStudio.Composition.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Composition.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Composition.Analyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[analyzerConfigFiles]
+../
+ ../
+  ../../
+   ../../
+    artifacts/obj/Microsoft.VisualStudioCode.RazorExtension/Debug/net10.0/Microsoft.VisualStudioCode.RazorExtension.GeneratedMSBuildEditorConfig.editorconfig
+    eng/config/globalconfigs/
+     Common.globalconfig
+     Shipping.globalconfig
+    .editorconfig
+   .editorconfig
+   Common.globalconfig
+   Shipping.globalconfig
+  .editorconfig
+ .editorconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
+
+[additionalFiles]
+../../../../
+ ../../eng/config/BannedSymbols.txt
+ BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+PublicAPI.Shipped.txt
+PublicAPI.Unshipped.txt
+
+[projectReferences]
+../
+ ../../
+  ../../
+   Compilers/
+    Core/Portable/Microsoft.CodeAnalysis.csproj
+    CSharp/Portable/Microsoft.CodeAnalysis.CSharp.csproj
+   Features/
+    Core/Portable/Microsoft.CodeAnalysis.Features.csproj
+    CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Features.csproj
+    ExternalAccess/
+     AspNetCore/Microsoft.CodeAnalysis.ExternalAccess.AspNetCore.csproj
+     Copilot/Microsoft.CodeAnalysis.ExternalAccess.Copilot.csproj
+   LanguageServer/Protocol/Microsoft.CodeAnalysis.LanguageServer.Protocol.csproj
+   Scripting/Core/Microsoft.CodeAnalysis.Scripting.csproj
+   Tools/ExternalAccess/
+    Extensions/Microsoft.CodeAnalysis.ExternalAccess.Extensions.csproj
+    Razor/Features/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features.csproj
+    RazorCompiler/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.csproj
+   Workspaces/
+    Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
+    CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
+    Remote/
+     Core/Microsoft.CodeAnalysis.Remote.Workspaces.csproj
+     ServiceHub/Microsoft.CodeAnalysis.Remote.ServiceHub.csproj
+  Compiler/Microsoft.CodeAnalysis.Razor.Compiler/src/Microsoft.CodeAnalysis.Razor.Compiler.csproj
+  Shared/Microsoft.AspNetCore.Razor.Utilities.Shared/Microsoft.AspNetCore.Razor.Utilities.Shared.csproj
+ Microsoft.CodeAnalysis.Razor.Workspaces/Microsoft.CodeAnalysis.Razor.Workspaces.csproj
+ Microsoft.CodeAnalysis.Remote.Razor/Microsoft.CodeAnalysis.Remote.Razor.csproj
+
+[capabilities]
+NativeAOT
+Pack
+SupportsHotReload
