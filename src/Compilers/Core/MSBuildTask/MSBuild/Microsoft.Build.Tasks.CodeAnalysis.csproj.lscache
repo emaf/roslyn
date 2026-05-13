@@ -1,4 +1,4 @@
-hash=7e2f3d6b103abd7150e11741f02d1414b023aed2f4e4a702c56dcff0e87daba3
+hash=0587d1ec113fd44ec4c8407f8e9aa9a23d48ad37102032ecc6e08ea817315b23
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -24,6 +24,7 @@ TargetFrameworkIdentifier=.NETCoreApp
 /noconfig
 /unsafe+
 /checked-
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,CA1819,NU5105,1701,1702,8002
 /fullpaths
 /nostdlib+
 /errorreport:prompt
@@ -89,7 +90,6 @@ TargetRefPath=<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnaly
 TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,CA1819,NU5105,1701,1702,8002
 /doc:<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis/Debug/net10.0/Microsoft.Build.Tasks.CodeAnalysis.xml
 /define:TRACE;MICROSOFT_CODEANALYSIS_CONTRACTS_NO_VALUE_TASK;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
@@ -279,7 +279,6 @@ TargetRefPath=<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnaly
 TemporaryDependencyNodeTargetIdentifier=net8.0
 
 [commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,CA1819,NU5105,1701,1702
 /doc:<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis/Debug/net8.0/Microsoft.Build.Tasks.CodeAnalysis.xml
 /define:TRACE;MICROSOFT_CODEANALYSIS_CONTRACTS_NO_VALUE_TASK;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /out:<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis/Debug/net8.0/Microsoft.Build.Tasks.CodeAnalysis.dll

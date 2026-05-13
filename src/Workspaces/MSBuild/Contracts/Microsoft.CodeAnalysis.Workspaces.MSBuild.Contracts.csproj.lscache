@@ -1,4 +1,4 @@
-hash=b83f51a871e60574301c3d7a54219229043686c7f65fc3932c7513a3d9a55184
+hash=58ddd4fbfa6d2a3aeec30f8e3a17c019647107f41da04ffa26bf52983dd9745b
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -30,7 +30,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
 /noconfig
 /unsafe-
 /checked-
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /fullpaths
 /nostdlib+
 /errorreport:prompt

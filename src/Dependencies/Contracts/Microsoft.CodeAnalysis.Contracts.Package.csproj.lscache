@@ -1,4 +1,4 @@
-hash=cfc896a01d2e1801fd4daec172239bc26ab5a86c2220d98f847a4b27a241da87
+hash=4433a3437569935169958989aaa221bc0e7eee9d9858b592a8803a52a4a085a1
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -178,7 +178,7 @@ TargetRefPath=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Contracts.Pack
 TemporaryDependencyNodeTargetIdentifier=net8.0
 
 [commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5128,NU5105,1701,1702
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5128,NU5105,1701,1702,8002
 /define:TRACE;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /out:<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Contracts.Package/Debug/net8.0/Microsoft.CodeAnalysis.Contracts.Package.dll
 /refout:<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Contracts.Package/Debug/net8.0/refint/Microsoft.CodeAnalysis.Contracts.Package.dll
