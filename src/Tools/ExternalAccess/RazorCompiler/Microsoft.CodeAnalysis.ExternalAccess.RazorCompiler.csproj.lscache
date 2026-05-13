@@ -1,4 +1,4 @@
-hash=5b0edcefe4065f9351fb4ff970b5e16c92f65649bf6063935f401f2eb491b0ab
+hash=14cf8e28268bc1429afdf05e5fb8c9e225c58cc957e8fb65fa478bc808912d6f
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -183,7 +183,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
 [metadataReferences]
 ../../../../artifacts/obj/Microsoft.CodeAnalysis/Debug/net8.0/ref/Microsoft.CodeAnalysis.dll
 <NUGET>/
- microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+ microsoft.netcore.app.ref/8.0.26/ref/net8.0/
   Microsoft.CSharp.dll
   Microsoft.VisualBasic.Core.dll
   Microsoft.VisualBasic.dll
@@ -372,7 +372,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
   Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
   Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.netcore.app.ref/8.0.25/analyzers/dotnet/cs/
+ microsoft.netcore.app.ref/8.0.26/analyzers/dotnet/cs/
   Microsoft.Interop.ComInterfaceGenerator.dll
   Microsoft.Interop.LibraryImportGenerator.dll
   Microsoft.Interop.SourceGeneration.dll

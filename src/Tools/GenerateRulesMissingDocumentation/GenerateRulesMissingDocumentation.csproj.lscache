@@ -1,4 +1,4 @@
-hash=71d29c8b3f17afa8256a86e8d35cd443b4bf61c2e4beeeb8fe1c7e15dabe3670
+hash=802e93962a91d32b81d2f5be6a77603a8390854db0bbd69a04b1590c5d4c34c1
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../artifacts/bin/GenerateRulesMissingDocumentation/Debug/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/GenerateRulesMissingDocumentation/project.assets.json
 RootNamespace=GenerateRulesMissingDocumentation
-RunCommand=<PATH>../../../artifacts/bin/GenerateRulesMissingDocumentation/Debug/net10.0/GenerateRulesMissingDocumentation.exe
+RunCommand=<PATH>../../../artifacts/bin/GenerateRulesMissingDocumentation/Debug/net10.0/GenerateRulesMissingDocumentation
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/GenerateRulesMissingDocumentation/Debug/net10.0/GenerateRulesMissingDocumentation.dll

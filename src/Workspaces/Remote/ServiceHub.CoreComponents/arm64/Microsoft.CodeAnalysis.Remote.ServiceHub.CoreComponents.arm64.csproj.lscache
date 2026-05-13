@@ -1,4 +1,4 @@
-hash=502b1e8b4d5e2991739180d26d084094df1db4a6a89d58df80c1f7bbe5b7e5b7
+hash=7899e7530edb63bea90e9b336936169129f4d96e961d82a21b365e74627d712b
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Serv
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.Remote.ServiceHub.CoreComponents.arm64/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.Remote.ServiceHub.CoreComponents.arm64
-RunCommand=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.ServiceHub.CoreComponents.arm64/Debug/net10.0/Microsoft.CodeAnalysis.Remote.ServiceHub.CoreComponents.arm64.exe
+RunCommand=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.ServiceHub.CoreComponents.arm64/Debug/net10.0/Microsoft.CodeAnalysis.Remote.ServiceHub.CoreComponents.arm64
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.ServiceHub.CoreComponents.arm64/Debug/net10.0/Microsoft.CodeAnalysis.Remote.ServiceHub.CoreComponents.arm64.dll

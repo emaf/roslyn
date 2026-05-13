@@ -1,4 +1,4 @@
-hash=1f3349c3d4d1b7a06374e0eea12582c368b9a60421f9aec6c60823b0859c62b7
+hash=6298e6b65cda5d90b7944152bf0bec1833c32ec3fd2868dc3767f068af60051a
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../../../artifacts/bin/CompilersIOperationGenerator/Debug
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/CompilersIOperationGenerator/project.assets.json
 RootNamespace=Roslyn.Compilers.Internal.IOperationGenerator
-RunCommand=<PATH>../../../../../artifacts/bin/CompilersIOperationGenerator/Debug/net10.0/IOperationGenerator.exe
+RunCommand=<PATH>../../../../../artifacts/bin/CompilersIOperationGenerator/Debug/net10.0/IOperationGenerator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/CompilersIOperationGenerator/Debug/net10.0/IOperationGenerator.dll

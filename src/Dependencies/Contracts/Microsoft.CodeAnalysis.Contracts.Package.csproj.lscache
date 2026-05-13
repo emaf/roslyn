@@ -1,4 +1,4 @@
-hash=9dd506a67c50b48f8e5e592c00645565b05e3b00891bc2d00b5444b7680bcda1
+hash=cfc896a01d2e1801fd4daec172239bc26ab5a86c2220d98f847a4b27a241da87
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -178,7 +178,7 @@ TargetRefPath=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Contracts.Pack
 TemporaryDependencyNodeTargetIdentifier=net8.0
 
 [commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5128,NU5105,1701,1702,8002
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5128,NU5105,1701,1702
 /define:TRACE;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /out:<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Contracts.Package/Debug/net8.0/Microsoft.CodeAnalysis.Contracts.Package.dll
 /refout:<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Contracts.Package/Debug/net8.0/refint/Microsoft.CodeAnalysis.Contracts.Package.dll
@@ -191,7 +191,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
 
 [metadataReferences]
 <NUGET>/
- microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+ microsoft.netcore.app.ref/8.0.26/ref/net8.0/
   Microsoft.CSharp.dll
   Microsoft.VisualBasic.Core.dll
   Microsoft.VisualBasic.dll
@@ -377,7 +377,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
   Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
   Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.netcore.app.ref/8.0.25/analyzers/dotnet/cs/
+ microsoft.netcore.app.ref/8.0.26/analyzers/dotnet/cs/
   Microsoft.Interop.ComInterfaceGenerator.dll
   Microsoft.Interop.LibraryImportGenerator.dll
   Microsoft.Interop.SourceGeneration.dll

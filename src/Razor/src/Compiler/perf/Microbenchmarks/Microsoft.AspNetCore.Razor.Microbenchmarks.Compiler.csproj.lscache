@@ -1,4 +1,4 @@
-hash=2dd2a0ae7663cf043dcb0958d800888cfe269f69306cecb9f9b9d4c010a428b9
+hash=89c53314a2b88cb0b77a2c2506eaafea90820f8476d98d1523c3b1a60a5d96eb
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -20,7 +20,7 @@ OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Micr
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Microbenchmarks.Compiler/project.assets.json
 RootNamespace=Microsoft.AspNetCore.Razor.Microbenchmarks.Compiler
-RunCommand=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Compiler/Debug/net10.0/Microsoft.AspNetCore.Razor.Microbenchmarks.Compiler.exe
+RunCommand=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Compiler/Debug/net10.0/Microsoft.AspNetCore.Razor.Microbenchmarks.Compiler
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Compiler/Debug/net10.0/Microsoft.AspNetCore.Razor.Microbenchmarks.Compiler.dll
@@ -152,9 +152,7 @@ Microsoft.NETCore.App.Ref
   NonShipping.globalconfig
  .editorconfig
  .globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/build/config/analysislevel_11_default.globalconfig
- codestyle/cs/build/config/analysislevelstyle_default.globalconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../
@@ -180,12 +178,3 @@ CrossPlatformExecutable
 NativeAOT
 Pack
 SupportsHotReload
-
----
-
-[project]
-language=C#
-primary
-
-[sliceDimensions]
-TargetFramework=net10.0

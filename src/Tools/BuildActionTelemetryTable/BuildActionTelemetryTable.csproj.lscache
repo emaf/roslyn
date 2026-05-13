@@ -1,4 +1,4 @@
-hash=e46babf3152fec0e1e0b59d142f2f55ee8c7fdd3e3df5832adf5746a91a100b9
+hash=73cae3aed350970024eea9119ec92bc1f6eb34a3b5f74659fb4517a9ab868529
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../artifacts/bin/BuildActionTelemetryTable/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/BuildActionTelemetryTable/project.assets.json
 RootNamespace=BuildActionTelemetryTable
-RunCommand=<PATH>../../../artifacts/bin/BuildActionTelemetryTable/Debug/net10.0/BuildActionTelemetryTable.exe
+RunCommand=<PATH>../../../artifacts/bin/BuildActionTelemetryTable/Debug/net10.0/BuildActionTelemetryTable
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/BuildActionTelemetryTable/Debug/net10.0/BuildActionTelemetryTable.dll

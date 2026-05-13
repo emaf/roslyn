@@ -1,4 +1,4 @@
-hash=664aeadbddcca8a8ee6704bebccc9e4c1dcd7ba497d5f102e783de8c30f2d6ca
+hash=450dbe96d9882ebad3e96321a44c1a1f29474c9ebb28e41daba9342bac6a874d
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -15,238 +15,11 @@ lastDtbSucceeded
 
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost
+MaxSupportedLangVersion=12.0
+OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
-
-[commandLineArguments]
-/noconfig
-/unsafe+
-/checked-
-/fullpaths
-/nostdlib+
-/platform:AnyCPU
-/errorreport:prompt
-/warn:9999
-/highentropyva+
-/nullable:enable
-/debug+
-/debug:embedded
-/delaysign-
-/filealign:512
-/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/35MSSharedLib1024.snk
-/optimize-
-/target:exe
-/warnaserror-
-/utf8output
-/deterministic+
-/publicsign+
-/checksumalgorithm:SHA256
-/langversion:preview
-/skipanalyzers+
-/features:strict
-/warnaserror-:IDE0055
-
-[sourceFiles]
-Build/ProjectBuildManager.cs
-MSBuild/
- Constants/
-  ItemNames.cs
-  MetadataNames.cs
-  PropertyNames.cs
-  PropertyValues.cs
-  TargetNames.cs
- CSharp/
-  CSharpCommandLineArgumentReader.cs
-  CSharpProjectCommandLineReader.cs
- Logging/
-  DiagnosticLog.cs
-  MSBuildDiagnosticLogger.cs
-  MSBuildDiagnosticLogItem.cs
- ProjectFile/
-  CommandLineArgumentReader.cs
-  Conversions.cs
-  Extensions.cs
-  ProjectCommandLineReader.cs
-  ProjectFile.cs
-  ProjectInstanceReader.cs
- VisualBasic/
-  VisualBasicCommandLineArgumentReader.cs
-  VisualBasicProjectCommandLineReader.cs
-Rpc/
- RpcMethodInvoker.cs
- RpcServer.cs
-AbstractBuildHost.cs
-BuildHostLogger.cs
-MonoBuildHost.cs
-NetCoreBuildHost.cs
-NetFrameworkBuildHost.cs
-Program.cs
-
-[additionalFiles]
-../../../../eng/config/BannedSymbols.txt
-<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
- vs-threading.LegacyThreadSwitchingMembers.txt
- vs-threading.MainThreadAssertingMethods.txt
- vs-threading.MainThreadSwitchingMethods.txt
- vs-threading.MembersRequiringMainThread.txt
-PublicAPI.Shipped.txt
-PublicAPI.Unshipped.txt
-
-[projectReferences]
-../Contracts/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts.csproj
-
-[capabilities]
-Pack
-
----
-
-[project]
-language=C#
-
-[sliceDimensions]
-TargetFramework=net472
-
-[properties]
-MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/
-RunCommand=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
-TargetFramework=net472
-TargetFrameworkIdentifier=.NETFramework
-TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
-TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/ref/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
-TemporaryDependencyNodeTargetIdentifier=net472
-
-[commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,Nullable,1701,1702
-/doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.xml
-/define:TRACE;MSBUILDWORKSPACE_BUILDHOST;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
-/out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
-/refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/refint/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
-/subsystemversion:6.00
-/win32manifest:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.manifest
-/warnaserror+:NU1605
-
-[sourceFiles]
-../../../
- ../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
-  Microsoft.CodeAnalysis.WorkspaceMSBuildBuildHostResources.cs
-  Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.AssemblyInfo.cs
-  Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.InternalsVisibleTo.cs
- Compilers/
-  Core/Portable/
-   FileSystem/
-    FileUtilities.cs
-     @link=FileSystem/FileUtilities.cs
-    PathKind.cs
-     @link=FileSystem/PathKind.cs
-    PathUtilities.cs
-     @link=FileSystem/PathUtilities.cs
-   InternalUtilities/
-    CompilerOptionParseUtilities.cs
-     @link=Utilities/CompilerOptionParseUtilities.cs
-    ConcurrentSet.cs
-     @link=Utilities/ConcurrentSet.cs
-    Debug.cs
-     @link=Utilities/Debug.cs
-    FileNameUtilities.cs
-     @link=Utilities/FileNameUtilities.cs
-    Hash.cs
-     @link=Utilities/Hash.cs
-    NoMessagePumpSyncContext.cs
-     @link=Utilities/NoMessagePumpSyncContext.cs
-    PerformanceSensitiveAttribute.cs
-     @link=Utilities/PerformanceSensitiveAttribute.cs
-    PlatformInformation.cs
-     @link=Utilities/PlatformInformation.cs
-    RoslynString.cs
-     @link=Utilities/RoslynString.cs
-    SemaphoreSlimExtensions.cs
-     @link=Utilities/SemaphoreSlimExtensions.cs
-    SpecializedSyncContext.cs
-     @link=Utilities/SpecializedSyncContext.cs
-   Symbols/LanguageNames.cs
-    @link=Compiler/LanguageNames.cs
-  Shared/NamedPipeUtil.cs
-   @link=Utilities/NamedPipeUtil.cs
-
-[metadataReferences]
-../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts/Debug/net472/ref/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts.dll
-<NETFXREF>/v4.7.2/
- mscorlib.dll
- System.Core.dll
- System.Data.dll
- System.dll
- System.Drawing.dll
- System.IO.Compression.FileSystem.dll
- System.Numerics.dll
- System.Runtime.Serialization.dll
- System.Xml.dll
- System.Xml.Linq.dll
-<NUGET>/
- microsoft.bcl.asyncinterfaces/10.0.1/lib/net462/Microsoft.Bcl.AsyncInterfaces.dll
- microsoft.build.framework/17.11.48/ref/net472/Microsoft.Build.Framework.dll
- microsoft.build.locator/1.10.2/lib/net46/Microsoft.Build.Locator.dll
- microsoft.build.tasks.core/17.11.48/ref/net472/Microsoft.Build.Tasks.Core.dll
- microsoft.build.utilities.core/17.11.48/ref/net472/Microsoft.Build.Utilities.Core.dll
- microsoft.build/17.11.48/ref/net472/Microsoft.Build.dll
- microsoft.io.redist/6.1.0/lib/net472/Microsoft.IO.Redist.dll
- system.buffers/4.6.1/lib/net462/System.Buffers.dll
- system.io.pipelines/10.0.1/lib/net462/System.IO.Pipelines.dll
- system.memory/4.6.3/lib/net462/System.Memory.dll
- system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
- system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
- system.text.encodings.web/10.0.1/lib/net462/System.Text.Encodings.Web.dll
- system.text.json/10.0.1/lib/net462/System.Text.Json.dll
- system.threading.tasks.extensions/4.6.3/lib/net462/System.Threading.Tasks.Extensions.dll
-
-[analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
- Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
- Microsoft.CodeAnalysis.NetAnalyzers.dll
-<NUGET>/
- microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
-  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
- microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
-  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
- microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
-  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
-  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
-  Microsoft.VisualStudio.Threading.Analyzers.dll
- roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Roslyn.Diagnostics.Analyzers.dll
-  Roslyn.Diagnostics.CSharp.Analyzers.dll
- system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
-
-[analyzerConfigFiles]
-../../../
- ../
-  artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net472/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.GeneratedMSBuildEditorConfig.editorconfig
-  eng/config/globalconfigs/
-   Common.globalconfig
-   Shipping.globalconfig
-  .editorconfig
- Compilers/.editorconfig
-
----
-
-[project]
-language=C#
-primary
-
-[sliceDimensions]
-TargetFramework=net8.0
-
-[properties]
-MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/
 RunArguments=exec "<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll"
 RunCommand=dotnet
 TargetFramework=net8.0
@@ -256,12 +29,38 @@ TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.
 TemporaryDependencyNodeTargetIdentifier=net8.0
 
 [commandLineArguments]
+/noconfig
+/unsafe+
+/checked-
 /nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
+/fullpaths
+/nostdlib+
+/platform:AnyCPU
+/errorreport:prompt
+/warn:9999
 /doc:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.xml
 /define:TRACE;MSBUILDWORKSPACE_BUILDHOST;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
+/highentropyva+
+/nullable:enable
+/debug+
+/debug:embedded
+/delaysign-
+/filealign:512
+/keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/35MSSharedLib1024.snk
+/optimize-
 /out:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
 /refout:<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/refint/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+/target:exe
+/warnaserror-
+/utf8output
+/deterministic+
+/publicsign+
+/checksumalgorithm:SHA256
+/langversion:preview
+/skipanalyzers+
+/features:strict
 /warnaserror+:NU1605,SYSLIB0011
+/warnaserror-:IDE0055
 
 [sourceFiles]
 ../../../
@@ -306,6 +105,40 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
     @link=Compiler/LanguageNames.cs
   Shared/NamedPipeUtil.cs
    @link=Utilities/NamedPipeUtil.cs
+Build/ProjectBuildManager.cs
+MSBuild/
+ Constants/
+  ItemNames.cs
+  MetadataNames.cs
+  PropertyNames.cs
+  PropertyValues.cs
+  TargetNames.cs
+ CSharp/
+  CSharpCommandLineArgumentReader.cs
+  CSharpProjectCommandLineReader.cs
+ Logging/
+  DiagnosticLog.cs
+  MSBuildDiagnosticLogger.cs
+  MSBuildDiagnosticLogItem.cs
+ ProjectFile/
+  CommandLineArgumentReader.cs
+  Conversions.cs
+  Extensions.cs
+  ProjectCommandLineReader.cs
+  ProjectFile.cs
+  ProjectInstanceReader.cs
+ VisualBasic/
+  VisualBasicCommandLineArgumentReader.cs
+  VisualBasicProjectCommandLineReader.cs
+Rpc/
+ RpcMethodInvoker.cs
+ RpcServer.cs
+AbstractBuildHost.cs
+BuildHostLogger.cs
+MonoBuildHost.cs
+NetCoreBuildHost.cs
+NetFrameworkBuildHost.cs
+Program.cs
 
 [metadataReferences]
 ../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts/Debug/net8.0/ref/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts.dll
@@ -315,7 +148,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  microsoft.build.tasks.core/17.11.48/ref/net8.0/Microsoft.Build.Tasks.Core.dll
  microsoft.build.utilities.core/17.11.48/ref/net8.0/Microsoft.Build.Utilities.Core.dll
  microsoft.build/17.11.48/ref/net8.0/Microsoft.Build.dll
- microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+ microsoft.netcore.app.ref/8.0.26/ref/net8.0/
   Microsoft.CSharp.dll
   Microsoft.VisualBasic.Core.dll
   Microsoft.VisualBasic.dll
@@ -501,7 +334,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
   Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
   Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.netcore.app.ref/8.0.25/analyzers/dotnet/cs/
+ microsoft.netcore.app.ref/8.0.26/analyzers/dotnet/cs/
   Microsoft.Interop.ComInterfaceGenerator.dll
   Microsoft.Interop.LibraryImportGenerator.dll
   Microsoft.Interop.SourceGeneration.dll
@@ -526,7 +359,21 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  Compilers/.editorconfig
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
 
+[additionalFiles]
+../../../../eng/config/BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+PublicAPI.Shipped.txt
+PublicAPI.Unshipped.txt
+
+[projectReferences]
+../Contracts/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts.csproj
+
 [capabilities]
 CrossPlatformExecutable
 NativeAOT
+Pack
 SupportsHotReload

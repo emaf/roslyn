@@ -1,4 +1,4 @@
-hash=9ff62fd96e3062af9eb8bd699a8f1807c4dec2f952864f2edd04068e23a45d19
+hash=a87b57301a63c5bd2d0207a1306e9274bf49d7fb57d57d2363fe71251162e92e
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../../../artifacts/bin/CompilersBoundTreeGenerator/Debug/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/CompilersBoundTreeGenerator/project.assets.json
 RootNamespace=Roslyn.Compilers.Internal.BoundTreeGenerator
-RunCommand=<PATH>../../../../../artifacts/bin/CompilersBoundTreeGenerator/Debug/net10.0/BoundTreeGenerator.exe
+RunCommand=<PATH>../../../../../artifacts/bin/CompilersBoundTreeGenerator/Debug/net10.0/BoundTreeGenerator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/CompilersBoundTreeGenerator/Debug/net10.0/BoundTreeGenerator.dll

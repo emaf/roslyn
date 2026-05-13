@@ -1,4 +1,4 @@
-hash=3beb9260904d12ca9f14c7c8be0c80c9ccf606b240ff4d24a199531168136dc3
+hash=1517f7760be5ca7467336260f441f0f45bbdc2a55c0c7d2188fba9114eca47c0
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -219,7 +219,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  microsoft.extensions.logging/10.0.1/lib/net8.0/Microsoft.Extensions.Logging.dll
  microsoft.extensions.options/10.0.1/lib/net8.0/Microsoft.Extensions.Options.dll
  microsoft.extensions.primitives/10.0.1/lib/net8.0/Microsoft.Extensions.Primitives.dll
- microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+ microsoft.netcore.app.ref/8.0.26/ref/net8.0/
   Microsoft.CSharp.dll
   Microsoft.VisualBasic.Core.dll
   Microsoft.VisualBasic.dll
@@ -410,7 +410,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
   Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
  microsoft.extensions.logging.abstractions/10.0.1/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll
  microsoft.extensions.options/10.0.1/analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Options.SourceGeneration.dll
- microsoft.netcore.app.ref/8.0.25/analyzers/dotnet/cs/
+ microsoft.netcore.app.ref/8.0.26/analyzers/dotnet/cs/
   Microsoft.Interop.ComInterfaceGenerator.dll
   Microsoft.Interop.LibraryImportGenerator.dll
   Microsoft.Interop.SourceGeneration.dll

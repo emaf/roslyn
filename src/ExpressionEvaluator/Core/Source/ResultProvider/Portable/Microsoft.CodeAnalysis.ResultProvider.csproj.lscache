@@ -1,4 +1,4 @@
-hash=f50cac9d43d63ee464e3716d637189bc26be1e9f5c1fe5b328e05f2fa81e1b99
+hash=e6aa813f64466ab0ec31570cf05d925c18eb2357c6dc343e462fddd4eeacabbd
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -341,12 +341,3 @@ Helpers/Placeholders.cs
 
 [capabilities]
 Pack
-
----
-
-[project]
-language=C#
-primary
-
-[sliceDimensions]
-TargetFramework=netstandard2.0

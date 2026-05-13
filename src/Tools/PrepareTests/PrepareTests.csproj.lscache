@@ -1,4 +1,4 @@
-hash=74d4c715ae0be4222375406bbc81b0a6b7d73de71a0534ea3cf07e42b4198bc4
+hash=a64a6a2611de77305bf40ebd91ca7cf9f7f37619e3a06543a8dd8d1164212411
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../artifacts/bin/PrepareTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/PrepareTests/project.assets.json
 RootNamespace=PrepareTests
-RunCommand=<PATH>../../../artifacts/bin/PrepareTests/Debug/net10.0/PrepareTests.exe
+RunCommand=<PATH>../../../artifacts/bin/PrepareTests/Debug/net10.0/PrepareTests
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/PrepareTests/Debug/net10.0/PrepareTests.dll

@@ -1,4 +1,4 @@
-hash=99f075e79328c66c5f8a5637141ed3ce5ac239146f65693c528ae9b77977fd02
+hash=68d69f5d0a71a1aa2ef9507d54c64d0aea83293f3353b6b9a881e10e15c3251f
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../artifacts/bin/RunTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/RunTests/project.assets.json
 RootNamespace=RunTests
-RunCommand=<PATH>../../../artifacts/bin/RunTests/Debug/net10.0/RunTests.exe
+RunCommand=<PATH>../../../artifacts/bin/RunTests/Debug/net10.0/RunTests
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/RunTests/Debug/net10.0/RunTests.dll

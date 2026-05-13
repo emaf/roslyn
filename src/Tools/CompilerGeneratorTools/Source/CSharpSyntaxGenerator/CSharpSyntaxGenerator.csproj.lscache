@@ -1,4 +1,4 @@
-hash=10d1041eb4e23d74aafc4bbc7370ea9a5c6d47e268d2ed59feae1f23c9d4e853
+hash=410feb70e9c9661b8535f435907e9024a2db102231938918a9f0a34d08811bde
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -111,7 +111,7 @@ TargetFramework=net10.0
 MaxSupportedLangVersion=14.0
 OutputPath=<PATH>../../../../../artifacts/bin/CSharpSyntaxGenerator/Debug/net10.0/
 OutputType=Exe
-RunCommand=<PATH>../../../../../artifacts/bin/CSharpSyntaxGenerator/Debug/net10.0/CSharpSyntaxGenerator.exe
+RunCommand=<PATH>../../../../../artifacts/bin/CSharpSyntaxGenerator/Debug/net10.0/CSharpSyntaxGenerator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/CSharpSyntaxGenerator/Debug/net10.0/CSharpSyntaxGenerator.dll

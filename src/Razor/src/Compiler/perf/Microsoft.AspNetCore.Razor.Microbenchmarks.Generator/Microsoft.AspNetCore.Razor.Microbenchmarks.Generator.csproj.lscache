@@ -1,4 +1,4 @@
-hash=5dedbc289c781ee66896df82a1ce42fb3be4efe9af7415d82c8c4ba7f06a1fc7
+hash=09a977e6f47d9fb42a1f205111b1f2e4e7822713462a81850d54a994ca397506
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Micr
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator/project.assets.json
 RootNamespace=Microsoft.AspNetCore.Razor.Microbenchmarks.Generator
-RunCommand=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator/Debug/net10.0/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator.exe
+RunCommand=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator/Debug/net10.0/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator/Debug/net10.0/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator.dll
@@ -212,9 +212,7 @@ Microsoft.NETCore.App.Ref
   NonShipping.globalconfig
  .editorconfig
  .globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/build/config/analysislevel_11_default.globalconfig
- codestyle/cs/build/config/analysislevelstyle_default.globalconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../

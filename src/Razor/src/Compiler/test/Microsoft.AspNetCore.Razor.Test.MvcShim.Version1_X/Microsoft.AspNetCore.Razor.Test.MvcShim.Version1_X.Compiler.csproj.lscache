@@ -1,4 +1,4 @@
-hash=301ecd2f4e1129851bd1012d844af5083b3a4a0f8aa492cc802d8992f8d6edb1
+hash=e2e06a04e2962be2cc976aac4646e3b279b388f350ffc17444d30b0ea9c927d1
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -15,26 +15,38 @@ lastDtbSucceeded
 
 [properties]
 AssemblyName=Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler
+MaxSupportedLangVersion=14.0
+OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/project.assets.json
 RootNamespace=Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler
+TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
+TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
+TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/ref/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
+TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [commandLineArguments]
 /noconfig
 /unsafe-
 /checked-
+/nowarn:1701,1702,1705,NU1507,NU1510,RS1041,RS1038,1573,1701,NU1505,NETSDK1233,MSB3277,EnableGenerateDocumentationFile,RS0016,RS0017,RS0018,RS0022,RS0026,RS0027,NU5105,1701,1702,8002
 /fullpaths
 /nostdlib+
 /errorreport:prompt
 /warn:9999
+/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /highentropyva+
 /nullable:enable
+/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
 /debug+
 /debug:portable
 /delaysign-
 /filealign:512
 /keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/AspNetCore.snk
 /optimize-
+/out:<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
+/refout:<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/refint/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
 /target:library
 /warnaserror-
 /utf8output
@@ -44,9 +56,16 @@ RootNamespace=Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler
 /langversion:preview
 /skipanalyzers+
 /features:strict
+/warnaserror+:NU1605,SYSLIB0011
 /warnaserror-:IDE0055,CS1591,xUnit1004
 
 [sourceFiles]
+../../../
+ ../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/
+  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
+  Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.AssemblyInfo.cs
+ Shared/files/LanguageSupport/IsExternalInit.cs
+  @link=LanguageSupport/IsExternalInit.cs
 Microsoft.AspNetCore.Html/
  IHtmlContent.cs
  IHtmlContentBuilder.cs
@@ -107,6 +126,9 @@ Microsoft.AspNetCore.Razor.TagHelpers/
  TagMode.cs
  TagStructure.cs
 
+[frameworkPacks]
+Microsoft.NETCore.App.Ref
+
 [analyzerReferences]
 <NETSDK>/Sdks/Microsoft.NET.Sdk/
  analyzers/
@@ -140,61 +162,6 @@ Microsoft.AspNetCore.Razor.TagHelpers/
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
 [analyzerConfigFiles]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/build/config/analysislevel_11_default.globalconfig
- codestyle/cs/build/config/analysislevelstyle_default.globalconfig
-
-[additionalFiles]
-../../../../
- ../../eng/config/BannedSymbols.txt
- BannedSymbols.txt
-<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
- vs-threading.LegacyThreadSwitchingMembers.txt
- vs-threading.MainThreadAssertingMethods.txt
- vs-threading.MainThreadSwitchingMethods.txt
- vs-threading.MembersRequiringMainThread.txt
-
-[capabilities]
-Pack
-
----
-
-[project]
-language=C#
-primary
-
-[sliceDimensions]
-TargetFramework=net10.0
-
-[properties]
-MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/
-TargetFramework=net10.0
-TargetFrameworkIdentifier=.NETCoreApp
-TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
-TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/ref/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
-TemporaryDependencyNodeTargetIdentifier=net10.0
-
-[commandLineArguments]
-/nowarn:1701,1702,1705,NU1507,NU1510,RS1041,RS1038,1573,1701,NU1505,NETSDK1233,MSB3277,EnableGenerateDocumentationFile,RS0016,RS0017,RS0018,RS0022,RS0026,RS0027,NU5105,1701,1702,8002
-/define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
-/features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
-/out:<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
-/refout:<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/refint/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
-/warnaserror+:NU1605,SYSLIB0011
-
-[sourceFiles]
-../../../
- ../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net10.0/
-  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
-  Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.AssemblyInfo.cs
- Shared/files/LanguageSupport/IsExternalInit.cs
-  @link=LanguageSupport/IsExternalInit.cs
-
-[frameworkPacks]
-Microsoft.NETCore.App.Ref
-
-[analyzerConfigFiles]
 ../../
  ../../
   ../../
@@ -208,75 +175,19 @@ Microsoft.NETCore.App.Ref
   NonShipping.globalconfig
  .editorconfig
  .globalconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
+
+[additionalFiles]
+../../../../
+ ../../eng/config/BannedSymbols.txt
+ BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
 
 [capabilities]
 NativeAOT
+Pack
 SupportsHotReload
-
----
-
-[project]
-language=C#
-
-[sliceDimensions]
-TargetFramework=net472
-
-[properties]
-MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net472/
-TargetFramework=net472
-TargetFrameworkIdentifier=.NETFramework
-TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net472/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
-TargetRefPath=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net472/ref/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
-TemporaryDependencyNodeTargetIdentifier=net472
-
-[commandLineArguments]
-/nowarn:1701,1702,1705,NU1507,NU1510,RS1041,RS1038,1573,1701,NU1505,NETSDK1233,MSB3277,EnableGenerateDocumentationFile,RS0016,RS0017,RS0018,RS0022,RS0026,RS0027,NU5105,Nullable,Nullable,1701,1702
-/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
-/out:<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net472/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
-/refout:<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net472/refint/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.dll
-/subsystemversion:6.00
-/warnaserror+:NU1605
-
-[sourceFiles]
-../../../
- ../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net472/
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
-  Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.AssemblyInfo.cs
- Shared/files/LanguageSupport/IsExternalInit.cs
-  @link=LanguageSupport/IsExternalInit.cs
-
-[metadataReferences]
-<NETFXREF>/v4.7.2/
- mscorlib.dll
- System.Core.dll
- System.Data.dll
- System.dll
- System.Drawing.dll
- System.IO.Compression.FileSystem.dll
- System.Numerics.dll
- System.Runtime.Serialization.dll
- System.Xml.dll
- System.Xml.Linq.dll
-<NUGET>/
- system.buffers/4.6.1/lib/net462/System.Buffers.dll
- system.diagnostics.diagnosticsource/10.0.1/lib/net462/System.Diagnostics.DiagnosticSource.dll
- system.memory/4.6.3/lib/net462/System.Memory.dll
- system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
- system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
- system.text.encodings.web/10.0.1/lib/net462/System.Text.Encodings.Web.dll
-
-[analyzerConfigFiles]
-../../
- ../../
-  ../../
-   artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler/Debug/net472/Microsoft.AspNetCore.Razor.Test.MvcShim.Version1_X.Compiler.GeneratedMSBuildEditorConfig.editorconfig
-   eng/config/globalconfigs/
-    Common.globalconfig
-    NonShipping.globalconfig
-   .editorconfig
-  .editorconfig
-  Common.globalconfig
-  NonShipping.globalconfig
- .editorconfig
- .globalconfig

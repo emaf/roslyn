@@ -1,4 +1,4 @@
-hash=b01d733d065fc661dceb65d8ad5e8cf2f2229116c459ce46fefae47f8f45a5b8
+hash=900eff4b323793d9d1cdbaba096727e72cbd37cdc10b0c1c10c47accd843a6f5
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -352,9 +352,7 @@ Microsoft.NETCore.App.Ref
   NonShipping.globalconfig
  .editorconfig
  .globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/build/config/analysislevel_11_default.globalconfig
- codestyle/cs/build/config/analysislevelstyle_default.globalconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 .editorconfig
 
 [additionalFiles]

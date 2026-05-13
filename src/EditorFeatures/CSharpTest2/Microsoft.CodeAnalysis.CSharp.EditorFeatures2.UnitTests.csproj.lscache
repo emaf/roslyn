@@ -1,4 +1,4 @@
-hash=ab959f67f860b28894607566452c4a7a6e9bb23012583eeb715d963e429d42f7
+hash=b463f5d7d2bedb681fe6ca426703368b35d2213a32a5daa7875a7bea0ba2eddc
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -442,12 +442,3 @@ NativeAOT
 Pack
 SupportsHotReload
 TestContainer
-
----
-
-[project]
-language=C#
-primary
-
-[sliceDimensions]
-TargetFramework=net10.0

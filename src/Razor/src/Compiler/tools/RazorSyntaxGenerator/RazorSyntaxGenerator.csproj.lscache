@@ -1,4 +1,4 @@
-hash=39b74f749509a7c0f72f1c9933ad89e1790b959f2875f1d88d32ea87a1f256d9
+hash=d84007798e63df18b228d7d93175bda0df9c507038dde3e9602ed1a2fc9eaa09
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../../../../artifacts/bin/RazorSyntaxGenerator/Debug/net1
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/RazorSyntaxGenerator/project.assets.json
 RootNamespace=RazorSyntaxGenerator
-RunCommand=<PATH>../../../../../../artifacts/bin/RazorSyntaxGenerator/Debug/net10.0/dotnet-razorsyntaxgenerator.exe
+RunCommand=<PATH>../../../../../../artifacts/bin/RazorSyntaxGenerator/Debug/net10.0/dotnet-razorsyntaxgenerator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/RazorSyntaxGenerator/Debug/net10.0/dotnet-razorsyntaxgenerator.dll
@@ -131,9 +131,7 @@ Microsoft.NETCore.App.Ref
   Shipping.globalconfig
  .editorconfig
  .globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/build/config/analysislevel_11_default.globalconfig
- codestyle/cs/build/config/analysislevelstyle_default.globalconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../

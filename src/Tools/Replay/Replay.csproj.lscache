@@ -1,4 +1,4 @@
-hash=2222b45b73f02a0e90f91c5debfd033865a7ed7257cdbae128a274e07c411b8b
+hash=08e51b501c336c3eff7e8654c22a01ab75678ce88afa2d0be0c3ff5767471708
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -18,11 +18,13 @@ AssemblyName=Replay
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Replay/project.assets.json
 RootNamespace=Replay
+TargetFrameworkIdentifier=.NETCoreApp
 
 [commandLineArguments]
 /noconfig
 /unsafe-
 /checked-
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /fullpaths
 /nostdlib+
 /errorreport:prompt
@@ -41,10 +43,22 @@ RootNamespace=Replay
 /langversion:preview
 /skipanalyzers+
 /features:strict
+/warnaserror+:NU1605,SYSLIB0011
 /warnaserror-:IDE0055
 
 [sourceFiles]
 Replay.cs
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt
@@ -54,8 +68,27 @@ Replay.cs
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
 
+[projectReferences]
+../../
+ Compilers/
+  Core/Portable/Microsoft.CodeAnalysis.csproj
+  CSharp/
+   csc/AnyCpu/csc.csproj
+   Portable/Microsoft.CodeAnalysis.CSharp.csproj
+  Server/VBCSCompiler/AnyCpu/VBCSCompiler.csproj
+  VisualBasic/
+   Portable/Microsoft.CodeAnalysis.VisualBasic.vbproj
+   vbc/AnyCpu/vbc.csproj
+ Workspaces/
+  Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
+  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
+  VisualBasic/Portable/Microsoft.CodeAnalysis.VisualBasic.Workspaces.vbproj
+
 [capabilities]
+CrossPlatformExecutable
+NativeAOT
 Pack
+SupportsHotReload
 
 ---
 
@@ -68,21 +101,18 @@ TargetFramework=net10.0
 [properties]
 MaxSupportedLangVersion=14.0
 OutputPath=<PATH>../../../artifacts/bin/Replay/Debug/net10.0/
-RunCommand=<PATH>../../../artifacts/bin/Replay/Debug/net10.0/Replay.exe
+RunCommand=<PATH>../../../artifacts/bin/Replay/Debug/net10.0/Replay
 TargetFramework=net10.0
-TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/Replay/Debug/net10.0/Replay.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Replay/Debug/net10.0/ref/Replay.dll
 TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /doc:<PATH>../../../artifacts/obj/Replay/Debug/net10.0/Replay.xml
 /define:TRACE;ROSLYN_NO_INDEXRANGE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
 /out:<PATH>../../../artifacts/obj/Replay/Debug/net10.0/Replay.dll
 /refout:<PATH>../../../artifacts/obj/Replay/Debug/net10.0/refint/Replay.dll
-/warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
 ../../
@@ -176,15 +206,6 @@ Microsoft.NETCore.App.Ref
  system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
 
 [analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/
-  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
-  Microsoft.CodeAnalysis.NetAnalyzers.dll
- codestyle/cs/
-  Microsoft.CodeAnalysis.CodeStyle.dll
-  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 <NUGET>/
  messagepackanalyzer/3.1.4/analyzers/roslyn4.3/cs/
   MessagePack.Analyzers.CodeFixes.dll
@@ -222,338 +243,6 @@ Microsoft.NETCore.App.Ref
  Dependencies/.editorconfig
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
-[projectReferences]
-../../
- Compilers/
-  Core/Portable/Microsoft.CodeAnalysis.csproj
-  CSharp/
-   csc/AnyCpu/csc.csproj
-   Portable/Microsoft.CodeAnalysis.CSharp.csproj
-  Server/VBCSCompiler/AnyCpu/VBCSCompiler.csproj
-  VisualBasic/
-   Portable/Microsoft.CodeAnalysis.VisualBasic.vbproj
-   vbc/AnyCpu/vbc.csproj
- Workspaces/
-  Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
-  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
-  VisualBasic/Portable/Microsoft.CodeAnalysis.VisualBasic.Workspaces.vbproj
-
-[capabilities]
-CrossPlatformExecutable
-NativeAOT
-SupportsHotReload
-
----
-
-[project]
-language=C#
-
-[sliceDimensions]
-TargetFramework=net472
-
-[properties]
-MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../artifacts/bin/Replay/Debug/net472/
-RunCommand=<PATH>../../../artifacts/bin/Replay/Debug/net472/Replay.exe
-TargetFramework=net472
-TargetFrameworkIdentifier=.NETFramework
-TargetPath=<PATH>../../../artifacts/bin/Replay/Debug/net472/Replay.exe
-TargetRefPath=<PATH>../../../artifacts/obj/Replay/Debug/net472/ref/Replay.exe
-TemporaryDependencyNodeTargetIdentifier=net472
-
-[commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,Nullable,1701,1702
-/platform:AnyCPU
-/doc:<PATH>../../../artifacts/obj/Replay/Debug/net472/Replay.xml
-/define:TRACE;ROSLYN_NO_INDEXRANGE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
-/out:<PATH>../../../artifacts/obj/Replay/Debug/net472/Replay.exe
-/refout:<PATH>../../../artifacts/obj/Replay/Debug/net472/refint/Replay.exe
-/subsystemversion:6.00
-/win32manifest:<PATH>../../../artifacts/obj/Replay/Debug/net472/Replay.exe.manifest
-/warnaserror+:NU1605
-
-[sourceFiles]
-../../
- ../artifacts/obj/Replay/Debug/net472/
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
-  Replay.AssemblyInfo.cs
- Compilers/
-  Core/Portable/
-   InternalUtilities/
-    Debug.cs
-     @link=Debug.cs
-    PlatformInformation.cs
-     @link=PlatformInformation.cs
-   CommitHashAttribute.cs
-    @link=CommitHashAttribute.cs
-  Shared/
-   BuildProtocol.cs
-    @link=BuildProtocol.cs
-   BuildServerConnection.cs
-    @link=BuildServerConnection.cs
-   CompilerServerLogger.cs
-    @link=CompilerServerLogger.cs
-   NamedPipeUtil.cs
-    @link=NamedPipeUtil.cs
-   NativeMethods.cs
-    @link=NativeMethods.cs
-   RuntimeHostInfo.cs
-    @link=RuntimeHostInfo.cs
- Dependencies/Contracts/
-  ErrorReporting/
-   FailFast.cs
-   FatalError.cs
-  CollectionBuilderAttribute.cs
-  CompilerFeatureRequiredAttribute.cs
-  Contract.cs
-  Contract.InterpolatedStringHandlers.cs
-  EnumExtensions.cs
-  EqualityComparerExtensions.cs
-  ExceptionUtilities.cs
-  ExperimentalAttribute.cs
-  Index.cs
-  InterpolatedStringHandlerArgumentAttribute.cs
-  InterpolatedStringHandlerAttribute.cs
-  IReadOnlySet.cs
-  IsExternalInit.cs
-  NonCopyableAttribute.cs
-  NonDefaultableAttribute.cs
-  NullableAttributes.cs
-  Range.cs
-  ReferenceEqualityComparer.cs
-  RequiredMemberAttribute.cs
-  SetsRequiredMembersAttribute.cs
-  ValueTaskExtensions.cs
-
-[metadataReferences]
-../../../artifacts/obj/
- csc/Debug/net472/ref/csc.exe
-  @aliases=csc
- Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
- Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.dll
- Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
- Microsoft.CodeAnalysis.VisualBasic.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
- Microsoft.CodeAnalysis.VisualBasic/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.VisualBasic.dll
- Microsoft.CodeAnalysis.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
- Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
- vbc/Debug/net472/ref/vbc.exe
-  @aliases=vbc
- VBCSCompiler/Debug/net472/ref/VBCSCompiler.exe
-  @aliases=vbcscompiler
-<NETFXREF>/v4.7.2/
- Facades/
-  Microsoft.Win32.Primitives.dll
-  netstandard.dll
-  System.AppContext.dll
-  System.Collections.Concurrent.dll
-  System.Collections.dll
-  System.Collections.NonGeneric.dll
-  System.Collections.Specialized.dll
-  System.ComponentModel.Annotations.dll
-  System.ComponentModel.dll
-  System.ComponentModel.EventBasedAsync.dll
-  System.ComponentModel.Primitives.dll
-  System.ComponentModel.TypeConverter.dll
-  System.Console.dll
-  System.Data.Common.dll
-  System.Diagnostics.Contracts.dll
-  System.Diagnostics.Debug.dll
-  System.Diagnostics.FileVersionInfo.dll
-  System.Diagnostics.Process.dll
-  System.Diagnostics.StackTrace.dll
-  System.Diagnostics.TextWriterTraceListener.dll
-  System.Diagnostics.Tools.dll
-  System.Diagnostics.TraceSource.dll
-  System.Drawing.Primitives.dll
-  System.Dynamic.Runtime.dll
-  System.Globalization.Calendars.dll
-  System.Globalization.dll
-  System.Globalization.Extensions.dll
-  System.IO.Compression.ZipFile.dll
-  System.IO.dll
-  System.IO.FileSystem.dll
-  System.IO.FileSystem.DriveInfo.dll
-  System.IO.FileSystem.Primitives.dll
-  System.IO.FileSystem.Watcher.dll
-  System.IO.IsolatedStorage.dll
-  System.IO.MemoryMappedFiles.dll
-  System.IO.Pipes.dll
-  System.IO.UnmanagedMemoryStream.dll
-  System.Linq.dll
-  System.Linq.Expressions.dll
-  System.Linq.Parallel.dll
-  System.Linq.Queryable.dll
-  System.Net.Http.Rtc.dll
-  System.Net.NameResolution.dll
-  System.Net.NetworkInformation.dll
-  System.Net.Ping.dll
-  System.Net.Primitives.dll
-  System.Net.Requests.dll
-  System.Net.Security.dll
-  System.Net.Sockets.dll
-  System.Net.WebHeaderCollection.dll
-  System.Net.WebSockets.Client.dll
-  System.Net.WebSockets.dll
-  System.ObjectModel.dll
-  System.Reflection.dll
-  System.Reflection.Emit.dll
-  System.Reflection.Emit.ILGeneration.dll
-  System.Reflection.Emit.Lightweight.dll
-  System.Reflection.Extensions.dll
-  System.Reflection.Primitives.dll
-  System.Resources.Reader.dll
-  System.Resources.ResourceManager.dll
-  System.Resources.Writer.dll
-  System.Runtime.CompilerServices.VisualC.dll
-  System.Runtime.dll
-  System.Runtime.Extensions.dll
-  System.Runtime.Handles.dll
-  System.Runtime.InteropServices.dll
-  System.Runtime.InteropServices.RuntimeInformation.dll
-  System.Runtime.InteropServices.WindowsRuntime.dll
-  System.Runtime.Numerics.dll
-  System.Runtime.Serialization.Formatters.dll
-  System.Runtime.Serialization.Json.dll
-  System.Runtime.Serialization.Primitives.dll
-  System.Runtime.Serialization.Xml.dll
-  System.Security.Claims.dll
-  System.Security.Cryptography.Algorithms.dll
-  System.Security.Cryptography.Csp.dll
-  System.Security.Cryptography.Encoding.dll
-  System.Security.Cryptography.Primitives.dll
-  System.Security.Cryptography.X509Certificates.dll
-  System.Security.Principal.dll
-  System.Security.SecureString.dll
-  System.ServiceModel.Duplex.dll
-  System.ServiceModel.Http.dll
-  System.ServiceModel.NetTcp.dll
-  System.ServiceModel.Primitives.dll
-  System.ServiceModel.Security.dll
-  System.Text.Encoding.dll
-  System.Text.Encoding.Extensions.dll
-  System.Text.RegularExpressions.dll
-  System.Threading.dll
-  System.Threading.Overlapped.dll
-  System.Threading.Tasks.dll
-  System.Threading.Tasks.Parallel.dll
-  System.Threading.Thread.dll
-  System.Threading.ThreadPool.dll
-  System.Threading.Timer.dll
-  System.ValueTuple.dll
-  System.Xml.ReaderWriter.dll
-  System.Xml.XDocument.dll
-  System.Xml.XmlDocument.dll
-  System.Xml.XmlSerializer.dll
-  System.Xml.XPath.dll
-  System.Xml.XPath.XDocument.dll
- mscorlib.dll
- System.ComponentModel.Composition.dll
- System.Configuration.dll
- System.Core.dll
- System.Data.dll
- System.dll
- System.Drawing.dll
- System.IO.Compression.dll
- System.IO.Compression.FileSystem.dll
- System.Net.Http.dll
- System.Numerics.dll
- System.Runtime.Serialization.dll
- System.Xaml.dll
- System.Xml.dll
- System.Xml.Linq.dll
-<NUGET>/
- basic.compilerlog.util/0.9.19/lib/net472/Basic.CompilerLog.Util.dll
- messagepack.annotations/3.1.4/lib/netstandard2.0/MessagePack.Annotations.dll
- messagepack/3.1.4/lib/net472/MessagePack.dll
- microsoft.bcl.asyncinterfaces/10.0.1/lib/net462/Microsoft.Bcl.AsyncInterfaces.dll
- microsoft.bcl.memory/9.0.14/lib/net462/Microsoft.Bcl.Memory.dll
- microsoft.build.framework/18.0.2/ref/net472/Microsoft.Build.Framework.dll
- microsoft.build.utilities.core/18.0.2/ref/net472/Microsoft.Build.Utilities.Core.dll
- microsoft.extensions.objectpool/9.0.9/lib/net462/Microsoft.Extensions.ObjectPool.dll
- microsoft.io.redist/6.1.0/lib/net472/Microsoft.IO.Redist.dll
- microsoft.net.stringtools/18.0.2/ref/net472/Microsoft.NET.StringTools.dll
- mono.options/6.6.0.161/lib/net40/Mono.Options.dll
- msbuild.structuredlogger/2.3.113/lib/netstandard2.0/StructuredLogger.dll
- naturalsort.extension/4.3.0/lib/netstandard2.0/NaturalSort.Extension.dll
- system.buffers/4.6.1/lib/net462/System.Buffers.dll
- system.collections.immutable/10.0.1/lib/net462/System.Collections.Immutable.dll
- system.composition.attributedmodel/10.0.1/lib/net462/System.Composition.AttributedModel.dll
- system.composition.convention/10.0.1/lib/net462/System.Composition.Convention.dll
- system.composition.hosting/10.0.1/lib/net462/System.Composition.Hosting.dll
- system.composition.runtime/10.0.1/lib/net462/System.Composition.Runtime.dll
- system.composition.typedparts/10.0.1/lib/net462/System.Composition.TypedParts.dll
- system.configuration.configurationmanager/10.0.1/lib/net462/System.Configuration.ConfigurationManager.dll
- system.diagnostics.diagnosticsource/10.0.1/lib/net462/System.Diagnostics.DiagnosticSource.dll
- system.io.pipelines/10.0.1/lib/net462/System.IO.Pipelines.dll
- system.memory/4.6.3/lib/net462/System.Memory.dll
- system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
- system.reflection.metadata/10.0.1/lib/net462/System.Reflection.Metadata.dll
- system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
- system.text.encoding.codepages/8.0.0/lib/net462/System.Text.Encoding.CodePages.dll
- system.text.encodings.web/10.0.1/lib/net462/System.Text.Encodings.Web.dll
- system.text.json/10.0.1/lib/net462/System.Text.Json.dll
- system.threading.channels/8.0.0/lib/net462/System.Threading.Channels.dll
- system.threading.tasks.extensions/4.6.3/lib/net462/System.Threading.Tasks.Extensions.dll
-
-[analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
- Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
- Microsoft.CodeAnalysis.NetAnalyzers.dll
-<NUGET>/
- messagepackanalyzer/3.1.4/analyzers/roslyn4.3/cs/
-  MessagePack.Analyzers.CodeFixes.dll
-  MessagePack.SourceGenerator.dll
- microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.Analyzers.dll
-  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
- microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
-  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
- microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
-  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
- microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
-  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
-  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
-  Microsoft.VisualStudio.Threading.Analyzers.dll
- roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Roslyn.Diagnostics.Analyzers.dll
-  Roslyn.Diagnostics.CSharp.Analyzers.dll
- system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
-
-[analyzerConfigFiles]
-../../
- ../
-  artifacts/obj/Replay/Debug/net472/Replay.GeneratedMSBuildEditorConfig.editorconfig
-  eng/config/globalconfigs/
-   Common.globalconfig
-   Shipping.globalconfig
-  .editorconfig
- Compilers/.editorconfig
- Dependencies/.editorconfig
-
-[projectReferences]
-../
- ../
-  Compilers/
-   Core/Portable/Microsoft.CodeAnalysis.csproj
-   CSharp/
-    csc/AnyCpu/csc.csproj
-    Portable/Microsoft.CodeAnalysis.CSharp.csproj
-   Server/VBCSCompiler/AnyCpu/VBCSCompiler.csproj
-   VisualBasic/
-    Portable/Microsoft.CodeAnalysis.VisualBasic.vbproj
-    vbc/AnyCpu/vbc.csproj
-  Workspaces/
-   Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
-   CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
-   VisualBasic/Portable/Microsoft.CodeAnalysis.VisualBasic.Workspaces.vbproj
- ExternalAccess/RazorCompiler/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.csproj
-
 ---
 
 [project]
@@ -566,20 +255,17 @@ TargetFramework=net8.0
 [properties]
 MaxSupportedLangVersion=12.0
 OutputPath=<PATH>../../../artifacts/bin/Replay/Debug/net8.0/
-RunCommand=<PATH>../../../artifacts/bin/Replay/Debug/net8.0/Replay.exe
+RunCommand=<PATH>../../../artifacts/bin/Replay/Debug/net8.0/Replay
 TargetFramework=net8.0
-TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/Replay/Debug/net8.0/Replay.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Replay/Debug/net8.0/ref/Replay.dll
 TemporaryDependencyNodeTargetIdentifier=net8.0
 
 [commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /doc:<PATH>../../../artifacts/obj/Replay/Debug/net8.0/Replay.xml
 /define:TRACE;ROSLYN_NO_INDEXRANGE;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /out:<PATH>../../../artifacts/obj/Replay/Debug/net8.0/Replay.dll
 /refout:<PATH>../../../artifacts/obj/Replay/Debug/net8.0/refint/Replay.dll
-/warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
 ../../
@@ -657,7 +343,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  microsoft.build.utilities.core/17.11.48/ref/net8.0/Microsoft.Build.Utilities.Core.dll
  microsoft.extensions.objectpool/9.0.9/lib/netstandard2.0/Microsoft.Extensions.ObjectPool.dll
  microsoft.net.stringtools/17.11.48/ref/net8.0/Microsoft.NET.StringTools.dll
- microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+ microsoft.netcore.app.ref/8.0.26/ref/net8.0/
   Microsoft.CSharp.dll
   Microsoft.VisualBasic.Core.dll
   Microsoft.VisualBasic.dll
@@ -835,15 +521,6 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  system.security.cryptography.protecteddata/10.0.1/lib/net8.0/System.Security.Cryptography.ProtectedData.dll
 
 [analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/
-  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
-  Microsoft.CodeAnalysis.NetAnalyzers.dll
- codestyle/cs/
-  Microsoft.CodeAnalysis.CodeStyle.dll
-  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 <NUGET>/
  messagepackanalyzer/3.1.4/analyzers/roslyn4.3/cs/
   MessagePack.Analyzers.CodeFixes.dll
@@ -861,7 +538,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
   Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
   Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.netcore.app.ref/8.0.25/analyzers/dotnet/cs/
+ microsoft.netcore.app.ref/8.0.26/analyzers/dotnet/cs/
   Microsoft.Interop.ComInterfaceGenerator.dll
   Microsoft.Interop.LibraryImportGenerator.dll
   Microsoft.Interop.SourceGeneration.dll
@@ -886,24 +563,3 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  Compilers/.editorconfig
  Dependencies/.editorconfig
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
-
-[projectReferences]
-../../
- Compilers/
-  Core/Portable/Microsoft.CodeAnalysis.csproj
-  CSharp/
-   csc/AnyCpu/csc.csproj
-   Portable/Microsoft.CodeAnalysis.CSharp.csproj
-  Server/VBCSCompiler/AnyCpu/VBCSCompiler.csproj
-  VisualBasic/
-   Portable/Microsoft.CodeAnalysis.VisualBasic.vbproj
-   vbc/AnyCpu/vbc.csproj
- Workspaces/
-  Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
-  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
-  VisualBasic/Portable/Microsoft.CodeAnalysis.VisualBasic.Workspaces.vbproj
-
-[capabilities]
-CrossPlatformExecutable
-NativeAOT
-SupportsHotReload

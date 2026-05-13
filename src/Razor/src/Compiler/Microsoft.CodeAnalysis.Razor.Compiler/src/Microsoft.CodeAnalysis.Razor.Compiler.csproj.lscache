@@ -1,4 +1,4 @@
-hash=91d913545d99da68af89478c2992f0602af14e82aa6ccd994a70caf7908cd4bf
+hash=7abb1bc884020759c5f76b4aa0b2a42361c9324c005e9ce90926886980d5e57d
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -724,9 +724,7 @@ SourceGenerators/
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
 [analyzerConfigFiles]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/build/config/analysislevel_11_default.globalconfig
- codestyle/cs/build/config/analysislevelstyle_default.globalconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 SourceGenerators/.editorconfig
 
 [additionalFiles]

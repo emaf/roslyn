@@ -1,4 +1,4 @@
-hash=b86631355177a81c647ca78eee6b3832df6668d8c624e154c9e65d533771f945
+hash=e3646235ad177c0db91d3a61d9fe7ebb3fcd19288a3c5e7af02ac9828af59e77
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../../../artifacts/bin/CSharpErrorFactsGenerator/Debug/ne
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/CSharpErrorFactsGenerator/project.assets.json
 RootNamespace=Roslyn.Compilers.CSharp.Internal.CSharpErrorFactsGenerator
-RunCommand=<PATH>../../../../../artifacts/bin/CSharpErrorFactsGenerator/Debug/net10.0/CSharpErrorFactsGenerator.exe
+RunCommand=<PATH>../../../../../artifacts/bin/CSharpErrorFactsGenerator/Debug/net10.0/CSharpErrorFactsGenerator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/CSharpErrorFactsGenerator/Debug/net10.0/CSharpErrorFactsGenerator.dll

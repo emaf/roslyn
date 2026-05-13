@@ -1,4 +1,4 @@
-hash=f91894f3f159bad66daba8396dd9a22007aa62744dd7af1c222b857ed9f8f142
+hash=46bb9e3507b5a5633b0cf8a43079d51a5f54e9eed7b8b70acf53010693bf56c2
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -18,11 +18,13 @@ AssemblyName=csc
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/csc/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.CSharp.CommandLine
+TargetFrameworkIdentifier=.NETCoreApp
 
 [commandLineArguments]
 /noconfig
 /unsafe-
 /checked-
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /fullpaths
 /nostdlib+
 /platform:AnyCPU
@@ -46,7 +48,19 @@ RootNamespace=Microsoft.CodeAnalysis.CSharp.CommandLine
 /langversion:preview
 /skipanalyzers+
 /features:strict
+/warnaserror+:NU1605,SYSLIB0011
 /warnaserror-:IDE0055
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
 [additionalFiles]
 ../../../../../eng/config/BannedSymbols.txt
@@ -56,8 +70,16 @@ RootNamespace=Microsoft.CodeAnalysis.CSharp.CommandLine
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
 
+[projectReferences]
+../../
+ ../Core/Portable/Microsoft.CodeAnalysis.csproj
+ Portable/Microsoft.CodeAnalysis.CSharp.csproj
+
 [capabilities]
+CrossPlatformExecutable
+NativeAOT
 Pack
+SupportsHotReload
 
 ---
 
@@ -70,21 +92,18 @@ TargetFramework=net10.0
 [properties]
 MaxSupportedLangVersion=14.0
 OutputPath=<PATH>../../../../../artifacts/bin/csc/Debug/net10.0/
-RunCommand=<PATH>../../../../../artifacts/bin/csc/Debug/net10.0/csc.exe
+RunCommand=<PATH>../../../../../artifacts/bin/csc/Debug/net10.0/csc
 TargetFramework=net10.0
-TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/csc/Debug/net10.0/csc.dll
 TargetRefPath=<PATH>../../../../../artifacts/obj/csc/Debug/net10.0/ref/csc.dll
 TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /doc:<PATH>../../../../../artifacts/obj/csc/Debug/net10.0/csc.xml
 /define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
 /out:<PATH>../../../../../artifacts/obj/csc/Debug/net10.0/csc.dll
 /refout:<PATH>../../../../../artifacts/obj/csc/Debug/net10.0/refint/csc.dll
-/warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
 ../
@@ -115,15 +134,6 @@ Microsoft.NETCore.App.Ref
  Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
 
 [analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/
-  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
-  Microsoft.CodeAnalysis.NetAnalyzers.dll
- codestyle/cs/
-  Microsoft.CodeAnalysis.CodeStyle.dll
-  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 <NUGET>/
  microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
   Microsoft.CodeAnalysis.Analyzers.dll
@@ -157,134 +167,6 @@ Microsoft.NETCore.App.Ref
  .editorconfig
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
-[projectReferences]
-../../
- ../Core/Portable/Microsoft.CodeAnalysis.csproj
- Portable/Microsoft.CodeAnalysis.CSharp.csproj
-
-[capabilities]
-CrossPlatformExecutable
-NativeAOT
-SupportsHotReload
-
----
-
-[project]
-language=C#
-
-[sliceDimensions]
-TargetFramework=net472
-
-[properties]
-MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/csc/Debug/net472/
-RunCommand=<PATH>../../../../../artifacts/bin/csc/Debug/net472/csc.exe
-TargetFramework=net472
-TargetFrameworkIdentifier=.NETFramework
-TargetPath=<PATH>../../../../../artifacts/bin/csc/Debug/net472/csc.exe
-TargetRefPath=<PATH>../../../../../artifacts/obj/csc/Debug/net472/ref/csc.exe
-TemporaryDependencyNodeTargetIdentifier=net472
-
-[commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,Nullable,1701,1702
-/doc:<PATH>../../../../../artifacts/obj/csc/Debug/net472/csc.xml
-/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
-/out:<PATH>../../../../../artifacts/obj/csc/Debug/net472/csc.exe
-/refout:<PATH>../../../../../artifacts/obj/csc/Debug/net472/refint/csc.exe
-/subsystemversion:6.00
-/win32manifest:<PATH>../../../../../artifacts/obj/csc/Debug/net472/csc.exe.manifest
-/warnaserror+:NU1605
-
-[sourceFiles]
-../
- ../../
-  ../../artifacts/obj/csc/Debug/net472/
-   .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
-   csc.AssemblyInfo.cs
-   csc.InternalsVisibleTo.cs
-  Shared/
-   BuildClient.cs
-   BuildProtocol.cs
-   BuildServerConnection.cs
-   CompilerServerLogger.cs
-   ConsoleUtil.cs
-   Csc.cs
-   ExitingTraceListener.cs
-   NamedPipeUtil.cs
-   NativeMethods.cs
-   RuntimeHostInfo.cs
- Program.cs
-
-[metadataReferences]
-../../../../../artifacts/obj/
- Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.dll
- Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
- Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
-<NETFXREF>/v4.7.2/
- Facades/netstandard.dll
- mscorlib.dll
- System.Core.dll
- System.Data.dll
- System.dll
- System.Drawing.dll
- System.IO.Compression.FileSystem.dll
- System.Numerics.dll
- System.Runtime.Serialization.dll
- System.Xml.dll
- System.Xml.Linq.dll
-<NUGET>/
- system.buffers/4.6.1/lib/net462/System.Buffers.dll
- system.collections.immutable/10.0.1/lib/net462/System.Collections.Immutable.dll
- system.memory/4.6.3/lib/net462/System.Memory.dll
- system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
- system.reflection.metadata/10.0.1/lib/net462/System.Reflection.Metadata.dll
- system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
- system.text.encoding.codepages/8.0.0/lib/net462/System.Text.Encoding.CodePages.dll
- system.threading.tasks.extensions/4.6.3/lib/net462/System.Threading.Tasks.Extensions.dll
-
-[analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
- Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
- Microsoft.CodeAnalysis.NetAnalyzers.dll
-<NUGET>/
- microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.Analyzers.dll
-  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
- microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
-  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
- microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
-  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
- microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
-  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
-  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
-  Microsoft.VisualStudio.Threading.Analyzers.dll
- roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Roslyn.Diagnostics.Analyzers.dll
-  Roslyn.Diagnostics.CSharp.Analyzers.dll
-
-[analyzerConfigFiles]
-../../../
- ../../
-  artifacts/obj/csc/Debug/net472/csc.GeneratedMSBuildEditorConfig.editorconfig
-  eng/config/globalconfigs/
-   Common.globalconfig
-   Shipping.globalconfig
-  .editorconfig
- .editorconfig
-
-[projectReferences]
-../../
- ../
-  ../Tools/ExternalAccess/RazorCompiler/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.csproj
-  Core/Portable/Microsoft.CodeAnalysis.csproj
- Portable/Microsoft.CodeAnalysis.CSharp.csproj
-
 ---
 
 [project]
@@ -297,20 +179,17 @@ TargetFramework=net8.0
 [properties]
 MaxSupportedLangVersion=12.0
 OutputPath=<PATH>../../../../../artifacts/bin/csc/Debug/net8.0/
-RunCommand=<PATH>../../../../../artifacts/bin/csc/Debug/net8.0/csc.exe
+RunCommand=<PATH>../../../../../artifacts/bin/csc/Debug/net8.0/csc
 TargetFramework=net8.0
-TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/csc/Debug/net8.0/csc.dll
 TargetRefPath=<PATH>../../../../../artifacts/obj/csc/Debug/net8.0/ref/csc.dll
 TemporaryDependencyNodeTargetIdentifier=net8.0
 
 [commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /doc:<PATH>../../../../../artifacts/obj/csc/Debug/net8.0/csc.xml
 /define:TRACE;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /out:<PATH>../../../../../artifacts/obj/csc/Debug/net8.0/csc.dll
 /refout:<PATH>../../../../../artifacts/obj/csc/Debug/net8.0/refint/csc.dll
-/warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
 ../
@@ -337,7 +216,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  Microsoft.CodeAnalysis.CSharp/Debug/net8.0/ref/Microsoft.CodeAnalysis.CSharp.dll
  Microsoft.CodeAnalysis/Debug/net8.0/ref/Microsoft.CodeAnalysis.dll
 <NUGET>/
- microsoft.netcore.app.ref/8.0.25/ref/net8.0/
+ microsoft.netcore.app.ref/8.0.26/ref/net8.0/
   Microsoft.CSharp.dll
   Microsoft.VisualBasic.Core.dll
   Microsoft.VisualBasic.dll
@@ -503,15 +382,6 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
 
 [analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/
-  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
-  Microsoft.CodeAnalysis.NetAnalyzers.dll
- codestyle/cs/
-  Microsoft.CodeAnalysis.CodeStyle.dll
-  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 <NUGET>/
  microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
   Microsoft.CodeAnalysis.Analyzers.dll
@@ -526,7 +396,7 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
  microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
   Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
   Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.netcore.app.ref/8.0.25/analyzers/dotnet/cs/
+ microsoft.netcore.app.ref/8.0.26/analyzers/dotnet/cs/
   Microsoft.Interop.ComInterfaceGenerator.dll
   Microsoft.Interop.LibraryImportGenerator.dll
   Microsoft.Interop.SourceGeneration.dll
@@ -550,13 +420,3 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
   .editorconfig
  .editorconfig
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
-
-[projectReferences]
-../../
- ../Core/Portable/Microsoft.CodeAnalysis.csproj
- Portable/Microsoft.CodeAnalysis.CSharp.csproj
-
-[capabilities]
-CrossPlatformExecutable
-NativeAOT
-SupportsHotReload

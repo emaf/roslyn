@@ -1,4 +1,4 @@
-hash=fc8c1d65216dfa62de9d4b592e787aa28d6729033eb718a5711f782612e6bcf2
+hash=69bf42deaac9baf2e8e5026c5af1e5af9ad3822537e25f4d4cb5ad6b60c594c3
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -286,95 +286,6 @@ Microsoft.NETCore.App.Ref
 [capabilities]
 NativeAOT
 SupportsHotReload
-
----
-
-[project]
-language=C#
-
-[sliceDimensions]
-TargetFramework=net472
-
-[properties]
-MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/
-TargetFramework=net472
-TargetFrameworkIdentifier=.NETFramework
-TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
-TargetRefPath=<PATH>../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/ref/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
-TemporaryDependencyNodeTargetIdentifier=net472
-
-[commandLineArguments]
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU1505,NETSDK1233,MSB3277,NU5105,Nullable,Nullable,1701,1702
-/doc:<PATH>../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/Microsoft.AspNetCore.Razor.Utilities.Shared.xml
-/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
-/out:<PATH>../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
-/refout:<PATH>../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/refint/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
-/subsystemversion:6.00
-/warnaserror+:NU1605
-
-[sourceFiles]
-../
- ../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/
-  .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
-  Microsoft.AspNetCore.Razor.Utilities.Shared.AssemblyInfo.cs
-  Microsoft.AspNetCore.Razor.Utilities.Shared.GlobalUsings.g.cs
-  Microsoft.AspNetCore.Razor.Utilities.Shared.InternalsVisibleTo.cs
-  Microsoft.AspNetCore.Razor.Utilities.Shared.Resources.SR.cs
- files/LanguageSupport/IsExternalInit.cs
-  @link=LanguageSupport/IsExternalInit.cs
-
-[metadataReferences]
-<NETFXREF>/v4.7.2/
- mscorlib.dll
- System.Core.dll
- System.Data.dll
- System.dll
- System.Drawing.dll
- System.IO.Compression.FileSystem.dll
- System.Numerics.dll
- System.Runtime.Serialization.dll
- System.Xml.dll
- System.Xml.Linq.dll
-<NUGET>/
- microsoft.extensions.objectpool/10.0.1/lib/net462/Microsoft.Extensions.ObjectPool.dll
- system.buffers/4.6.1/lib/net462/System.Buffers.dll
- system.collections.immutable/10.0.1/lib/net462/System.Collections.Immutable.dll
- system.memory/4.6.3/lib/net462/System.Memory.dll
- system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
- system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
-
-[analyzerConfigFiles]
-../../../
- ../../
-  artifacts/obj/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/Microsoft.AspNetCore.Razor.Utilities.Shared.GeneratedMSBuildEditorConfig.editorconfig
-  eng/config/globalconfigs/
-   Common.globalconfig
-   Shipping.globalconfig
-  .editorconfig
- .editorconfig
- Common.globalconfig
- Shipping.globalconfig
-
-[additionalFiles]
-../../../
- ../../
-  artifacts/obj/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net472/Microsoft.AspNetCore.Razor.Utilities.Shared.xlf/
-   SR.cs.resx
-   SR.de.resx
-   SR.es.resx
-   SR.fr.resx
-   SR.it.resx
-   SR.ja.resx
-   SR.ko.resx
-   SR.pl.resx
-   SR.pt-BR.resx
-   SR.ru.resx
-   SR.tr.resx
-   SR.zh-Hans.resx
-   SR.zh-Hant.resx
-  eng/config/BannedSymbols.txt
- BannedSymbols.txt
 
 ---
 

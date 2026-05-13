@@ -1,4 +1,4 @@
-hash=274a9a064b16196020513c31ddc9b4f1e2eac577732c2736f6037e391ad9d647
+hash=a63ad2936e9e33289f22fa008a4da1e8e0c022d6ff8c215d6951fc4029affb42
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -245,12 +245,3 @@ TestResources.cs
 
 [capabilities]
 Pack
-
----
-
-[project]
-language=C#
-primary
-
-[sliceDimensions]
-TargetFramework=netstandard2.0

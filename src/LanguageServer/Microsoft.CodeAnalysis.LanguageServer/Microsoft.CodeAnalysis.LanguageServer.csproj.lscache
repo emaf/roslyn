@@ -1,4 +1,4 @@
-hash=2f2047647c09ac8dec46e53223452f6d64b9b7c811afa53225e514dc4053aa61
+hash=3289ffe400ac89e6fd7c3fc7710dccb0f44e68edb6048ff7a80af4c67b049dc0
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -21,7 +21,7 @@ OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer/De
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.LanguageServer/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.LanguageServer
-RunCommand=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer/Debug/net10.0/Microsoft.CodeAnalysis.LanguageServer.exe
+RunCommand=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer/Debug/net10.0/Microsoft.CodeAnalysis.LanguageServer
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer/Debug/net10.0/Microsoft.CodeAnalysis.LanguageServer.dll

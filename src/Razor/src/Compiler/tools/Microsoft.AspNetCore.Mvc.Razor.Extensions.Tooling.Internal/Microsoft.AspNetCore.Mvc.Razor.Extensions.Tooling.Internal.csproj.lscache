@@ -1,4 +1,4 @@
-hash=9e4e5dfd54008dfc74f433e1a1c8fadefc963083db97a47d8a8d8b7c650df63f
+hash=15a6e67280a78a4b216d80cadc6d8689a6f39ba1e6c51407c8b6a0d986019cf7
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -226,9 +226,7 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
  .editorconfig
  Common.globalconfig
  NonShipping.globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/build/config/analysislevel_11_default.globalconfig
- codestyle/cs/build/config/analysislevelstyle_default.globalconfig
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../
