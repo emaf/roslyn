@@ -1,4 +1,4 @@
-hash=d623d34ed0e118c42b16d951ef3a11431c804aa9cbf8f6213d21a07417c8ea10
+hash=f2bd948ce19fdf6323be493c961c5cfde27351abcab7d61b36e9a9a52971e164
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.UnitTests
-RunArguments=exec "<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests.dll
@@ -238,6 +235,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.HotReload.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -245,7 +246,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../

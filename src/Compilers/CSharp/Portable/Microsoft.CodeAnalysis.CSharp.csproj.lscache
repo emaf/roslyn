@@ -1,4 +1,4 @@
-hash=8282976c1f47670d535370e4a6ea00fde6f1d4bb9de73aa793844e9d0d7ffc7b
+hash=3115dae65aebc61ac5a00e948705697d3d4b9a486a0392c3a7690812b5682a1e
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -1318,7 +1318,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp/Debug/net10.0/
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.dll
@@ -1360,6 +1359,10 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -1369,7 +1372,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../
@@ -1404,7 +1406,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp/Debug/net8.0/
 TargetFramework=net8.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll
@@ -1448,6 +1449,10 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -1457,7 +1462,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
 
 [additionalFiles]
 ../../../../
@@ -1491,7 +1495,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll
@@ -1645,6 +1648,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../

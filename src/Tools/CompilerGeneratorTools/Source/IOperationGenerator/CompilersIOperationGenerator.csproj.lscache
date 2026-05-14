@@ -1,4 +1,4 @@
-hash=6298e6b65cda5d90b7944152bf0bec1833c32ec3fd2868dc3767f068af60051a
+hash=7500aacdbc9cbeeddd6f0d95d9be95a87d0f10cbb8277fe5f8494237807de2b0
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,11 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=IOperationGenerator
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/CompilersIOperationGenerator/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/CompilersIOperationGenerator/project.assets.json
 RootNamespace=Roslyn.Compilers.Internal.IOperationGenerator
-RunCommand=<PATH>../../../../../artifacts/bin/CompilersIOperationGenerator/Debug/net10.0/IOperationGenerator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/CompilersIOperationGenerator/Debug/net10.0/IOperationGenerator.dll
@@ -74,6 +72,8 @@ Program.cs
 [frameworkPacks]
 Microsoft.NETCore.App.Ref
 
+[metadataReferences]
+
 [analyzerReferences]
 <NETSDK>/Sdks/Microsoft.NET.Sdk/
  analyzers/
@@ -103,6 +103,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../../../
@@ -112,7 +116,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../../eng/config/BannedSymbols.txt
@@ -121,6 +124,8 @@ Microsoft.NETCore.App.Ref
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 CrossPlatformExecutable

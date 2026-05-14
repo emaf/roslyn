@@ -1,4 +1,4 @@
-hash=8b870446ba2d02d92f24fbfd4e8d01f4782b53eabea6daac0829f52501c12f7c
+hash=230101ed9bd4331bff1afc5f63aef92ba63f4f58f0fb32db703ff632821545ab
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.ExpressionEvaluator.FunctionResolver
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.FunctionResolver/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.FunctionResolver/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.ExpressionEvaluator
@@ -300,6 +299,10 @@ TypeSignature.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../../../../
  ../
@@ -318,6 +321,8 @@ TypeSignature.cs
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 Pack

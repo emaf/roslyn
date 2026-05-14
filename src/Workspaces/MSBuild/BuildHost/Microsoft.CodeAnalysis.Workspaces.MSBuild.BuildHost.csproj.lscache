@@ -1,4 +1,4 @@
-hash=e664f3bcf251aa24a6e2b1481a59d050f6d2c0e4af4e6a3b571977bd6e091658
+hash=9e1e45566882ca18ea71d6e34ace50a08f67177c7f34508d01fc86cd30efa5a1
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,12 +16,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
-RunArguments=exec "<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll"
-RunCommand=dotnet
 TargetFramework=net8.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
@@ -181,6 +178,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  ../
@@ -190,7 +191,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  Compilers/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt

@@ -1,4 +1,4 @@
-hash=0ca6ce2fe1f43f27e45dd8d8e84610516c7eef55360a535d7b20343f76aa68b8
+hash=6d08c3ff7a109027ad79c3c86db244ba49ac03325e3080f90ecba2fe948ad8e6
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Workspaces.Desktop
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.Desktop/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.Desktop/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
@@ -117,6 +116,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.CodeAnalysis.Workspaces.Desktop/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.Desktop.GeneratedMSBuildEditorConfig.editorconfig
@@ -124,7 +127,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt

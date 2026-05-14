@@ -1,4 +1,4 @@
-hash=20bf7f9975015c24334469977bc1a6a3643cb85863b2a6b7f484d370fc59136d
+hash=601b881236164634f7f379c0a507a9d5674e9c71d5edb73ba733a7a37643c57a
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=SemanticSearch.BuildTask
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/SemanticSearch.BuildTask/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/SemanticSearch.BuildTask/project.assets.json
 RootNamespace=SemanticSearch.BuildTask
@@ -148,6 +147,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  ../
@@ -158,7 +161,6 @@ Microsoft.NETCore.App.Ref
   .editorconfig
  Compilers/.editorconfig
  Dependencies/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt

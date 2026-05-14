@@ -1,4 +1,4 @@
-hash=b4e393c0a57d3ab97cf22d2d7b2f872348614ef78b9c2aed610fd7042ca9a2a4
+hash=9c2f2a82a6e02ef63c79f7027a7b4f9542c38988ad46fa4d4fad1cd43129fb19
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -102,7 +102,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.BuildClient.Package/Debug/net10.0/
 TargetFramework=net10.0
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.BuildClient.Package/Debug/net10.0/Microsoft.CodeAnalysis.BuildClient.Package.dll
 TemporaryDependencyNodeTargetIdentifier=net10.0
@@ -142,6 +141,10 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 [frameworkPacks]
 Microsoft.NETCore.App.Ref
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -151,7 +154,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  Compilers/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -164,7 +166,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.BuildClient.Package/Debug/net8.0/
 TargetFramework=net8.0
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.BuildClient.Package/Debug/net8.0/Microsoft.CodeAnalysis.BuildClient.Package.dll
 TemporaryDependencyNodeTargetIdentifier=net8.0
@@ -203,6 +204,10 @@ TemporaryDependencyNodeTargetIdentifier=net8.0
 [nugetFrameworkPacks]
 Microsoft.NETCore.App.Ref
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -212,4 +217,3 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  Compilers/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

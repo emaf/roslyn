@@ -1,4 +1,4 @@
-hash=80de8dc0a43e2770872b7b53cb992df1ea34eb79eff4442d4653eff6da56565d
+hash=1939af89cdee1147f88b1bb6c999a352c0218d986a1c319a3763ecef1cc6f1bb
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CommonLanguageServerProtocol.Framework.Package
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CommonLanguageServerProtocol.Framework.Package/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Microsoft.CommonLanguageServerProtocol.Framework.Package/project.assets.json
 RootNamespace=Microsoft.CommonLanguageServerProtocol.Framework.Package
@@ -296,6 +295,10 @@ TypeRef.DefaultResolver.cs
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -315,6 +318,8 @@ TypeRef.DefaultResolver.cs
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 Pack

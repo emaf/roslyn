@@ -1,4 +1,4 @@
-hash=586031dddb32a05fc44d455f5f51fec4a37800a589e1aa4109f7cb72f86762b2
+hash=34f820eaa101ca7129374f6c3acdf9f2f9cbbedb90bacb7867a89343b97a892d
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.AspNetCore.Razor.Test.MvcShim.Version2_X.Compiler
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Test.MvcShim.Version2_X.Compiler/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.MvcShim.Version2_X.Compiler/project.assets.json
 RootNamespace=Microsoft.AspNetCore.Razor.Test.MvcShim.Version2_X.Compiler
@@ -177,6 +176,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=Latest|AnalysisMode=Default
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=Latest|AnalysisMode=Default
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -191,7 +194,6 @@ Microsoft.NETCore.App.Ref
   NonShipping.globalconfig
  .editorconfig
  .globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../

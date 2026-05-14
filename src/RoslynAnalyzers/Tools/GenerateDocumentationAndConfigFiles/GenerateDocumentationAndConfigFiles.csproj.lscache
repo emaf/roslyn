@@ -1,4 +1,4 @@
-hash=2d7665300fb038ad7c0481a439b972a2acdce4c98ca943d20f390c6384bfc3f4
+hash=95bf7810e7fe187808441469204742a33e384e1315a33c7e4ae108fcd738a0e5
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=GenerateDocumentationAndConfigFiles
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/GenerateDocumentationAndConfigFiles/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/GenerateDocumentationAndConfigFiles/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
-RunArguments=exec "<PATH>../../../../artifacts/bin/GenerateDocumentationAndConfigFiles/Debug/net10.0/GenerateDocumentationAndConfigFiles.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/GenerateDocumentationAndConfigFiles/Debug/net10.0/GenerateDocumentationAndConfigFiles.dll
@@ -1158,6 +1155,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -1171,7 +1172,6 @@ Microsoft.NETCore.App.Ref
   Dependencies/.editorconfig
   Workspaces/SharedUtilitiesAndExtensions/Compiler/Extensions/.editorconfig
  Utilities/Compiler/Extensions/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../
@@ -1214,6 +1214,8 @@ Microsoft.NETCore.App.Ref
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 CrossPlatformExecutable

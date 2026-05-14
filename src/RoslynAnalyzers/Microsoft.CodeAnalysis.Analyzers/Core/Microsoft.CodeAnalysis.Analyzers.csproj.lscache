@@ -1,4 +1,4 @@
-hash=7e31dec1a1425884fe898abbb5a47f0cb10b01c913450043ad112004d461c065
+hash=b753c160ab05872093a43d92ac6f0216ecf6df7cedb3224bb5f317607073f02b
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Analyzers
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Analyzers/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Analyzers/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
@@ -1328,6 +1327,10 @@ UpgradeMSBuildWorkspaceAnalyzer.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -1401,6 +1404,8 @@ AnalyzerReleases.Shipped.md
 AnalyzerReleases.Unshipped.md
 AnalyzerReleases.Unshipped.md
 CodeAnalysisDiagnosticsResources.resx
+
+[projectReferences]
 
 [capabilities]
 Pack

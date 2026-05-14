@@ -1,4 +1,4 @@
-hash=94ef39a98a6cb9ae7e5206082e1c8241464634db56a931f50441d25c25e78ddf
+hash=c2dd9fe31e4be352d056f1470fa87c2335a7575528850cb54939b05842d2ddac
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -111,7 +111,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Rebuild/Debug/net10.0/
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Rebuild/Debug/net10.0/Microsoft.CodeAnalysis.Rebuild.dll
@@ -161,6 +160,10 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -170,7 +173,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [capabilities]
 NativeAOT
@@ -187,7 +189,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Rebuild/Debug/net8.0/
 TargetFramework=net8.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Rebuild/Debug/net8.0/Microsoft.CodeAnalysis.Rebuild.dll
@@ -239,6 +240,10 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -248,7 +253,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
 
 [capabilities]
 NativeAOT
@@ -264,7 +268,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Rebuild/Debug/netstandard2.0/
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Rebuild/Debug/netstandard2.0/Microsoft.CodeAnalysis.Rebuild.dll
@@ -428,6 +431,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../

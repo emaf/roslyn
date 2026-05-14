@@ -1,4 +1,4 @@
-hash=900eff4b323793d9d1cdbaba096727e72cbd37cdc10b0c1c10c47accd843a6f5
+hash=8d89d6e5ac9087a6bc71fa900e6e714ec297563e3ac69e6d842a2b8e5a046d91
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.NET.Sdk.Razor.SourceGenerators.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.NET.Sdk.Razor.SourceGenerators.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.NET.Sdk.Razor.SourceGenerators.UnitTests/project.assets.json
 RootNamespace=Microsoft.NET.Sdk.Razor.SourceGenerators.UnitTests
-RunArguments=exec "<PATH>../../../../../../artifacts/bin/Microsoft.NET.Sdk.Razor.SourceGenerators.UnitTests/Debug/net10.0/Microsoft.NET.Sdk.Razor.SourceGenerators.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.NET.Sdk.Razor.SourceGenerators.UnitTests/Debug/net10.0/Microsoft.NET.Sdk.Razor.SourceGenerators.UnitTests.dll
@@ -338,6 +335,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=Latest|AnalysisMode=Default
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=Latest|AnalysisMode=Default
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -352,7 +353,6 @@ Microsoft.NETCore.App.Ref
   NonShipping.globalconfig
  .editorconfig
  .globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 .editorconfig
 
 [additionalFiles]

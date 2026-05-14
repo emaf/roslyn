@@ -1,4 +1,4 @@
-hash=9bfdeae9f8e977dcf984a8f7c0061db0088628c97c85f3405b8e7d2185ad1fe9
+hash=dc9a77364aaf9f7ee81703a25e481f9f003c2c488e93f8d11487cb9bd958081c
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.Net.Compilers.Razor.Toolset
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.Net.Compilers.Razor.Toolset/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.Net.Compilers.Razor.Toolset/project.assets.json
 RootNamespace=Microsoft.Net.Compilers.Razor.Toolset
@@ -226,6 +225,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=Latest|AnalysisMode=Default
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=Latest|AnalysisMode=Default
+
 [analyzerConfigFiles]
 ../../../
  ../../
@@ -235,7 +238,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
    Shipping.globalconfig
  Common.globalconfig
  Shipping.globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../

@@ -1,4 +1,4 @@
-hash=fc1ab18c60b07206cffcd5ebae15539b28a59e9e0d7745edef533c514fb20622
+hash=d9625caf490b14b018deb812eefd0e8b07084abe6f7f4d8a917daaf2d88f3cc1
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -192,7 +192,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features/Debug/net10.0/
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features.dll
@@ -297,6 +296,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  ../
@@ -306,7 +309,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  Dependencies/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [capabilities]
 NativeAOT
@@ -322,7 +324,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features/Debug/netstandard2.0/
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features/Debug/netstandard2.0/Microsoft.CodeAnalysis.ExternalAccess.Razor.Features.dll
@@ -549,6 +550,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../

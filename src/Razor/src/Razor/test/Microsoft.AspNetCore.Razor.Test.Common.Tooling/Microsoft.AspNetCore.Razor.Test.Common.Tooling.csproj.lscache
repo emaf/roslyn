@@ -1,4 +1,4 @@
-hash=a475cc0759f636638a3963a732efee1bfb8bab766734a75722a514c97fdf1517
+hash=8ec28f7ad4dc6ee648c3de8b2b8918062e4078fa4d60ad8e60fdee962a1131d7
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.AspNetCore.Razor.Test.Common.Tooling
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Test.Common.Tooling/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Test.Common.Tooling/project.assets.json
 RootNamespace=Microsoft.AspNetCore.Razor.Test.Common
@@ -241,6 +240,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../
  ../
@@ -257,7 +260,6 @@ Microsoft.NETCore.App.Ref
   src/.editorconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../

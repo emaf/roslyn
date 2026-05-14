@@ -1,4 +1,4 @@
-hash=3289ffe400ac89e6fd7c3fc7710dccb0f44e68edb6048ff7a80af4c67b049dc0
+hash=1d13b8f666c06d6d67f5d830d339e5a21ba6d937dc58740d1ae7d9963bf2e6b8
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,11 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.LanguageServer
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.LanguageServer/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.LanguageServer
-RunCommand=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer/Debug/net10.0/Microsoft.CodeAnalysis.LanguageServer
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer/Debug/net10.0/Microsoft.CodeAnalysis.LanguageServer.dll
@@ -315,6 +313,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CodeAnalysis.LanguageServer/Debug/net10.0/Microsoft.CodeAnalysis.LanguageServer.GeneratedMSBuildEditorConfig.editorconfig
@@ -322,7 +324,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 .editorconfig
 
 [additionalFiles]

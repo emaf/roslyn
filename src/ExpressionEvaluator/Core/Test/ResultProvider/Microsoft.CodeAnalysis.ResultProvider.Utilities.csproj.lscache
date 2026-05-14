@@ -1,4 +1,4 @@
-hash=3f2b4596dca1d7391bc737ff88475084ea33c90d8435449c46ae5bdc77c6bf3c
+hash=7c4e5082935e894f3b7befa6d226bef530b225dd4e1728080d357677a066b9d8
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.ExpressionEvaluator.ResultProvider.Utilities
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.ResultProvider.Utilities/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.ResultProvider.Utilities/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.ExpressionEvaluator
@@ -306,6 +305,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  ../
@@ -316,7 +319,6 @@ Microsoft.NETCore.App.Ref
   .editorconfig
  Compilers/.editorconfig
  Dependencies/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../

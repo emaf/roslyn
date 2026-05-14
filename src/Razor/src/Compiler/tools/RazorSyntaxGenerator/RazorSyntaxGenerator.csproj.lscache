@@ -1,4 +1,4 @@
-hash=d84007798e63df18b228d7d93175bda0df9c507038dde3e9602ed1a2fc9eaa09
+hash=7a7bb30ddf5cefe0c2198d333410a9167333af47b388c227e45afa4baf389dec
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,11 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=dotnet-razorsyntaxgenerator
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/RazorSyntaxGenerator/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/RazorSyntaxGenerator/project.assets.json
 RootNamespace=RazorSyntaxGenerator
-RunCommand=<PATH>../../../../../../artifacts/bin/RazorSyntaxGenerator/Debug/net10.0/dotnet-razorsyntaxgenerator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/RazorSyntaxGenerator/Debug/net10.0/dotnet-razorsyntaxgenerator.dll
@@ -85,6 +83,8 @@ SourceWriter.cs
 [frameworkPacks]
 Microsoft.NETCore.App.Ref
 
+[metadataReferences]
+
 [analyzerReferences]
 <NETSDK>/Sdks/Microsoft.NET.Sdk/
  analyzers/
@@ -117,6 +117,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=Latest|AnalysisMode=Default
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=Latest|AnalysisMode=Default
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -131,7 +135,6 @@ Microsoft.NETCore.App.Ref
   Shipping.globalconfig
  .editorconfig
  .globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../
@@ -142,6 +145,8 @@ Microsoft.NETCore.App.Ref
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 CrossPlatformExecutable

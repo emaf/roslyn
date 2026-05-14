@@ -1,4 +1,4 @@
-hash=a63ad2936e9e33289f22fa008a4da1e8e0c022d6ff8c215d6951fc4029affb42
+hash=f9e17c0a7267b9743ad57e62eb765b12611e41c1aad28e635c9d5e081a4e5f69
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Compiler.Test.Resources
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.Compiler.Test.Resources/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.Compiler.Test.Resources/project.assets.json
 TargetFramework=netstandard2.0
@@ -221,6 +220,10 @@ TestResources.cs
  roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../

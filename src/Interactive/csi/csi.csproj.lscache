@@ -1,4 +1,4 @@
-hash=f3326695e2b6babb9a35110b48248b0cafa775f170375172bd3566920c99dfba
+hash=1b79938e63f38b9f8992c29f4d1a2788be831e5522960af5917a861ea9a623e6
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -118,8 +118,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/csi/Debug/net10.0/
-RunCommand=<PATH>../../../artifacts/bin/csi/Debug/net10.0/csi
 TargetFramework=net10.0
 TargetPath=<PATH>../../../artifacts/bin/csi/Debug/net10.0/csi.dll
 TargetRefPath=<PATH>../../../artifacts/obj/csi/Debug/net10.0/ref/csi.dll
@@ -148,6 +146,10 @@ Microsoft.NETCore.App.Ref
  Microsoft.CodeAnalysis.Scripting/Debug/net10.0/ref/Microsoft.CodeAnalysis.Scripting.dll
  Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/csi/Debug/net10.0/csi.GeneratedMSBuildEditorConfig.editorconfig
@@ -155,7 +157,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -168,8 +169,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../artifacts/bin/csi/Debug/net8.0/
-RunCommand=<PATH>../../../artifacts/bin/csi/Debug/net8.0/csi
 TargetFramework=net8.0
 TargetPath=<PATH>../../../artifacts/bin/csi/Debug/net8.0/csi.dll
 TargetRefPath=<PATH>../../../artifacts/obj/csi/Debug/net8.0/ref/csi.dll
@@ -200,6 +199,10 @@ Microsoft.NETCore.App.Ref
  system.collections.immutable/10.0.1/lib/net8.0/System.Collections.Immutable.dll
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/csi/Debug/net8.0/csi.GeneratedMSBuildEditorConfig.editorconfig
@@ -207,4 +210,3 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

@@ -1,4 +1,4 @@
-hash=36232b2d1a0500f2bb5e53c9704f3638d770501912691ef2a605d483f27866b4
+hash=302b87d77e1d80253d72bbf02b4fdae269fe89731dba75b16fbffd0eb0fb4fdf
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.ExpressionEvaluator.ExpressionCompiler
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.ExpressionCompiler/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.ExpressionCompiler/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.ExpressionEvaluator
@@ -274,6 +273,10 @@ ResultProperties.cs
  roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../../

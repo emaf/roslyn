@@ -1,4 +1,4 @@
-hash=6dfaae8ded822e85c987dca1445ba891f72987ccf0c59bed60643f01bb27847b
+hash=2e21ee7d981afc72a0cf5bef35d791a048490a718b093ef558852bda85bc321b
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Test.Utilities
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Test.Utilities/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Test.Utilities/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
@@ -976,6 +975,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../
  ../
@@ -989,7 +992,6 @@ Microsoft.NETCore.App.Ref
   Dependencies/.editorconfig
   Workspaces/SharedUtilitiesAndExtensions/Compiler/Extensions/.editorconfig
  Utilities/Compiler/Extensions/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 .editorconfig
 
 [additionalFiles]

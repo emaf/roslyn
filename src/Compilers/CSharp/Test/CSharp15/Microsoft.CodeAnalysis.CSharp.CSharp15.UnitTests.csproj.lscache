@@ -1,4 +1,4 @@
-hash=cc64b3ab9bbbce9d7cc6999dcca97a90410ec7a2591c09c7b32a31415b526050
+hash=2fac5c6de2f591b617934dd7367662c0d7b10f6ed40ff84a5b7aa52bdec845c6
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,12 +16,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.CSharp.CSharp15.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.CSharp15.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.CSharp15.UnitTests/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.CSharp.UnitTests
-RunArguments=exec "<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.CSharp15.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.CSharp15.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.CSharp15.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.CSharp15.UnitTests.dll
@@ -155,6 +152,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  ../../
@@ -164,7 +165,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../../eng/config/test/BannedSymbols.txt

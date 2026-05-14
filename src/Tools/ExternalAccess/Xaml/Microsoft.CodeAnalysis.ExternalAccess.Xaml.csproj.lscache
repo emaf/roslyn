@@ -1,4 +1,4 @@
-hash=c890e4138d715fb5d33b7643b3533b4c861d4ffb11a5f4f32b5b1e9215d4ba02
+hash=02f2e018d39220bb36a2a7ebce3264eb38c5aa20d03f2de12a5233aac10d8ce9
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.ExternalAccess.Xaml
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.Xaml/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.Xaml/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.ExternalAccess.Xaml
@@ -288,6 +287,10 @@ StringConstants.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../

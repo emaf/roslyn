@@ -1,4 +1,4 @@
-hash=410feb70e9c9661b8535f435907e9024a2db102231938918a9f0a34d08811bde
+hash=cc6a1eb199a37d1fd53bbf8b19f509bc85684c0c12e744a14d664bb0fb8a6839
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -109,9 +109,7 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/CSharpSyntaxGenerator/Debug/net10.0/
 OutputType=Exe
-RunCommand=<PATH>../../../../../artifacts/bin/CSharpSyntaxGenerator/Debug/net10.0/CSharpSyntaxGenerator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/CSharpSyntaxGenerator/Debug/net10.0/CSharpSyntaxGenerator.dll
@@ -159,6 +157,10 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -170,7 +172,6 @@ Microsoft.NETCore.App.Ref
    .editorconfig
   Compilers/.editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [capabilities]
 CrossPlatformExecutable
@@ -187,7 +188,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/CSharpSyntaxGenerator/Debug/netstandard2.0/
 OutputType=Library
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
@@ -339,6 +339,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../

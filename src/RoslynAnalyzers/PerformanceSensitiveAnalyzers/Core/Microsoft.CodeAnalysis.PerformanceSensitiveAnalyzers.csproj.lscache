@@ -1,4 +1,4 @@
-hash=1dce893082d922dad3513ebca1e7a64a5732acd5f592b418dd5782da9a0612b3
+hash=b8f93c23ae42b960ae0d5acb3011e5d2ea43252b03e9bbbcd905911c4fad38c5
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
@@ -1280,6 +1279,10 @@ PerformanceSensitiveAnalyzersResources.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -1353,6 +1356,8 @@ AnalyzerReleases.Shipped.md
 AnalyzerReleases.Unshipped.md
 AnalyzerReleases.Unshipped.md
 PerformanceSensitiveAnalyzersResources.resx
+
+[projectReferences]
 
 [capabilities]
 Pack

@@ -1,4 +1,4 @@
-hash=ffdd9f5eec9d520fd64106f0e6d9c1d94435f770dee64f57339b7735585763eb
+hash=ba8e2c7be2ab4225280bf67c42acc9f5a75fffe03e774dd723e24f02aab32d04
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Remote.Razor.CoreComponents.arm64
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Razor.CoreComponents.arm64/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Remote.Razor.CoreComponents.arm64/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.Remote.Razor.CoreComponents.arm64
@@ -72,6 +71,8 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 [frameworkPacks]
 Microsoft.NETCore.App.Ref
 
+[metadataReferences]
+
 [analyzerReferences]
 <NETSDK>/Sdks/Microsoft.NET.Sdk/
  analyzers/
@@ -104,6 +105,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../../
  ../../
@@ -115,7 +120,6 @@ Microsoft.NETCore.App.Ref
  .editorconfig
  Common.globalconfig
  NonShipping.globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../../

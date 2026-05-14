@@ -1,4 +1,4 @@
-hash=2c64718c9728632596c401732dd8ec8a39d840e8f12373d138deb3a0e78a5759
+hash=2f6b9d71ebe63961b5828b9bc34893aad1f1ff2489d8627e5121d35e3030ee4d
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=GenerateDocumentationAndConfigFilesForBrokenRuntime
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/GenerateDocumentationAndConfigFilesForBrokenRuntime/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/GenerateDocumentationAndConfigFilesForBrokenRuntime/project.assets.json
 RootNamespace=GenerateDocumentationAndConfigFilesForBrokenRuntime
-RunArguments=exec "<PATH>../../../../artifacts/bin/GenerateDocumentationAndConfigFilesForBrokenRuntime/Debug/net10.0/GenerateDocumentationAndConfigFilesForBrokenRuntime.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/GenerateDocumentationAndConfigFilesForBrokenRuntime/Debug/net10.0/GenerateDocumentationAndConfigFilesForBrokenRuntime.dll
@@ -122,6 +119,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/GenerateDocumentationAndConfigFilesForBrokenRuntime/Debug/net10.0/GenerateDocumentationAndConfigFilesForBrokenRuntime.GeneratedMSBuildEditorConfig.editorconfig
@@ -129,7 +130,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt

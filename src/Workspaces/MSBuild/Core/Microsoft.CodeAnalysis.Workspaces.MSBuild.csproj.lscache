@@ -1,4 +1,4 @@
-hash=80992cf3a1a8ddb65fab484704a2b681f51b18dc0f78217dfb6e427981ed5179
+hash=9418aa1a3da643f126424b8b9a24c14b47f8411a62939e6176f26966ea422f19
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -150,7 +150,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild/Debug/net10.0/
 TargetFramework=net10.0
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild/Debug/net10.0/ref/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
@@ -201,6 +200,10 @@ Microsoft.NETCore.App.Ref
  system.composition.runtime/10.0.1/lib/net10.0/System.Composition.Runtime.dll
  system.composition.typedparts/10.0.1/lib/net10.0/System.Composition.TypedParts.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  ../
@@ -210,7 +213,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  Compilers/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../
@@ -241,7 +243,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild/Debug/net8.0/
 TargetFramework=net8.0
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild/Debug/net8.0/ref/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
@@ -295,6 +296,10 @@ Microsoft.NETCore.App.Ref
  system.io.pipelines/10.0.1/lib/net8.0/System.IO.Pipelines.dll
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  ../
@@ -304,7 +309,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  Compilers/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
 
 [additionalFiles]
 ../../../../

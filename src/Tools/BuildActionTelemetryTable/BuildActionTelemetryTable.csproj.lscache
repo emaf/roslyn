@@ -1,4 +1,4 @@
-hash=73cae3aed350970024eea9119ec92bc1f6eb34a3b5f74659fb4517a9ab868529
+hash=201a438746bf02532baa846f42a833c5e4ebe0280f32f1b3cc39cef612ea4077
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,11 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=BuildActionTelemetryTable
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/BuildActionTelemetryTable/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/BuildActionTelemetryTable/project.assets.json
 RootNamespace=BuildActionTelemetryTable
-RunCommand=<PATH>../../../artifacts/bin/BuildActionTelemetryTable/Debug/net10.0/BuildActionTelemetryTable
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/BuildActionTelemetryTable/Debug/net10.0/BuildActionTelemetryTable.dll
@@ -164,6 +162,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -174,7 +176,6 @@ Microsoft.NETCore.App.Ref
   .editorconfig
  Compilers/.editorconfig
  Dependencies/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt

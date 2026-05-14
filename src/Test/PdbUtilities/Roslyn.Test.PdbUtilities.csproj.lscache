@@ -1,4 +1,4 @@
-hash=fcf5487a213f3330947cc3596a9049e93d9e26558828cfb115a8f731e2a5ceac
+hash=efd1c29eb0099cf5f74656bb1de739dc1216fe72d35fd09cb85580b4bf11183f
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -143,7 +143,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Roslyn.Test.PdbUtilities/Debug/net10.0/
 TargetFramework=net10.0
 TargetPath=<PATH>../../../artifacts/bin/Roslyn.Test.PdbUtilities/Debug/net10.0/Roslyn.Test.PdbUtilities.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Roslyn.Test.PdbUtilities/Debug/net10.0/ref/Roslyn.Test.PdbUtilities.dll
@@ -196,6 +195,10 @@ Microsoft.NETCore.App.Ref
  xunit.combinatorial/1.6.24/lib/netstandard2.0/Xunit.Combinatorial.dll
  xunit.extensibility.core/2.9.2/lib/netstandard1.1/xunit.core.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Roslyn.Test.PdbUtilities/Debug/net10.0/Roslyn.Test.PdbUtilities.GeneratedMSBuildEditorConfig.editorconfig
@@ -203,7 +206,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -216,7 +218,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../artifacts/bin/Roslyn.Test.PdbUtilities/Debug/net8.0/
 TargetFramework=net8.0
 TargetPath=<PATH>../../../artifacts/bin/Roslyn.Test.PdbUtilities/Debug/net8.0/Roslyn.Test.PdbUtilities.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Roslyn.Test.PdbUtilities/Debug/net8.0/ref/Roslyn.Test.PdbUtilities.dll
@@ -270,6 +271,10 @@ Microsoft.NETCore.App.Ref
  xunit.combinatorial/1.6.24/lib/netstandard2.0/Xunit.Combinatorial.dll
  xunit.extensibility.core/2.9.2/lib/netstandard1.1/xunit.core.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Roslyn.Test.PdbUtilities/Debug/net8.0/Roslyn.Test.PdbUtilities.GeneratedMSBuildEditorConfig.editorconfig
@@ -277,4 +282,3 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

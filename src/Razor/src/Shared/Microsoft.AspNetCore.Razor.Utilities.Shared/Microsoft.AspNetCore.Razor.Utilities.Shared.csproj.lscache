@@ -1,4 +1,4 @@
-hash=69bf42deaac9baf2e8e5026c5af1e5af9ad3822537e25f4d4cb5ad6b60c594c3
+hash=bfa213165901327f121c8a9b52cfffed7770608bca739ec311f815a65aa41a7e
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -217,7 +217,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net10.0/
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/net10.0/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
@@ -250,6 +249,10 @@ Microsoft.NETCore.App.Ref
 [metadataReferences]
 <NUGET>/microsoft.extensions.objectpool/10.0.1/lib/net10.0/Microsoft.Extensions.ObjectPool.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  ../../
@@ -261,7 +264,6 @@ Microsoft.NETCore.App.Ref
  .editorconfig
  Common.globalconfig
  Shipping.globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../
@@ -297,7 +299,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/netstandard2.0/
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Utilities.Shared/Debug/netstandard2.0/Microsoft.AspNetCore.Razor.Utilities.Shared.dll
@@ -445,6 +446,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
  system.memory/4.6.3/lib/netstandard2.0/System.Memory.dll
  system.numerics.vectors/4.6.1/lib/netstandard2.0/System.Numerics.Vectors.dll
  system.runtime.compilerservices.unsafe/6.1.2/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../

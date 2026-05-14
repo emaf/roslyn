@@ -1,4 +1,4 @@
-hash=dff0be936cee01922c949e827ccd24301d4e9ab0c9b9c2f9cb83c246065643e0
+hash=68ed0283020e7d9106345b15963d3f5be6a8eaec8be7faa667f0410e5f571f3c
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=GenerateAnalyzerNuspec
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/GenerateAnalyzerNuspec/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/GenerateAnalyzerNuspec/project.assets.json
 RootNamespace=GenerateAnalyzerNuspec
-RunArguments=exec "<PATH>../../../../artifacts/bin/GenerateAnalyzerNuspec/Debug/net10.0/GenerateAnalyzerNuspec.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/GenerateAnalyzerNuspec/Debug/net10.0/GenerateAnalyzerNuspec.dll
@@ -73,6 +70,8 @@ Program.cs
 [frameworkPacks]
 Microsoft.NETCore.App.Ref
 
+[metadataReferences]
+
 [analyzerReferences]
 <NETSDK>/Sdks/Microsoft.NET.Sdk/
  analyzers/
@@ -102,6 +101,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/GenerateAnalyzerNuspec/Debug/net10.0/GenerateAnalyzerNuspec.GeneratedMSBuildEditorConfig.editorconfig
@@ -109,7 +112,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt
@@ -118,6 +120,8 @@ Microsoft.NETCore.App.Ref
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 CrossPlatformExecutable

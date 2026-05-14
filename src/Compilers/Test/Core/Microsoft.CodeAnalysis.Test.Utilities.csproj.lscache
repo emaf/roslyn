@@ -1,4 +1,4 @@
-hash=29585b4ad0bfaf5456737666d313d9dfb54c0e5350f732b452a33293361526b0
+hash=018a43719cfb3f7e13332771d505f3b4387f7d39bf0753fa50f6164128addea0
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -306,7 +306,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Test.Utilities/Debug/net10.0/
 TargetFramework=net10.0
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Test.Utilities/Debug/net10.0/Microsoft.CodeAnalysis.Test.Utilities.dll
 TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Test.Utilities/Debug/net10.0/ref/Microsoft.CodeAnalysis.Test.Utilities.dll
@@ -369,6 +368,10 @@ Microsoft.NETCore.App.Ref
  xunit.combinatorial/1.6.24/lib/netstandard2.0/Xunit.Combinatorial.dll
  xunit.extensibility.core/2.9.2/lib/netstandard1.1/xunit.core.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -378,7 +381,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -391,7 +393,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Test.Utilities/Debug/net8.0/
 TargetFramework=net8.0
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Test.Utilities/Debug/net8.0/Microsoft.CodeAnalysis.Test.Utilities.dll
 TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Test.Utilities/Debug/net8.0/ref/Microsoft.CodeAnalysis.Test.Utilities.dll
@@ -455,6 +456,10 @@ Microsoft.NETCore.App.Ref
  xunit.combinatorial/1.6.24/lib/netstandard2.0/Xunit.Combinatorial.dll
  xunit.extensibility.core/2.9.2/lib/netstandard1.1/xunit.core.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -464,4 +469,3 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

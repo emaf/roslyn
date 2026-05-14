@@ -1,4 +1,4 @@
-hash=4e8bfa60a73d1a54501d69eb52f7c0983007e7382072985ec2e943b3ce737d63
+hash=d2cfdb870ee94122aae00b5d41dcb55175d983e6b4725ae461b4a524a09be27c
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Text.Analyzers.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Text.Analyzers.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Text.Analyzers.UnitTests/project.assets.json
 RootNamespace=Text.Analyzers.UnitTests
-RunArguments=exec "<PATH>../../../../artifacts/bin/Text.Analyzers.UnitTests/Debug/net10.0/Text.Analyzers.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Text.Analyzers.UnitTests/Debug/net10.0/Text.Analyzers.UnitTests.dll
@@ -158,6 +155,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Text.Analyzers.UnitTests/Debug/net10.0/Text.Analyzers.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -165,7 +166,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/test/BannedSymbols.txt

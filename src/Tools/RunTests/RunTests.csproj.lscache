@@ -1,4 +1,4 @@
-hash=68d69f5d0a71a1aa2ef9507d54c64d0aea83293f3353b6b9a881e10e15c3251f
+hash=87ab5598550c0be5b59def2f245a724c94f80d0bada165f071f81fb94f849606
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,11 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=RunTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/RunTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/RunTests/project.assets.json
 RootNamespace=RunTests
-RunCommand=<PATH>../../../artifacts/bin/RunTests/Debug/net10.0/RunTests
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/RunTests/Debug/net10.0/RunTests.dll
@@ -183,6 +181,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/RunTests/Debug/net10.0/RunTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -190,7 +192,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt

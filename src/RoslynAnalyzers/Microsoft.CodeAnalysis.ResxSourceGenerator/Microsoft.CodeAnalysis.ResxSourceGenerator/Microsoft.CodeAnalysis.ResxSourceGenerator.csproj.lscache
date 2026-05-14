@@ -1,4 +1,4 @@
-hash=1fca60b77b5ae5d65e7b72f67da485afd2caf19c037da76cd30e03aabb022cd3
+hash=df807c91bad7fa53de061e78e2be9a136d4839b2068b758209c2a39a07819567
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.ResxSourceGenerator
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ResxSourceGenerator/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ResxSourceGenerator/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
@@ -1059,6 +1058,10 @@ AbstractResxGenerator.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -1113,6 +1116,8 @@ AbstractResxGenerator.cs
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
 Resources.resx
+
+[projectReferences]
 
 [capabilities]
 Pack

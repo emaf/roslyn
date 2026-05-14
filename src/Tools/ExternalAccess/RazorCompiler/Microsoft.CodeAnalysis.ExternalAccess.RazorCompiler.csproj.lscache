@@ -1,4 +1,4 @@
-hash=b5f9083e3f92921b5a44f71e6b213c246d8c552aa4ad2e7d29108a8334bba51c
+hash=63191aed7270086105d767c82761d1ea8a681ed111df6d496c5e41045ecce17e
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -98,7 +98,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/net10.0/
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
@@ -137,6 +136,10 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/net10.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.GeneratedMSBuildEditorConfig.editorconfig
@@ -144,7 +147,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [capabilities]
 NativeAOT
@@ -161,7 +163,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/net8.0/
 TargetFramework=net8.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/net8.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
@@ -202,6 +203,10 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/net8.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.GeneratedMSBuildEditorConfig.editorconfig
@@ -209,7 +214,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
 
 [capabilities]
 NativeAOT
@@ -225,7 +229,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/netstandard2.0/
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler/Debug/netstandard2.0/Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
@@ -376,6 +379,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../

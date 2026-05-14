@@ -1,4 +1,4 @@
-hash=7434022a59cd3aec4df3ad8b99c28d83eea553b5670c10f03e109e1f0ab0715b
+hash=dd95d96470492c4fd438d121993488a97d87df0c5c1537b279cc4d410645cb68
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.Net.Compilers.Toolset.Package
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.Net.Compilers.Toolset.Package/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.Net.Compilers.Toolset.Package/project.assets.json
 RootNamespace=Microsoft.Net.Compilers.Toolset.Package
@@ -92,13 +91,16 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.Net.Compilers.Toolset.Package/Debug/net10.0/Microsoft.Net.Compilers.Toolset.Package.GeneratedMSBuildEditorConfig.editorconfig
  eng/config/globalconfigs/
   Common.globalconfig
   Shipping.globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt

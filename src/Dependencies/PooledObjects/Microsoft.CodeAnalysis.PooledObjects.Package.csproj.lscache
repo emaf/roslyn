@@ -1,4 +1,4 @@
-hash=8a3cbf58f801bfcf9bec289f13133edd782af8621a68a237ef769a469bd42657
+hash=0e1549805da7211cd39ab93642e5da6116ed42e531692781b684a6468c2a3260
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.PooledObjects.Package
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.PooledObjects.Package/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.PooledObjects.Package/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.PooledObjects.Package
@@ -251,6 +250,10 @@ PooledStringBuilder.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../
  ../../
@@ -268,6 +271,8 @@ PooledStringBuilder.cs
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 Pack

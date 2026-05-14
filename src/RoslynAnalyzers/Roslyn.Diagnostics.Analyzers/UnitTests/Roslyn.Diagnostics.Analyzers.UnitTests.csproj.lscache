@@ -1,4 +1,4 @@
-hash=fae529beb301b20498f2ec1f35d39d423a588b0b2580d9d173af40354c757480
+hash=a98d58d8205df621fa723f625babed66b033a44b7a8224a83ed9f11b61d67912
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Roslyn.Diagnostics.Analyzers.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/project.assets.json
 RootNamespace=Roslyn.Diagnostics.Analyzers.UnitTests
-RunArguments=exec "<PATH>../../../../artifacts/bin/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/Roslyn.Diagnostics.Analyzers.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/Roslyn.Diagnostics.Analyzers.UnitTests.dll
@@ -182,6 +179,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Roslyn.Diagnostics.Analyzers.UnitTests/Debug/net10.0/Roslyn.Diagnostics.Analyzers.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -189,7 +190,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/test/BannedSymbols.txt

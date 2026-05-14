@@ -1,4 +1,4 @@
-hash=052b9cc69df21a6992e41678c77f50f5caecf19619f06e8020a1d79c868d94d3
+hash=4d832bf0c6689e76ad71efebe0b9e712dc798a57c0df307f397e9bc7c877fbbc
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.VisualStudioCode.Razor.IntegrationTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.VisualStudioCode.Razor.IntegrationTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.VisualStudioCode.Razor.IntegrationTests/project.assets.json
 RootNamespace=Microsoft.VisualStudioCode.Razor.IntegrationTests
-RunArguments=exec "<PATH>../../../../../../artifacts/bin/Microsoft.VisualStudioCode.Razor.IntegrationTests/Debug/net10.0/Microsoft.VisualStudioCode.Razor.IntegrationTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.VisualStudioCode.Razor.IntegrationTests/Debug/net10.0/Microsoft.VisualStudioCode.Razor.IntegrationTests.dll
@@ -247,6 +244,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../
  ../
@@ -262,7 +263,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../

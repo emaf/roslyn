@@ -1,4 +1,4 @@
-hash=2ab5c38ca63fe6764b57f9ca07b225403dbdbe2074f062724bedff897a4c2223
+hash=fb0254901b1e2e8ef7b53c07a328bb70c341bf2e4d192203e2f8233c8b575e65
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.VisualStudio.Extensibility.Testing.SourceGenerator
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.VisualStudio.Extensibility.Testing.SourceGenerator/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.VisualStudio.Extensibility.Testing.SourceGenerator/project.assets.json
 RootNamespace=Microsoft.VisualStudio.Extensibility.Testing.SourceGenerator
@@ -232,6 +231,10 @@ TestServicesSourceGenerator.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../../../../
  ../
@@ -249,6 +252,8 @@ TestServicesSourceGenerator.cs
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 Pack

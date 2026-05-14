@@ -1,4 +1,4 @@
-hash=5b519acaa75c70a4f817b6b0a90093963f5bc8207c18bbf9c6e9dc90ab16b38c
+hash=760445d73d7a2eac067a4a690e299376d1e624fa8a76948e466ad079155783e4
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.ExternalAccess.AspNetCore
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.AspNetCore/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.AspNetCore/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.ExternalAccess.AspNetCore
@@ -270,6 +269,10 @@ Internal/EmbeddedLanguages/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../

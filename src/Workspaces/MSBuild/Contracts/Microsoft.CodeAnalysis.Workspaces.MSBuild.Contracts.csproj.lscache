@@ -1,4 +1,4 @@
-hash=ac8a6360d5a0007ed91bb253e7cf67d58b31e54ee21989d67e2854d64a4359d8
+hash=d1dd0a1e1464160602fb0ad61a0dc071612e36541779528ef885ca753ee0b510
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts/Debug/net8.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Workspaces.MSBuild.Contracts/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
@@ -138,6 +137,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  ../
@@ -147,7 +150,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  Dependencies/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt

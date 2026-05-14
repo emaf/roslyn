@@ -1,4 +1,4 @@
-hash=a8fb0f8e362cd5e3cff1ed5a71c794cb9537ed0a338fcd5b032a7d9847773235
+hash=4e5466a1a251d002675e4d69e217334a07c45e7b8f5cb17ac70fd6fb1ee88f68
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -112,8 +112,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/vbc/Debug/net10.0/
-RunCommand=<PATH>../../../../../artifacts/bin/vbc/Debug/net10.0/vbc
 TargetFramework=net10.0
 TargetPath=<PATH>../../../../../artifacts/bin/vbc/Debug/net10.0/vbc.dll
 TargetRefPath=<PATH>../../../../../artifacts/obj/vbc/Debug/net10.0/ref/vbc.dll
@@ -154,6 +152,10 @@ Microsoft.NETCore.App.Ref
  Microsoft.CodeAnalysis.VisualBasic/Debug/net10.0/ref/Microsoft.CodeAnalysis.VisualBasic.dll
  Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  ../../
@@ -163,7 +165,6 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -176,8 +177,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../../artifacts/bin/vbc/Debug/net8.0/
-RunCommand=<PATH>../../../../../artifacts/bin/vbc/Debug/net8.0/vbc
 TargetFramework=net8.0
 TargetPath=<PATH>../../../../../artifacts/bin/vbc/Debug/net8.0/vbc.dll
 TargetRefPath=<PATH>../../../../../artifacts/obj/vbc/Debug/net8.0/ref/vbc.dll
@@ -220,6 +219,10 @@ Microsoft.NETCore.App.Ref
  system.collections.immutable/10.0.1/lib/net8.0/System.Collections.Immutable.dll
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  ../../
@@ -229,4 +232,3 @@ Microsoft.NETCore.App.Ref
    Shipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

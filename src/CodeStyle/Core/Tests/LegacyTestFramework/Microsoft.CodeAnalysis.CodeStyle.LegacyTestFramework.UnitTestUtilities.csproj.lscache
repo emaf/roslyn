@@ -1,4 +1,4 @@
-hash=7722eec821a6000fd4bf64bb3b282ffc2658d45685e2451fd9e05d366db732f3
+hash=cbd0659b3db96e21aabba9ce3b212245c56c38f5b643d678c05ad53a25096194
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,7 +16,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.CodeStyle.LegacyTestFramework.UnitTestUtilities
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CodeStyle.LegacyTestFramework.UnitTestUtilities/Debug/net10.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.CodeStyle.LegacyTestFramework.UnitTestUtilities/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
@@ -218,6 +217,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../../
  artifacts/obj/Microsoft.CodeAnalysis.CodeStyle.LegacyTestFramework.UnitTestUtilities/Debug/net10.0/Microsoft.CodeAnalysis.CodeStyle.LegacyTestFramework.UnitTestUtilities.GeneratedMSBuildEditorConfig.editorconfig
@@ -225,7 +228,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../

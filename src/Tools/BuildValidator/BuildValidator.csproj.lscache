@@ -1,4 +1,4 @@
-hash=01ee0c596a812a2783c52fa816ebbce5c16950f95cb013c63a71ba96dab06767
+hash=fb2876f9477ce3349046bbaaa269ca5060a97b50b1c8f1c2f3922f910f2f8971
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,11 +16,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=BuildValidator
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/BuildValidator/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/BuildValidator/project.assets.json
 RootNamespace=BuildValidator
-RunCommand=<PATH>../../../artifacts/bin/BuildValidator/Debug/net10.0/BuildValidator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/BuildValidator/Debug/net10.0/BuildValidator.dll
@@ -143,6 +141,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/BuildValidator/Debug/net10.0/BuildValidator.GeneratedMSBuildEditorConfig.editorconfig
@@ -150,7 +152,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt

@@ -1,4 +1,4 @@
-hash=d19c4aa7dd393c829e4aa1a3173f52eefc34d6ec93be486f8186753272e1f665
+hash=bd872635866a1d9529e6797e5f447f48fb90f346087908288092c8200471ecf2
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -124,8 +124,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Replay/Debug/net10.0/
-RunCommand=<PATH>../../../artifacts/bin/Replay/Debug/net10.0/Replay
 TargetFramework=net10.0
 TargetPath=<PATH>../../../artifacts/bin/Replay/Debug/net10.0/Replay.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Replay/Debug/net10.0/ref/Replay.dll
@@ -229,6 +227,10 @@ Microsoft.NETCore.App.Ref
  system.diagnostics.eventlog/10.0.1/lib/net10.0/System.Diagnostics.EventLog.dll
  system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -239,7 +241,6 @@ Microsoft.NETCore.App.Ref
   .editorconfig
  Compilers/.editorconfig
  Dependencies/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -252,8 +253,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../artifacts/bin/Replay/Debug/net8.0/
-RunCommand=<PATH>../../../artifacts/bin/Replay/Debug/net8.0/Replay
 TargetFramework=net8.0
 TargetPath=<PATH>../../../artifacts/bin/Replay/Debug/net8.0/Replay.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Replay/Debug/net8.0/ref/Replay.dll
@@ -359,6 +358,10 @@ Microsoft.NETCore.App.Ref
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
  system.security.cryptography.protecteddata/10.0.1/lib/net8.0/System.Security.Cryptography.ProtectedData.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -369,4 +372,3 @@ Microsoft.NETCore.App.Ref
   .editorconfig
  Compilers/.editorconfig
  Dependencies/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

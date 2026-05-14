@@ -1,4 +1,4 @@
-hash=09a977e6f47d9fb42a1f205111b1f2e4e7822713462a81850d54a994ca397506
+hash=5ec178a8113d8f83a1a89adc8f3841ee889fad90328d592a5fbb86320094f5d7
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,11 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.AspNetCore.Razor.Microbenchmarks.Generator
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator/project.assets.json
 RootNamespace=Microsoft.AspNetCore.Razor.Microbenchmarks.Generator
-RunCommand=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator/Debug/net10.0/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator/Debug/net10.0/Microsoft.AspNetCore.Razor.Microbenchmarks.Generator.dll
@@ -198,6 +196,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=Latest|AnalysisMode=Default
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=Latest|AnalysisMode=Default
+
 [analyzerConfigFiles]
 ../../
  ../../
@@ -212,7 +214,6 @@ Microsoft.NETCore.App.Ref
   NonShipping.globalconfig
  .editorconfig
  .globalconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../

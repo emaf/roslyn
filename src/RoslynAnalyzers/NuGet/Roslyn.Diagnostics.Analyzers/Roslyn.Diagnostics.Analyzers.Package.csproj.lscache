@@ -1,4 +1,4 @@
-hash=9fb419fc1107a501cd05b407f500acf1d7c0b00e3b91e016b0508147e284ab52
+hash=9315e439cebf867258c131b8e1f180601bd323a4542ba884ed80916d0f546349
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Roslyn.Diagnostics.Analyzers.Package
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Roslyn.Diagnostics.Analyzers.Package/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Roslyn.Diagnostics.Analyzers.Package/project.assets.json
 RootNamespace=Roslyn.Diagnostics.Analyzers.Package
@@ -237,6 +236,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
  roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../

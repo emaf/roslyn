@@ -1,4 +1,4 @@
-hash=8dbaec7aadeb6c269b065e0b58f67bdd8a4cf2b74c391d938b3167633db5ed43
+hash=f3981464504c45fa4ea6525090a7628e0ae423518542846f93c3215cc1d3124e
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,11 +16,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=TestDiscoveryWorker
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/TestDiscoveryWorker/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/TestDiscoveryWorker/project.assets.json
 RootNamespace=TestDiscoveryWorker
-RunCommand=<PATH>../../../artifacts/bin/TestDiscoveryWorker/Debug/net10.0/TestDiscoveryWorker
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/TestDiscoveryWorker/Debug/net10.0/TestDiscoveryWorker.dll
@@ -104,6 +102,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/TestDiscoveryWorker/Debug/net10.0/TestDiscoveryWorker.GeneratedMSBuildEditorConfig.editorconfig
@@ -111,7 +113,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt

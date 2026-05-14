@@ -1,4 +1,4 @@
-hash=f0d15f48c92c31782d06145fad00d3fd252df22acb4a3151fc2ce8b10e1ce184
+hash=22fc762820cade52263662fea61e884f38a41e80283d86f154c5ce5b38d3d94e
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -18,7 +18,6 @@ AssemblyName=Microsoft.CommonLanguageServerProtocol.Framework.UnitTests
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/project.assets.json
 RootNamespace=Microsoft.CommonLanguageServerProtocol.Framework.UnitTests
-RunCommand=dotnet
 TargetFrameworkIdentifier=.NETCoreApp
 
 [commandLineArguments]
@@ -139,8 +138,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net10.0/
-RunArguments=exec "<PATH>../../../artifacts/bin/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net10.0/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.dll"
 TargetFramework=net10.0
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net10.0/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net10.0/ref/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.dll
@@ -303,6 +300,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net10.0/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -310,7 +311,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -323,8 +323,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net8.0/
-RunArguments=exec "<PATH>../../../artifacts/bin/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net8.0/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.dll"
 TargetFramework=net8.0
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net8.0/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net8.0/ref/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.dll
@@ -493,6 +491,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net8.0/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -500,4 +502,3 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

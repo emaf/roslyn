@@ -1,4 +1,4 @@
-hash=4e5e7268c7de894f574fd040f18105a73dd5cb6f1b8dbbe1242b46f71931fc14
+hash=a76c551f2937c6b6a0f0842535ca6e63cad4ff8bb2ad38f9fdadea4558486c47
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,12 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=CodeStyleConfigFileGenerator
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/CodeStyleConfigFileGenerator/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/CodeStyleConfigFileGenerator/project.assets.json
 RootNamespace=CodeStyleConfigFileGenerator
-RunArguments=exec "<PATH>../../../artifacts/bin/CodeStyleConfigFileGenerator/Debug/net10.0/CodeStyleConfigFileGenerator.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/CodeStyleConfigFileGenerator/Debug/net10.0/CodeStyleConfigFileGenerator.dll
@@ -143,6 +140,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../
  ../
@@ -152,7 +153,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  Dependencies/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../

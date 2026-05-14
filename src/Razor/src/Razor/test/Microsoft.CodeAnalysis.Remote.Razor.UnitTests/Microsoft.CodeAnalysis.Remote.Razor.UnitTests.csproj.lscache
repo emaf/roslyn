@@ -1,4 +1,4 @@
-hash=947351bc18dd0e06b38d5b0a78a203bfb9caf71109c8429d948bc2f6ebfb309a
+hash=de1e85aa196eb74a235bfbd205908e32ea13c2ecfe08764b59140b0215c1ce82
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,12 +16,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Remote.Razor.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Razor.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../../artifacts/obj/Microsoft.CodeAnalysis.Remote.Razor.UnitTests/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.Remote.Razor.UnitTests
-RunArguments=exec "<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Razor.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.Remote.Razor.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Razor.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.Remote.Razor.UnitTests.dll
@@ -226,6 +223,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../
  ../
@@ -241,7 +242,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../

@@ -1,4 +1,4 @@
-hash=da51e6c0cbffd36fa0b35ead5d3e605ec266a225324014e870080313ddd2ff07
+hash=09ed6b76b0861e16b5663d3340a19170e1c50903a105fd6afba12a170ef50584
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.PublicApiAnalyzers
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.PublicApiAnalyzers/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.PublicApiAnalyzers/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis
@@ -1066,6 +1065,10 @@ PublicApiFile.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../../../
  ../
@@ -1124,6 +1127,8 @@ AnalyzerReleases.Shipped.md
 AnalyzerReleases.Unshipped.md
 AnalyzerReleases.Unshipped.md
 PublicApiAnalyzerResources.resx
+
+[projectReferences]
 
 [capabilities]
 Pack

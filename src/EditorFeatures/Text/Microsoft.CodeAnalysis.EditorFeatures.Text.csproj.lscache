@@ -1,4 +1,4 @@
-hash=83fabe294c363526b7072856fb32efc6735d15692d5c5cc0158f8beaf5ba1db3
+hash=b784f99546e2d7988da3e64b718a01320aeaf306186d83fe8c4cae3712ecabce
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -116,7 +116,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.EditorFeatures.Text/Debug/net10.0/
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.EditorFeatures.Text/Debug/net10.0/Microsoft.CodeAnalysis.EditorFeatures.Text.dll
@@ -170,6 +169,10 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CodeAnalysis.EditorFeatures.Text/Debug/net10.0/Microsoft.CodeAnalysis.EditorFeatures.Text.GeneratedMSBuildEditorConfig.editorconfig
@@ -177,7 +180,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../
@@ -211,7 +213,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.EditorFeatures.Text/Debug/netstandard2.0/
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.EditorFeatures.Text/Debug/netstandard2.0/Microsoft.CodeAnalysis.EditorFeatures.Text.dll
@@ -381,6 +382,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../

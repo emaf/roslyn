@@ -1,4 +1,4 @@
-hash=f13998a9d782d2ed1a68466fa5068566361c4921c2bd246639aea22c75d639cd
+hash=d7e69ac99f7b133e2084ce3810b6571b2c0a6d1ff224a57bc4af13ccd465f4c4
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,12 +16,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.UnitTests
-RunArguments=exec "<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests.dll
@@ -216,6 +213,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.Remote.ServiceHub.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -223,7 +224,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../eng/config/test/BannedSymbols.txt

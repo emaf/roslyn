@@ -1,4 +1,4 @@
-hash=0859d33e5801aaf16c55d5f67c99d8e27e89cdbe87c8dff761fc2e06fc37eaed
+hash=b59702a002e74cd9992e4c120b1ecdcbcd1244ca622f7a606a41e4df7c97f469
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -230,7 +230,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Razor/Debug/net10.0/
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Razor/Debug/net10.0/Microsoft.CodeAnalysis.Remote.Razor.dll
@@ -357,6 +356,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../
  ../
@@ -373,7 +376,6 @@ Microsoft.NETCore.App.Ref
   .editorconfig
  Microsoft.VisualStudio.LanguageServices.Razor/.editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../
@@ -410,7 +412,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Razor/Debug/netstandard2.0/
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
 TargetPath=<PATH>../../../../../../artifacts/bin/Microsoft.CodeAnalysis.Remote.Razor/Debug/netstandard2.0/Microsoft.CodeAnalysis.Remote.Razor.dll
@@ -666,6 +667,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../

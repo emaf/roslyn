@@ -1,4 +1,4 @@
-hash=4c1a4f82abdb609bacf8bdd0e40115207e9313b1794e97707805b3e6cb9cf99a
+hash=297d7b9bb4f4f35be8fdc27f67783bffa8712efcf396f28bf74003e8d9ab2ab3
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.BannedApiAnalyzers.Package
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.BannedApiAnalyzers.Package/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.BannedApiAnalyzers.Package/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.BannedApiAnalyzers.Package
@@ -235,6 +234,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
  roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../

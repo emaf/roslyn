@@ -1,4 +1,4 @@
-hash=802e93962a91d32b81d2f5be6a77603a8390854db0bbd69a04b1590c5d4c34c1
+hash=3e960a5d4f7150d6a6f6c2f0cd8843d882591c972247bd1a0105b124506bcf21
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,11 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=GenerateRulesMissingDocumentation
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/GenerateRulesMissingDocumentation/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/GenerateRulesMissingDocumentation/project.assets.json
 RootNamespace=GenerateRulesMissingDocumentation
-RunCommand=<PATH>../../../artifacts/bin/GenerateRulesMissingDocumentation/Debug/net10.0/GenerateRulesMissingDocumentation
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/GenerateRulesMissingDocumentation/Debug/net10.0/GenerateRulesMissingDocumentation.dll
@@ -128,6 +126,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/GenerateRulesMissingDocumentation/Debug/net10.0/GenerateRulesMissingDocumentation.GeneratedMSBuildEditorConfig.editorconfig
@@ -135,7 +137,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt

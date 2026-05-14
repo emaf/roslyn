@@ -1,4 +1,4 @@
-hash=2e5bb290315a99c5d1ac72aa9abab5003aed46a83412db7d812c5f996b52653b
+hash=0eb5c319006ed6c6dea48e92eeca60ae7cf29f40c621192d8bfb2b6fefa3eb44
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.Debugging.Package
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.Debugging.Package/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Debugging.Package/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.Debugging.Package
@@ -265,6 +264,10 @@ VBImportScopeKind.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [analyzerConfigFiles]
 ../
  ../../
@@ -282,6 +285,8 @@ VBImportScopeKind.cs
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 Pack

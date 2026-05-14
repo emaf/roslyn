@@ -1,4 +1,4 @@
-hash=a64a6a2611de77305bf40ebd91ca7cf9f7f37619e3a06543a8dd8d1164212411
+hash=ea6132ef689388fb8bddd5f0c38aaadd6f390fa35cc9e4f7854cf2ba2ab11bcf
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,11 +17,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=PrepareTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/PrepareTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/PrepareTests/project.assets.json
 RootNamespace=PrepareTests
-RunCommand=<PATH>../../../artifacts/bin/PrepareTests/Debug/net10.0/PrepareTests
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/PrepareTests/Debug/net10.0/PrepareTests.dll
@@ -102,6 +100,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/PrepareTests/Debug/net10.0/PrepareTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -109,7 +111,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt
@@ -118,6 +119,8 @@ Microsoft.NETCore.App.Ref
  vs-threading.MainThreadAssertingMethods.txt
  vs-threading.MainThreadSwitchingMethods.txt
  vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
 
 [capabilities]
 CrossPlatformExecutable

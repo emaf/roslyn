@@ -1,4 +1,4 @@
-hash=d51137e1cd176b5fca7948dcc5b4bbcfbfa3e8fcd06705e0089ca409af86628f
+hash=bec3923127c0c46d943e7283321c62b894688ddb3cc5c4e33974c912d2ed12e7
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -101,7 +101,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.Build.Tasks.CodeAnalysis/Debug/net10.0/
 TargetFramework=net10.0
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.Build.Tasks.CodeAnalysis/Debug/net10.0/Microsoft.Build.Tasks.CodeAnalysis.dll
 TargetRefPath=<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis/Debug/net10.0/ref/Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -246,6 +245,10 @@ Microsoft.NETCore.App.Ref
  system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
  system.security.cryptography.xml/8.0.3/lib/net8.0/System.Security.Cryptography.Xml.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  ../
@@ -257,7 +260,6 @@ Microsoft.NETCore.App.Ref
    .editorconfig
   Dependencies/.editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -270,7 +272,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.Build.Tasks.CodeAnalysis/Debug/net8.0/
 TargetFramework=net8.0
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.Build.Tasks.CodeAnalysis/Debug/net8.0/Microsoft.Build.Tasks.CodeAnalysis.dll
 TargetRefPath=<PATH>../../../../../artifacts/obj/Microsoft.Build.Tasks.CodeAnalysis/Debug/net8.0/ref/Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -416,6 +417,10 @@ Microsoft.NETCore.App.Ref
  system.security.cryptography.protecteddata/10.0.1/lib/net8.0/System.Security.Cryptography.ProtectedData.dll
  system.security.cryptography.xml/8.0.3/lib/net8.0/System.Security.Cryptography.Xml.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  ../
@@ -427,4 +432,3 @@ Microsoft.NETCore.App.Ref
    .editorconfig
   Dependencies/.editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

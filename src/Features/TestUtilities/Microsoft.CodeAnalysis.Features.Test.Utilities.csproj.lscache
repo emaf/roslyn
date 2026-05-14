@@ -1,4 +1,4 @@
-hash=3202aed76a16ae02eb90b447e24ed406da01fdacafb33f3dcd7995b27488313c
+hash=945c3dcc2b2b16daceb3a0ca1c07e2760d324f763b0adc18ceadd473e35e5ceb
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -156,7 +156,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.Features.Test.Utilities/Debug/net10.0/
 TargetFramework=net10.0
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.Features.Test.Utilities/Debug/net10.0/Microsoft.CodeAnalysis.Features.Test.Utilities.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Features.Test.Utilities/Debug/net10.0/ref/Microsoft.CodeAnalysis.Features.Test.Utilities.dll
@@ -301,6 +300,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CodeAnalysis.Features.Test.Utilities/Debug/net10.0/Microsoft.CodeAnalysis.Features.Test.Utilities.GeneratedMSBuildEditorConfig.editorconfig
@@ -308,7 +311,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -321,7 +323,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.Features.Test.Utilities/Debug/net8.0/
 TargetFramework=net8.0
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.Features.Test.Utilities/Debug/net8.0/Microsoft.CodeAnalysis.Features.Test.Utilities.dll
 TargetRefPath=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Features.Test.Utilities/Debug/net8.0/ref/Microsoft.CodeAnalysis.Features.Test.Utilities.dll
@@ -472,6 +473,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CodeAnalysis.Features.Test.Utilities/Debug/net8.0/Microsoft.CodeAnalysis.Features.Test.Utilities.GeneratedMSBuildEditorConfig.editorconfig
@@ -479,4 +484,3 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   NonShipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

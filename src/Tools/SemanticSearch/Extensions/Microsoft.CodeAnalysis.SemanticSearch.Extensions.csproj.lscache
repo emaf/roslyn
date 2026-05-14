@@ -1,4 +1,4 @@
-hash=a2e6d1be7cc952ca8d0535128b2df5145cad11dd557af4b1e6e222e389db9604
+hash=59fcd45ae38717007dcc29e3c1e54552166878a6eb87f16801b9b216f50ae723
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -110,7 +110,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net10.0/
 TargetFramework=net10.0
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net10.0/Microsoft.CodeAnalysis.SemanticSearch.Extensions.dll
 TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net10.0/ref/Microsoft.CodeAnalysis.SemanticSearch.Extensions.dll
@@ -135,6 +134,10 @@ Microsoft.NETCore.App.Ref
 [metadataReferences]
 ../../../../artifacts/obj/Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net10.0/Microsoft.CodeAnalysis.SemanticSearch.Extensions.GeneratedMSBuildEditorConfig.editorconfig
@@ -142,7 +145,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 ---
 
@@ -155,7 +157,6 @@ TargetFramework=net8.0
 
 [properties]
 MaxSupportedLangVersion=12.0
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net8.0/
 TargetFramework=net8.0
 TargetPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net8.0/Microsoft.CodeAnalysis.SemanticSearch.Extensions.dll
 TargetRefPath=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net8.0/ref/Microsoft.CodeAnalysis.SemanticSearch.Extensions.dll
@@ -182,6 +183,10 @@ Microsoft.NETCore.App.Ref
  system.collections.immutable/10.0.1/lib/net8.0/System.Collections.Immutable.dll
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
+
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net8.0/Microsoft.CodeAnalysis.SemanticSearch.Extensions.GeneratedMSBuildEditorConfig.editorconfig
@@ -189,4 +194,3 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_8_default.globalconfig

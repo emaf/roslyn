@@ -1,4 +1,4 @@
-hash=96739a983f1a699a4b62311c785a1f731b74466cd9ab0e1803fe216af042a244
+hash=dbdc5ce53d1367930c9a2fccf8ff7c8e842009ce54c59038894594b3a7922c39
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,12 +16,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator.ResultProvider.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator
-RunArguments=exec "<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator.ResultProvider.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.ResultProvider.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.ExpressionEvaluator.ResultProvider.UnitTests.dll
@@ -176,6 +173,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../../
  ../
@@ -185,7 +186,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  Compilers/.editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../../eng/config/test/BannedSymbols.txt

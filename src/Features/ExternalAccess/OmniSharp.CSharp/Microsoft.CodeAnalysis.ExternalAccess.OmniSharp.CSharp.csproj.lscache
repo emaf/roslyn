@@ -1,4 +1,4 @@
-hash=a0c553e272628324131339cb71c95a9e0e33a7f556e42a14b250b5b159f3049f
+hash=7aadecbc91a30782d3b43f6406db1292fc7b295afef7561b2fe164b0ada411be
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.CSharp
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.CSharp/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.CSharp/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.ExternalAccess.OmniSharp.CSharp
@@ -250,6 +249,10 @@ Formatting/OmniSharpSyntaxFormattingOptionsFactory.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../

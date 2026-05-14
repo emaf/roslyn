@@ -1,4 +1,4 @@
-hash=97ff6f76fe6dbdd439fe7ca32052d86f30b68310e8e87a0a29831f16f98226d3
+hash=3bc38f61f1d723dd57627c74389089474b7fb68be42084ac9de3f3cc7a01e06a
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -16,12 +16,9 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests/Debug/net10.0/
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../../../artifacts/obj/Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests
-RunArguments=exec "<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests.dll"
-RunCommand=dotnet
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../../../artifacts/bin/Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests/Debug/net10.0/Microsoft.CodeAnalysis.CSharp.Semantic.UnitTests.dll
@@ -274,6 +271,10 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  ../../
@@ -283,7 +284,6 @@ Microsoft.NETCore.App.Ref
    NonShipping.globalconfig
   .editorconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../../../../../eng/config/test/BannedSymbols.txt

@@ -1,4 +1,4 @@
-hash=c0440da0f8f7a99663582987160bb7af7d0e6b56c3e4b7e8f61ee89352d6a23c
+hash=c58123794858e0e1f0d0da58fdad80f9dce5632e5c604116b44b3779d514e5ba
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -963,7 +963,6 @@ TargetFramework=net10.0
 
 [properties]
 MaxSupportedLangVersion=14.0
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/net10.0/
 TargetFramework=net10.0
 TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/net10.0/Microsoft.CodeAnalysis.LanguageServer.Protocol.dll
@@ -1083,6 +1082,10 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
+Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/net10.0/Microsoft.CodeAnalysis.LanguageServer.Protocol.GeneratedMSBuildEditorConfig.editorconfig
@@ -1090,7 +1093,6 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/build/config/analysislevel_10_default.globalconfig
 
 [additionalFiles]
 ../
@@ -1126,7 +1128,6 @@ TargetFramework=netstandard2.0
 
 [properties]
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/netstandard2.0/
 TargetFramework=netstandard2.0
 TargetFrameworkIdentifier=.NETStandard
 TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer.Protocol/Debug/netstandard2.0/Microsoft.CodeAnalysis.LanguageServer.Protocol.dll
@@ -1370,6 +1371,10 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../

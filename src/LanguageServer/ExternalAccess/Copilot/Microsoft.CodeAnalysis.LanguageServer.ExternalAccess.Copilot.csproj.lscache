@@ -1,4 +1,4 @@
-hash=78b089ea39c5bde7e5b36185f61e91bb13da4f732e3ed8552a2f1c0b794a6159
+hash=6e4f41274c8083401d887a84309bfe435db14bc2b3305a5cf332fb5a07adda47
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -17,7 +17,6 @@ lastDtbSucceeded
 [properties]
 AssemblyName=Microsoft.CodeAnalysis.LanguageServer.ExternalAccess.Copilot
 MaxSupportedLangVersion=7.3
-OutputPath=<PATH>../../../../artifacts/bin/Microsoft.CodeAnalysis.LanguageServer.ExternalAccess.Copilot/Debug/netstandard2.0/
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../../artifacts/obj/Microsoft.CodeAnalysis.LanguageServer.ExternalAccess.Copilot/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.LanguageServer.ExternalAccess.Copilot
@@ -268,6 +267,10 @@ LspServices/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../
