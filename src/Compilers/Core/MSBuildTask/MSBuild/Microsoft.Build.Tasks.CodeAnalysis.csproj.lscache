@@ -1,4 +1,4 @@
-hash=bec3923127c0c46d943e7283321c62b894688ddb3cc5c4e33974c912d2ed12e7
+hash=a01c45de9af9d5e5e2eebd0dceeaf4620cb40a94ee17cd12e37f56065661de2f
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -77,6 +77,10 @@ TargetFrameworkIdentifier=.NETCoreApp
  roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [additionalFiles]
 ../../../../../eng/config/BannedSymbols.txt
@@ -245,10 +249,6 @@ Microsoft.NETCore.App.Ref
  system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
  system.security.cryptography.xml/8.0.3/lib/net8.0/System.Security.Cryptography.Xml.dll
 
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
-
 [analyzerConfigFiles]
 ../../../
  ../
@@ -416,10 +416,6 @@ Microsoft.NETCore.App.Ref
  system.security.cryptography.pkcs/8.0.1/lib/net8.0/System.Security.Cryptography.Pkcs.dll
  system.security.cryptography.protecteddata/10.0.1/lib/net8.0/System.Security.Cryptography.ProtectedData.dll
  system.security.cryptography.xml/8.0.3/lib/net8.0/System.Security.Cryptography.Xml.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
 
 [analyzerConfigFiles]
 ../../../

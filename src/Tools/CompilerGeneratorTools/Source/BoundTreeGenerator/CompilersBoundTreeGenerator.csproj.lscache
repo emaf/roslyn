@@ -1,4 +1,4 @@
-hash=d4ecc79f16b9c2eef3ddc7441164c9c76b7ad395b7800c729e17efd49b1c0e3d
+hash=eeb562129542738f928081e1fbe317e6ef0411bacc4d0e906e5782bbb88ecc87
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -103,8 +103,8 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
 [sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../

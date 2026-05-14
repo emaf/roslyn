@@ -1,4 +1,4 @@
-hash=6815358c77b33607b1cb6894d19bcfb5412e7b455fba0df83c7b81cb21404889
+hash=ebd05033c6552caf1f65070b8a379e231ffe4b37c0f5f4c4633a3ef7e9841b9c
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -159,8 +159,8 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.fixes.dll
 
 [sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../

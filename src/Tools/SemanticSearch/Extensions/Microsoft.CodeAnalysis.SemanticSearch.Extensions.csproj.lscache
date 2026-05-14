@@ -1,4 +1,4 @@
-hash=59fcd45ae38717007dcc29e3c1e54552166878a6eb87f16801b9b216f50ae723
+hash=2da09620b26f9169f327b1ed8b34a3f6b0b75cd12b4f77491cdafe3fb8686e5d
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -84,6 +84,10 @@ ProjectModel.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt
 <NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
@@ -134,10 +138,6 @@ Microsoft.NETCore.App.Ref
 [metadataReferences]
 ../../../../artifacts/obj/Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
 
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
-
 [analyzerConfigFiles]
 ../../../../
  artifacts/obj/Microsoft.CodeAnalysis.SemanticSearch.Extensions/Debug/net10.0/Microsoft.CodeAnalysis.SemanticSearch.Extensions.GeneratedMSBuildEditorConfig.editorconfig
@@ -182,10 +182,6 @@ Microsoft.NETCore.App.Ref
 <NUGET>/
  system.collections.immutable/10.0.1/lib/net8.0/System.Collections.Immutable.dll
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
 
 [analyzerConfigFiles]
 ../../../../

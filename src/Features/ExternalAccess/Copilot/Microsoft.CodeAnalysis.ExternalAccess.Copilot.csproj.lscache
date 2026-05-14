@@ -1,4 +1,4 @@
-hash=63dee696067535a4138dd522d22909cc45492e10ed7a28ee6ba7ba863eef3e74
+hash=c7ad03521f7f0fbbe57d26953cb59825551e0d41f69e31d6b4a45aa9a2b1b9d5
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -88,6 +88,10 @@ SemanticSearch/
  ICopilotSemanticSearchQueryService.cs
  ICopilotSemanticSearchResultsObserver.cs
  ICopilotSemanticSearchSolutionService.cs
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 .editorconfig
@@ -199,10 +203,6 @@ Microsoft.NETCore.App.Ref
  roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
 
 [analyzerConfigFiles]
 ../../../../
@@ -417,10 +417,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers
-Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../../

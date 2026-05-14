@@ -1,4 +1,4 @@
-hash=666a1db285ae6af00df5a978f24ad08abdd4a0af4be01612b236c6ccd6fe3f07
+hash=e9b4dca96fe3160b9d0e6f62c2077aca1e0f64cd103ee5ef953a9fa162f52fe6
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -112,6 +112,10 @@ UsesIsNullableVisitor.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [additionalFiles]
 ../../../../../eng/config/BannedSymbols.txt
 <NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
@@ -197,10 +201,6 @@ Microsoft.NETCore.App.Ref
  xunit.combinatorial/1.6.24/lib/netstandard2.0/Xunit.Combinatorial.dll
  xunit.extensibility.core/2.9.2/lib/netstandard1.1/xunit.core.dll
 
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
-
 [analyzerConfigFiles]
 ../../../
  ../../
@@ -274,10 +274,6 @@ Microsoft.NETCore.App.Ref
  xunit.assert/2.9.2/lib/net6.0/xunit.assert.dll
  xunit.combinatorial/1.6.24/lib/netstandard2.0/Xunit.Combinatorial.dll
  xunit.extensibility.core/2.9.2/lib/netstandard1.1/xunit.core.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
 
 [analyzerConfigFiles]
 ../../../

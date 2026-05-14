@@ -1,4 +1,4 @@
-hash=c1514646ea581e4291b296e54102e233fcc54447af9b92383471e575e4912cc4
+hash=de77bcb3e47c03b6e4964cfc14258d46e451179661d6d4eef96e701a87cfd8e4
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -126,6 +126,10 @@ Services/
  BrokeredServiceBase.ServiceConstructionArguments.cs
  ClientOptionsProvider.cs
  RemoteDocumentTrackingService.cs
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [additionalFiles]
 ../../../../eng/config/BannedSymbols.txt
@@ -316,10 +320,6 @@ Microsoft.NETCore.App.Ref
  roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
 
 [analyzerConfigFiles]
 ../../../
@@ -611,10 +611,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers
-Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../../
