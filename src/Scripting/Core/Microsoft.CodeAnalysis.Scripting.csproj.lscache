@@ -1,4 +1,4 @@
-hash=ec0f5374cfaa90e2fb7a953a6925c3fcc17ad17e541f54f0e64ae80f176d39b2
+hash=2d01e2790529230e647908bf1f4f9b8c762cdf28458be88c53cca0615230ed79
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -128,6 +128,10 @@ ScriptVariable.cs
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
 [additionalFiles]
 <NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
  vs-threading.LegacyThreadSwitchingMembers.txt
@@ -211,10 +215,6 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
 
 [analyzerConfigFiles]
 ../../
@@ -318,10 +318,6 @@ Microsoft.NETCore.App.Ref
   Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
 
 [analyzerConfigFiles]
 ../../
@@ -535,10 +531,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 <NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
  Microsoft.CodeAnalysis.NetAnalyzers.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers
-Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../

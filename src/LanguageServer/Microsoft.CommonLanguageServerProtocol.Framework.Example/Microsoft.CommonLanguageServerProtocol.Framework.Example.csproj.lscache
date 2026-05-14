@@ -1,4 +1,4 @@
-hash=eebef5ef51f9bf2f39210e389f00b638b6dd124167828d7dab42dd32946e3429
+hash=68bc42fac9254c64f034503021f4f0b22705c7e4af66a602ad8488a122b992bc
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -53,6 +53,10 @@ ExampleLspServices.cs
 ExampleRequestContext.cs
 ExampleRequestContextFactory.cs
 MultiRegisteringHandler.cs
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [additionalFiles]
 ../
@@ -200,10 +204,6 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
-
 [analyzerConfigFiles]
 ../../
  ../
@@ -345,10 +345,6 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
 
 [analyzerConfigFiles]
 ../../
@@ -610,10 +606,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers
-Microsoft.NET.Sdk/codestyle/cs
 
 [analyzerConfigFiles]
 ../../

@@ -1,4 +1,4 @@
-hash=5a3fca0c7338ba481b6f236d42b32af0b21445d68914ab484a16a04c50440eec
+hash=a550231b06046dbc2c415905318c86440e8f59007cf13519b6fda4577f01f738
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -124,6 +124,10 @@ WorkspaceTestUtilities.cs
   Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt
@@ -316,10 +320,6 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
-
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CodeAnalysis.Workspaces.Test.Utilities/Debug/net10.0/Microsoft.CodeAnalysis.Workspaces.Test.Utilities.GeneratedMSBuildEditorConfig.editorconfig
@@ -483,10 +483,6 @@ Microsoft.NETCore.App.Ref
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
  system.text.json/10.0.1/analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
 
 [analyzerConfigFiles]
 ../../../

@@ -1,4 +1,4 @@
-hash=bd872635866a1d9529e6797e5f447f48fb90f346087908288092c8200471ecf2
+hash=3f8dff9f3bffae5c4b51e87b84255b4ad44a0090bbac665c8ef75a56f4a2fa2a
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -83,6 +83,10 @@ Replay.cs
  roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [additionalFiles]
 ../../../eng/config/BannedSymbols.txt
@@ -227,10 +231,6 @@ Microsoft.NETCore.App.Ref
  system.diagnostics.eventlog/10.0.1/lib/net10.0/System.Diagnostics.EventLog.dll
  system.security.cryptography.protecteddata/10.0.1/lib/net10.0/System.Security.Cryptography.ProtectedData.dll
 
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
-
 [analyzerConfigFiles]
 ../../
  ../
@@ -357,10 +357,6 @@ Microsoft.NETCore.App.Ref
  system.io.pipelines/10.0.1/lib/net8.0/System.IO.Pipelines.dll
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
  system.security.cryptography.protecteddata/10.0.1/lib/net8.0/System.Security.Cryptography.ProtectedData.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
 
 [analyzerConfigFiles]
 ../../

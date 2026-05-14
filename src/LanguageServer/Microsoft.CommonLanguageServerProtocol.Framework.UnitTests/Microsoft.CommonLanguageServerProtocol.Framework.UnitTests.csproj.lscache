@@ -1,4 +1,4 @@
-hash=22fc762820cade52263662fea61e884f38a41e80283d86f154c5ce5b38d3d94e
+hash=c61d18a17bb48686ad6b4ce5557497a2280353a57334053179b96a7a0c591a2a
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -72,6 +72,10 @@ TestExampleLanguageServer.cs
   Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
   Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
 
 [additionalFiles]
 ../
@@ -300,10 +304,6 @@ Microsoft.NETCore.App.Ref
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
 
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=latest
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=latest
-
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests/Debug/net10.0/Microsoft.CommonLanguageServerProtocol.Framework.UnitTests.GeneratedMSBuildEditorConfig.editorconfig
@@ -490,10 +490,6 @@ Microsoft.NETCore.App.Ref
  xunit.analyzers/1.17.0/analyzers/dotnet/cs/
   xunit.analyzers.dll
   xunit.analyzers.fixes.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=8.0
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=8.0
 
 [analyzerConfigFiles]
 ../../../
