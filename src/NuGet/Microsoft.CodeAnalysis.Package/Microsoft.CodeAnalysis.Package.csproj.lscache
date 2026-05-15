@@ -1,4 +1,4 @@
-hash=b6c0c44f85c871b2f869bc62826c49457b8a78cb4645ab0072c0ff8158449324
+hash=cccbdc600d95b97cb1b245539347bfdc0d742fa3e6fc0b2fe75691859883f52c
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -19,10 +19,6 @@ MaxSupportedLangVersion=7.3
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../artifacts/obj/Microsoft.CodeAnalysis.Package/project.assets.json
 RootNamespace=Microsoft.CodeAnalysis.Package
-TargetFramework=netstandard2.0
-TargetFrameworkIdentifier=.NETStandard
-TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.Package/Debug/netstandard2.0/Microsoft.CodeAnalysis.Package.dll
-TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 
 [commandLineArguments]
 /noconfig
@@ -33,7 +29,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 /nostdlib+
 /errorreport:prompt
 /warn:9999
-/define:TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD1_0_OR_GREATER;NETSTANDARD1_1_OR_GREATER;NETSTANDARD1_2_OR_GREATER;NETSTANDARD1_3_OR_GREATER;NETSTANDARD1_4_OR_GREATER;NETSTANDARD1_5_OR_GREATER;NETSTANDARD1_6_OR_GREATER;NETSTANDARD2_0_OR_GREATER
 /highentropyva+
 /nullable:enable
 /debug+
@@ -55,9 +50,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 /warnaserror+:NU1605
 /warnaserror-:IDE0055
 
-[sourceFiles]
-../../../artifacts/obj/Microsoft.CodeAnalysis.Package/Debug/netstandard2.0/Microsoft.CodeAnalysis.Package.AssemblyInfo.cs
-
 [metadataReferences]
 ../../../artifacts/obj/
  Microsoft.CodeAnalysis.CSharp.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
@@ -66,6 +58,141 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
  Microsoft.CodeAnalysis.VisualBasic/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.VisualBasic.dll
  Microsoft.CodeAnalysis.Workspaces/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Workspaces.dll
  Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+<NUGET>/
+ microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.Analyzers.dll
+  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
+[additionalFiles]
+../../../eng/config/BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+
+[projectReferences]
+../../
+ Compilers/
+  Core/Portable/Microsoft.CodeAnalysis.csproj
+  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.csproj
+  VisualBasic/Portable/Microsoft.CodeAnalysis.VisualBasic.vbproj
+ Workspaces/
+  Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
+  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
+  VisualBasic/Portable/Microsoft.CodeAnalysis.VisualBasic.Workspaces.vbproj
+
+[capabilities]
+Pack
+
+---
+
+[project]
+language=C#
+primary
+
+[sliceDimensions]
+TargetFramework=net472
+
+[properties]
+TargetFramework=net472
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.Package/Debug/net472/Microsoft.CodeAnalysis.Package.dll
+TemporaryDependencyNodeTargetIdentifier=net472
+
+[commandLineArguments]
+/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
+/subsystemversion:6.00
+
+[sourceFiles]
+../../../artifacts/obj/Microsoft.CodeAnalysis.Package/Debug/net472/Microsoft.CodeAnalysis.Package.AssemblyInfo.cs
+
+[metadataReferences]
+<NETFXREF>/v4.7.2/
+ Facades/netstandard.dll
+ mscorlib.dll
+ System.ComponentModel.Composition.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+<NUGET>/
+ microsoft.bcl.asyncinterfaces/10.0.1/lib/net462/Microsoft.Bcl.AsyncInterfaces.dll
+ system.buffers/4.6.1/lib/net462/System.Buffers.dll
+ system.collections.immutable/10.0.1/lib/net462/System.Collections.Immutable.dll
+ system.composition.attributedmodel/10.0.1/lib/net462/System.Composition.AttributedModel.dll
+ system.composition.convention/10.0.1/lib/net462/System.Composition.Convention.dll
+ system.composition.hosting/10.0.1/lib/net462/System.Composition.Hosting.dll
+ system.composition.runtime/10.0.1/lib/net462/System.Composition.Runtime.dll
+ system.composition.typedparts/10.0.1/lib/net462/System.Composition.TypedParts.dll
+ system.io.pipelines/10.0.1/lib/net462/System.IO.Pipelines.dll
+ system.memory/4.6.3/lib/net462/System.Memory.dll
+ system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
+ system.reflection.metadata/10.0.1/lib/net462/System.Reflection.Metadata.dll
+ system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
+ system.text.encoding.codepages/8.0.0/lib/net462/System.Text.Encoding.CodePages.dll
+ system.threading.channels/8.0.0/lib/net462/System.Threading.Channels.dll
+ system.threading.tasks.extensions/4.6.3/lib/net462/System.Threading.Tasks.Extensions.dll
+
+[analyzerConfigFiles]
+../../../
+ artifacts/obj/Microsoft.CodeAnalysis.Package/Debug/net472/Microsoft.CodeAnalysis.Package.GeneratedMSBuildEditorConfig.editorconfig
+ eng/config/globalconfigs/
+  Common.globalconfig
+  Shipping.globalconfig
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=netstandard2.0
+
+[properties]
+TargetFramework=netstandard2.0
+TargetFrameworkIdentifier=.NETStandard
+TargetPath=<PATH>../../../artifacts/bin/Microsoft.CodeAnalysis.Package/Debug/netstandard2.0/Microsoft.CodeAnalysis.Package.dll
+TemporaryDependencyNodeTargetIdentifier=netstandard2.0
+
+[commandLineArguments]
+/define:TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD1_0_OR_GREATER;NETSTANDARD1_1_OR_GREATER;NETSTANDARD1_2_OR_GREATER;NETSTANDARD1_3_OR_GREATER;NETSTANDARD1_4_OR_GREATER;NETSTANDARD1_5_OR_GREATER;NETSTANDARD1_6_OR_GREATER;NETSTANDARD2_0_OR_GREATER
+
+[sourceFiles]
+../../../artifacts/obj/Microsoft.CodeAnalysis.Package/Debug/netstandard2.0/Microsoft.CodeAnalysis.Package.AssemblyInfo.cs
+
+[metadataReferences]
 <NUGET>/
  microsoft.bcl.asyncinterfaces/10.0.1/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll
  netstandard.library/2.0.3/build/netstandard2.0/ref/
@@ -198,61 +325,9 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
  system.threading.channels/8.0.0/lib/netstandard2.0/System.Threading.Channels.dll
  system.threading.tasks.extensions/4.6.3/lib/netstandard2.0/System.Threading.Tasks.Extensions.dll
 
-[analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
- Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
- Microsoft.CodeAnalysis.NetAnalyzers.dll
-<NUGET>/
- microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.Analyzers.dll
-  Microsoft.CodeAnalysis.CSharp.Analyzers.dll
- microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
-  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
- microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
-  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
- microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
-  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
-  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
-  Microsoft.VisualStudio.Threading.Analyzers.dll
- roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Roslyn.Diagnostics.Analyzers.dll
-  Roslyn.Diagnostics.CSharp.Analyzers.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers
-Microsoft.NET.Sdk/codestyle/cs
-
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/Microsoft.CodeAnalysis.Package/Debug/netstandard2.0/Microsoft.CodeAnalysis.Package.GeneratedMSBuildEditorConfig.editorconfig
  eng/config/globalconfigs/
   Common.globalconfig
   Shipping.globalconfig
-
-[additionalFiles]
-../../../eng/config/BannedSymbols.txt
-<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
- vs-threading.LegacyThreadSwitchingMembers.txt
- vs-threading.MainThreadAssertingMethods.txt
- vs-threading.MainThreadSwitchingMethods.txt
- vs-threading.MembersRequiringMainThread.txt
-
-[projectReferences]
-../../
- Compilers/
-  Core/Portable/Microsoft.CodeAnalysis.csproj
-  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.csproj
-  VisualBasic/Portable/Microsoft.CodeAnalysis.VisualBasic.vbproj
- Workspaces/
-  Core/Portable/Microsoft.CodeAnalysis.Workspaces.csproj
-  CSharp/Portable/Microsoft.CodeAnalysis.CSharp.Workspaces.csproj
-  VisualBasic/Portable/Microsoft.CodeAnalysis.VisualBasic.Workspaces.vbproj
-
-[capabilities]
-Pack

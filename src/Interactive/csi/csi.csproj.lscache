@@ -1,4 +1,4 @@
-hash=5031688089e338170fdd6f60139a37be5fa4b5b3d8c04cf7faaf0ef83786446c
+hash=cd5379fbfd9c0b3813551900d643f23a87402a9916c18f63518a31a9b887af08
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -18,13 +18,11 @@ AssemblyName=csi
 OutputType=Exe
 ProjectAssetsFile=<PATH>../../../artifacts/obj/csi/project.assets.json
 RootNamespace=CSharpInteractive
-TargetFrameworkIdentifier=.NETCoreApp
 
 [commandLineArguments]
 /noconfig
 /unsafe-
 /checked-
-/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /fullpaths
 /nostdlib+
 /platform:AnyCPU
@@ -47,22 +45,12 @@ TargetFrameworkIdentifier=.NETCoreApp
 /langversion:preview
 /skipanalyzers+
 /features:strict
-/warnaserror+:NU1605,SYSLIB0011
 /warnaserror-:IDE0055
 
 [sourceFiles]
 Csi.cs
 
 [analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/
- analyzers/
-  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
-  Microsoft.CodeAnalysis.NetAnalyzers.dll
- codestyle/cs/
-  Microsoft.CodeAnalysis.CodeStyle.dll
-  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
-  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
 <NUGET>/
  microsoft.codeanalysis.analyzers/5.6.0-2.26172.2/analyzers/dotnet/cs/
   Microsoft.CodeAnalysis.Analyzers.dll
@@ -107,10 +95,7 @@ Microsoft.NET.Sdk/codestyle/cs
   CSharp/Microsoft.CodeAnalysis.CSharp.Scripting.csproj
 
 [capabilities]
-CrossPlatformExecutable
-NativeAOT
 Pack
-SupportsHotReload
 
 ---
 
@@ -123,16 +108,19 @@ TargetFramework=net10.0
 [properties]
 MaxSupportedLangVersion=14.0
 TargetFramework=net10.0
+TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/csi/Debug/net10.0/csi.dll
 TargetRefPath=<PATH>../../../artifacts/obj/csi/Debug/net10.0/ref/csi.dll
 TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /doc:<PATH>../../../artifacts/obj/csi/Debug/net10.0/csi.xml
 /define:TRACE;DEBUG;NET;NET10_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /features:"InterceptorsNamespaces=;Microsoft.Extensions.Validation.Generated"
 /out:<PATH>../../../artifacts/obj/csi/Debug/net10.0/csi.dll
 /refout:<PATH>../../../artifacts/obj/csi/Debug/net10.0/refint/csi.dll
+/warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
 ../../../artifacts/obj/csi/Debug/net10.0/
@@ -150,9 +138,99 @@ Microsoft.NETCore.App.Ref
  Microsoft.CodeAnalysis.Scripting/Debug/net10.0/ref/Microsoft.CodeAnalysis.Scripting.dll
  Microsoft.CodeAnalysis/Debug/net10.0/ref/Microsoft.CodeAnalysis.dll
 
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/csi/Debug/net10.0/csi.GeneratedMSBuildEditorConfig.editorconfig
+ eng/config/globalconfigs/
+  Common.globalconfig
+  Shipping.globalconfig
+ .editorconfig
+
+[capabilities]
+CrossPlatformExecutable
+NativeAOT
+SupportsHotReload
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=net472
+
+[properties]
+MaxSupportedLangVersion=7.3
+TargetFramework=net472
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>../../../artifacts/bin/csi/Debug/net472/csi.exe
+TargetRefPath=<PATH>../../../artifacts/obj/csi/Debug/net472/ref/csi.exe
+TemporaryDependencyNodeTargetIdentifier=net472
+
+[commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,Nullable,1701,1702
+/doc:<PATH>../../../artifacts/obj/csi/Debug/net472/csi.xml
+/define:TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
+/out:<PATH>../../../artifacts/obj/csi/Debug/net472/csi.exe
+/refout:<PATH>../../../artifacts/obj/csi/Debug/net472/refint/csi.exe
+/subsystemversion:6.00
+/win32manifest:<PATH>../../../artifacts/obj/csi/Debug/net472/csi.exe.manifest
+/warnaserror+:NU1605
+
+[sourceFiles]
+../../../artifacts/obj/csi/Debug/net472/
+ .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ csi.AssemblyInfo.cs
+ csi.InternalsVisibleTo.cs
+
+[metadataReferences]
+../../../artifacts/obj/
+ Microsoft.CodeAnalysis.CSharp.Scripting/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.Scripting.dll
+ Microsoft.CodeAnalysis.CSharp/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.CSharp.dll
+ Microsoft.CodeAnalysis.Scripting/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.Scripting.dll
+ Microsoft.CodeAnalysis/Debug/netstandard2.0/ref/Microsoft.CodeAnalysis.dll
+<NETFXREF>/v4.7.2/
+ Facades/netstandard.dll
+ Microsoft.CSharp.dll
+ mscorlib.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+<NUGET>/
+ system.buffers/4.6.1/lib/net462/System.Buffers.dll
+ system.collections.immutable/10.0.1/lib/net462/System.Collections.Immutable.dll
+ system.memory/4.6.3/lib/net462/System.Memory.dll
+ system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
+ system.reflection.metadata/10.0.1/lib/net462/System.Reflection.Metadata.dll
+ system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
+ system.text.encoding.codepages/8.0.0/lib/net462/System.Text.Encoding.CodePages.dll
+ system.threading.tasks.extensions/4.6.3/lib/net462/System.Threading.Tasks.Extensions.dll
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+
+[analyzerConfigFiles]
+../../../
+ artifacts/obj/csi/Debug/net472/csi.GeneratedMSBuildEditorConfig.editorconfig
  eng/config/globalconfigs/
   Common.globalconfig
   Shipping.globalconfig
@@ -170,15 +248,18 @@ TargetFramework=net8.0
 [properties]
 MaxSupportedLangVersion=12.0
 TargetFramework=net8.0
+TargetFrameworkIdentifier=.NETCoreApp
 TargetPath=<PATH>../../../artifacts/bin/csi/Debug/net8.0/csi.dll
 TargetRefPath=<PATH>../../../artifacts/obj/csi/Debug/net8.0/ref/csi.dll
 TemporaryDependencyNodeTargetIdentifier=net8.0
 
 [commandLineArguments]
+/nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,1701,1702,8002
 /doc:<PATH>../../../artifacts/obj/csi/Debug/net8.0/csi.xml
 /define:TRACE;DEBUG;NET;NET8_0;NETCOREAPP;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP1_0_OR_GREATER;NETCOREAPP1_1_OR_GREATER;NETCOREAPP2_0_OR_GREATER;NETCOREAPP2_1_OR_GREATER;NETCOREAPP2_2_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER
 /out:<PATH>../../../artifacts/obj/csi/Debug/net8.0/csi.dll
 /refout:<PATH>../../../artifacts/obj/csi/Debug/net8.0/refint/csi.dll
+/warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
 ../../../artifacts/obj/csi/Debug/net8.0/
@@ -199,6 +280,17 @@ Microsoft.NETCore.App.Ref
  system.collections.immutable/10.0.1/lib/net8.0/System.Collections.Immutable.dll
  system.reflection.metadata/10.0.1/lib/net8.0/System.Reflection.Metadata.dll
 
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/
+ analyzers/
+  Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+  Microsoft.CodeAnalysis.NetAnalyzers.dll
+ codestyle/cs/
+  Microsoft.CodeAnalysis.CodeStyle.dll
+  Microsoft.CodeAnalysis.CodeStyle.Fixes.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.dll
+  Microsoft.CodeAnalysis.CSharp.CodeStyle.Fixes.dll
+
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/csi/Debug/net8.0/csi.GeneratedMSBuildEditorConfig.editorconfig
@@ -206,3 +298,8 @@ Microsoft.NETCore.App.Ref
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
+
+[capabilities]
+CrossPlatformExecutable
+NativeAOT
+SupportsHotReload

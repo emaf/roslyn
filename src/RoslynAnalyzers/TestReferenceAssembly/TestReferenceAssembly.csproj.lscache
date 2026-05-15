@@ -1,4 +1,4 @@
-hash=e3e0e6677cf7bec78b1e0749bf34cdc45434f24bd26a329be0aa227936343b2c
+hash=3eb167b2c7a9e1a3c8fdbd9ff52c312c287b1cc90fbbcb4c3f0bdca223679a66
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -19,11 +19,6 @@ MaxSupportedLangVersion=7.3
 OutputType=Library
 ProjectAssetsFile=<PATH>../../../artifacts/obj/TestReferenceAssembly/project.assets.json
 RootNamespace=OtherDll
-TargetFramework=netstandard2.0
-TargetFrameworkIdentifier=.NETStandard
-TargetPath=<PATH>../../../artifacts/bin/TestReferenceAssembly/Debug/netstandard2.0/TestReferenceAssembly.dll
-TargetRefPath=<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/ref/TestReferenceAssembly.dll
-TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 
 [commandLineArguments]
 /noconfig
@@ -34,8 +29,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 /nostdlib+
 /errorreport:prompt
 /warn:9999
-/doc:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/TestReferenceAssembly.xml
-/define:OLDER_ROSLYN;TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD1_0_OR_GREATER;NETSTANDARD1_1_OR_GREATER;NETSTANDARD1_2_OR_GREATER;NETSTANDARD1_3_OR_GREATER;NETSTANDARD1_4_OR_GREATER;NETSTANDARD1_5_OR_GREATER;NETSTANDARD1_6_OR_GREATER;NETSTANDARD2_0_OR_GREATER
 /highentropyva+
 /nullable:enable
 /debug+
@@ -44,8 +37,6 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 /filealign:512
 /keyfile:<NUGET>/microsoft.dotnet.arcade.sdk/10.0.0-beta.26257.4/tools/snk/35MSSharedLib1024.snk
 /optimize-
-/out:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/TestReferenceAssembly.dll
-/refout:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/refint/TestReferenceAssembly.dll
 /target:library
 /warnaserror-
 /utf8output
@@ -60,11 +51,124 @@ TemporaryDependencyNodeTargetIdentifier=netstandard2.0
 /warnaserror-:IDE0055
 
 [sourceFiles]
+OtherDllClass.cs
+OtherDllStaticMethods.cs
+
+[analyzerReferences]
+<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
+ Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+ Microsoft.CodeAnalysis.NetAnalyzers.dll
+<NUGET>/
+ microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
+  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
+ microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
+  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
+ microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
+  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
+ microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
+  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
+  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
+  Microsoft.VisualStudio.Threading.Analyzers.dll
+ roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
+  Roslyn.Diagnostics.Analyzers.dll
+  Roslyn.Diagnostics.CSharp.Analyzers.dll
+
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers
+Microsoft.NET.Sdk/codestyle/cs
+
+[analyzerConfigFiles]
+.editorconfig
+
+[additionalFiles]
+../../../eng/config/BannedSymbols.txt
+<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
+ vs-threading.LegacyThreadSwitchingMembers.txt
+ vs-threading.MainThreadAssertingMethods.txt
+ vs-threading.MainThreadSwitchingMethods.txt
+ vs-threading.MembersRequiringMainThread.txt
+
+[capabilities]
+Pack
+
+---
+
+[project]
+language=C#
+
+[sliceDimensions]
+TargetFramework=net472
+
+[properties]
+TargetFramework=net472
+TargetFrameworkIdentifier=.NETFramework
+TargetPath=<PATH>../../../artifacts/bin/TestReferenceAssembly/Debug/net472/TestReferenceAssembly.dll
+TargetRefPath=<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/net472/ref/TestReferenceAssembly.dll
+TemporaryDependencyNodeTargetIdentifier=net472
+
+[commandLineArguments]
+/doc:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/net472/TestReferenceAssembly.xml
+/define:OLDER_ROSLYN;TRACE;DEBUG;NETFRAMEWORK;NET472;NET20_OR_GREATER;NET30_OR_GREATER;NET35_OR_GREATER;NET40_OR_GREATER;NET45_OR_GREATER;NET451_OR_GREATER;NET452_OR_GREATER;NET46_OR_GREATER;NET461_OR_GREATER;NET462_OR_GREATER;NET47_OR_GREATER;NET471_OR_GREATER;NET472_OR_GREATER
+/out:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/net472/TestReferenceAssembly.dll
+/refout:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/net472/refint/TestReferenceAssembly.dll
+/subsystemversion:6.00
+
+[sourceFiles]
+../../../artifacts/obj/TestReferenceAssembly/Debug/net472/
+ .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+ TestReferenceAssembly.AssemblyInfo.cs
+
+[metadataReferences]
+<NETFXREF>/v4.7.2/
+ mscorlib.dll
+ System.Core.dll
+ System.Data.dll
+ System.dll
+ System.Drawing.dll
+ System.IO.Compression.FileSystem.dll
+ System.Numerics.dll
+ System.Runtime.Serialization.dll
+ System.Xml.dll
+ System.Xml.Linq.dll
+
+[analyzerConfigFiles]
+../../../
+ artifacts/obj/TestReferenceAssembly/Debug/net472/TestReferenceAssembly.GeneratedMSBuildEditorConfig.editorconfig
+ eng/config/globalconfigs/
+  Common.globalconfig
+  Shipping.globalconfig
+ .editorconfig
+
+---
+
+[project]
+language=C#
+primary
+
+[sliceDimensions]
+TargetFramework=netstandard2.0
+
+[properties]
+TargetFramework=netstandard2.0
+TargetFrameworkIdentifier=.NETStandard
+TargetPath=<PATH>../../../artifacts/bin/TestReferenceAssembly/Debug/netstandard2.0/TestReferenceAssembly.dll
+TargetRefPath=<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/ref/TestReferenceAssembly.dll
+TemporaryDependencyNodeTargetIdentifier=netstandard2.0
+
+[commandLineArguments]
+/doc:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/TestReferenceAssembly.xml
+/define:OLDER_ROSLYN;TRACE;DEBUG;NETSTANDARD;NETSTANDARD2_0;NETSTANDARD1_0_OR_GREATER;NETSTANDARD1_1_OR_GREATER;NETSTANDARD1_2_OR_GREATER;NETSTANDARD1_3_OR_GREATER;NETSTANDARD1_4_OR_GREATER;NETSTANDARD1_5_OR_GREATER;NETSTANDARD1_6_OR_GREATER;NETSTANDARD2_0_OR_GREATER
+/out:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/TestReferenceAssembly.dll
+/refout:<PATH>../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/refint/TestReferenceAssembly.dll
+
+[sourceFiles]
 ../../../artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/
  .NETStandard,Version=v2.0.AssemblyAttributes.cs
  TestReferenceAssembly.AssemblyInfo.cs
-OtherDllClass.cs
-OtherDllStaticMethods.cs
 
 [metadataReferences]
 <NUGET>/netstandard.library/2.0.3/build/netstandard2.0/ref/
@@ -182,33 +286,6 @@ OtherDllStaticMethods.cs
  System.Xml.XPath.dll
  System.Xml.XPath.XDocument.dll
 
-[analyzerReferences]
-<NETSDK>/Sdks/Microsoft.NET.Sdk/analyzers/
- Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
- Microsoft.CodeAnalysis.NetAnalyzers.dll
-<NUGET>/
- microsoft.codeanalysis.bannedapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.BannedApiAnalyzers.dll
-  Microsoft.CodeAnalysis.CSharp.BannedApiAnalyzers.dll
- microsoft.codeanalysis.performancesensitiveanalyzers/3.3.4-beta1.22504.1/analyzers/dotnet/cs/
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.CSharp.PerformanceSensitiveAnalyzers.dll
-  Microsoft.CodeAnalysis.PerformanceSensitiveAnalyzers.dll
- microsoft.codeanalysis.publicapianalyzers/5.7.0-1.26227.104/analyzers/dotnet/
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.CodeFixes.dll
-  Microsoft.CodeAnalysis.PublicApiAnalyzers.dll
- microsoft.visualstudio.threading.analyzers/17.15.20-alpha/analyzers/cs/
-  Microsoft.VisualStudio.Threading.Analyzers.CodeFixes.dll
-  Microsoft.VisualStudio.Threading.Analyzers.CSharp.dll
-  Microsoft.VisualStudio.Threading.Analyzers.dll
- roslyn.diagnostics.analyzers/5.7.0-1.26227.104/analyzers/dotnet/cs/
-  Roslyn.Diagnostics.Analyzers.dll
-  Roslyn.Diagnostics.CSharp.Analyzers.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers
-Microsoft.NET.Sdk/codestyle/cs
-
 [analyzerConfigFiles]
 ../../../
  artifacts/obj/TestReferenceAssembly/Debug/netstandard2.0/TestReferenceAssembly.GeneratedMSBuildEditorConfig.editorconfig
@@ -216,15 +293,3 @@ Microsoft.NET.Sdk/codestyle/cs
   Common.globalconfig
   Shipping.globalconfig
  .editorconfig
-.editorconfig
-
-[additionalFiles]
-../../../eng/config/BannedSymbols.txt
-<NUGET>/microsoft.visualstudio.threading.analyzers/17.15.20-alpha/buildTransitive/AdditionalFiles/
- vs-threading.LegacyThreadSwitchingMembers.txt
- vs-threading.MainThreadAssertingMethods.txt
- vs-threading.MainThreadSwitchingMethods.txt
- vs-threading.MembersRequiringMainThread.txt
-
-[capabilities]
-Pack
