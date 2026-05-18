@@ -1,4 +1,4 @@
-hash=bedce3c7312580dafdfbd9b38f85f331a454268c7dfe77c4033fd355d5034f0e
+hash=2f99664c11c2d5266b282ffabcad636b875bc54a7546261844a97206b9e8e9b3
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -155,6 +155,10 @@ Microsoft.AspNetCore.Razor.TagHelpers/
   Roslyn.Diagnostics.Analyzers.dll
   Roslyn.Diagnostics.CSharp.Analyzers.dll
 
+[sdkAnalyzerConfigPolicy]
+Microsoft.NET.Sdk/analyzers|AnalysisMode=Default
+Microsoft.NET.Sdk/codestyle/cs|AnalysisMode=Default
+
 [additionalFiles]
 ../../../../
  ../../eng/config/BannedSymbols.txt
@@ -203,10 +207,6 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 
 [frameworkPacks]
 Microsoft.NETCore.App.Ref
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisMode=Default
-Microsoft.NET.Sdk/codestyle/cs|AnalysisMode=Default
 
 [analyzerConfigFiles]
 ../../
@@ -278,10 +278,6 @@ TemporaryDependencyNodeTargetIdentifier=net472
  system.numerics.vectors/4.6.1/lib/net462/System.Numerics.Vectors.dll
  system.runtime.compilerservices.unsafe/6.1.2/lib/net462/System.Runtime.CompilerServices.Unsafe.dll
  system.text.encodings.web/10.0.1/lib/net462/System.Text.Encodings.Web.dll
-
-[sdkAnalyzerConfigPolicy]
-Microsoft.NET.Sdk/analyzers|AnalysisLevel=Latest|AnalysisMode=Default
-Microsoft.NET.Sdk/codestyle/cs|AnalysisLevel=Latest|AnalysisMode=Default
 
 [analyzerConfigFiles]
 ../../
