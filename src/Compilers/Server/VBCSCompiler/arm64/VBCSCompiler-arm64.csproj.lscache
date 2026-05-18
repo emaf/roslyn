@@ -1,4 +1,4 @@
-hash=cf40bfe63b2a5078683c5b443e3c2edb873be8f672447b8cc0333daf74153a2e
+hash=bb850f55bd483c45cc5608f016451cb2532fc6c149415350301d89cf5cff59f6
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -33,7 +33,6 @@ TemporaryDependencyNodeTargetIdentifier=net472
 /nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,Nullable,1701,1702
 /fullpaths
 /nostdlib+
-/platform:ARM64
 /errorreport:prompt
 /warn:9999
 /doc:<PATH>../../../../../artifacts/obj/VBCSCompiler-arm64/Debug/net472/VBCSCompiler.xml

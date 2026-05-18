@@ -1,4 +1,4 @@
-hash=cd5379fbfd9c0b3813551900d643f23a87402a9916c18f63518a31a9b887af08
+hash=07a92a534bffeab9973c4e75f7a09110420b63d4430d491b776155dc3d2e0dd5
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -25,7 +25,6 @@ RootNamespace=CSharpInteractive
 /checked-
 /fullpaths
 /nostdlib+
-/platform:AnyCPU
 /errorreport:prompt
 /warn:9999
 /highentropyva+

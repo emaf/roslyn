@@ -1,4 +1,4 @@
-hash=7ebf003972d75207a3771a6a76118cf18c26f1d0cb27b27522a39929f5dbd052
+hash=ae64f72afeb24f9de311cdb52c9bce2614f53590ff66464e8034b7db50eb3f91
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -25,7 +25,6 @@ RootNamespace=Roslyn.Test.PdbUtilities
 /checked-
 /fullpaths
 /nostdlib+
-/platform:AnyCPU
 /errorreport:prompt
 /warn:9999
 /highentropyva+

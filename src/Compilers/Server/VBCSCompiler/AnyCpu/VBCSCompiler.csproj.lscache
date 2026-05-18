@@ -1,4 +1,4 @@
-hash=d4bee04ed2d5b5b2a4bfd25fd0526c919869e9a3392a44c960d58e2f77157110
+hash=993b1c7703e6b3e608e19ea7673a1775fa1222ada3981a0455764f65dfb07333
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -25,7 +25,6 @@ RootNamespace=VBCSCompiler
 /checked-
 /fullpaths
 /nostdlib+
-/platform:AnyCPU
 /errorreport:prompt
 /warn:9999
 /highentropyva+

@@ -1,4 +1,4 @@
-hash=11c45e43f9301249cd24c143547febd82ff4acd62337c38ba9db2f4bbbf7edc6
+hash=998d1e96246dea9d340baf627e2bb74863aa67a0070a38d45c076c3fd0f0c2c4
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -25,7 +25,6 @@ RootNamespace=BuildValidator
 /checked-
 /fullpaths
 /nostdlib+
-/platform:AnyCPU
 /errorreport:prompt
 /warn:9999
 /highentropyva+

@@ -1,4 +1,4 @@
-hash=e7bf908500349dfd692ac9a8dbf85dc401d62f5dd5e2af7a1c88f1906a813395
+hash=db6b67642cffacbb8a06c764afc253e450e1e3a8a83c30081648752f18cab8a8
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -25,7 +25,6 @@ RootNamespace=Microsoft.CodeAnalysis.CSharp.CommandLine
 /checked-
 /fullpaths
 /nostdlib+
-/platform:AnyCPU
 /errorreport:prompt
 /warn:9999
 /main:Microsoft.CodeAnalysis.CSharp.CommandLine.Program

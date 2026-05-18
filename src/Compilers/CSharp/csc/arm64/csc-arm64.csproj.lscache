@@ -1,4 +1,4 @@
-hash=773ab8836180a055d9e663a33b8ab10533cd1bf30fc89bf59905beaf061bb5cd
+hash=ebaabf097754b8873f2454a17373865362bce354bec45a562c40523988974bee
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -33,7 +33,6 @@ TemporaryDependencyNodeTargetIdentifier=net472
 /nowarn:1701,1702,1705,1591,NU1507,NU1510,RS1041,RS1038,1573,1591,1701,NU5105,Nullable,1701,1702
 /fullpaths
 /nostdlib+
-/platform:ARM64
 /errorreport:prompt
 /warn:9999
 /doc:<PATH>../../../../../artifacts/obj/csc-arm64/Debug/net472/csc.xml

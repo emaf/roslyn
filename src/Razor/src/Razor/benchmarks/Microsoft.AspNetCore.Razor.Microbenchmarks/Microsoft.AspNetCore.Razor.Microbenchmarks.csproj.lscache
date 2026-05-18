@@ -1,4 +1,4 @@
-hash=98c0f1f33d1e4dd54d788ef30a82d9bfecddaf3c8716f79c5b2de2334f0efb03
+hash=5f18d3d83b52c03fcfda235ee822935bdae6764cf3403fa10cc154f3c8a8a201
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -25,7 +25,6 @@ RootNamespace=Microsoft.AspNetCore.Razor.Microbenchmarks
 /checked-
 /fullpaths
 /nostdlib+
-/platform:AnyCPU
 /errorreport:prompt
 /warn:9999
 /highentropyva+
