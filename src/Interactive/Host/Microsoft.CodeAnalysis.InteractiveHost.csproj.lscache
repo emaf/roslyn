@@ -1,4 +1,4 @@
-hash=e710c1ef872be448d997477587f3770676d112eed78239e68a200286793fe1a1
+hash=648166528512659e287402794a9b82d7e37e35c61bea9c5a6de86594a6c6fe2c
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -89,6 +89,7 @@ Pack
 
 [project]
 language=C#
+primary
 
 [sliceDimensions]
 TargetFramework=net10.0
@@ -384,7 +385,6 @@ SupportsHotReload
 
 [project]
 language=C#
-primary
 
 [sliceDimensions]
 TargetFramework=net472

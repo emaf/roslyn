@@ -1,4 +1,4 @@
-hash=cccbdc600d95b97cb1b245539347bfdc0d742fa3e6fc0b2fe75691859883f52c
+hash=5b723af3b1bd8f74f2c49c4509369ee99b0193d0e2e456d4f864c4a4f2d75e73
 version=2
 
 # This file caches language service data to improve the performance of C# Dev Kit.
@@ -115,7 +115,6 @@ Pack
 
 [project]
 language=C#
-primary
 
 [sliceDimensions]
 TargetFramework=net472
@@ -176,6 +175,7 @@ TemporaryDependencyNodeTargetIdentifier=net472
 
 [project]
 language=C#
+primary
 
 [sliceDimensions]
 TargetFramework=netstandard2.0
