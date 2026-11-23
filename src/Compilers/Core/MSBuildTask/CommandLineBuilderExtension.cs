@@ -3,9 +3,11 @@
 // See the LICENSE file in the project root for more information.
 
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using System.Linq;
 using System.Text;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
@@ -187,15 +189,33 @@ namespace Microsoft.CodeAnalysis.BuildTasks
         /// Split on the characters provided.
         /// </summary>
         internal void AppendSwitchWithSplitting(string switchName, string? parameter, string delimiter, params char[] splitOn)
+            => AppendSwitchWithSplitting(switchName, parameter, delimiter, removeDuplicates: false, splitOn);
+
+        internal void AppendSwitchWithSplitting(string switchName, string? parameter, string delimiter, bool removeDuplicates, params char[] splitOn)
         {
             if (parameter != null)
             {
                 string[] splits = parameter.Split(splitOn, /* omitEmptyEntries */ StringSplitOptions.RemoveEmptyEntries);
                 string[] splitAndTrimmed = new string[splits.Length];
+                bool canRemoveDuplicates = removeDuplicates;
                 for (int i = 0; i < splits.Length; ++i)
                 {
                     splitAndTrimmed[i] = splits[i].Trim();
+                    // The compiler may interpret quoted lists differently from the task's split.
+                    if (canRemoveDuplicates && IsQuotingRequired(splitAndTrimmed[i]))
+                    {
+                        canRemoveDuplicates = false;
+                    }
                 }
+
+                if (canRemoveDuplicates && splitAndTrimmed.Length > 1)
+                {
+                    var seen = new HashSet<string>(StringComparer.Ordinal);
+                    splitAndTrimmed = splitAndTrimmed
+                        .Where(value => value.Length == 0 || seen.Add(value))
+                        .ToArray();
+                }
+
                 AppendSwitchIfNotNull(switchName, splitAndTrimmed, delimiter);
             }
         }

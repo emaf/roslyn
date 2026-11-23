@@ -150,6 +150,118 @@ namespace Microsoft.CodeAnalysis.BuildTasks.UnitTests
             csc = new Csc();
             csc.Instrument = "TestCoverage,Mumble;Stumble";
             Assert.Equal("/instrument:TestCoverage,Mumble,Stumble", csc.GenerateResponseFileContents());
+
+            csc = new Csc();
+            csc.Instrument = "TestCoverage, Mumble; TestCoverage, Mumble";
+            Assert.Equal("/instrument:TestCoverage,Mumble,TestCoverage,Mumble", csc.GenerateResponseFileContents());
+        }
+
+        [Fact]
+        public void WarningSwitchesDeduplicateIndependentlyInOrder()
+        {
+            const string warnings = " \tCS0168 ; 168,CS0168 ; cs0168, 0168; 168;CS9999,CS9999 \t";
+            var csc = new Csc
+            {
+                DisabledWarnings = warnings,
+                TreatWarningsAsErrors = false,
+                WarningsAsErrors = warnings,
+                WarningsNotAsErrors = warnings,
+            };
+
+            Assert.Equal(
+                "/nowarn:CS0168,168,cs0168,0168,CS9999 /warnaserror- " +
+                "/warnaserror+:CS0168,168,cs0168,0168,CS9999 /warnaserror-:CS0168,168,cs0168,0168,CS9999",
+                csc.GenerateResponseFileContents());
+
+            csc.TreatWarningsAsErrors = true;
+            Assert.Equal(
+                "/nowarn:CS0168,168,cs0168,0168,CS9999 /warnaserror+ " +
+                "/warnaserror+:CS0168,168,cs0168,0168,CS9999 /warnaserror-:CS0168,168,cs0168,0168,CS9999",
+                csc.GenerateResponseFileContents());
+        }
+
+        [Fact]
+        public void WarningSwitchesPreserveEmptyValues()
+        {
+            var csc = new Csc
+            {
+                DisabledWarnings = null,
+                WarningsAsErrors = null,
+                WarningsNotAsErrors = null,
+            };
+            Assert.Equal(string.Empty, csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = "";
+            Assert.Equal(string.Empty, csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = ",;;";
+            Assert.Equal(string.Empty, csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = " ";
+            Assert.Equal("/nowarn: /warnaserror+: /warnaserror-:", csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = " , ; ";
+            Assert.Equal("/nowarn:,, /warnaserror+:,, /warnaserror-:,,", csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = "A, ,A, ";
+            Assert.Equal("/nowarn:A,, /warnaserror+:A,, /warnaserror-:A,,", csc.GenerateResponseFileContents());
+        }
+
+        [Fact]
+        public void WarningSwitchesBypassDeduplicationWhenQuotingIsRequired()
+        {
+            const string whitespace = " A,A,A B,A B ";
+            var csc = new Csc
+            {
+                DisabledWarnings = whitespace,
+                WarningsAsErrors = whitespace,
+                WarningsNotAsErrors = whitespace,
+            };
+            Assert.Equal(
+                "/nowarn:A,A,\"A B\",\"A B\" /warnaserror+:A,A,\"A B\",\"A B\" " +
+                "/warnaserror-:A,A,\"A B\",\"A B\"",
+                csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = "A,A,A\tB";
+            Assert.Equal(
+                "/nowarn:A,A,\"A\tB\" /warnaserror+:A,A,\"A\tB\" /warnaserror-:A,A,\"A\tB\"",
+                csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = "A,A,\"Q\",\"Q\"";
+            Assert.Equal(
+                "/nowarn:A,A,\"\\\"Q\\\"\",\"\\\"Q\\\"\" /warnaserror+:A,A,\"\\\"Q\\\"\",\"\\\"Q\\\"\" " +
+                "/warnaserror-:A,A,\"\\\"Q\\\"\",\"\\\"Q\\\"\"",
+                csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = "A,\"A,B\",A";
+            Assert.Equal(
+                "/nowarn:A,\"\\\"A\",\"B\\\"\",A /warnaserror+:A,\"\\\"A\",\"B\\\"\",A " +
+                "/warnaserror-:A,\"\\\"A\",\"B\\\"\",A",
+                csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = csc.WarningsAsErrors = csc.WarningsNotAsErrors = "A,A,A#B";
+            Assert.Equal(
+                "/nowarn:A,A,\"A#B\" /warnaserror+:A,A,\"A#B\" /warnaserror-:A,A,\"A#B\"",
+                csc.GenerateResponseFileContents());
+
+            csc.DisabledWarnings = "A,A,A B";
+            csc.WarningsAsErrors = csc.WarningsNotAsErrors = "A,A";
+            Assert.Equal(
+                "/nowarn:A,A,\"A B\" /warnaserror+:A /warnaserror-:A",
+                csc.GenerateResponseFileContents());
+        }
+
+        [Fact]
+        public void WarningSwitchesMatchDesignTimeBuildForNuGetWarnings()
+        {
+            var csc = new Csc
+            {
+                WarningsNotAsErrors = "NU1901,NU1902,NU1903,NU1904,NU1901,NU1902,NU1903,NU1904",
+            };
+            Assert.Equal("/warnaserror-:NU1901,NU1902,NU1903,NU1904", csc.GenerateResponseFileContents());
+
+            csc.WarningsNotAsErrors = "NU1901,NU1902,NU1903,NU1904";
+            Assert.Equal("/warnaserror-:NU1901,NU1902,NU1903,NU1904", csc.GenerateResponseFileContents());
         }
 
         [Fact]

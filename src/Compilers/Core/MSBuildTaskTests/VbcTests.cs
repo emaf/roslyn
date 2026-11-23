@@ -151,6 +151,118 @@ namespace Microsoft.CodeAnalysis.BuildTasks.UnitTests
             vbc = new Vbc();
             vbc.Instrument = "TestCoverage,Mumble;Stumble";
             Assert.Equal("/optionstrict:custom /instrument:TestCoverage,Mumble,Stumble", vbc.GenerateResponseFileContents());
+
+            vbc = new Vbc();
+            vbc.Instrument = "TestCoverage, Mumble; TestCoverage, Mumble";
+            Assert.Equal("/optionstrict:custom /instrument:TestCoverage,Mumble,TestCoverage,Mumble", vbc.GenerateResponseFileContents());
+        }
+
+        [Fact]
+        public void WarningSwitchesDeduplicateIndependentlyInOrder()
+        {
+            const string warnings = " \tBC42024 ; 42024,BC42024 ; bc42024, 042024; 42024;BC40000,BC40000 \t";
+            var vbc = new Vbc
+            {
+                DisabledWarnings = warnings,
+                TreatWarningsAsErrors = false,
+                WarningsAsErrors = warnings,
+                WarningsNotAsErrors = warnings,
+            };
+
+            Assert.Equal(
+                "/optionstrict:custom /nowarn:BC42024,42024,bc42024,042024,BC40000 /warnaserror- " +
+                "/warnaserror+:BC42024,42024,bc42024,042024,BC40000 /warnaserror-:BC42024,42024,bc42024,042024,BC40000",
+                vbc.GenerateResponseFileContents());
+
+            vbc.TreatWarningsAsErrors = true;
+            Assert.Equal(
+                "/optionstrict:custom /nowarn:BC42024,42024,bc42024,042024,BC40000 /warnaserror+ " +
+                "/warnaserror+:BC42024,42024,bc42024,042024,BC40000 /warnaserror-:BC42024,42024,bc42024,042024,BC40000",
+                vbc.GenerateResponseFileContents());
+        }
+
+        [Fact]
+        public void WarningSwitchesPreserveEmptyValues()
+        {
+            var vbc = new Vbc
+            {
+                DisabledWarnings = null,
+                WarningsAsErrors = null,
+                WarningsNotAsErrors = null,
+            };
+            Assert.Equal("/optionstrict:custom", vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = "";
+            Assert.Equal("/optionstrict:custom", vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = ",;;";
+            Assert.Equal("/optionstrict:custom", vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = " ";
+            Assert.Equal("/optionstrict:custom /nowarn: /warnaserror+: /warnaserror-:", vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = " , ; ";
+            Assert.Equal("/optionstrict:custom /nowarn:,, /warnaserror+:,, /warnaserror-:,,", vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = "A, ,A, ";
+            Assert.Equal("/optionstrict:custom /nowarn:A,, /warnaserror+:A,, /warnaserror-:A,,", vbc.GenerateResponseFileContents());
+        }
+
+        [Fact]
+        public void WarningSwitchesBypassDeduplicationWhenQuotingIsRequired()
+        {
+            const string whitespace = " A,A,A B,A B ";
+            var vbc = new Vbc
+            {
+                DisabledWarnings = whitespace,
+                WarningsAsErrors = whitespace,
+                WarningsNotAsErrors = whitespace,
+            };
+            Assert.Equal(
+                "/optionstrict:custom /nowarn:A,A,\"A B\",\"A B\" /warnaserror+:A,A,\"A B\",\"A B\" " +
+                "/warnaserror-:A,A,\"A B\",\"A B\"",
+                vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = "A,A,A\tB";
+            Assert.Equal(
+                "/optionstrict:custom /nowarn:A,A,\"A\tB\" /warnaserror+:A,A,\"A\tB\" /warnaserror-:A,A,\"A\tB\"",
+                vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = "A,A,\"Q\",\"Q\"";
+            Assert.Equal(
+                "/optionstrict:custom /nowarn:A,A,\"\\\"Q\\\"\",\"\\\"Q\\\"\" /warnaserror+:A,A,\"\\\"Q\\\"\",\"\\\"Q\\\"\" " +
+                "/warnaserror-:A,A,\"\\\"Q\\\"\",\"\\\"Q\\\"\"",
+                vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = "A,\"A,B\",A";
+            Assert.Equal(
+                "/optionstrict:custom /nowarn:A,\"\\\"A\",\"B\\\"\",A /warnaserror+:A,\"\\\"A\",\"B\\\"\",A " +
+                "/warnaserror-:A,\"\\\"A\",\"B\\\"\",A",
+                vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = "A,A,A#B";
+            Assert.Equal(
+                "/optionstrict:custom /nowarn:A,A,\"A#B\" /warnaserror+:A,A,\"A#B\" /warnaserror-:A,A,\"A#B\"",
+                vbc.GenerateResponseFileContents());
+
+            vbc.DisabledWarnings = "A,A,A B";
+            vbc.WarningsAsErrors = vbc.WarningsNotAsErrors = "A,A";
+            Assert.Equal(
+                "/optionstrict:custom /nowarn:A,A,\"A B\" /warnaserror+:A /warnaserror-:A",
+                vbc.GenerateResponseFileContents());
+        }
+
+        [Fact]
+        public void WarningSwitchesMatchDesignTimeBuildForNuGetWarnings()
+        {
+            var vbc = new Vbc
+            {
+                WarningsNotAsErrors = "NU1901,NU1902,NU1903,NU1904,NU1901,NU1902,NU1903,NU1904",
+            };
+            Assert.Equal("/optionstrict:custom /warnaserror-:NU1901,NU1902,NU1903,NU1904", vbc.GenerateResponseFileContents());
+
+            vbc.WarningsNotAsErrors = "NU1901,NU1902,NU1903,NU1904";
+            Assert.Equal("/optionstrict:custom /warnaserror-:NU1901,NU1902,NU1903,NU1904", vbc.GenerateResponseFileContents());
         }
 
         [Fact]

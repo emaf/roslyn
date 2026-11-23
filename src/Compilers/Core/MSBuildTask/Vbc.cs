@@ -457,7 +457,7 @@ namespace Microsoft.CodeAnalysis.BuildTasks
 
             commandLine.AppendSwitchIfNotNull("/optionstrict:", this.OptionStrictType);
             commandLine.AppendWhenTrue("/nowarn", this._store, "NoWarnings");
-            commandLine.AppendSwitchWithSplitting("/nowarn:", this.DisabledWarnings, ",", ';', ',');
+            commandLine.AppendSwitchWithSplitting("/nowarn:", this.DisabledWarnings, ",", removeDuplicates: true, ';', ',');
             commandLine.AppendWhenTrue("/nosdkpath", _store, nameof(DisableSdkPath));
             commandLine.AppendPlusOrMinusSwitch("/optioninfer", this._store, "OptionInfer");
             commandLine.AppendWhenTrue("/nostdlib", this._store, "NoStandardLib");
@@ -546,8 +546,8 @@ namespace Microsoft.CodeAnalysis.BuildTasks
             //      /warnaserror-
             // is just shorthand for:
             //      /warnaserror-:<all possible warnings>
-            commandLine.AppendSwitchWithSplitting("/warnaserror+:", this.WarningsAsErrors, ",", ';', ',');
-            commandLine.AppendSwitchWithSplitting("/warnaserror-:", this.WarningsNotAsErrors, ",", ';', ',');
+            commandLine.AppendSwitchWithSplitting("/warnaserror+:", this.WarningsAsErrors, ",", removeDuplicates: true, ';', ',');
+            commandLine.AppendSwitchWithSplitting("/warnaserror-:", this.WarningsNotAsErrors, ",", removeDuplicates: true, ';', ',');
 
             // If not design time build and the globalSessionGuid property was set then add a -globalsessionguid:<guid>
             bool designTime = false;

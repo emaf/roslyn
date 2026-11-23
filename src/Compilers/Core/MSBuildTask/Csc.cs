@@ -230,7 +230,7 @@ namespace Microsoft.CodeAnalysis.BuildTasks
             commandLine.AppendSwitchIfNotNull("/lib:", AdditionalLibPaths, ",");
             commandLine.AppendPlusOrMinusSwitch("/unsafe", _store, nameof(AllowUnsafeBlocks));
             commandLine.AppendPlusOrMinusSwitch("/checked", _store, nameof(CheckForOverflowUnderflow));
-            commandLine.AppendSwitchWithSplitting("/nowarn:", DisabledWarnings, ",", ';', ',');
+            commandLine.AppendSwitchWithSplitting("/nowarn:", DisabledWarnings, ",", removeDuplicates: true, ';', ',');
             commandLine.AppendWhenTrue("/fullpaths", _store, nameof(GenerateFullPaths));
             commandLine.AppendSwitchIfNotNull("/moduleassemblyname:", ModuleAssemblyName);
             commandLine.AppendSwitchIfNotNull("/pdb:", PdbFile);
@@ -288,8 +288,8 @@ namespace Microsoft.CodeAnalysis.BuildTasks
             //      /warnaserror-
             // is just shorthand for:
             //      /warnaserror-:<all possible warnings>
-            commandLine.AppendSwitchWithSplitting("/warnaserror+:", WarningsAsErrors, ",", ';', ',');
-            commandLine.AppendSwitchWithSplitting("/warnaserror-:", WarningsNotAsErrors, ",", ';', ',');
+            commandLine.AppendSwitchWithSplitting("/warnaserror+:", WarningsAsErrors, ",", removeDuplicates: true, ';', ',');
+            commandLine.AppendSwitchWithSplitting("/warnaserror-:", WarningsNotAsErrors, ",", removeDuplicates: true, ';', ',');
 
             // It's a good idea for the response file to be the very last switch passed, just 
             // from a predictability perspective.  It also solves the problem that a dogfooder
